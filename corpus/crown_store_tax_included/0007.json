@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "alcohol",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "VINS SPECIMEN",
+    "address_lines": [
+      "2643, boulevard des Pins - Rouyn-Noranda",
+      "Rouyn-Noranda, QC J8X 1N7"
+    ],
+    "phone": "819-555-0113"
+  },
+  "store_number": "95828",
+  "datetime": "2024-07-19T18:59:00",
+  "transaction_number": "121729",
+  "items": [
+    {
+      "kind": "product",
+      "code": "64252398",
+      "description": "GIN ARTISANAL FICTIF",
+      "qty": 1,
+      "unit_price_cents": 3550,
+      "line_total_cents": 3550,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 3088,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 154
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 308
+    }
+  ],
+  "total_cents": 3550,
+  "tip_cents": null,
+  "gst_number": "783329197RT0001",
+  "qst_number": "5583462452TQ9319",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4000
+    }
+  ],
+  "change_cents": 450,
+  "card": null,
+  "reprint": true,
+  "declared_weight_g": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "    VINS SPECIMEN",
+    "",
+    " 2643, boulevard des Pins - Rouyn-Noranda",
+    "        Rouyn-Noranda, QC J8X 1N7",
+    "               819-555-0113",
+    "",
+    "Billet : 121729      Caisse : 3",
+    "Succursale : 95828   Caissier : 1128510",
+    "Date : 2024/07/19    Heure : 18:59",
+    "",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
+    "",
+    "Article         Qté        Prix    Montant",
+    "GIN ARTISANAL FICTIF",
+    "64252398          1     35,50 $    35,50 $",
+    "",
+    "                          Total    35,50 $",
+    "   783329197 RT0001 TPS (incl.)     1,54 $",
+    "  5583462452 TQ9319 TVQ (incl.)     3,08 $",
+    "",
+    "Comptant                           40,00 $",
+    "",
+    "Remise Comptant                     4,50 $",
+    "     Taxe spécifique sur les boissons",
+    "           alcooliques incluse",
+    "",
+    "Nombre d'articles vendus = 1",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
+    "",
+    "          TA7B49LVWA0SJGA06EAZXC",
+    "",
+    "               Copie client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0007.png",
+    "degraded": "0007.jpg"
+  },
+  "degradation": {
+    "paper_gray": 217,
+    "ink_gray_top": 44,
+    "ink_gray_bottom": 117,
+    "shading_amplitude": 0.24094261910831188,
+    "fold_position": null,
+    "blur_radius": 0.9827809832013767,
+    "rotation_degrees": 1.8344474652487757,
+    "perspective": 0.02151259872700064,
+    "noise_sigma": 7.688576970210425,
+    "salt_pepper_fraction": 0.00243487075822993,
+    "jpeg_quality": 70
+  }
+}

@@ -5,6 +5,7 @@ layout helper here works in columns, so the same receipt renders identically whe
 drawn to an image or dumped as plain text for extractor tests that skip OCR.
 """
 
+import textwrap
 from dataclasses import dataclass, field
 from enum import Enum
 
@@ -27,6 +28,7 @@ class Line:
     bold: bool = False
     size: Size = Size.NORMAL
     qr_payload: str | None = None  # a QR line carries no text; the payload is encoded instead
+    barcode_payload: str | None = None  # likewise for a 1-D barcode
 
 
 @dataclass
@@ -51,11 +53,27 @@ class Receipt:
     def qr(self, payload: str) -> None:
         self.lines.append(Line(qr_payload=payload, align=Align.CENTER))
 
+    def barcode(self, payload: str) -> None:
+        self.lines.append(Line(barcode_payload=payload, align=Align.CENTER))
+
+    def wrap_overflow(self) -> None:
+        """Wrap lines longer than the paper, keeping their indent, as the printer would."""
+        lines = []
+        for line in self.lines:
+            width = self.columns // line.size.value
+            if line.qr_payload is not None or line.barcode_payload is not None or len(line.text) <= width:
+                lines.append(line)
+                continue
+            indent = " " * (len(line.text) - len(line.text.lstrip()))
+            for part in textwrap.wrap(line.text, width, subsequent_indent=indent, break_on_hyphens=False):
+                lines.append(Line(part, align=line.align, bold=line.bold, size=line.size))
+        self.lines = lines
+
     def text_lines(self) -> list[str]:
         """The receipt as the plain text an ideal OCR would return, one entry per printed line."""
         out = []
         for line in self.lines:
-            if line.qr_payload is not None:
+            if line.qr_payload is not None or line.barcode_payload is not None:
                 continue
             width = self.columns // line.size.value
             if line.align is Align.CENTER:

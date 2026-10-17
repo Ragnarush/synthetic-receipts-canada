@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CANNA-DOH",
+    "address_lines": [
+      "3608, avenue du Quai",
+      "Gatineau, QC J9G 3H0"
+    ],
+    "phone": "8445550133"
+  },
+  "store_number": "46361",
+  "datetime": "2024-06-27T16:54:00",
+  "transaction_number": "25831",
+  "items": [
+    {
+      "kind": "product",
+      "code": "429784527736",
+      "description": "3,5g Haschich Spécimen",
+      "qty": 1,
+      "unit_price_cents": 4295,
+      "line_total_cents": 4295,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 3735,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 187
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 373
+    }
+  ],
+  "total_cents": 4295,
+  "tip_cents": null,
+  "gst_number": "37425892RT0001",
+  "qst_number": "90476778TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4500
+    }
+  ],
+  "change_cents": 205,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "14g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "      CANNA-DOH",
+    "           3608, avenue du Quai",
+    "           Gatineau, QC J9G 3H0",
+    "                  Canada",
+    "                8445550133",
+    "",
+    "Transaction : 25831  Caisse 1",
+    "Magasin : 46361      Caissier : 2970896",
+    "Date : 27/06/2024    Heure : 16:54",
+    "",
+    "Article         Qté        Prix    Montant",
+    "3,5g Haschich Spécimen",
+    "429784527736      1      42,95$     42,95$",
+    "",
+    "                          Total     42,95$",
+    "    37425892 RT0001 TPS (incl.)      1,87$",
+    "    90476778 TQ0001 TVQ (incl.)      3,73$",
+    "",
+    "__________________________________________",
+    "Comptant                            45,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                           (2,05)$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 1",
+    "Poids total Articles vendus =  14g",
+    "",
+    "          TF4F33EUZFXAYKJZJ0R5KR",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0013.png",
+    "degraded": "0013.jpg"
+  },
+  "degradation": {
+    "paper_gray": 233,
+    "ink_gray_top": 44,
+    "ink_gray_bottom": 99,
+    "shading_amplitude": 0.27049567803935787,
+    "fold_position": null,
+    "blur_radius": 0.7583019507582577,
+    "rotation_degrees": 1.103080890564631,
+    "perspective": 0.02313117124736969,
+    "noise_sigma": 5.006340025878972,
+    "salt_pepper_fraction": 0.0025788323081744214,
+    "jpeg_quality": 69
+  }
+}

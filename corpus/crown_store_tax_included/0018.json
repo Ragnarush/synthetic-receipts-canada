@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "alcohol",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CELLIER FICTIF",
+    "address_lines": [
+      "3887, chemin du Lac - Rimouski",
+      "Rimouski, QC G4Z 0P3"
+    ],
+    "phone": "819-555-0186"
+  },
+  "store_number": "24431",
+  "datetime": "2026-06-06T19:47:00",
+  "transaction_number": "29288",
+  "items": [
+    {
+      "kind": "product",
+      "code": "57729308",
+      "description": "BIERE IPA DOH 4X473",
+      "qty": 1,
+      "unit_price_cents": 1295,
+      "line_total_cents": 1295,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "81589815",
+      "description": "CIDRE DE GLACE FICTIF",
+      "qty": 1,
+      "unit_price_cents": 2395,
+      "line_total_cents": 2395,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "27680531",
+      "description": "GIN ARTISANAL FICTIF",
+      "qty": 1,
+      "unit_price_cents": 4575,
+      "line_total_cents": 4575,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 7189,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 359
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 717
+    }
+  ],
+  "total_cents": 8265,
+  "tip_cents": null,
+  "gst_number": "170488319RT0001",
+  "qst_number": "2767594751TQ6414",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 8265
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "    CELLIER FICTIF",
+    "",
+    "      3887, chemin du Lac - Rimouski",
+    "           Rimouski, QC G4Z 0P3",
+    "               819-555-0186",
+    "",
+    "Billet : 29288       Caisse : 3",
+    "Succursale : 24431   Caissier : 1930718",
+    "Date : 2026/06/06    Heure : 19:47",
+    "",
+    "Article         Qté        Prix    Montant",
+    "BIERE IPA DOH 4X473",
+    "57729308          1     12,95 $    12,95 $",
+    "CIDRE DE GLACE FICTIF",
+    "81589815          1     23,95 $    23,95 $",
+    "GIN ARTISANAL FICTIF",
+    "27680531          1     45,75 $    45,75 $",
+    "",
+    "                          Total    82,65 $",
+    "   170488319 RT0001 TPS (incl.)     3,59 $",
+    "  2767594751 TQ6414 TVQ (incl.)     7,17 $",
+    "",
+    "Comptant                           82,65 $",
+    "",
+    "Remise Comptant                     0,00 $",
+    "     Taxe spécifique sur les boissons",
+    "           alcooliques incluse",
+    "",
+    "Nombre d'articles vendus = 3",
+    "",
+    "          TDD87KWF59AK4GF63HEC72",
+    "",
+    "               Copie client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0018.png",
+    "degraded": "0018.jpg"
+  },
+  "degradation": {
+    "paper_gray": 235,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.03425351970469377,
+    "rotation_degrees": -0.44775153564504455,
+    "perspective": 0.0017581160976298926,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0009223959661479926,
+    "jpeg_quality": 86
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CANNA-DOH",
+    "address_lines": [
+      "1415, chemin du Lac",
+      "Drummondville, QC J7X 2V0"
+    ],
+    "phone": "8445550120"
+  },
+  "store_number": "19234",
+  "datetime": "2024-04-26T16:11:00",
+  "transaction_number": "101337",
+  "items": [
+    {
+      "kind": "product",
+      "code": "671877064684",
+      "description": "1g Résine Quidam",
+      "qty": 1,
+      "unit_price_cents": 1890,
+      "line_total_cents": 1890,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "617031354744",
+      "description": "3 x 0,5g Préroulés Doh",
+      "qty": 1,
+      "unit_price_cents": 1195,
+      "line_total_cents": 1195,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "348084669374",
+      "description": "3,5g Haschich Spécimen",
+      "qty": 1,
+      "unit_price_cents": 4250,
+      "line_total_cents": 4250,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "671877064684",
+      "description": "1g Résine Quidam",
+      "qty": 1,
+      "unit_price_cents": 1890,
+      "line_total_cents": 1890,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 8024,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 401
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 800
+    }
+  ],
+  "total_cents": 9225,
+  "tip_cents": null,
+  "gst_number": "73276417RT0001",
+  "qst_number": "82828417TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10000
+    }
+  ],
+  "change_cents": 775,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "23,5g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "      CANNA-DOH",
+    "           1415, chemin du Lac",
+    "        Drummondville, QC J7X 2V0",
+    "                  Canada",
+    "                8445550120",
+    "",
+    "Transaction : 101337 Caisse 2",
+    "Magasin : 19234      Caissier : 2676020",
+    "Date : 26/04/2024    Heure : 16:11",
+    "",
+    "Article         Qté        Prix    Montant",
+    "1g Résine Quidam",
+    "671877064684      1      18,90$     18,90$",
+    "3 x 0,5g Préroulés Doh",
+    "617031354744      1      11,95$     11,95$",
+    "3,5g Haschich Spécimen",
+    "348084669374      1      42,50$     42,50$",
+    "1g Résine Quidam",
+    "671877064684      1      18,90$     18,90$",
+    "",
+    "                          Total     92,25$",
+    "    73276417 RT0001 TPS (incl.)      4,01$",
+    "    82828417 TQ0001 TVQ (incl.)      8,00$",
+    "",
+    "__________________________________________",
+    "Comptant                           100,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                           (7,75)$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 4",
+    "Poids total Articles vendus =  23,5g",
+    "",
+    "          T1E4EYAAG4BFNVVKM1H94S",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0006.png",
+    "degraded": "0006.jpg"
+  },
+  "degradation": {
+    "paper_gray": 223,
+    "ink_gray_top": 33,
+    "ink_gray_bottom": 93,
+    "shading_amplitude": 0.21059438413692722,
+    "fold_position": null,
+    "blur_radius": 0.889783986392181,
+    "rotation_degrees": -0.874601307796304,
+    "perspective": 0.015459856445095363,
+    "noise_sigma": 6.540321600744347,
+    "salt_pepper_fraction": 0.00293866150346413,
+    "jpeg_quality": 77
+  }
+}

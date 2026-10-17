@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CHANVRE SPECIMEN",
+    "address_lines": [
+      "3630, rue Notre-Dame",
+      "Terrebonne, QC J1W 2J3"
+    ],
+    "phone": "8445550146"
+  },
+  "store_number": "30488",
+  "datetime": "2026-10-03T18:56:00",
+  "transaction_number": "31787",
+  "items": [
+    {
+      "kind": "product",
+      "code": "485876389980",
+      "description": "1g Résine Quidam",
+      "qty": 1,
+      "unit_price_cents": 2390,
+      "line_total_cents": 2390,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 2079,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 104
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 207
+    }
+  ],
+  "total_cents": 2390,
+  "tip_cents": null,
+  "gst_number": "20002545RT0001",
+  "qst_number": "78554507TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4000
+    }
+  ],
+  "change_cents": 1610,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "4g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "   CHANVRE SPECIMEN",
+    "           3630, rue Notre-Dame",
+    "          Terrebonne, QC J1W 2J3",
+    "                  Canada",
+    "                8445550146",
+    "",
+    "Transaction : 31787  Caisse 1",
+    "Magasin : 30488      Caissier : 291490",
+    "Date : 03/10/2026    Heure : 18:56",
+    "",
+    "Article         Qté        Prix    Montant",
+    "1g Résine Quidam",
+    "485876389980      1      23,90$     23,90$",
+    "",
+    "                          Total     23,90$",
+    "    20002545 RT0001 TPS (incl.)      1,04$",
+    "    78554507 TQ0001 TVQ (incl.)      2,07$",
+    "",
+    "__________________________________________",
+    "Comptant                            40,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                          (16,10)$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 1",
+    "Poids total Articles vendus =  4g",
+    "",
+    "          TPRMQYC0MU6RD1YJ248B82",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0010.png",
+    "degraded": "0010.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.09037988025158686,
+    "fold_position": null,
+    "blur_radius": 0.34071050914426265,
+    "rotation_degrees": 0.014150254474041057,
+    "perspective": 0.006140990580921096,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 83
+  }
+}

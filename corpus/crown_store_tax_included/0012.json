@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CANNABIS FICTIF",
+    "address_lines": [
+      "1961, boulevard des Pins",
+      "Saguenay, QC G9K 3C1"
+    ],
+    "phone": "8445550101"
+  },
+  "store_number": "97301",
+  "datetime": "2024-11-02T16:54:00",
+  "transaction_number": "110266",
+  "items": [
+    {
+      "kind": "product",
+      "code": "399440518452",
+      "description": "1g Résine Quidam",
+      "qty": 1,
+      "unit_price_cents": 2190,
+      "line_total_cents": 2190,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "744511299113",
+      "description": "3 x 0,5g Préroulés Doh",
+      "qty": 1,
+      "unit_price_cents": 1890,
+      "line_total_cents": 1890,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "829620308219",
+      "description": "3,5g Haschich Spécimen",
+      "qty": 1,
+      "unit_price_cents": 3990,
+      "line_total_cents": 3990,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 7019,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 351
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 700
+    }
+  ],
+  "total_cents": 8070,
+  "tip_cents": null,
+  "gst_number": "20672116RT0001",
+  "qst_number": "37786033TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10000
+    }
+  ],
+  "change_cents": 1930,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "19,5g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "   CANNABIS FICTIF",
+    "         1961, boulevard des Pins",
+    "           Saguenay, QC G9K 3C1",
+    "                  Canada",
+    "                8445550101",
+    "",
+    "Transaction : 110266 Caisse 2",
+    "Magasin : 97301      Caissier : 583657",
+    "Date : 02/11/2024    Heure : 16:54",
+    "",
+    "Article         Qté        Prix    Montant",
+    "1g Résine Quidam",
+    "399440518452      1      21,90$     21,90$",
+    "3 x 0,5g Préroulés Doh",
+    "744511299113      1      18,90$     18,90$",
+    "3,5g Haschich Spécimen",
+    "829620308219      1      39,90$     39,90$",
+    "",
+    "                          Total     80,70$",
+    "    20672116 RT0001 TPS (incl.)      3,51$",
+    "    37786033 TQ0001 TVQ (incl.)      7,00$",
+    "",
+    "__________________________________________",
+    "Comptant                           100,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                          (19,30)$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 3",
+    "Poids total Articles vendus =  19,5g",
+    "",
+    "          TYMJ319Q0C44P32V9Y2AF2",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0012.png",
+    "degraded": "0012.jpg"
+  },
+  "degradation": {
+    "paper_gray": 217,
+    "ink_gray_top": 45,
+    "ink_gray_bottom": 131,
+    "shading_amplitude": 0.24263858262275712,
+    "fold_position": null,
+    "blur_radius": 1.12289966967993,
+    "rotation_degrees": 1.6105664858602782,
+    "perspective": 0.033381515746652046,
+    "noise_sigma": 5.8640236074089085,
+    "salt_pepper_fraction": 0.0018140481478310735,
+    "jpeg_quality": 74
+  }
+}

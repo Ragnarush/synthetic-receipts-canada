@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CHANVRE SPECIMEN",
+    "address_lines": [
+      "1631, avenue des Érables",
+      "Terrebonne, QC J8J 0T4"
+    ],
+    "phone": "8445550190"
+  },
+  "store_number": "72998",
+  "datetime": "2026-04-09T13:05:00",
+  "transaction_number": "99390",
+  "items": [
+    {
+      "kind": "product",
+      "code": "916341709908",
+      "description": "3,5g Fleurs séchées Indica Doh",
+      "qty": 1,
+      "unit_price_cents": 4100,
+      "line_total_cents": 4100,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 3566,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 178
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 356
+    }
+  ],
+  "total_cents": 4100,
+  "tip_cents": null,
+  "gst_number": "67073649RT0001",
+  "qst_number": "50337262TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4100
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "3,5g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "   CHANVRE SPECIMEN",
+    "         1631, avenue des Érables",
+    "          Terrebonne, QC J8J 0T4",
+    "                  Canada",
+    "                8445550190",
+    "",
+    "Transaction : 99390  Caisse 3",
+    "Magasin : 72998      Caissier : 135253",
+    "Date : 09/04/2026    Heure : 13:05",
+    "",
+    "Article         Qté        Prix    Montant",
+    "3,5g Fleurs séchées Indica Doh",
+    "916341709908      1      41,00$     41,00$",
+    "",
+    "                          Total     41,00$",
+    "    67073649 RT0001 TPS (incl.)      1,78$",
+    "    50337262 TQ0001 TVQ (incl.)      3,56$",
+    "",
+    "__________________________________________",
+    "Comptant                            41,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                             0,00$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 1",
+    "Poids total Articles vendus =  3,5g",
+    "",
+    "          TGTQZKFMJA9MPEDEK6Y4T1",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0003.png",
+    "degraded": "0003.jpg"
+  },
+  "degradation": {
+    "paper_gray": 236,
+    "ink_gray_top": 32,
+    "ink_gray_bottom": 51,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.31844407007083664,
+    "rotation_degrees": 0.38611126916832256,
+    "perspective": 0.014924510036827487,
+    "noise_sigma": 3.221692716509018,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 85
+  }
+}

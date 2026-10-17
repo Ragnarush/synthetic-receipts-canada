@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "alcohol",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CELLIER FICTIF",
+    "address_lines": [
+      "2069, boul. de la Rivière - Trois-Rivières",
+      "Trois-Rivières, QC G7B 0W4"
+    ],
+    "phone": "819-555-0144"
+  },
+  "store_number": "14939",
+  "datetime": "2026-02-01T17:42:00",
+  "transaction_number": "145535",
+  "items": [
+    {
+      "kind": "product",
+      "code": "58086775",
+      "description": "GIN ARTISANAL FICTIF",
+      "qty": 1,
+      "unit_price_cents": 4875,
+      "line_total_cents": 4875,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 4240,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 212
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 423
+    }
+  ],
+  "total_cents": 4875,
+  "tip_cents": null,
+  "gst_number": "764633794RT0001",
+  "qst_number": "3112231069TQ2432",
+  "payment_method": "debit",
+  "tenders": [
+    {
+      "method": "debit",
+      "cents": 4875
+    }
+  ],
+  "change_cents": null,
+  "card": null,
+  "reprint": true,
+  "declared_weight_g": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "    CELLIER FICTIF",
+    "",
+    "2069, boul. de la Rivière - Trois-Rivières",
+    "        Trois-Rivières, QC G7B 0W4",
+    "               819-555-0144",
+    "",
+    "Billet : 145535      Caisse : 2",
+    "Succursale : 14939   Caissier : 1166319",
+    "Date : 2026/02/01    Heure : 17:42",
+    "",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
+    "",
+    "Article         Qté        Prix    Montant",
+    "GIN ARTISANAL FICTIF",
+    "58086775          1     48,75 $    48,75 $",
+    "",
+    "                          Total    48,75 $",
+    "   764633794 RT0001 TPS (incl.)     2,12 $",
+    "  3112231069 TQ2432 TVQ (incl.)     4,23 $",
+    "",
+    "ACHAT DÉBIT                        48,75 $",
+    "",
+    "Remise Comptant                     0,00 $",
+    "     Taxe spécifique sur les boissons",
+    "           alcooliques incluse",
+    "",
+    "Nombre d'articles vendus = 1",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
+    "",
+    "          T1C1U6HMYSTJS4X3JPKGZD",
+    "",
+    "               Copie client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0001.png",
+    "degraded": "0001.jpg"
+  },
+  "degradation": {
+    "paper_gray": 219,
+    "ink_gray_top": 48,
+    "ink_gray_bottom": 75,
+    "shading_amplitude": 0.14390246412870572,
+    "fold_position": 0.31620079732468137,
+    "blur_radius": 0.43688612389015974,
+    "rotation_degrees": -2.186869747803884,
+    "perspective": 0.023673696400856845,
+    "noise_sigma": 7.286891273608177,
+    "salt_pepper_fraction": 0.0013277247026478288,
+    "jpeg_quality": 77
+  }
+}

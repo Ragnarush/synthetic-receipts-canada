@@ -36,7 +36,7 @@ src/                         le générateur (Python, Pillow, numpy)
 | `taxi_websrm` | Revenu Québec, exemple officiel du transport rémunéré de personnes, juillet 2025 | livrée |
 | `grocery_chain` | observation de reçus réels d'une grande chaîne d'épicerie québécoise (structure seulement) ; bordereau du terminal intégré | livrée |
 | bordereau de terminal de paiement seul | observation | à venir |
-| société d'État à taxes incluses (alcool, cannabis) | observation | à venir |
+| `crown_store_tax_included` | observation de reçus réels de deux sociétés d'État québécoises (alcool, cannabis) : prix taxes comprises, bordereau intégré | livrée |
 | grande surface (fournitures, électronique) | observation | à venir |
 | facture de services professionnels | observation | à venir |
 | pharmacie, quincaillerie | observation | à venir |
@@ -98,7 +98,9 @@ déjà produits.
 
 Certaines familles ajoutent des champs, décrits dans leur gabarit : `grocery_chain` donne
 l'assiette de chaque taxe (`taxes[].base_cents`), les modes de paiement (`tenders`),
-l'arrondi au comptant, la monnaie rendue et le bordereau de carte (`card`). Un champ
+l'arrondi au comptant, la monnaie rendue et le bordereau de carte (`card`) ;
+`crown_store_tax_included` marque les taxes `included` et donne un `subtotal_cents` qui
+n'est pas imprimé, à recalculer. Un champ
 absent du reçu vaut `null`, jamais une valeur par défaut.
 
 Les montants sont en **cents entiers**, arrondis à la demi-unité supérieure comme une
@@ -128,8 +130,8 @@ vocabulaire, alignement, largeur de papier, marqueurs de taxes. Voir
 No public dataset of Québec or Canadian receipts exists, and real receipts carry personal
 data. This repository generates receipts from templates that copy the *structure* of real
 ones (the restaurant and taxi families follow Revenu Québec's official mandatory-billing
-samples; the grocery family copies the structure of a large Québec chain's receipts, inline
-card slip included) and fills them with verifiably fake data: fictitious merchants, 555-01XX
+samples; the grocery and crown-store families copy the structure of real Québec receipts,
+inline card slips and tax-included prices included) and fills them with verifiably fake data: fictitious merchants, 555-01XX
 phone numbers, GST/QST numbers that deliberately fail the Luhn check, a printed "SPÉCIMEN" line,
 a QR code pointing here. Each receipt comes as a clean print, a degraded phone-photo
 version, and a JSON ground truth with integer-cent amounts and the exact printed text

@@ -8,14 +8,13 @@ differ, cash rounding to 5 cents, and four date formats on one receipt.
 """
 
 import random
-import textwrap
 import unicodedata
 from datetime import datetime, timedelta
 from fractions import Fraction
 
 from .. import SCHEMA_VERSION
 from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_qst_number
-from ..layout import Align, Line, Receipt, Size
+from ..layout import Align, Receipt, Size
 from ..money import GST_RATE, QST_RATE, format_cad_en, round_half_up
 from ..render import PAPER
 
@@ -221,20 +220,6 @@ def _card_slip(r: Receipt, rng: random.Random, method: str, network: str, cents:
             "datetime": at.isoformat(), "reference": ref, "authorization": auth}
 
 
-def _wrap_overflow(r: Receipt) -> None:
-    """On 58 mm paper some lines are too long; the printer wraps them, keeping the indent."""
-    lines = []
-    for line in r.lines:
-        width = r.columns // line.size.value
-        if line.qr_payload is not None or len(line.text) <= width:
-            lines.append(line)
-            continue
-        indent = " " * (len(line.text) - len(line.text.lstrip()))
-        for part in textwrap.wrap(line.text, width, subsequent_indent=indent, drop_whitespace=True):
-            lines.append(Line(part, align=line.align, bold=line.bold, size=line.size))
-    r.lines = lines
-
-
 def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     r = Receipt(columns=PAPER[paper_mm]["columns"])
     banner = rng.choice(BANNERS)
@@ -337,7 +322,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     r.add()
     r.add("SPECIMEN - synthetic-receipts-canada", align=Align.CENTER)
 
-    _wrap_overflow(r)
+    r.wrap_overflow()
 
     truth = {
         "schema_version": SCHEMA_VERSION,

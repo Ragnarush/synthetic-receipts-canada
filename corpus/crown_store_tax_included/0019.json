@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CHANVRE SPECIMEN",
+    "address_lines": [
+      "2091, chemin de la Montagne",
+      "Saint-Jérôme, QC J9J 0R7"
+    ],
+    "phone": "8445550100"
+  },
+  "store_number": "24545",
+  "datetime": "2024-04-07T20:42:00",
+  "transaction_number": "47693",
+  "items": [
+    {
+      "kind": "product",
+      "code": "908871404399",
+      "description": "28g Fleurs séchées Hybride Doh",
+      "qty": 1,
+      "unit_price_cents": 13295,
+      "line_total_cents": 13295,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 11564,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 578
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 1153
+    }
+  ],
+  "total_cents": 13295,
+  "tip_cents": null,
+  "gst_number": "99772344RT0001",
+  "qst_number": "35890197TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 13500
+    }
+  ],
+  "change_cents": 205,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "28g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "   CHANVRE SPECIMEN",
+    "       2091, chemin de la Montagne",
+    "         Saint-Jérôme, QC J9J 0R7",
+    "                  Canada",
+    "                8445550100",
+    "",
+    "Transaction : 47693  Caisse 2",
+    "Magasin : 24545      Caissier : 1400740",
+    "Date : 07/04/2024    Heure : 20:42",
+    "",
+    "Article         Qté        Prix    Montant",
+    "28g Fleurs séchées Hybride Doh",
+    "908871404399      1     132,95$    132,95$",
+    "",
+    "                          Total    132,95$",
+    "    99772344 RT0001 TPS (incl.)      5,78$",
+    "    35890197 TQ0001 TVQ (incl.)     11,53$",
+    "",
+    "__________________________________________",
+    "Comptant                           135,00$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                           (2,05)$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 1",
+    "Poids total Articles vendus =  28g",
+    "",
+    "          T9FVUZVLB4MP2A1XCDV8NR",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0019.png",
+    "degraded": "0019.jpg"
+  },
+  "degradation": {
+    "paper_gray": 237,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.12470944665447196,
+    "fold_position": null,
+    "blur_radius": 0.3973406688047365,
+    "rotation_degrees": -0.3377135278946175,
+    "perspective": 0.0,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0003313989753258808,
+    "jpeg_quality": 92
+  }
+}

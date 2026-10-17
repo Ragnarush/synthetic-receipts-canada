@@ -1,5 +1,6 @@
 """Draw a Receipt to a clean grayscale image, the way a thermal printer would print it."""
 
+import hashlib
 from functools import lru_cache
 from pathlib import Path
 
@@ -53,11 +54,17 @@ def render(receipt: Receipt, paper_mm: int = 80, font_family: str | None = None)
     }
     base_height = int(fonts[(False, Size.NORMAL)].size * LINE_GAP)
     qr_side = spec["print_px"] // 2
+    barcode_height = base_height * 3
 
     # First pass: total height.
     height = MARGIN_PX
     for line in receipt.lines:
-        height += qr_side + base_height if line.qr_payload is not None else base_height * line.size.value
+        if line.qr_payload is not None:
+            height += qr_side + base_height
+        elif line.barcode_payload is not None:
+            height += barcode_height + base_height // 2
+        else:
+            height += base_height * line.size.value
     height += MARGIN_PX * 2
 
     width = spec["print_px"] + MARGIN_PX * 2
@@ -74,6 +81,11 @@ def render(receipt: Receipt, paper_mm: int = 80, font_family: str | None = None)
             image.paste(qr_img, ((width - qr_side) // 2, y + base_height // 2))
             y += qr_side + base_height
             continue
+        if line.barcode_payload is not None:
+            _draw_barcode(draw, line.barcode_payload, MARGIN_PX + spec["print_px"] // 20, y,
+                          spec["print_px"] * 9 // 10, barcode_height)
+            y += barcode_height + base_height // 2
+            continue
         font = fonts[(line.bold, line.size)]
         text_width = font.getlength(line.text)
         if line.align is Align.CENTER:
@@ -85,3 +97,17 @@ def render(receipt: Receipt, paper_mm: int = 80, font_family: str | None = None)
         draw.text((x, y), line.text, font=font, fill=0)
         y += base_height * line.size.value
     return image
+
+
+def _draw_barcode(draw: ImageDraw.ImageDraw, payload: str, x: int, y: int, width: int, height: int) -> None:
+    """Bars that look like a 1-D barcode, derived from the payload. They decode to nothing on
+    purpose: the point is what an OCR engine sees next to the printed code, not a scannable code."""
+    bits = "".join(f"{byte:08b}" for byte in hashlib.sha256(payload.encode()).digest() * 4)
+    module = 2
+    cursor, i = x, 0
+    while cursor < x + width - module * 3:
+        bar = 1 + (int(bits[i:i + 2], 2) % 3)
+        if i % 4 == 0:
+            draw.rectangle([cursor, y, cursor + bar * module - 1, y + height - 1], fill=0)
+        cursor += bar * module
+        i = (i + 2) % (len(bits) - 2)

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "alcohol",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "965, chemin du Lac - Montréal",
+      "Montréal, QC H6X 3E1"
+    ],
+    "phone": "819-555-0130"
+  },
+  "store_number": "99546",
+  "datetime": "2026-10-16T19:36:00",
+  "transaction_number": "79804",
+  "items": [
+    {
+      "kind": "product",
+      "code": "68814500",
+      "description": "BIERE IPA DOH 4X473",
+      "qty": 1,
+      "unit_price_cents": 1495,
+      "line_total_cents": 1495,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "51431411",
+      "description": "CIDRE DE GLACE FICTIF",
+      "qty": 1,
+      "unit_price_cents": 3275,
+      "line_total_cents": 3275,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 4149,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 207
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 414
+    }
+  ],
+  "total_cents": 4770,
+  "tip_cents": null,
+  "gst_number": "814772887RT0001",
+  "qst_number": "3306257648TQ7365",
+  "payment_method": "mixed",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4000
+    },
+    {
+      "method": "debit",
+      "cents": 770
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "     ALCOOLS DOH",
+    "",
+    "      965, chemin du Lac - Montréal",
+    "           Montréal, QC H6X 3E1",
+    "               819-555-0130",
+    "",
+    "Billet : 79804       Caisse : 2",
+    "Succursale : 99546   Caissier : 726445",
+    "Date : 2026/10/16    Heure : 19:36",
+    "",
+    "Article         Qté        Prix    Montant",
+    "BIERE IPA DOH 4X473",
+    "68814500          1     14,95 $    14,95 $",
+    "CIDRE DE GLACE FICTIF",
+    "51431411          1     32,75 $    32,75 $",
+    "",
+    "                          Total    47,70 $",
+    "   814772887 RT0001 TPS (incl.)     2,07 $",
+    "  3306257648 TQ7365 TVQ (incl.)     4,14 $",
+    "",
+    "Comptant                           40,00 $",
+    "ACHAT DÉBIT                         7,70 $",
+    "",
+    "Remise Comptant                     0,00 $",
+    "     Taxe spécifique sur les boissons",
+    "           alcooliques incluse",
+    "",
+    "Nombre d'articles vendus = 2",
+    "",
+    "          T0KT9M1PA9BGHL1SUUMNDX",
+    "",
+    "               Copie client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0020.png",
+    "degraded": "0020.jpg"
+  },
+  "degradation": {
+    "paper_gray": 229,
+    "ink_gray_top": 32,
+    "ink_gray_bottom": 122,
+    "shading_amplitude": 0.1998947813508553,
+    "fold_position": 0.5031332420446515,
+    "blur_radius": 0.838975743187087,
+    "rotation_degrees": -0.8100062741610459,
+    "perspective": 0.03282627315716571,
+    "noise_sigma": 7.899845973563691,
+    "salt_pepper_fraction": 0.001868740285577014,
+    "jpeg_quality": 66
+  }
+}

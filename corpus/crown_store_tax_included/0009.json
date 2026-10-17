@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "alcohol",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "VINS SPECIMEN",
+    "address_lines": [
+      "205, chemin de la Montagne - Terrebonne",
+      "Terrebonne, QC J7P 4Z1"
+    ],
+    "phone": "819-555-0162"
+  },
+  "store_number": "14474",
+  "datetime": "2026-08-16T16:40:00",
+  "transaction_number": "34940",
+  "items": [
+    {
+      "kind": "product",
+      "code": "89657524",
+      "description": "BLANC CLOS DOH",
+      "qty": 1,
+      "unit_price_cents": 2250,
+      "line_total_cents": 2250,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "89657524",
+      "description": "BLANC CLOS DOH",
+      "qty": 1,
+      "unit_price_cents": 2250,
+      "line_total_cents": 2250,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 3914,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 196
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 390
+    }
+  ],
+  "total_cents": 4500,
+  "tip_cents": null,
+  "gst_number": "843719521RT0001",
+  "qst_number": "5981035181TQ8712",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5000
+    }
+  ],
+  "change_cents": 500,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "    VINS SPECIMEN",
+    "",
+    " 205, chemin de la Montagne - Terrebonne",
+    "          Terrebonne, QC J7P 4Z1",
+    "               819-555-0162",
+    "",
+    "Billet : 34940       Caisse : 1",
+    "Succursale : 14474   Caissier : 500326",
+    "Date : 2026/08/16    Heure : 16:40",
+    "",
+    "Article         Qté        Prix    Montant",
+    "BLANC CLOS DOH",
+    "89657524          1     22,50 $    22,50 $",
+    "BLANC CLOS DOH",
+    "89657524          1     22,50 $    22,50 $",
+    "",
+    "                          Total    45,00 $",
+    "   843719521 RT0001 TPS (incl.)     1,96 $",
+    "  5981035181 TQ8712 TVQ (incl.)     3,90 $",
+    "",
+    "Comptant                           50,00 $",
+    "",
+    "Remise Comptant                     5,00 $",
+    "     Taxe spécifique sur les boissons",
+    "           alcooliques incluse",
+    "",
+    "Nombre d'articles vendus = 2",
+    "",
+    "          TAUACL9ZS6ULVDZZPZ3C1S",
+    "",
+    "               Copie client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0009.png",
+    "degraded": "0009.jpg"
+  },
+  "degradation": {
+    "paper_gray": 220,
+    "ink_gray_top": 54,
+    "ink_gray_bottom": 93,
+    "shading_amplitude": 0.19789563179250164,
+    "fold_position": null,
+    "blur_radius": 1.1010379347903136,
+    "rotation_degrees": 2.7054183053719028,
+    "perspective": 0.029619729852079568,
+    "noise_sigma": 7.528999003522096,
+    "salt_pepper_fraction": 0.0017298477516275706,
+    "jpeg_quality": 71
+  }
+}

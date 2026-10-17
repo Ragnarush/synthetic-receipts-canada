@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "family": "crown_store_tax_included",
+  "variant": "cannabis",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "CANNA-DOH",
+    "address_lines": [
+      "2647, boul. de la Rivière",
+      "Trois-Rivières, QC G1J 6Z9"
+    ],
+    "phone": "8445550155"
+  },
+  "store_number": "96960",
+  "datetime": "2025-10-05T21:24:00",
+  "transaction_number": "23182",
+  "items": [
+    {
+      "kind": "product",
+      "code": "485243010199",
+      "description": "3,5g Fleurs séchées Sativa Fictive",
+      "qty": 1,
+      "unit_price_cents": 2950,
+      "line_total_cents": 2950,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "485243010199",
+      "description": "3,5g Fleurs séchées Sativa Fictive",
+      "qty": 1,
+      "unit_price_cents": 2950,
+      "line_total_cents": 2950,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "code": "730337776222",
+      "description": "3,5g Haschich Spécimen",
+      "qty": 1,
+      "unit_price_cents": 4595,
+      "line_total_cents": 4595,
+      "tax_flags": null
+    }
+  ],
+  "taxes_included": true,
+  "subtotal_cents": 9128,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "included": true,
+      "cents": 456
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "included": true,
+      "cents": 911
+    }
+  ],
+  "total_cents": 10495,
+  "tip_cents": null,
+  "gst_number": "65181920RT0001",
+  "qst_number": "42737012TQ0001",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10495
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "reprint": false,
+  "declared_weight_g": "21g",
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "      CANNA-DOH",
+    "        2647, boul. de la Rivière",
+    "        Trois-Rivières, QC G1J 6Z9",
+    "                  Canada",
+    "                8445550155",
+    "",
+    "Transaction : 23182  Caisse 1",
+    "Magasin : 96960      Caissier : 119740",
+    "Date : 05/10/2025    Heure : 21:24",
+    "",
+    "Article         Qté        Prix    Montant",
+    "3,5g Fleurs séchées Sativa Fictive",
+    "485243010199      1      29,50$     29,50$",
+    "3,5g Fleurs séchées Sativa Fictive",
+    "485243010199      1      29,50$     29,50$",
+    "3,5g Haschich Spécimen",
+    "730337776222      1      45,95$     45,95$",
+    "",
+    "                          Total    104,95$",
+    "    65181920 RT0001 TPS (incl.)      4,56$",
+    "    42737012 TQ0001 TVQ (incl.)      9,11$",
+    "",
+    "__________________________________________",
+    "Comptant                           104,95$",
+    "__________________________________________",
+    "Monnaie",
+    "Comptant                             0,00$",
+    "Rendez-vous sur :",
+    "   information-cannabis.example pour de",
+    "l'information sur la consommation à",
+    "moindre risque.",
+    "",
+    "Nombre d'articles vendus = 3",
+    "Poids total Articles vendus =  21g",
+    "",
+    "          TQM62X8JAQ5SH1ZTLDN3XM",
+    "",
+    "            Exemplaire client",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0016.png",
+    "degraded": "0016.jpg"
+  },
+  "degradation": {
+    "paper_gray": 218,
+    "ink_gray_top": 50,
+    "ink_gray_bottom": 110,
+    "shading_amplitude": 0.2516921683155293,
+    "fold_position": null,
+    "blur_radius": 0.9770247080023098,
+    "rotation_degrees": -0.32556841262833797,
+    "perspective": 0.03675454605371358,
+    "noise_sigma": 8.92599576124942,
+    "salt_pepper_fraction": 0.002901240851470477,
+    "jpeg_quality": 65
+  }
+}
