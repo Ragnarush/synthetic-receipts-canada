@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "2055 boul. de la Rivière",
+      "Rimouski, QC G3C 5B8"
+    ],
+    "phone": "(819)555-0166"
+  },
+  "store_number": null,
+  "datetime": "2024-07-24",
+  "transaction_number": "681349",
+  "client": {
+    "name": "M. Émilie Untel",
+    "id": "2649",
+    "address_lines": [
+      "1722 boulevard des Pins",
+      "Saint-Jérôme, QC  J0H 3V9"
+    ]
+  },
+  "patient": {
+    "name": "Galette",
+    "id": "25186",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 2.1 kg à 5kg",
+      "unit_price_cents": 5653,
+      "line_total_cents": 5653,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 5653,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 283
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 564
+    }
+  ],
+  "total_cents": 6500,
+  "tip_cents": null,
+  "gst_number": "622932865",
+  "qst_number": "9796847504",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 6500
+    }
+  ],
+  "change_cents": 0,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "2055 boul. de la Rivière",
+    "Rimouski, QC G3C 5B8",
+    "Téléphone:  (819)555-0166",
+    "TPS: 622932865  TVQ: 9796847504",
+    "",
+    "Facture: 681349",
+    "Date: 24-juil.-2024",
+    "",
+    "M. Émilie Untel (2649)",
+    "1722 boulevard des Pins",
+    "Saint-Jérôme, QC  J0H 3V9",
+    "",
+    "",
+    "Galette - 25186",
+    "   1 Antiparasitaire DOH canin     56,53 $",
+    "     2.1 kg à 5kg",
+    "",
+    "                   Sous-total:     56,53 $",
+    "                   TPS(5%):         2,83 $",
+    "                   TVQ(9,975%):     5,64 $",
+    "                   Total:          65,00 $",
+    "",
+    "      24-juil.-2024  Comptant:     65,00 $",
+    "",
+    "                     Monnaie        0,00 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0016.png",
+    "degraded": "0016.jpg"
+  },
+  "degradation": {
+    "paper_gray": 208,
+    "ink_gray_top": 63,
+    "ink_gray_bottom": 156,
+    "shading_amplitude": 0.3143713117958648,
+    "fold_position": null,
+    "blur_radius": 1.2851361958447214,
+    "rotation_degrees": -4.038997907686957,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 61
+  }
+}

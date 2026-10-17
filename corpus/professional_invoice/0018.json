@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "2576 rue du Moulin",
+      "Rouyn-Noranda, QC J7K 6Z7"
+    ],
+    "phone": "(819)555-0161"
+  },
+  "store_number": null,
+  "datetime": "2024-11-23",
+  "transaction_number": "481899",
+  "client": {
+    "name": "M. Félix Exemple",
+    "id": "19670",
+    "address_lines": [
+      "217 rue Notre-Dame",
+      "Gatineau, QC  J0Y 4N7"
+    ]
+  },
+  "patient": {
+    "name": "Pacha",
+    "id": "36261",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 7094,
+      "line_total_cents": 7094,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH félin 4.1 kg à 8kg",
+      "unit_price_cents": 4678,
+      "line_total_cents": 4678,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 11772,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 589
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1174
+    }
+  ],
+  "total_cents": 13535,
+  "tip_cents": null,
+  "gst_number": "284686137",
+  "qst_number": "3542218552",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 15000
+    }
+  ],
+  "change_cents": 1465,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "2576 rue du Moulin",
+    "Rouyn-Noranda, QC J7K 6Z7",
+    "Téléphone:  (819)555-0161",
+    "TPS: 284686137  TVQ: 3542218552",
+    "",
+    "Facture: 481899",
+    "Date: 23-nov.-2024",
+    "",
+    "M. Félix Exemple (19670)",
+    "217 rue Notre-Dame",
+    "Gatineau, QC  J0Y 4N7",
+    "",
+    "",
+    "Pacha - 36261",
+    "   1 Examen de santé complet       70,94 $",
+    "   1 Antiparasitaire DOH félin     46,78 $",
+    "     4.1 kg à 8kg",
+    "",
+    "                   Sous-total:    117,72 $",
+    "                   TPS(5%):         5,89 $",
+    "                   TVQ(9,975%):    11,74 $",
+    "                   Total:         135,35 $",
+    "",
+    "       23-nov.-2024  Comptant:    150,00 $",
+    "",
+    "                     Monnaie       14,65 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0018.png",
+    "degraded": "0018.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 28,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.30304587726355314,
+    "perspective": 0.0008148068749218407,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 3.9981805398486614e-05,
+    "jpeg_quality": 90
+  }
+}

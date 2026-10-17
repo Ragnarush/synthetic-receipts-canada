@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire du Quidam inc",
+    "address_lines": [
+      "2630 boulevard des Pins",
+      "Lévis, QC G6T 9L0"
+    ],
+    "phone": "(819)555-0132"
+  },
+  "store_number": null,
+  "datetime": "2024-02-14",
+  "transaction_number": "673627",
+  "client": {
+    "name": "Mme Hugo Quidam",
+    "id": "2205",
+    "address_lines": [
+      "2580 chemin du Lac",
+      "Sept-Îles, QC  G3X 7G2"
+    ]
+  },
+  "patient": {
+    "name": "Galette",
+    "id": "13600",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 10.1 kg à 20kg",
+      "unit_price_cents": 5116,
+      "line_total_cents": 5116,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
+      "unit_price_cents": 4286,
+      "line_total_cents": 4286,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 9402,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 470
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 938
+    }
+  ],
+  "total_cents": 10810,
+  "tip_cents": null,
+  "gst_number": "116713128",
+  "qst_number": "4506765771",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 12000
+    }
+  ],
+  "change_cents": 1190,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "    du Quidam inc",
+    "2630 boulevard des Pins",
+    "Lévis, QC G6T 9L0",
+    "Téléphone:  (819)555-0132",
+    "TPS: 116713128  TVQ: 4506765771",
+    "",
+    "Facture: 673627",
+    "Date: 14-févr.-2024",
+    "",
+    "Mme Hugo Quidam (2205)",
+    "2580 chemin du Lac",
+    "Sept-Îles, QC  G3X 7G2",
+    "",
+    "",
+    "Galette - 13600",
+    "   1 Antiparasitaire DOH canin     51,16 $",
+    "     10.1 kg à 20kg",
+    "   1 Antiparasitaire DOH canin     42,86 $",
+    "     5.1 kg à 10kg",
+    "",
+    "                   Sous-total:     94,02 $",
+    "                   TPS(5%):         4,70 $",
+    "                   TVQ(9,975%):     9,38 $",
+    "                   Total:         108,10 $",
+    "",
+    "      14-févr.-2024  Comptant:    120,00 $",
+    "",
+    "                     Monnaie       11,90 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0006.png",
+    "degraded": "0006.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.3476462588301303,
+    "fold_position": null,
+    "blur_radius": 1.6,
+    "rotation_degrees": 0.3305666736052726,
+    "perspective": 0.06,
+    "noise_sigma": 11.44050577480797,
+    "salt_pepper_fraction": 0.003268145793531924,
+    "jpeg_quality": 56
+  }
+}

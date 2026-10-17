@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "377 rue Notre-Dame",
+      "Laval, QC H8L 6Y3"
+    ],
+    "phone": "(819)555-0196"
+  },
+  "store_number": null,
+  "datetime": "2024-11-17",
+  "transaction_number": "494041",
+  "client": {
+    "name": "M. Simon Exemple",
+    "id": "18585",
+    "address_lines": [
+      "2146 rue Principale",
+      "Trois-Rivières, QC  G2C 1L5"
+    ]
+  },
+  "patient": {
+    "name": "Galette",
+    "id": "38892",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Vaccin annuel DHPP",
+      "unit_price_cents": 4689,
+      "line_total_cents": 4689,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture canin FICTIVE 8 kg",
+      "unit_price_cents": 3724,
+      "line_total_cents": 3724,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture canin FICTIVE 8 kg",
+      "unit_price_cents": 6951,
+      "line_total_cents": 6951,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 15364,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 768
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1533
+    }
+  ],
+  "total_cents": 17665,
+  "tip_cents": null,
+  "gst_number": "435585671",
+  "qst_number": "2332754789",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 18000
+    }
+  ],
+  "change_cents": 335,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "377 rue Notre-Dame",
+    "Laval, QC H8L 6Y3",
+    "Téléphone:  (819)555-0196",
+    "TPS: 435585671  TVQ: 2332754789",
+    "",
+    "Facture: 494041",
+    "Date: 17-nov.-2024",
+    "",
+    "M. Simon Exemple (18585)",
+    "2146 rue Principale",
+    "Trois-Rivières, QC  G2C 1L5",
+    "",
+    "",
+    "Galette - 38892",
+    "   1 Vaccin annuel DHPP            46,89 $",
+    "   1 Nourriture canin FICTIVE 8    37,24 $",
+    "     kg",
+    "   1 Nourriture canin FICTIVE 8    69,51 $",
+    "     kg",
+    "",
+    "                   Sous-total:    153,64 $",
+    "                   TPS(5%):         7,68 $",
+    "                   TVQ(9,975%):    15,33 $",
+    "                   Total:         176,65 $",
+    "",
+    "       17-nov.-2024  Comptant:    180,00 $",
+    "",
+    "                     Monnaie        3,35 $",
+    "                   Solde:           0,00 $",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0017.png",
+    "degraded": "0017.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 65,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.3751468675373107,
+    "perspective": 0.0033622020878061585,
+    "noise_sigma": 3.5200104291788414,
+    "salt_pepper_fraction": 0.00041062067532220814,
+    "jpeg_quality": 87
+  }
+}

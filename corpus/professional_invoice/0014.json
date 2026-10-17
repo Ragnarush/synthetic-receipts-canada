@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Fictive inc",
+    "address_lines": [
+      "2850 boul. de la Rivière",
+      "Rouyn-Noranda, QC J7J 3W8"
+    ],
+    "phone": "(819)555-0115"
+  },
+  "store_number": null,
+  "datetime": "2024-09-26",
+  "transaction_number": "507819",
+  "client": {
+    "name": "M. Jade Toutlemonde",
+    "id": "19204",
+    "address_lines": [
+      "3699 rue Notre-Dame",
+      "Longueuil, QC  J3W 3K1"
+    ]
+  },
+  "patient": {
+    "name": "Moka",
+    "id": "45246",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 2.1 kg à 5kg",
+      "unit_price_cents": 4370,
+      "line_total_cents": 4370,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 4370,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 219
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 436
+    }
+  ],
+  "total_cents": 5025,
+  "tip_cents": null,
+  "gst_number": "162145365",
+  "qst_number": "6926665098",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5500
+    }
+  ],
+  "change_cents": 475,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Fictive inc",
+    "2850 boul. de la Rivière",
+    "Rouyn-Noranda, QC J7J 3W8",
+    "Téléphone:  (819)555-0115",
+    "TPS: 162145365  TVQ: 6926665098",
+    "",
+    "Facture: 507819",
+    "Date: 26-sept.-2024",
+    "",
+    "M. Jade Toutlemonde (19204)",
+    "3699 rue Notre-Dame",
+    "Longueuil, QC  J3W 3K1",
+    "",
+    "",
+    "Moka - 45246",
+    "   1 Antiparasitaire DOH canin     43,70 $",
+    "     2.1 kg à 5kg",
+    "",
+    "                   Sous-total:     43,70 $",
+    "                   TPS(5%):         2,19 $",
+    "                   TVQ(9,975%):     4,36 $",
+    "                   Total:          50,25 $",
+    "",
+    "      26-sept.-2024  Comptant:     55,00 $",
+    "",
+    "                     Monnaie        4,75 $",
+    "                   Solde:           0,00 $",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0014.png",
+    "degraded": "0014.jpg"
+  },
+  "degradation": {
+    "paper_gray": 214,
+    "ink_gray_top": 58,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.3449416993151691,
+    "fold_position": 0.45490837893523417,
+    "blur_radius": 1.2400977291248587,
+    "rotation_degrees": 4.9539338052214035,
+    "perspective": 0.050110898208874696,
+    "noise_sigma": 9.721591365189745,
+    "salt_pepper_fraction": 0.003929182863687802,
+    "jpeg_quality": 55
+  }
+}

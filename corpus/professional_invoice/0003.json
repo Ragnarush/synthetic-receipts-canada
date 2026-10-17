@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "2646 chemin du Lac",
+      "Lévis, QC G7G 2K0"
+    ],
+    "phone": "(819)555-0194"
+  },
+  "store_number": null,
+  "datetime": "2024-05-08",
+  "transaction_number": "168172",
+  "client": {
+    "name": "M. Émilie Fictif",
+    "id": "15347",
+    "address_lines": [
+      "447 boul. de la Rivière",
+      "Laval, QC  H0B 1H7"
+    ]
+  },
+  "patient": {
+    "name": "Praline",
+    "id": "25472",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
+      "unit_price_cents": 6453,
+      "line_total_cents": 6453,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
+      "unit_price_cents": 6241,
+      "line_total_cents": 6241,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 12694,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 635
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1266
+    }
+  ],
+  "total_cents": 14595,
+  "tip_cents": null,
+  "gst_number": "794500018",
+  "qst_number": "2173249361",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 15000
+    }
+  ],
+  "change_cents": 405,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "2646 chemin du Lac",
+    "Lévis, QC G7G 2K0",
+    "Téléphone:  (819)555-0194",
+    "TPS: 794500018  TVQ: 2173249361",
+    "",
+    "Facture: 168172",
+    "Date: 8-mai-2024",
+    "",
+    "M. Émilie Fictif (15347)",
+    "447 boul. de la Rivière",
+    "Laval, QC  H0B 1H7",
+    "",
+    "",
+    "Praline - 25472",
+    "   1 Antiparasitaire DOH canin     64,53 $",
+    "     5.1 kg à 10kg",
+    "   1 Antiparasitaire DOH canin     62,41 $",
+    "     5.1 kg à 10kg",
+    "",
+    "                   Sous-total:    126,94 $",
+    "                   TPS(5%):         6,35 $",
+    "                   TVQ(9,975%):    12,66 $",
+    "                   Total:         145,95 $",
+    "",
+    "         8-mai-2024  Comptant:    150,00 $",
+    "",
+    "                     Monnaie        4,05 $",
+    "                   Solde:           0,00 $",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0003.png",
+    "degraded": "0003.jpg"
+  },
+  "degradation": {
+    "paper_gray": 240,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.10004755393622355,
+    "fold_position": null,
+    "blur_radius": 0.35645593258659103,
+    "rotation_degrees": 1.0537744303375487,
+    "perspective": 0.011131326098123773,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.000986851963267301,
+    "jpeg_quality": 90
+  }
+}

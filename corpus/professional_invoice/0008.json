@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "274 rue Notre-Dame",
+      "Gatineau, QC J2S 0M3"
+    ],
+    "phone": "(819)555-0178"
+  },
+  "store_number": null,
+  "datetime": "2024-03-12",
+  "transaction_number": "523880",
+  "client": {
+    "name": "Mme Olivier Spécimen",
+    "id": "14446",
+    "address_lines": [
+      "2872 rue Notre-Dame",
+      "Lévis, QC  G0W 3R8"
+    ]
+  },
+  "patient": {
+    "name": "Rocco",
+    "id": "14374",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
+      "unit_price_cents": 5356,
+      "line_total_cents": 5356,
+      "tax_flags": null
+    },
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8647,
+      "line_total_cents": 8647,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 14003,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 700
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1397
+    }
+  ],
+  "total_cents": 16100,
+  "tip_cents": null,
+  "gst_number": "762149101",
+  "qst_number": "9217469167",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 16100
+    }
+  ],
+  "change_cents": 0,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "274 rue Notre-Dame",
+    "Gatineau, QC J2S 0M3",
+    "Téléphone:  (819)555-0178",
+    "TPS: 762149101  TVQ: 9217469167",
+    "",
+    "Facture: 523880",
+    "Date: 12-mars-2024",
+    "",
+    "Mme Olivier Spécimen (14446)",
+    "2872 rue Notre-Dame",
+    "Lévis, QC  G0W 3R8",
+    "",
+    "",
+    "Rocco - 14374",
+    "   1 Antiparasitaire DOH canin     53,56 $",
+    "     5.1 kg à 10kg",
+    "   1 Examen de santé complet       86,47 $",
+    "",
+    "                   Sous-total:    140,03 $",
+    "                   TPS(5%):         7,00 $",
+    "                   TVQ(9,975%):    13,97 $",
+    "                   Total:         161,00 $",
+    "",
+    "       12-mars-2024  Comptant:    161,00 $",
+    "",
+    "                     Monnaie        0,00 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0008.png",
+    "degraded": "0008.jpg"
+  },
+  "degradation": {
+    "paper_gray": 231,
+    "ink_gray_top": 54,
+    "ink_gray_bottom": 90,
+    "shading_amplitude": 0.1704920552974457,
+    "fold_position": 0.47867845357697775,
+    "blur_radius": 0.8742458495613704,
+    "rotation_degrees": 1.1403880980405159,
+    "perspective": 0.017429041848508485,
+    "noise_sigma": 5.203296697857539,
+    "salt_pepper_fraction": 0.0023896678770132375,
+    "jpeg_quality": 66
+  }
+}

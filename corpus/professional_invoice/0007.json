@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire des Fictifs inc",
+    "address_lines": [
+      "889 avenue des Érables",
+      "Gatineau, QC J7Y 4N1"
+    ],
+    "phone": "(819)555-0167"
+  },
+  "store_number": null,
+  "datetime": "2024-07-27",
+  "transaction_number": "623621",
+  "client": {
+    "name": "Mme Mélanie Quidam",
+    "id": "24970",
+    "address_lines": [
+      "315 rue Notre-Dame",
+      "Sherbrooke, QC  J6G 8N6"
+    ]
+  },
+  "patient": {
+    "name": "Pistache",
+    "id": "29357",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 8 kg",
+      "unit_price_cents": 7267,
+      "line_total_cents": 7267,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 7267,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 363
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 725
+    }
+  ],
+  "total_cents": 8355,
+  "tip_cents": null,
+  "gst_number": "651121214",
+  "qst_number": "1397932593",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 8500
+    }
+  ],
+  "change_cents": 145,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "   des Fictifs inc",
+    "889 avenue des Érables",
+    "Gatineau, QC J7Y 4N1",
+    "Téléphone:  (819)555-0167",
+    "TPS: 651121214  TVQ: 1397932593",
+    "",
+    "Facture: 623621",
+    "Date: 27-juil.-2024",
+    "",
+    "Mme Mélanie Quidam (24970)",
+    "315 rue Notre-Dame",
+    "Sherbrooke, QC  J6G 8N6",
+    "",
+    "",
+    "Pistache - 29357",
+    "   1 Nourriture félin FICTIVE 8    72,67 $",
+    "     kg",
+    "",
+    "                   Sous-total:     72,67 $",
+    "                   TPS(5%):         3,63 $",
+    "                   TVQ(9,975%):     7,25 $",
+    "                   Total:          83,55 $",
+    "",
+    "      27-juil.-2024  Comptant:     85,00 $",
+    "",
+    "                     Monnaie        1,45 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0007.png",
+    "degraded": "0007.jpg"
+  },
+  "degradation": {
+    "paper_gray": 211,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 161,
+    "shading_amplitude": 0.3432530403912447,
+    "fold_position": 0.5444890460737069,
+    "blur_radius": 1.6,
+    "rotation_degrees": 3.918137953566441,
+    "perspective": 0.06,
+    "noise_sigma": 10.055481060396353,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

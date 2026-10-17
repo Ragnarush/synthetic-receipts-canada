@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Doh inc",
+    "address_lines": [
+      "180 chemin de la Montagne",
+      "Sherbrooke, QC J2Z 4T4"
+    ],
+    "phone": "(819)555-0135"
+  },
+  "store_number": null,
+  "datetime": "2024-10-29",
+  "transaction_number": "269358",
+  "client": {
+    "name": "Mme Marc Lambda",
+    "id": "23724",
+    "address_lines": [
+      "2428 avenue des Érables",
+      "Gatineau, QC  J6G 1H7"
+    ]
+  },
+  "patient": {
+    "name": "Biscuit",
+    "id": "46380",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 10.1 kg à 20kg",
+      "unit_price_cents": 4862,
+      "line_total_cents": 4862,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 4862,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 243
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 485
+    }
+  ],
+  "total_cents": 5590,
+  "tip_cents": null,
+  "gst_number": "887027286",
+  "qst_number": "1321337461",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5590
+    }
+  ],
+  "change_cents": 0,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "       Doh inc",
+    "180 chemin de la Montagne",
+    "Sherbrooke, QC J2Z 4T4",
+    "Téléphone:  (819)555-0135",
+    "TPS: 887027286  TVQ: 1321337461",
+    "",
+    "Facture: 269358",
+    "Date: 29-oct.-2024",
+    "",
+    "Mme Marc Lambda (23724)",
+    "2428 avenue des Érables",
+    "Gatineau, QC  J6G 1H7",
+    "",
+    "",
+    "Biscuit - 46380",
+    "   1 Antiparasitaire DOH canin     48,62 $",
+    "     10.1 kg à 20kg",
+    "",
+    "                   Sous-total:     48,62 $",
+    "                   TPS(5%):         2,43 $",
+    "                   TVQ(9,975%):     4,85 $",
+    "                   Total:          55,90 $",
+    "",
+    "       29-oct.-2024  Comptant:     55,90 $",
+    "",
+    "                     Monnaie        0,00 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0013.png",
+    "degraded": "0013.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 168,
+    "shading_amplitude": 0.31850007982839795,
+    "fold_position": 0.5884808828286413,
+    "blur_radius": 1.4002349720298441,
+    "rotation_degrees": 1.5988830107465046,
+    "perspective": 0.059908419318137,
+    "noise_sigma": 9.541545331027946,
+    "salt_pepper_fraction": 0.003194354025514316,
+    "jpeg_quality": 55
+  }
+}

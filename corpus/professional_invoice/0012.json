@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Doh inc",
+    "address_lines": [
+      "1649 rue Notre-Dame",
+      "Granby, QC J0R 5A8"
+    ],
+    "phone": "(819)555-0148"
+  },
+  "store_number": null,
+  "datetime": "2024-09-03",
+  "transaction_number": "260614",
+  "client": {
+    "name": "M. Thomas Toutlemonde",
+    "id": "18512",
+    "address_lines": [
+      "1718 boul. de la Rivière",
+      "Sept-Îles, QC  G2S 9T0"
+    ]
+  },
+  "patient": {
+    "name": "Biscuit",
+    "id": "24948",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 8 kg",
+      "unit_price_cents": 5610,
+      "line_total_cents": 5610,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 2 kg",
+      "unit_price_cents": 5540,
+      "line_total_cents": 5540,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 11150,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 558
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1112
+    }
+  ],
+  "total_cents": 12820,
+  "tip_cents": null,
+  "gst_number": "307798365",
+  "qst_number": "5085415343",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 13000
+    }
+  ],
+  "change_cents": 180,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "       Doh inc",
+    "1649 rue Notre-Dame",
+    "Granby, QC J0R 5A8",
+    "Téléphone:  (819)555-0148",
+    "TPS: 307798365  TVQ: 5085415343",
+    "",
+    "Facture: 260614",
+    "Date: 3-sept.-2024",
+    "",
+    "M. Thomas Toutlemonde (18512)",
+    "1718 boul. de la Rivière",
+    "Sept-Îles, QC  G2S 9T0",
+    "",
+    "",
+    "Biscuit - 24948",
+    "   1 Nourriture félin FICTIVE 8    56,10 $",
+    "     kg",
+    "   1 Nourriture félin FICTIVE 2    55,40 $",
+    "     kg",
+    "",
+    "                   Sous-total:    111,50 $",
+    "                   TPS(5%):         5,58 $",
+    "                   TVQ(9,975%):    11,12 $",
+    "                   Total:         128,20 $",
+    "",
+    "       3-sept.-2024  Comptant:    130,00 $",
+    "",
+    "                     Monnaie        1,80 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0012.png",
+    "degraded": "0012.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 21,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.0878470633177422,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.23061533161831768,
+    "perspective": 0.0,
+    "noise_sigma": 3.3265485029846884,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
+  }
+}

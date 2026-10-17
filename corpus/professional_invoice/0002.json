@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire du Quidam inc",
+    "address_lines": [
+      "736 chemin du Lac",
+      "Granby, QC J2E 3P8"
+    ],
+    "phone": "(819)555-0130"
+  },
+  "store_number": null,
+  "datetime": "2025-09-09",
+  "transaction_number": "150780",
+  "client": {
+    "name": "M. Gabriel Quidam",
+    "id": "25122",
+    "address_lines": [
+      "3691 avenue du Quai",
+      "Shawinigan, QC  G0M 6V5"
+    ]
+  },
+  "patient": {
+    "name": "Moka",
+    "id": "13282",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Vaccin annuel DHPP",
+      "unit_price_cents": 5440,
+      "line_total_cents": 5440,
+      "tax_flags": null
+    },
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 9191,
+      "line_total_cents": 9191,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
+      "unit_price_cents": 2556,
+      "line_total_cents": 2556,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 17187,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 859
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1714
+    }
+  ],
+  "total_cents": 19760,
+  "tip_cents": null,
+  "gst_number": "338203275",
+  "qst_number": "6568009156",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 20000
+    }
+  ],
+  "change_cents": 240,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "    du Quidam inc",
+    "736 chemin du Lac",
+    "Granby, QC J2E 3P8",
+    "Téléphone:  (819)555-0130",
+    "TPS: 338203275  TVQ: 6568009156",
+    "",
+    "Facture: 150780",
+    "Date: 9-sept.-2025",
+    "",
+    "M. Gabriel Quidam (25122)",
+    "3691 avenue du Quai",
+    "Shawinigan, QC  G0M 6V5",
+    "",
+    "",
+    "Moka - 13282",
+    "   1 Vaccin annuel DHPP            54,40 $",
+    "   1 Examen de santé complet       91,91 $",
+    "   1 Antiparasitaire DOH canin     25,56 $",
+    "     40.1 kg à 60kg",
+    "",
+    "                   Sous-total:    171,87 $",
+    "                   TPS(5%):         8,59 $",
+    "                   TVQ(9,975%):    17,14 $",
+    "                   Total:         197,60 $",
+    "",
+    "       9-sept.-2025  Comptant:    200,00 $",
+    "",
+    "                     Monnaie        2,40 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0002.png",
+    "degraded": "0002.jpg"
+  },
+  "degradation": {
+    "paper_gray": 241,
+    "ink_gray_top": 30,
+    "ink_gray_bottom": 43,
+    "shading_amplitude": 0.06327960789411745,
+    "fold_position": null,
+    "blur_radius": 0.08657690646287888,
+    "rotation_degrees": 0.3360362128672092,
+    "perspective": 0.0,
+    "noise_sigma": 3.5294095822341407,
+    "salt_pepper_fraction": 0.00046106710151778475,
+    "jpeg_quality": 92
+  }
+}

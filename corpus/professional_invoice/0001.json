@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "3939 chemin de la Montagne",
+      "Terrebonne, QC J7B 6Z6"
+    ],
+    "phone": "(819)555-0124"
+  },
+  "store_number": null,
+  "datetime": "2025-07-25",
+  "transaction_number": "562217",
+  "client": {
+    "name": "Mme Hugo Spécimen",
+    "id": "6130",
+    "address_lines": [
+      "103 chemin du Lac",
+      "Sept-Îles, QC  G8S 0S7"
+    ]
+  },
+  "patient": {
+    "name": "Moka",
+    "id": "48728",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 20.1 kg à 40kg",
+      "unit_price_cents": 3434,
+      "line_total_cents": 3434,
+      "tax_flags": null
+    },
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 7590,
+      "line_total_cents": 7590,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 11024,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 551
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1100
+    }
+  ],
+  "total_cents": 12675,
+  "tip_cents": null,
+  "gst_number": "377535365",
+  "qst_number": "9955217108",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 13000
+    }
+  ],
+  "change_cents": 325,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "3939 chemin de la Montagne",
+    "Terrebonne, QC J7B 6Z6",
+    "Téléphone:  (819)555-0124",
+    "TPS: 377535365  TVQ: 9955217108",
+    "",
+    "Facture: 562217",
+    "Date: 25-juil.-2025",
+    "",
+    "Mme Hugo Spécimen (6130)",
+    "103 chemin du Lac",
+    "Sept-Îles, QC  G8S 0S7",
+    "",
+    "",
+    "Moka - 48728",
+    "   1 Antiparasitaire DOH canin     34,34 $",
+    "     20.1 kg à 40kg",
+    "   1 Examen de santé complet       75,90 $",
+    "",
+    "                   Sous-total:    110,24 $",
+    "                   TPS(5%):         5,51 $",
+    "                   TVQ(9,975%):    11,00 $",
+    "                   Total:         126,75 $",
+    "",
+    "      25-juil.-2025  Comptant:    130,00 $",
+    "",
+    "                     Monnaie        3,25 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0001.png",
+    "degraded": "0001.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 149,
+    "shading_amplitude": 0.2897835292782291,
+    "fold_position": 0.464169114644849,
+    "blur_radius": 1.308073292332021,
+    "rotation_degrees": 2.0086264741072437,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Fictive inc",
+    "address_lines": [
+      "307 boul. de la Rivière",
+      "Shawinigan, QC G0W 2G3"
+    ],
+    "phone": "(819)555-0104"
+  },
+  "store_number": null,
+  "datetime": "2025-03-30",
+  "transaction_number": "334009",
+  "client": {
+    "name": "Mme Mélanie Toutlemonde",
+    "id": "17176",
+    "address_lines": [
+      "1176 boul. de la Rivière",
+      "Trois-Rivières, QC  G7N 9K2"
+    ]
+  },
+  "patient": {
+    "name": "Biscuit",
+    "id": "19916",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 8 kg",
+      "unit_price_cents": 6388,
+      "line_total_cents": 6388,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 2 kg",
+      "unit_price_cents": 6159,
+      "line_total_cents": 6159,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH félin 2.1 kg à 4kg",
+      "unit_price_cents": 5401,
+      "line_total_cents": 5401,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 17948,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 897
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1790
+    }
+  ],
+  "total_cents": 20635,
+  "tip_cents": null,
+  "gst_number": "795877493",
+  "qst_number": "7655939904",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 22000
+    }
+  ],
+  "change_cents": 1365,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Fictive inc",
+    "307 boul. de la Rivière",
+    "Shawinigan, QC G0W 2G3",
+    "Téléphone:  (819)555-0104",
+    "TPS: 795877493  TVQ: 7655939904",
+    "",
+    "Facture: 334009",
+    "Date: 30-mars-2025",
+    "",
+    "Mme Mélanie Toutlemonde (17176)",
+    "1176 boul. de la Rivière",
+    "Trois-Rivières, QC  G7N 9K2",
+    "",
+    "",
+    "Biscuit - 19916",
+    "   1 Nourriture félin FICTIVE 8    63,88 $",
+    "     kg",
+    "   1 Nourriture félin FICTIVE 2    61,59 $",
+    "     kg",
+    "   1 Antiparasitaire DOH félin     54,01 $",
+    "     2.1 kg à 4kg",
+    "",
+    "                   Sous-total:    179,48 $",
+    "                   TPS(5%):         8,97 $",
+    "                   TVQ(9,975%):    17,90 $",
+    "                   Total:         206,35 $",
+    "",
+    "       30-mars-2025  Comptant:    220,00 $",
+    "",
+    "                     Monnaie       13,65 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0015.png",
+    "degraded": "0015.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 62,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.3180191353041728,
+    "fold_position": 0.635978880606658,
+    "blur_radius": 1.6,
+    "rotation_degrees": -2.4621061196236083,
+    "perspective": 0.06,
+    "noise_sigma": 11.420660053999704,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

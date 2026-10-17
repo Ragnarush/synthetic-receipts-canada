@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire du Quidam inc",
+    "address_lines": [
+      "1305 boul. de la Rivière",
+      "Terrebonne, QC J0C 6S5"
+    ],
+    "phone": "(819)555-0151"
+  },
+  "store_number": null,
+  "datetime": "2025-03-09",
+  "transaction_number": "564555",
+  "client": {
+    "name": "M. Félix Quidam",
+    "id": "12514",
+    "address_lines": [
+      "3663 rue Saint-Joseph",
+      "Shawinigan, QC  G5Z 6E6"
+    ]
+  },
+  "patient": {
+    "name": "Biscuit",
+    "id": "33667",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8453,
+      "line_total_cents": 8453,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Vaccin annuel DHPP",
+      "unit_price_cents": 5318,
+      "line_total_cents": 5318,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Vaccin annuel DHPP",
+      "unit_price_cents": 5390,
+      "line_total_cents": 5390,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 19161,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 958
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1911
+    }
+  ],
+  "total_cents": 22030,
+  "tip_cents": null,
+  "gst_number": "949806770",
+  "qst_number": "4198840385",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 24000
+    }
+  ],
+  "change_cents": 1970,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "    du Quidam inc",
+    "1305 boul. de la Rivière",
+    "Terrebonne, QC J0C 6S5",
+    "Téléphone:  (819)555-0151",
+    "TPS: 949806770  TVQ: 4198840385",
+    "",
+    "Facture: 564555",
+    "Date: 9-mars-2025",
+    "",
+    "M. Félix Quidam (12514)",
+    "3663 rue Saint-Joseph",
+    "Shawinigan, QC  G5Z 6E6",
+    "",
+    "",
+    "Biscuit - 33667",
+    "   1 Examen de santé complet       84,53 $",
+    "   1 Vaccin annuel DHPP            53,18 $",
+    "   1 Vaccin annuel DHPP            53,90 $",
+    "",
+    "                   Sous-total:    191,61 $",
+    "                   TPS(5%):         9,58 $",
+    "                   TVQ(9,975%):    19,11 $",
+    "                   Total:         220,30 $",
+    "",
+    "        9-mars-2025  Comptant:    240,00 $",
+    "",
+    "                     Monnaie       19,70 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0019.png",
+    "degraded": "0019.jpg"
+  },
+  "degradation": {
+    "paper_gray": 223,
+    "ink_gray_top": 43,
+    "ink_gray_bottom": 95,
+    "shading_amplitude": 0.20021268006805032,
+    "fold_position": null,
+    "blur_radius": 0.6853877643638553,
+    "rotation_degrees": -0.39983680238956687,
+    "perspective": 0.044045626955414745,
+    "noise_sigma": 8.099663306216158,
+    "salt_pepper_fraction": 0.00289826860258847,
+    "jpeg_quality": 70
+  }
+}

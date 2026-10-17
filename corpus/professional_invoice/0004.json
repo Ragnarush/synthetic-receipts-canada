@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Spécimen inc",
+    "address_lines": [
+      "75 rue Saint-Joseph",
+      "Lévis, QC G1B 6T7"
+    ],
+    "phone": "(819)555-0122"
+  },
+  "store_number": null,
+  "datetime": "2024-11-06",
+  "transaction_number": "382718",
+  "client": {
+    "name": "Mme Camille Fictif",
+    "id": "13552",
+    "address_lines": [
+      "1637 boulevard des Pins",
+      "Laval, QC  H3K 4H9"
+    ]
+  },
+  "patient": {
+    "name": "Filou",
+    "id": "20350",
+    "species": "canin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture canin FICTIVE 8 kg",
+      "unit_price_cents": 5204,
+      "line_total_cents": 5204,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
+      "unit_price_cents": 3611,
+      "line_total_cents": 3611,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
+      "unit_price_cents": 6186,
+      "line_total_cents": 6186,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture canin FICTIVE 8 kg",
+      "unit_price_cents": 6021,
+      "line_total_cents": 6021,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 21022,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 1051
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 2097
+    }
+  ],
+  "total_cents": 24170,
+  "tip_cents": null,
+  "gst_number": "290882625",
+  "qst_number": "6772815572",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 26000
+    }
+  ],
+  "change_cents": 1830,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Spécimen inc",
+    "75 rue Saint-Joseph",
+    "Lévis, QC G1B 6T7",
+    "Téléphone:  (819)555-0122",
+    "TPS: 290882625  TVQ: 6772815572",
+    "",
+    "Facture: 382718",
+    "Date: 6-nov.-2024",
+    "",
+    "Mme Camille Fictif (13552)",
+    "1637 boulevard des Pins",
+    "Laval, QC  H3K 4H9",
+    "",
+    "",
+    "Filou - 20350",
+    "   1 Nourriture canin FICTIVE 8    52,04 $",
+    "     kg",
+    "   1 Antiparasitaire DOH canin     36,11 $",
+    "     40.1 kg à 60kg",
+    "   1 Antiparasitaire DOH canin     61,86 $",
+    "     40.1 kg à 60kg",
+    "   1 Nourriture canin FICTIVE 8    60,21 $",
+    "     kg",
+    "",
+    "                   Sous-total:    210,22 $",
+    "                   TPS(5%):        10,51 $",
+    "                   TVQ(9,975%):    20,97 $",
+    "                   Total:         241,70 $",
+    "",
+    "        6-nov.-2024  Comptant:    260,00 $",
+    "",
+    "                     Monnaie       18,30 $",
+    "                   Solde:           0,00 $",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0004.png",
+    "degraded": "0004.jpg"
+  },
+  "degradation": {
+    "paper_gray": 213,
+    "ink_gray_top": 59,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": null,
+    "blur_radius": 1.6,
+    "rotation_degrees": 4.423218556890881,
+    "perspective": 0.047622885530649556,
+    "noise_sigma": 10.082868104109,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 59
+  }
+}

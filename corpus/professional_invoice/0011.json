@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Fictive inc",
+    "address_lines": [
+      "3466 boulevard des Pins",
+      "Québec, QC G5C 9A2"
+    ],
+    "phone": "(819)555-0154"
+  },
+  "store_number": null,
+  "datetime": "2025-04-26",
+  "transaction_number": "638220",
+  "client": {
+    "name": "Mme Émilie Quidam",
+    "id": "13151",
+    "address_lines": [
+      "3817 rue Saint-Joseph",
+      "Laval, QC  H2E 0N9"
+    ]
+  },
+  "patient": {
+    "name": "Filou",
+    "id": "25077",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH félin 2.1 kg à 4kg",
+      "unit_price_cents": 3249,
+      "line_total_cents": 3249,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 3249,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 162
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 324
+    }
+  ],
+  "total_cents": 3735,
+  "tip_cents": null,
+  "gst_number": "686562768",
+  "qst_number": "1939347890",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 3735
+    }
+  ],
+  "change_cents": 0,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "     Fictive inc",
+    "3466 boulevard des Pins",
+    "Québec, QC G5C 9A2",
+    "Téléphone:  (819)555-0154",
+    "TPS: 686562768  TVQ: 1939347890",
+    "",
+    "Facture: 638220",
+    "Date: 26-avr.-2025",
+    "",
+    "Mme Émilie Quidam (13151)",
+    "3817 rue Saint-Joseph",
+    "Laval, QC  H2E 0N9",
+    "",
+    "",
+    "Filou - 25077",
+    "   1 Antiparasitaire DOH félin     32,49 $",
+    "     2.1 kg à 4kg",
+    "",
+    "                   Sous-total:     32,49 $",
+    "                   TPS(5%):         1,62 $",
+    "                   TVQ(9,975%):     3,24 $",
+    "                   Total:          37,35 $",
+    "",
+    "       26-avr.-2025  Comptant:     37,35 $",
+    "",
+    "                     Monnaie        0,00 $",
+    "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0011.png",
+    "degraded": "0011.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.07840219358769032,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.42727438339990575,
+    "perspective": 0.0,
+    "noise_sigma": 3.0101590918207366,
+    "salt_pepper_fraction": 0.0004431667877002985,
+    "jpeg_quality": 92
+  }
+}

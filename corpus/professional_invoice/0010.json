@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "family": "professional_invoice",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Clinique vétérinaire Doh inc",
+    "address_lines": [
+      "3714 rue du Moulin",
+      "Longueuil, QC J8G 6V0"
+    ],
+    "phone": "(819)555-0108"
+  },
+  "store_number": null,
+  "datetime": "2024-09-11",
+  "transaction_number": "188722",
+  "client": {
+    "name": "Mme Jade Untel",
+    "id": "24793",
+    "address_lines": [
+      "1900 boul. de la Rivière",
+      "Gatineau, QC  J5R 5N7"
+    ]
+  },
+  "patient": {
+    "name": "Caramel",
+    "id": "38025",
+    "species": "félin"
+  },
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH félin 4.1 kg à 8kg",
+      "unit_price_cents": 2505,
+      "line_total_cents": 2505,
+      "tax_flags": null
+    },
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8738,
+      "line_total_cents": 8738,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH félin 2.1 kg à 4kg",
+      "unit_price_cents": 6356,
+      "line_total_cents": 6356,
+      "tax_flags": null
+    }
+  ],
+  "subtotal_cents": 17599,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 880
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1756
+    }
+  ],
+  "total_cents": 20235,
+  "tip_cents": null,
+  "gst_number": "912418765",
+  "qst_number": "1777731658",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 20500
+    }
+  ],
+  "change_cents": 265,
+  "balance_cents": 0,
+  "card": null,
+  "document_kind": "invoice",
+  "text_lines": [
+    "       Clinique",
+    "     vétérinaire",
+    "       Doh inc",
+    "3714 rue du Moulin",
+    "Longueuil, QC J8G 6V0",
+    "Téléphone:  (819)555-0108",
+    "TPS: 912418765  TVQ: 1777731658",
+    "",
+    "Facture: 188722",
+    "Date: 11-sept.-2024",
+    "",
+    "Mme Jade Untel (24793)",
+    "1900 boul. de la Rivière",
+    "Gatineau, QC  J5R 5N7",
+    "",
+    "",
+    "Caramel - 38025",
+    "   1 Antiparasitaire DOH félin     25,05 $",
+    "     4.1 kg à 8kg",
+    "   1 Examen de santé complet       87,38 $",
+    "   1 Antiparasitaire DOH félin     63,56 $",
+    "     2.1 kg à 4kg",
+    "",
+    "                   Sous-total:    175,99 $",
+    "                   TPS(5%):         8,80 $",
+    "                   TVQ(9,975%):    17,56 $",
+    "                   Total:         202,35 $",
+    "",
+    "      11-sept.-2024  Comptant:    205,00 $",
+    "",
+    "                     Monnaie        2,65 $",
+    "                   Solde:           0,00 $",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0010.png",
+    "degraded": "0010.jpg"
+  },
+  "degradation": {
+    "paper_gray": 243,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 42,
+    "shading_amplitude": 0.09985885808178263,
+    "fold_position": null,
+    "blur_radius": 0.002540722681519725,
+    "rotation_degrees": 0.32363903451898235,
+    "perspective": 0.0,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
+  }
+}
