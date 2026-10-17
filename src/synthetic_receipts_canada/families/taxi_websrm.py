@@ -6,10 +6,10 @@ levy ('redevance') shown as information, already included in the fare.
 """
 
 import random
-from datetime import timedelta
+from datetime import date, timedelta
 
 from .. import SCHEMA_VERSION
-from ..fakes import fake_gst_number, fake_phone, fake_qst_number
+from ..fakes import fake_gst_number, fake_qst_number
 from ..layout import Align, Receipt, Size
 from ..money import format_cad_fr, gst_cents, qst_cents
 from ..render import PAPER
@@ -17,13 +17,14 @@ from . import _websrm
 
 TAXI_NAMES = ["Taxi Fictif", "Taxis du Nord Doh", "Coop Taxi Exemple", "Taxi Jean Doh inc.", "Taxi Spécimen"]
 HOURS = [(0, 24)]
+SECOND_GEN_SEV_MANDATORY = date(2026, 1, 1)  # taxi receipts take this form from this day
 
 
 def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     r = Receipt(columns=PAPER[paper_mm]["columns"])
     name = rng.choice(TAXI_NAMES)
     gst_number, qst_number = fake_gst_number(rng), fake_qst_number(rng)
-    when = _websrm.random_datetime(rng, HOURS)
+    when = _websrm.random_datetime(rng, HOURS, SECOND_GEN_SEV_MANDATORY)
     number = f"{rng.randint(1, 999999):06d}"
     fare = rng.randrange(800, 9500, 5)
     levy = 90  # the per-trip levy printed on the official sample
@@ -60,7 +61,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         "family": "taxi_websrm",
         "country": "CA", "province": "QC", "currency": "CAD", "language": "fr",
         "paper_width_mm": paper_mm,
-        "merchant": {"name": name, "address_lines": [], "phone": fake_phone(rng)},
+        "merchant": {"name": name, "address_lines": [], "phone": None},
         "datetime": when.isoformat(),
         "transaction_number": number,
         "items": items,

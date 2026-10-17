@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Fictif",
     "address_lines": [],
-    "phone": "514 555-0134"
+    "phone": null
   },
-  "datetime": "2026-03-14T18:01:22",
+  "datetime": "2026-07-20T18:01:22",
   "transaction_number": "620154",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "KBUN-1362-UMV8-4215",
     "device_id": "6882-3323-9776",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-KBUN-1362-UMV8-4215",
-    "processed_at": "2026-03-14T18:01:25"
+    "processed_at": "2026-07-20T18:01:25"
   },
   "text_lines": [
     "     Taxi Fictif",
     "       101,64 $",
     "",
-    " 2026-03-14 18:01:22",
+    " 2026-07-20 18:01:22",
     " TRANSACTION #620154",
     "",
     "1 Tarif taxi.                  88,40 $ FP",
@@ -73,7 +73,7 @@
     " TOTAL:          101,64 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-03-14 18:01:25",
+    "           2026-07-20 18:01:25",
     "           KBUN-1362-UMV8-4215",
     "              6882-3323-9776",
     "==========================================",
@@ -84,16 +84,16 @@
     "degraded": "0017.jpg"
   },
   "degradation": {
-    "paper_gray": 235,
-    "ink_gray_top": 21,
-    "ink_gray_bottom": 40,
+    "paper_gray": 245,
+    "ink_gray_top": 31,
+    "ink_gray_bottom": 44,
     "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.35995185917762185,
-    "rotation_degrees": 0.3076024952349749,
-    "perspective": 0.005204533209560488,
-    "noise_sigma": 4.195453096630024,
-    "salt_pepper_fraction": 0.00011392983024639003,
-    "jpeg_quality": 92
+    "blur_radius": 0.01846615323568619,
+    "rotation_degrees": 0.7727862115615344,
+    "perspective": 0.0061941815149791375,
+    "noise_sigma": 2.8674222015934148,
+    "salt_pepper_fraction": 0.0008781812386520094,
+    "jpeg_quality": 90
   }
 }

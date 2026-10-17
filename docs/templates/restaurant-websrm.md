@@ -42,4 +42,6 @@ must be ignored.
 
 **Generated variation.** Merchant, items (1 to 7, quantities), alcohol or not, closing
 receipt (80 %) or original invoice, payment method, tip, server line, thank-you note,
-phone, narrow or full-width amount columns.
+phone (60 %; `merchant.phone` is `null` when it is not printed), narrow or full-width
+amount columns. Dates start on 2025-06-01, the day MEV-WEB receipts became mandatory for
+every restaurant: the source sample has the MEV-WEB form, earlier receipts did not.

@@ -13,10 +13,15 @@ from ..layout import Align, Receipt
 INTERAC_AID = "A0000002771010"
 
 
-def releve_slip(r: Receipt, rng: random.Random, cents: int, when: datetime, invoice: str) -> dict:
-    """Interac debit, the only kind observed. Returns the card fields of the ground truth."""
+def releve_slip(r: Receipt, rng: random.Random, cents: int, when: datetime, invoice: str,
+                last4: str | None = None) -> dict:
+    """Interac debit, the only kind observed. Returns the card fields of the ground truth.
+
+    `last4`: the card's digits when the receipt already printed them above the slip.
+    """
     account = rng.choice(["CHEQUE", "CHEQUE", "DEFAUT FLASH"])  # FLASH = contactless tap
-    last4 = f"{rng.randint(0, 9999):04d}"
+    if last4 is None:
+        last4 = f"{rng.randint(0, 9999):04d}"
     at = when + timedelta(seconds=rng.randint(5, 50))
     ref = f"00{rng.randint(10_000_000, 19_999_999)} {rng.choice('CH')}"
     auth = "".join(rng.choice("0123456789ABCDEF") for _ in range(6))

@@ -14,7 +14,7 @@
     ],
     "phone": "579 555-0171"
   },
-  "datetime": "2025-02-15T13:38:04",
+  "datetime": "2025-12-23T13:38:04",
   "transaction_number": "233217",
   "items": [
     {
@@ -78,7 +78,7 @@
     "transaction_id": "42H8-2917-GN66-0718",
     "device_id": "7008-7539-4447",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-42H8-2917-GN66-0718",
-    "processed_at": "2025-02-15T13:38:08"
+    "processed_at": "2025-12-23T13:38:08"
   },
   "text_lines": [
     "   Taverne Chez Doh",
@@ -86,7 +86,7 @@
     "       Longueuil (Québec)  J9T 4R5",
     "           Tél. : 579 555-0171",
     "",
-    " 2025-02-15 13:38:04",
+    " 2025-12-23 13:38:04",
     " TRANSACTION #233217",
     "",
     "1 Spaghetti                    13,25 $ FP",
@@ -107,7 +107,7 @@
     " TOTAL:          107,51 $",
     "",
     "            FACTURE ORIGINALE",
-    "           2025-02-15 13:38:08",
+    "           2025-12-23 13:38:08",
     "           42H8-2917-GN66-0718",
     "              7008-7539-4447",
     "==========================================",

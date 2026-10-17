@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Spécimen",
     "address_lines": [],
-    "phone": "450 555-0196"
+    "phone": null
   },
-  "datetime": "2024-01-18T05:02:46",
+  "datetime": "2026-01-05T05:02:46",
   "transaction_number": "240228",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "XG3N-3910-AR7X-3333",
     "device_id": "8463-9306-1845",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-XG3N-3910-AR7X-3333",
-    "processed_at": "2024-01-18T05:02:49"
+    "processed_at": "2026-01-05T05:02:49"
   },
   "text_lines": [
     "    Taxi Spécimen",
     "       100,84 $",
     "",
-    " 2024-01-18 05:02:46",
+    " 2026-01-05 05:02:46",
     " TRANSACTION #240228",
     "",
     "1 Tarif taxi.                  87,70 $ FP",
@@ -74,7 +74,7 @@
     " Pourboire:       10,08 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-01-18 05:02:49",
+    "           2026-01-05 05:02:49",
     "           XG3N-3910-AR7X-3333",
     "              8463-9306-1845",
     "==========================================",
@@ -85,11 +85,11 @@
     "degraded": "0004.jpg"
   },
   "degradation": {
-    "paper_gray": 225,
-    "ink_gray_top": 50,
-    "ink_gray_bottom": 124,
-    "shading_amplitude": 0.12532448256843817,
-    "fold_position": null,
+    "paper_gray": 219,
+    "ink_gray_top": 43,
+    "ink_gray_bottom": 118,
+    "shading_amplitude": 0.24604140257265888,
+    "fold_position": 0.6244633527434491,
     "blur_radius": 0.6049668848642116,
     "rotation_degrees": -0.9139586742417453,
     "perspective": 0.03328338660404919,

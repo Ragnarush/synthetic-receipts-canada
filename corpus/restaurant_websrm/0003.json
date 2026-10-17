@@ -12,9 +12,9 @@
       "6391, rue du Moulin",
       "Gatineau (Québec)  J7X 2Y2"
     ],
-    "phone": "514 555-0156"
+    "phone": null
   },
-  "datetime": "2025-03-30T20:56:50",
+  "datetime": "2026-01-14T20:56:50",
   "transaction_number": "117569",
   "items": [
     {
@@ -78,14 +78,14 @@
     "transaction_id": "T4K7-2373-D5M9-3819",
     "device_id": "0372-7445-6207",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-T4K7-2373-D5M9-3819",
-    "processed_at": "2025-03-30T20:56:55"
+    "processed_at": "2026-01-14T20:56:55"
   },
   "text_lines": [
     "         Restaurant Chez Mireille",
     "           6391, rue du Moulin",
     "        Gatineau (Québec)  J7X 2Y2",
     "",
-    " 2025-03-30 20:56:50",
+    " 2026-01-14 20:56:50",
     " TRANSACTION #117569",
     "",
     "1 Salade César                 12,75 $ FP",
@@ -109,7 +109,7 @@
     " Pourboire:                        24,25 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-03-30 20:56:55",
+    "           2026-01-14 20:56:55",
     "           T4K7-2373-D5M9-3819",
     "              0372-7445-6207",
     "==========================================",

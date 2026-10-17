@@ -22,7 +22,7 @@ taxes**. There is no printed subtotal, and the GST (TPS) and QST (TVQ) lines car
 | Items | `Article  Qté  Prix  Montant`, then the name on one line and `code  1  37,50 $  37,50 $` on the next | same, `42,90$` without a space; a product bought twice prints twice | `items[]` |
 | Total | `Total   37,50 $`, aligned on the Prix column | same | `total_cents` |
 | Taxes | `123456789 RT0001 TPS (incl.)   1,63 $` | numbers printed with **8 digits** | `taxes[]` (`included: true`) |
-| Payment | `Comptant 20,00 $` / `ACHAT DÉBIT 17,50 $` / `Remise Comptant 0,00 $` | `Comptant 90,00$` then `Monnaie` / `Comptant (4,20)$`; or `Debit Card` + full embedded card slip | `tenders[]`, `change_cents`, `card` |
+| Payment | `Comptant 20,00 $` / `ACHAT DÉBIT 17,50 $` / `Remise Comptant 0,00 $` | `Comptant 90,00$` then `Monnaie` / `Comptant (4,20)$`; or `Debit Card` + full embedded card slip | `tenders[]`, `change_cents` (`0`, not `null`, when `Remise Comptant 0,00 $` or `Monnaie 0,00$` is printed), `card` |
 | Notice | `Taxe spécifique sur les boissons alcooliques incluse` | pointer to information on consumption | — |
 | Counters | `Nombre d'articles vendus = 1` | same + `Poids total Articles vendus =  7g` | `declared_weight_g` |
 | Footer | barcode + alphanumeric code `T…` (22 characters), `Copie client` | same, `Exemplaire client` | — |
@@ -32,7 +32,8 @@ QST = P × 9.975 / 114.975, rounded to the cent (half up). Both variants confirm
 the cent. `subtotal_cents` in the ground truth equals total − GST − QST: **it is not
 printed**; it is what an extractor has to recompute.
 
-**Embedded card slip (cannabis, debit).** A summary (`Debit Card`, masked card,
+**Embedded card slip (cannabis, debit).** A summary (`Debit Card`, masked card with 13
+stars but the same last 4 digits as the slip,
 `Numéro d'autorisation`, `Type de transaction : Vente`, `Heure d'autorisation`, terminal
 version line) then the full `RELEVE DE TRANSACTION` card slip. This card slip is identical
 from one retailer to the next (`families/_terminal.py`). It gives `MONTANT: 42.90 $` with a

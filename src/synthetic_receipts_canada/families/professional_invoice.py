@@ -10,10 +10,10 @@ the total without being payments.
 
 import random
 import textwrap
-from datetime import date, timedelta
+from datetime import date
 
 from .. import SCHEMA_VERSION
-from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_postal_code, fake_qst_number
+from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_postal_code, fake_qst_number, random_day
 from ..layout import Align, Receipt, Size
 from ..money import cash_rounded, gst_cents, qst_cents
 from ..render import PAPER
@@ -70,7 +70,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     number = f"{rng.randint(100_000, 699_999)}"
     # A dated invoice naming a client is the most personal document here: keep its dates out
     # of the year the source invoice was printed, so no sample can echo a real visit.
-    day = date(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2))
+    day = random_day(rng, last=date(2025, 12, 31)).date()
     civility = rng.choice(["M.", "Mme"])
     client = fake_full_name(rng)
     client_id = f"{rng.randint(1_000, 29_999)}"

@@ -58,7 +58,7 @@
       "cents": 4875
     }
   ],
-  "change_cents": null,
+  "change_cents": 0,
   "card": null,
   "reprint": true,
   "declared_weight_g": null,

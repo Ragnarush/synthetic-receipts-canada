@@ -12,9 +12,9 @@
       "8548, avenue du Quai",
       "Longueuil (Québec)  J3H 5X3"
     ],
-    "phone": "450 555-0154"
+    "phone": null
   },
-  "datetime": "2026-03-24T11:11:29",
+  "datetime": "2026-07-12T11:11:29",
   "transaction_number": "516470",
   "items": [
     {
@@ -85,14 +85,14 @@
     "transaction_id": "GVPG-5251-64M2-8543",
     "device_id": "7898-7011-1368",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-GVPG-5251-64M2-8543",
-    "processed_at": "2026-03-24T11:11:30"
+    "processed_at": "2026-07-12T11:11:30"
   },
   "text_lines": [
     " Rôtisserie du Moulin",
     "           8548, avenue du Quai",
     "       Longueuil (Québec)  J3H 5X3",
     "",
-    " 2026-03-24 11:11:29",
+    " 2026-07-12 11:11:29",
     " TRANSACTION #516470",
     "",
     "1 Boisson gazeuse               4,25 $ FP",
@@ -118,7 +118,7 @@
     " Pourboire:                        11,07 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-03-24 11:11:30",
+    "           2026-07-12 11:11:30",
     "           GVPG-5251-64M2-8543",
     "              7898-7011-1368",
     "==========================================",

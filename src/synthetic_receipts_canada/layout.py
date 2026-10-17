@@ -6,8 +6,14 @@ drawn to an image or dumped as plain text for extractor tests that skip OCR.
 """
 
 import textwrap
+import unicodedata
 from dataclasses import dataclass, field
 from enum import Enum
+
+
+def ascii_upper(text: str) -> str:
+    """Capitals without accents, as printers with no accented glyphs print: SAINT-JEROME."""
+    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().upper()
 
 
 class Align(Enum):

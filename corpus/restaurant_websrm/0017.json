@@ -14,7 +14,7 @@
     ],
     "phone": "581 555-0193"
   },
-  "datetime": "2026-10-24T20:32:36",
+  "datetime": "2026-10-27T20:32:36",
   "transaction_number": "082196",
   "items": [
     {
@@ -64,7 +64,7 @@
     "transaction_id": "4AVB-7707-JQRJ-3508",
     "device_id": "7017-1639-0039",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-4AVB-7707-JQRJ-3508",
-    "processed_at": "2026-10-24T20:32:38"
+    "processed_at": "2026-10-27T20:32:38"
   },
   "text_lines": [
     "    Resto Chez Doh",
@@ -72,7 +72,7 @@
     "         Laval (Québec)  H1M 7P9",
     "           Tél. : 581 555-0193",
     "",
-    " 2026-10-24 20:32:36",
+    " 2026-10-27 20:32:36",
     " TRANSACTION #082196",
     "",
     "4 Salade César                 47,00 $ FP",
@@ -93,7 +93,7 @@
     " TOTAL:                           123,60 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-10-24 20:32:38",
+    "           2026-10-27 20:32:38",
     "           4AVB-7707-JQRJ-3508",
     "              7017-1639-0039",
     "==========================================",

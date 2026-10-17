@@ -8,13 +8,12 @@ differ, cash rounding to 5 cents, and four date formats on one receipt.
 """
 
 import random
-import unicodedata
 from datetime import datetime, timedelta
 from fractions import Fraction
 
 from .. import SCHEMA_VERSION
-from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_qst_number
-from ..layout import Align, Receipt, Size
+from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_qst_number, random_day
+from ..layout import Align, Receipt, Size, ascii_upper
 from ..money import GST_RATE, QST_RATE, cash_rounded, format_cad_en, round_half_up
 from ..render import PAPER
 
@@ -67,11 +66,6 @@ CARD_NETWORKS = {
 }
 
 
-def _plain(text: str) -> str:
-    """The chain's printer has no accents: SAINT-JEROME, not SAINT-JÉRÔME."""
-    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().upper()
-
-
 def _amt(cents: int) -> str:
     return f"({_amt(-cents)})" if cents < 0 else f"{cents // 100}.{cents % 100:02d}"
 
@@ -83,7 +77,7 @@ def _shelf_price(rng: random.Random, lo: int, hi: int) -> int:
 
 
 def _random_datetime(rng: random.Random) -> datetime:
-    day = datetime(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2 + 300))
+    day = random_day(rng)
     return day.replace(hour=rng.randint(8, 21), minute=rng.randint(0, 59), second=rng.randint(0, 59))
 
 
@@ -223,7 +217,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     lane = f"{rng.randint(201, 420)}"
     form_a = rng.random() < 0.5
     phone = f"{rng.choice(['819', '418', '450', '514'])}-555-{rng.randint(100, 199):04d}"
-    address = f"{rng.randint(10, 3999)},{_plain(rng.choice(STREETS).split(' ', 1)[1])}, {_plain(city)}"
+    address = f"{rng.randint(10, 3999)},{ascii_upper(rng.choice(STREETS).split(' ', 1)[1])}, {ascii_upper(city)}"
     gst_number = fake_gst_number(rng)[:9] + f"RT{rng.choice([1, 1, 5]):04d}"
     qst_number = fake_qst_number(rng)[:10] + f"TQ{rng.choice([1, 2]):04d}" if rng.random() < 0.6 else None
     when = _random_datetime(rng)
@@ -241,10 +235,10 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     r.add(banner, align=Align.CENTER, bold=True, size=Size.DOUBLE)
     r.add()
     if form_a:
-        r.add(f"{banner} {_plain(city)} ({store})")
+        r.add(f"{banner} {ascii_upper(city)} ({store})")
         r.add(address)
     else:
-        r.add(f"{banner} {_plain(city)}")
+        r.add(f"{banner} {ascii_upper(city)}")
         r.add(phone)
     r.add()
     department = None
@@ -282,11 +276,16 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         card_cents = total
         if method == "mixed":
             cash = rng.randrange(2000, max(2100, total - 500), 1000) if total > 2600 else 1000
-            cash = min(cash, total - 100)
-            card_cents = total - cash
-            r.add()
-            r.two_columns("     COMPTANT", _amt(cash))
-            tenders.append({"method": "cash", "cents": cash})
+            # The cash part is whole bills and leaves at least 1 $ for the card; below that the
+            # card pays alone, so cash never needs rounding here.
+            cash = min(cash, (total - 100) // 1000 * 1000)
+            if cash > 0:
+                card_cents = total - cash
+                r.add()
+                r.two_columns("     COMPTANT", _amt(cash))
+                tenders.append({"method": "cash", "cents": cash})
+            else:
+                method = "debit"
         kind = "credit" if method == "credit" else "debit"
         network = rng.choice(["visa", "mastercard"]) if kind == "credit" else "debit"
         card = _card_slip(r, rng, kind, network, card_cents, when, garbled)
@@ -301,7 +300,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     if qst_number:
         r.add(f"TVQ# {qst_number[:10]} {qst_number[10:12]} {qst_number[12:]}")
     title = rng.choice(["DIRECTEUR DU MAGASIN:", "DIRECTRICE DE MAGASIN"])
-    r.add(f"{title} {_plain(fake_full_name(rng))}")
+    r.add(f"{title} {ascii_upper(fake_full_name(rng))}")
     if form_a:
         r.add(f"NUMERO DE TELEPHONE: {phone}")
     r.add("*" * (r.columns - 4))

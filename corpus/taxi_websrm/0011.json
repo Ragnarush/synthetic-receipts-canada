@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Spécimen",
     "address_lines": [],
-    "phone": "418 555-0191"
+    "phone": null
   },
-  "datetime": "2026-07-09T22:44:39",
+  "datetime": "2026-08-19T22:44:39",
   "transaction_number": "361777",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "C8EU-5349-U9KP-7701",
     "device_id": "7847-1264-0997",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-C8EU-5349-U9KP-7701",
-    "processed_at": "2026-07-09T22:44:43"
+    "processed_at": "2026-08-19T22:44:43"
   },
   "text_lines": [
     "    Taxi Spécimen",
     "       68,76 $",
     "",
-    " 2026-07-09 22:44:39",
+    " 2026-08-19 22:44:39",
     " TRANSACTION #361777",
     "",
     "1 Tarif taxi.                  59,80 $ FP",
@@ -73,7 +73,7 @@
     " TOTAL:           68,76 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-07-09 22:44:43",
+    "           2026-08-19 22:44:43",
     "           C8EU-5349-U9KP-7701",
     "              7847-1264-0997",
     "==========================================",
@@ -84,16 +84,16 @@
     "degraded": "0011.jpg"
   },
   "degradation": {
-    "paper_gray": 220,
-    "ink_gray_top": 50,
-    "ink_gray_bottom": 89,
-    "shading_amplitude": 0.1773644456809632,
+    "paper_gray": 240,
+    "ink_gray_top": 25,
+    "ink_gray_bottom": 54,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 1.1950499724666621,
-    "rotation_degrees": 2.876265237788802,
-    "perspective": 0.038296141634062406,
-    "noise_sigma": 8.579450015204987,
-    "salt_pepper_fraction": 0.002432389768078503,
-    "jpeg_quality": 76
+    "blur_radius": 0.1885107566207486,
+    "rotation_degrees": 1.5219790468933825,
+    "perspective": 0.0047761011074335625,
+    "noise_sigma": 3.3826902723437335,
+    "salt_pepper_fraction": 0.0006317800060819945,
+    "jpeg_quality": 88
   }
 }

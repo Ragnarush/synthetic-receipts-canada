@@ -1,8 +1,9 @@
 """Pieces shared by the crown-store sales receipt and its separate terminal slip."""
 
 import random
-from datetime import datetime, timedelta
+from datetime import datetime
 
+from ..fakes import random_day
 from ..layout import Align, Receipt, Size
 
 ALCOHOL_BANNERS = ["CELLIER FICTIF", "ALCOOLS DOH", "VINS SPECIMEN"]
@@ -21,7 +22,7 @@ def shelf_price(rng: random.Random, lo: int, hi: int, cannabis: bool) -> int:
 
 
 def random_datetime(rng: random.Random) -> datetime:
-    day = datetime(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2 + 300))
+    day = random_day(rng)
     return day.replace(hour=rng.randint(10, 21), minute=rng.randint(0, 59), second=rng.randint(0, 59))
 
 

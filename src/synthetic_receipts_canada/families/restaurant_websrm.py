@@ -6,7 +6,7 @@ note), closing receipt vs original invoice, payment method, tip, server line, co
 """
 
 import random
-from datetime import timedelta
+from datetime import date, timedelta
 
 from .. import SCHEMA_VERSION
 from ..fakes import fake_first_name, fake_restaurant
@@ -26,12 +26,14 @@ MENU = [
     ("Cocktail maison", 1100, 1600, "FPS"),
 ]
 HOURS = [(11, 14), (17, 22)]
+# The official sample is a MEV-WEB receipt, mandatory for every restaurant since this day.
+MEV_WEB_MANDATORY = date(2025, 6, 1)
 
 
 def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     merchant = fake_restaurant(rng)
     r = Receipt(columns=PAPER[paper_mm]["columns"])
-    when = _websrm.random_datetime(rng, HOURS)
+    when = _websrm.random_datetime(rng, HOURS, MEV_WEB_MANDATORY)
     number = f"{rng.randint(1, 999999):06d}"
     closing = rng.random() < 0.8  # else an original invoice handed over before payment
     narrow = rng.random() < 0.5
@@ -52,7 +54,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         tip -= tip % 25 if rng.random() < 0.5 else 0
     payment = rng.choice(list(_websrm.PAYMENT_METHODS)) if closing else None
 
-    _websrm.header(r, merchant.name, merchant.address_lines, merchant.phone, rng)
+    phone = _websrm.header(r, merchant.name, merchant.address_lines, merchant.phone, rng)
     _websrm.transaction_lines(r, when, number)
     for item in items:
         _websrm.item_line(r, item["qty"], item["description"], item["line_total_cents"], item["tax_flags"])
@@ -83,7 +85,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         "family": "restaurant_websrm",
         "country": "CA", "province": "QC", "currency": "CAD", "language": "fr",
         "paper_width_mm": paper_mm,
-        "merchant": {"name": merchant.name, "address_lines": merchant.address_lines, "phone": merchant.phone},
+        "merchant": {"name": merchant.name, "address_lines": merchant.address_lines, "phone": phone},
         "datetime": when.isoformat(),
         "transaction_number": number,
         "items": items,

@@ -9,10 +9,10 @@
   "merchant": {
     "name": "Taxi Fictif",
     "address_lines": [],
-    "phone": "581 555-0193"
+    "phone": null
   },
-  "datetime": "2025-03-13T21:05:28",
-  "transaction_number": "900655",
+  "datetime": "2026-10-07T08:42:05",
+  "transaction_number": "469576",
   "items": [
     {
       "qty": 1,
@@ -47,14 +47,14 @@
     "transaction_id": "80FY-8722-Q0PX-6736",
     "device_id": "8409-7564-1400",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-80FY-8722-Q0PX-6736",
-    "processed_at": "2025-03-13T21:05:30"
+    "processed_at": "2026-10-07T08:42:07"
   },
   "text_lines": [
     "     Taxi Fictif",
     "       52,89 $",
     "",
-    " 2025-03-13 21:05:28",
-    " TRANSACTION #900655",
+    " 2026-10-07 08:42:05",
+    " TRANSACTION #469576",
     "",
     "1 Tarif taxi.                  46,00 $ FP",
     "   redevance@0,90 $",
@@ -74,7 +74,7 @@
     " Pourboire:        5,29 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-03-13 21:05:30",
+    "           2026-10-07 08:42:07",
     "           80FY-8722-Q0PX-6736",
     "              8409-7564-1400",
     "==========================================",
@@ -85,16 +85,16 @@
     "degraded": "0012.jpg"
   },
   "degradation": {
-    "paper_gray": 221,
-    "ink_gray_top": 47,
-    "ink_gray_bottom": 105,
-    "shading_amplitude": 0.24977430510745624,
+    "paper_gray": 240,
+    "ink_gray_top": 24,
+    "ink_gray_bottom": 47,
+    "shading_amplitude": 0.05093113157313464,
     "fold_position": null,
-    "blur_radius": 0.6720747690196118,
-    "rotation_degrees": 0.3267310336347172,
-    "perspective": 0.02312859621305156,
-    "noise_sigma": 7.391097212746465,
-    "salt_pepper_fraction": 0.002056829961617459,
-    "jpeg_quality": 73
+    "blur_radius": 0.1605731828010334,
+    "rotation_degrees": -0.20100741887933452,
+    "perspective": 0.0014685959996010166,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.00015643888509858585,
+    "jpeg_quality": 91
   }
 }

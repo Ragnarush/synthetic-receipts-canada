@@ -12,9 +12,9 @@
       "1227, avenue des Érables",
       "Longueuil (Québec)  J1B 7L9"
     ],
-    "phone": "438 555-0191"
+    "phone": null
   },
-  "datetime": "2026-08-07T21:30:43",
+  "datetime": "2026-09-18T21:30:43",
   "transaction_number": "180922",
   "items": [
     {
@@ -71,14 +71,14 @@
     "transaction_id": "7TDA-3936-3JVY-2236",
     "device_id": "1324-5614-1998",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-7TDA-3936-3JVY-2236",
-    "processed_at": "2026-08-07T21:30:44"
+    "processed_at": "2026-09-18T21:30:44"
   },
   "text_lines": [
     "        Taverne La Cabane à Pignon",
     "         1227, avenue des Érables",
     "       Longueuil (Québec)  J1B 7L9",
     "",
-    " 2026-08-07 21:30:43",
+    " 2026-09-18 21:30:43",
     " TRANSACTION #180922",
     "",
     "1 Pizza 12 po                  25,25 $ FP",
@@ -102,7 +102,7 @@
     " TOTAL:           62,67 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-08-07 21:30:44",
+    "           2026-09-18 21:30:44",
     "           7TDA-3936-3JVY-2236",
     "              1324-5614-1998",
     "==========================================",

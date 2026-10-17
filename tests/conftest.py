@@ -1,9 +1,11 @@
+import os
 import random
 from functools import cache
 
 from synthetic_receipts_canada.families import FAMILIES
 
-COUNT = 200  # receipts checked per family and paper width
+# Receipts checked per family and paper width; raise it to hunt rare draws: RECEIPTS_COUNT=5000.
+COUNT = int(os.environ.get("RECEIPTS_COUNT", 200))
 PAPERS = (58, 80)
 
 

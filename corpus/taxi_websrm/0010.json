@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Coop Taxi Exemple",
     "address_lines": [],
-    "phone": "819 555-0159"
+    "phone": null
   },
-  "datetime": "2024-08-21T20:17:49",
+  "datetime": "2026-02-28T20:17:49",
   "transaction_number": "240955",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "Q6YT-2931-LCS3-6499",
     "device_id": "9773-4993-7774",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-Q6YT-2931-LCS3-6499",
-    "processed_at": "2024-08-21T20:17:54"
+    "processed_at": "2026-02-28T20:17:54"
   },
   "text_lines": [
     "  Coop Taxi Exemple",
     "       90,49 $",
     "",
-    " 2024-08-21 20:17:49",
+    " 2026-02-28 20:17:49",
     " TRANSACTION #240955",
     "",
     "1 Tarif taxi.                  78,70 $ FP",
@@ -74,7 +74,7 @@
     " Pourboire:       13,57 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-08-21 20:17:54",
+    "           2026-02-28 20:17:54",
     "           Q6YT-2931-LCS3-6499",
     "              9773-4993-7774",
     "==========================================",
@@ -85,16 +85,16 @@
     "degraded": "0010.jpg"
   },
   "degradation": {
-    "paper_gray": 239,
-    "ink_gray_top": 21,
-    "ink_gray_bottom": 56,
-    "shading_amplitude": 0.050227946247011705,
+    "paper_gray": 225,
+    "ink_gray_top": 52,
+    "ink_gray_bottom": 109,
+    "shading_amplitude": 0.2390536815572336,
     "fold_position": null,
-    "blur_radius": 0.13234258930237086,
-    "rotation_degrees": -0.048269812213662555,
-    "perspective": 0.0,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.0005000360359836182,
-    "jpeg_quality": 83
+    "blur_radius": 1.1335378821034277,
+    "rotation_degrees": 0.8739219468278886,
+    "perspective": 0.017077062401556937,
+    "noise_sigma": 6.963226169509298,
+    "salt_pepper_fraction": 0.0011525077025586596,
+    "jpeg_quality": 68
   }
 }

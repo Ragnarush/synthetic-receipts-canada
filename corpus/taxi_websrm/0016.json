@@ -9,73 +9,73 @@
   "merchant": {
     "name": "Taxi Fictif",
     "address_lines": [],
-    "phone": "581 555-0186"
+    "phone": null
   },
-  "datetime": "2024-07-14T15:28:03",
-  "transaction_number": "390145",
+  "datetime": "2026-10-17T22:44:17",
+  "transaction_number": "521875",
   "items": [
     {
       "qty": 1,
       "description": "Tarif taxi.",
-      "unit_price_cents": 1870,
-      "line_total_cents": 1870,
+      "unit_price_cents": 5335,
+      "line_total_cents": 5335,
       "tax_flags": "FP"
     }
   ],
-  "subtotal_cents": 1870,
+  "subtotal_cents": 5335,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 94
+      "cents": 267
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 187
+      "cents": 532
     }
   ],
-  "total_cents": 2151,
+  "total_cents": 6134,
   "tip_cents": null,
   "gst_number": "515014150RT0001",
   "qst_number": "9622084207TQ0001",
   "payment_method": "credit",
   "document_kind": "closing_receipt",
   "websrm": {
-    "transaction_id": "5K3P-9508-QXNK-3868",
-    "device_id": "4177-7150-1001",
-    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-5K3P-9508-QXNK-3868",
-    "processed_at": "2024-07-14T15:28:06"
+    "transaction_id": "TL5K-6949-PQXN-9595",
+    "device_id": "2359-3868-4176",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-TL5K-6949-PQXN-9595",
+    "processed_at": "2026-10-17T22:44:21"
   },
   "text_lines": [
     "     Taxi Fictif",
-    "       21,51 $",
+    "       61,34 $",
     "",
-    " 2024-07-14 15:28:03",
-    " TRANSACTION #390145",
+    " 2026-10-17 22:44:17",
+    " TRANSACTION #521875",
     "",
-    "1 Tarif taxi.                  18,70 $ FP",
+    "1 Tarif taxi.                  53,35 $ FP",
     "   redevance@0,90 $",
     "",
-    " SOUS-TOTAL                        18,70 $",
+    " SOUS-TOTAL                        53,35 $",
     "",
     " TPS: 515014150     RT 0001",
     " TVQ: 9622084207    TQ 0001",
     "",
     "             CARTE DE CRÉDIT",
     "",
-    "          Merci de votre visite",
+    "          Merci et bonne journée",
     "==========================================",
-    " TPS:              0,94 $",
-    " TVQ:              1,87 $",
-    " TOTAL:           21,51 $",
+    " TPS:              2,67 $",
+    " TVQ:              5,32 $",
+    " TOTAL:           61,34 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-07-14 15:28:06",
-    "           5K3P-9508-QXNK-3868",
-    "              4177-7150-1001",
+    "           2026-10-17 22:44:21",
+    "           TL5K-6949-PQXN-9595",
+    "              2359-3868-4176",
     "==========================================",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -84,16 +84,16 @@
     "degraded": "0016.jpg"
   },
   "degradation": {
-    "paper_gray": 229,
-    "ink_gray_top": 42,
-    "ink_gray_bottom": 75,
-    "shading_amplitude": 0.21130171213734028,
-    "fold_position": 0.5857198384197545,
-    "blur_radius": 0.6023698135908789,
-    "rotation_degrees": -0.6525603812673938,
-    "perspective": 0.03661242984491243,
-    "noise_sigma": 9.00995744888061,
-    "salt_pepper_fraction": 0.0018412464082984124,
-    "jpeg_quality": 70
+    "paper_gray": 245,
+    "ink_gray_top": 29,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.07728477613797426,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.33722559488329584,
+    "perspective": 0.0,
+    "noise_sigma": 3.2246955704551654,
+    "salt_pepper_fraction": 0.0006144823970783608,
+    "jpeg_quality": 92
   }
 }

@@ -12,9 +12,9 @@
       "3435, avenue du Quai",
       "Montréal (Québec)  H3B 2E2"
     ],
-    "phone": "367 555-0102"
+    "phone": null
   },
-  "datetime": "2024-03-01T19:55:59",
+  "datetime": "2025-07-01T19:55:59",
   "transaction_number": "861396",
   "items": [
     {
@@ -85,14 +85,14 @@
     "transaction_id": "X5TT-3206-CJD9-7771",
     "device_id": "6181-8810-3439",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-X5TT-3206-CJD9-7771",
-    "processed_at": "2024-03-01T19:56:04"
+    "processed_at": "2025-07-01T19:56:04"
   },
   "text_lines": [
     "        Brasserie Le Petit Mousse",
     "           3435, avenue du Quai",
     "        Montréal (Québec)  H3B 2E2",
     "",
-    " 2024-03-01 19:55:59",
+    " 2025-07-01 19:55:59",
     " TRANSACTION #861396",
     "",
     "1 Club sandwich                14,25 $ FP",
@@ -117,7 +117,7 @@
     " TOTAL:                            74,73 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-03-01 19:56:04",
+    "           2025-07-01 19:56:04",
     "           X5TT-3206-CJD9-7771",
     "              6181-8810-3439",
     "==========================================",

@@ -12,9 +12,9 @@
       "9496, rue Notre-Dame",
       "Granby (Québec)  J3E 9N2"
     ],
-    "phone": "450 555-0193"
+    "phone": null
   },
-  "datetime": "2026-01-03T11:27:32",
+  "datetime": "2026-06-02T11:27:32",
   "transaction_number": "849708",
   "items": [
     {
@@ -85,14 +85,14 @@
     "transaction_id": "22L7-5592-87HT-9941",
     "device_id": "6697-3793-5359",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-22L7-5592-87HT-9941",
-    "processed_at": "2026-01-03T11:27:34"
+    "processed_at": "2026-06-02T11:27:34"
   },
   "text_lines": [
     " Café La Toque Rouge",
     "           9496, rue Notre-Dame",
     "         Granby (Québec)  J3E 9N2",
     "",
-    " 2026-01-03 11:27:32",
+    " 2026-06-02 11:27:32",
     " TRANSACTION #849708",
     "",
     "4 Soupe du jour                22,00 $ FP",
@@ -116,7 +116,7 @@
     " TOTAL:          268,76 $",
     "",
     "            FACTURE ORIGINALE",
-    "           2026-01-03 11:27:34",
+    "           2026-06-02 11:27:34",
     "           22L7-5592-87HT-9941",
     "              6697-3793-5359",
     "==========================================",

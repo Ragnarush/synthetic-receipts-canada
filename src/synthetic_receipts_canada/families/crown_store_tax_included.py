@@ -158,12 +158,13 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         else:
             r.two_columns("Debit Card", _fr(total, False))
             auth = f"{rng.randint(100_000, 999_999)}"
-            r.add(f"      {'*' * 13}{rng.randint(0, 9999):04d}")
+            last4 = f"{rng.randint(0, 9999):04d}"
+            r.add(f"      {'*' * 13}{last4}")
             r.add(f"      Numéro d'autorisation : {auth}")
             r.add("      Type de transaction : Vente")
             r.add(f"      Heure d'autorisation : {when:%H:%M}")
             r.add(f"TPV 4.2.13 - MAG {rng.randint(10_000, 19_999)} - PROC. DOH")
-            card = _terminal.releve_slip(r, rng, total, when, number)
+            card = _terminal.releve_slip(r, rng, total, when, number, last4)
             r.add(rule)
             r.two_columns("Monnaie", _fr(0, False))
             change = 0
@@ -179,7 +180,8 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
             label = "Comptant" if tender["method"] == "cash" else "ACHAT DÉBIT"
             r.two_columns(label, _fr(tender["cents"], True))
         r.add()
-        r.two_columns("Remise Comptant", _fr(change or 0, True))
+        change = change or 0  # printed even when no cash was given
+        r.two_columns("Remise Comptant", _fr(change, True))
         r.add("Taxe spécifique sur les boissons", align=Align.CENTER)
         r.add("alcooliques incluse", align=Align.CENTER)
         r.add()

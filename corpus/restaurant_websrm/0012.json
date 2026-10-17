@@ -12,9 +12,9 @@
       "3185, rue des Bouleaux",
       "Rouyn-Noranda (Québec)  J6B 6A6"
     ],
-    "phone": "367 555-0196"
+    "phone": null
   },
-  "datetime": "2024-09-21T18:48:07",
+  "datetime": "2025-10-11T18:48:07",
   "transaction_number": "468387",
   "items": [
     {
@@ -50,14 +50,14 @@
     "transaction_id": "Z0TX-6018-9VYV-9503",
     "device_id": "2705-5452-3587",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-Z0TX-6018-9VYV-9503",
-    "processed_at": "2024-09-21T18:48:10"
+    "processed_at": "2025-10-11T18:48:10"
   },
   "text_lines": [
     "         Café Les Deux Cuillères",
     "          3185, rue des Bouleaux",
     "     Rouyn-Noranda (Québec)  J6B 6A6",
     "",
-    " 2024-09-21 18:48:07",
+    " 2025-10-11 18:48:07",
     " TRANSACTION #468387",
     "",
     "1 Pâtes alfredo                16,75 $ FP",
@@ -73,7 +73,7 @@
     " TOTAL:                            19,26 $",
     "",
     "            FACTURE ORIGINALE",
-    "           2024-09-21 18:48:10",
+    "           2025-10-11 18:48:10",
     "           Z0TX-6018-9VYV-9503",
     "              2705-5452-3587",
     "==========================================",

@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Spécimen",
     "address_lines": [],
-    "phone": "873 555-0104"
+    "phone": null
   },
-  "datetime": "2024-07-08T15:42:33",
+  "datetime": "2026-02-17T15:42:33",
   "transaction_number": "764764",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "MZCU-1158-QLZ7-5910",
     "device_id": "8305-3259-3760",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-MZCU-1158-QLZ7-5910",
-    "processed_at": "2024-07-08T15:42:35"
+    "processed_at": "2026-02-17T15:42:35"
   },
   "text_lines": [
     "    Taxi Spécimen",
     "       63,06 $",
     "",
-    " 2024-07-08 15:42:33",
+    " 2026-02-17 15:42:33",
     " TRANSACTION #764764",
     "",
     "1 Tarif taxi.                  54,85 $ FP",
@@ -73,7 +73,7 @@
     " TOTAL:           63,06 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-07-08 15:42:35",
+    "           2026-02-17 15:42:35",
     "           MZCU-1158-QLZ7-5910",
     "              8305-3259-3760",
     "==========================================",
@@ -84,16 +84,16 @@
     "degraded": "0008.jpg"
   },
   "degradation": {
-    "paper_gray": 216,
+    "paper_gray": 234,
     "ink_gray_top": 55,
-    "ink_gray_bottom": 77,
-    "shading_amplitude": 0.22780280969240113,
+    "ink_gray_bottom": 133,
+    "shading_amplitude": 0.13622195384547914,
     "fold_position": null,
-    "blur_radius": 0.8803030237742334,
-    "rotation_degrees": 0.08048710955075998,
-    "perspective": 0.03991690205417891,
-    "noise_sigma": 8.283510170537935,
-    "salt_pepper_fraction": 0.0020198311219351687,
-    "jpeg_quality": 81
+    "blur_radius": 0.8247713527700473,
+    "rotation_degrees": 0.5620503144970658,
+    "perspective": 0.017651112176775098,
+    "noise_sigma": 8.65281700902982,
+    "salt_pepper_fraction": 0.0025134040682151743,
+    "jpeg_quality": 73
   }
 }

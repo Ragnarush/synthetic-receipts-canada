@@ -9,6 +9,7 @@ Everything here is invented. Guard rails that keep it that way:
 
 import random
 from dataclasses import dataclass
+from datetime import date, datetime, timedelta
 
 RESTAURANT_PREFIXES = [
     "Resto", "Bistro", "Café", "Casse-croûte", "Pizzeria", "Cantine", "Brasserie",
@@ -108,6 +109,17 @@ def fake_restaurant(rng: random.Random) -> Merchant:
         gst_number=fake_gst_number(rng),
         qst_number=fake_qst_number(rng),
     )
+
+
+# Generated dates span these days unless a family bounds them further (a regime's start date,
+# or keeping clear of the period a source receipt was printed in).
+FIRST_DAY = date(2024, 1, 1)
+LAST_DAY = date(2026, 10, 27)
+
+
+def random_day(rng: random.Random, first: date = FIRST_DAY, last: date = LAST_DAY) -> datetime:
+    """Midnight of a day drawn uniformly in [first, last], with a single draw."""
+    return datetime.combine(first, datetime.min.time()) + timedelta(days=rng.randint(0, (last - first).days))
 
 
 def fake_first_name(rng: random.Random) -> str:

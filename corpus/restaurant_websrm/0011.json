@@ -12,9 +12,9 @@
       "1894, chemin du Lac",
       "Rimouski (Québec)  G6J 7E0"
     ],
-    "phone": "438 555-0103"
+    "phone": null
   },
-  "datetime": "2025-12-19T13:03:59",
+  "datetime": "2026-05-26T13:03:59",
   "transaction_number": "511715",
   "items": [
     {
@@ -57,14 +57,14 @@
     "transaction_id": "5EKA-1246-3GDA-0824",
     "device_id": "0081-4650-9341",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-5EKA-1246-3GDA-0824",
-    "processed_at": "2025-12-19T13:04:04"
+    "processed_at": "2026-05-26T13:04:04"
   },
   "text_lines": [
     " Grill La Toque Rouge",
     "           1894, chemin du Lac",
     "        Rimouski (Québec)  G6J 7E0",
     "",
-    " 2025-12-19 13:03:59",
+    " 2026-05-26 13:03:59",
     " TRANSACTION #511715",
     "",
     "1 Pizza 12 po                  22,75 $ FP",
@@ -84,7 +84,7 @@
     " TOTAL:                           179,08 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-12-19 13:04:04",
+    "           2026-05-26 13:04:04",
     "           5EKA-1246-3GDA-0824",
     "              0081-4650-9341",
     "==========================================",

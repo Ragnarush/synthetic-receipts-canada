@@ -12,9 +12,9 @@
       "3522, rue du Moulin",
       "Rimouski (Québec)  G5V 0N1"
     ],
-    "phone": "581 555-0176"
+    "phone": null
   },
-  "datetime": "2024-06-29T19:19:08",
+  "datetime": "2025-08-30T19:19:08",
   "transaction_number": "232720",
   "items": [
     {
@@ -50,14 +50,14 @@
     "transaction_id": "1BRF-5737-AMV2-5191",
     "device_id": "6205-1204-0196",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-1BRF-5737-AMV2-5191",
-    "processed_at": "2024-06-29T19:19:09"
+    "processed_at": "2025-08-30T19:19:09"
   },
   "text_lines": [
     " Resto du Vieux-Quai",
     "           3522, rue du Moulin",
     "        Rimouski (Québec)  G5V 0N1",
     "",
-    " 2024-06-29 19:19:08",
+    " 2025-08-30 19:19:08",
     " TRANSACTION #232720",
     "",
     "1 Burger maison                18,50 $ FP",
@@ -74,7 +74,7 @@
     " TOTAL:                            21,28 $",
     "",
     "            FACTURE ORIGINALE",
-    "           2024-06-29 19:19:09",
+    "           2025-08-30 19:19:09",
     "           1BRF-5737-AMV2-5191",
     "              6205-1204-0196",
     "==========================================",

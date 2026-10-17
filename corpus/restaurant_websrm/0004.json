@@ -14,7 +14,7 @@
     ],
     "phone": "438 555-0145"
   },
-  "datetime": "2026-01-26T11:57:28",
+  "datetime": "2026-06-14T11:57:28",
   "transaction_number": "118660",
   "items": [
     {
@@ -85,7 +85,7 @@
     "transaction_id": "LGJM-2069-V2QL-7743",
     "device_id": "4227-9755-5406",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-LGJM-2069-V2QL-7743",
-    "processed_at": "2026-01-26T11:57:31"
+    "processed_at": "2026-06-14T11:57:31"
   },
   "text_lines": [
     "         Sushi L'Assiette carrée",
@@ -93,7 +93,7 @@
     "         Lévis (Québec)  G3T 0P7",
     "           Tél. : 438 555-0145",
     "",
-    " 2026-01-26 11:57:28",
+    " 2026-06-14 11:57:28",
     " TRANSACTION #118660",
     "",
     "1 Poutine                      11,50 $ FP",
@@ -118,7 +118,7 @@
     " Pourboire:                        17,25 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-01-26 11:57:31",
+    "           2026-06-14 11:57:31",
     "           LGJM-2069-V2QL-7743",
     "              4227-9755-5406",
     "==========================================",

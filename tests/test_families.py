@@ -121,6 +121,9 @@ def test_payments(family, paper):
         rounding = truth.get("cash_rounding_cents") or 0
         change = truth.get("change_cents") or 0
         cash = sum(t["cents"] for t in tenders if t["method"] == "cash")
+        assert all(t["cents"] > 0 for t in tenders), f"{where}: {tenders}"
+        # Cash changes hands in multiples of 5 cents since the cent was withdrawn.
+        assert all(t["cents"] % 5 == 0 for t in tenders if t["method"] == "cash"), f"{where}: {tenders}"
         assert change >= 0, where
         assert cash or not change, f"{where}: change without cash"
         if total is None:  # a card slip carries no purchase total
@@ -148,6 +151,13 @@ def test_printed_values_match_ground_truth(family, paper):
             if cents is not None:
                 assert amount_pattern(cents).search(text), f"{where}: amount {cents} not printed"
 
+        # null means absent from the receipt: whatever the merchant block holds must be printed.
+        flat = " ".join(text.split())
+        merchant = truth["merchant"]
+        for value in [merchant["name"], *merchant["address_lines"], merchant["phone"]]:
+            if value:
+                assert " ".join(value.split()) in flat, f"{where}: merchant {value!r} not printed"
+
         when = datetime.fromisoformat(truth["datetime"])
         assert any(form in text for form in date_forms(when)), f"{where}: date {when:%Y-%m-%d} not printed"
         if "T" in truth["datetime"]:
@@ -162,6 +172,8 @@ def test_printed_values_match_ground_truth(family, paper):
         if truth.get("card"):
             card = truth["card"]
             assert card["masked_number"] in text, where
+            for masked in re.finditer(r"\*{4,}(\d{4})", text):  # every masked number is this card
+                assert masked.group(1) == card["masked_number"][-4:], f"{where}: {masked.group()}"
             assert card["authorization"] in text, where
             assert card["reference"] in text, where
             at = datetime.fromisoformat(card["datetime"])
@@ -178,7 +190,8 @@ def test_guardrails(family, paper):
                 assert not luhn_is_valid(leading_digits(truth[key])), f"{where}: {key} passes Luhn"
         phone = re.sub(r"\D", "", truth["merchant"]["phone"] or "")
         assert not phone or (phone[-7:-4] == "555" and phone[-4:-2] == "01"), f"{where}: phone {phone}"
-        for match in re.finditer(r"555-(\d{4})", text):
+        # An area code, then 555: not a device id (1555-2345-...) or a tax number (12555-6789).
+        for match in re.finditer(r"(?:\(\d{3}\)|(?<!\d)\d{3}[ -])555-(\d{4})", text):
             assert match.group(1).startswith("01"), f"{where}: {match.group()} outside 555-01XX"
         assert not re.search(r"(?i)\bwww\.|[\w-]\.(?:com|ca|net|org)\b", text), f"{where}: real-looking URL"
         for line in receipt.lines:

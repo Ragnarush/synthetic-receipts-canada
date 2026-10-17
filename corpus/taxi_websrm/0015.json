@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Jean Doh inc.",
     "address_lines": [],
-    "phone": "579 555-0191"
+    "phone": null
   },
-  "datetime": "2026-08-10T01:06:39",
+  "datetime": "2026-08-27T01:06:39",
   "transaction_number": "104764",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "QK41-2294-1L9K-9969",
     "device_id": "1697-3935-2725",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-QK41-2294-1L9K-9969",
-    "processed_at": "2026-08-10T01:06:41"
+    "processed_at": "2026-08-27T01:06:41"
   },
   "text_lines": [
     "  Taxi Jean Doh inc.",
     "       20,52 $",
     "",
-    " 2026-08-10 01:06:39",
+    " 2026-08-27 01:06:39",
     " TRANSACTION #104764",
     "",
     "1 Tarif taxi.                  17,85 $ FP",
@@ -73,7 +73,7 @@
     " TOTAL:           20,52 $",
     "",
     "              PAIEMENT REÇU",
-    "           2026-08-10 01:06:41",
+    "           2026-08-27 01:06:41",
     "           QK41-2294-1L9K-9969",
     "              1697-3935-2725",
     "==========================================",
@@ -84,16 +84,16 @@
     "degraded": "0015.jpg"
   },
   "degradation": {
-    "paper_gray": 242,
-    "ink_gray_top": 22,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.05,
+    "paper_gray": 218,
+    "ink_gray_top": 50,
+    "ink_gray_bottom": 77,
+    "shading_amplitude": 0.20926676122756854,
     "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": 0.48273756103937304,
-    "perspective": 0.0,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.0,
-    "jpeg_quality": 92
+    "blur_radius": 0.8029063464458646,
+    "rotation_degrees": -1.2107311226345678,
+    "perspective": 0.04235894411416446,
+    "noise_sigma": 7.814829842781828,
+    "salt_pepper_fraction": 0.002635122107163713,
+    "jpeg_quality": 81
   }
 }

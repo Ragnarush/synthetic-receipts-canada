@@ -12,9 +12,9 @@
       "9143, avenue du Quai",
       "Québec (Québec)  G9N 9J1"
     ],
-    "phone": "438 555-0152"
+    "phone": null
   },
-  "datetime": "2024-11-30T12:13:30",
+  "datetime": "2025-11-15T12:13:30",
   "transaction_number": "889433",
   "items": [
     {
@@ -92,14 +92,14 @@
     "transaction_id": "NNE4-1369-V6HJ-9380",
     "device_id": "4938-3904-7316",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-NNE4-1369-V6HJ-9380",
-    "processed_at": "2024-11-30T12:13:35"
+    "processed_at": "2025-11-15T12:13:35"
   },
   "text_lines": [
     "Cantine Le Bedon Rond",
     "           9143, avenue du Quai",
     "         Québec (Québec)  G9N 9J1",
     "",
-    " 2024-11-30 12:13:30",
+    " 2025-11-15 12:13:30",
     " TRANSACTION #889433",
     "",
     "1 Bière en fût                 10,25 $ FPS",
@@ -125,7 +125,7 @@
     " Pourboire:                        17,75 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-11-30 12:13:35",
+    "           2025-11-15 12:13:35",
     "           NNE4-1369-V6HJ-9380",
     "              4938-3904-7316",
     "==========================================",

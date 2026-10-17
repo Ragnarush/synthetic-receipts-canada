@@ -10,12 +10,11 @@ MONTANT is only the debit share, so the ground truth always leaves total_cents n
 
 import random
 import textwrap
-import unicodedata
 from datetime import timedelta
 
 from .. import SCHEMA_VERSION
 from ..fakes import AREA_CODES, CITIES, STREETS, fake_postal_code
-from ..layout import Align, Receipt, Size
+from ..layout import Align, Receipt, Size, ascii_upper
 from ..render import PAPER
 from . import _terminal
 from ._crown_store import ALCOHOL, ALCOHOL_BANNERS, alcohol_header, random_datetime, reprint_banner, shelf_price
@@ -24,11 +23,6 @@ SHOP_PREFIXES = ["DEP", "DEP GEN", "DEPANNEUR", "MARCHE", "DEP ET VIDEO"]
 SHOP_NAMES = ["DOH", "FICTIF", "QUIDAM", "SPECIMEN", "UNTEL", "DU COIN DOH", "LE FICTIF"]
 SHOP_SUFFIXES = ["", "", "ENR", "INC", "ST-DOH", "S.QUI"]
 STANDALONE_PAPER_MM = 58  # the terminal prints on its own narrow roll, whatever the store uses
-
-
-def _upper_ascii(text: str) -> str:
-    """Standalone terminals print the merchant block in unaccented capitals."""
-    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().upper()
 
 
 def _base_truth(paper_mm: int, variant: str) -> dict:
@@ -102,10 +96,10 @@ def _standalone_terminal(rng: random.Random) -> tuple[Receipt, dict]:
     r = Receipt(columns=PAPER[STANDALONE_PAPER_MM]["columns"])
     name = " ".join(p for p in (rng.choice(SHOP_PREFIXES), rng.choice(SHOP_NAMES), rng.choice(SHOP_SUFFIXES)) if p)
     city, letter = rng.choice(CITIES)
-    street = _upper_ascii(f"{rng.randint(10, 3999)} {rng.choice(STREETS)}")
+    street = ascii_upper(f"{rng.randint(10, 3999)} {rng.choice(STREETS)}")
     # The merchant block is set at the terminal and often wraps at a word well before the edge.
     address_lines = textwrap.wrap(street, rng.choice([18, 22, r.columns]))
-    locality = f"{_upper_ascii(city)}, QC {fake_postal_code(rng, letter).replace(' ', '')}"
+    locality = f"{ascii_upper(city)}, QC {fake_postal_code(rng, letter).replace(' ', '')}"
     phone = f"{rng.choice(AREA_CODES)}555{rng.randint(100, 199):04d}"
     when = random_datetime(rng) + timedelta(seconds=rng.randint(0, 59))
     cents = rng.randint(150, 4500)

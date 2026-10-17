@@ -12,9 +12,9 @@
       "1423, boul. de la Rivière",
       "Shawinigan (Québec)  G3G 2H3"
     ],
-    "phone": "819 555-0194"
+    "phone": null
   },
-  "datetime": "2025-01-18T17:45:15",
+  "datetime": "2025-12-09T17:45:15",
   "transaction_number": "243154",
   "items": [
     {
@@ -85,14 +85,14 @@
     "transaction_id": "JV5J-6174-BJVW-2443",
     "device_id": "5074-8637-2692",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-JV5J-6174-BJVW-2443",
-    "processed_at": "2025-01-18T17:45:19"
+    "processed_at": "2025-12-09T17:45:19"
   },
   "text_lines": [
     "        Bistro Au Fourneau d'Antan",
     "        1423, boul. de la Rivière",
     "       Shawinigan (Québec)  G3G 2H3",
     "",
-    " 2025-01-18 17:45:15",
+    " 2025-12-09 17:45:15",
     " TRANSACTION #243154",
     "",
     "1 Spaghetti                    12,00 $ FP",
@@ -116,7 +116,7 @@
     " TOTAL:           90,83 $",
     "",
     "            FACTURE ORIGINALE",
-    "           2025-01-18 17:45:19",
+    "           2025-12-09 17:45:19",
     "           JV5J-6174-BJVW-2443",
     "              5074-8637-2692",
     "==========================================",

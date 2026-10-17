@@ -9,74 +9,73 @@
   "merchant": {
     "name": "Taxis du Nord Doh",
     "address_lines": [],
-    "phone": "418 555-0192"
+    "phone": null
   },
-  "datetime": "2024-07-13T11:24:27",
-  "transaction_number": "126913",
+  "datetime": "2026-10-08T15:52:49",
+  "transaction_number": "364765",
   "items": [
     {
       "qty": 1,
       "description": "Tarif taxi.",
-      "unit_price_cents": 3035,
-      "line_total_cents": 3035,
+      "unit_price_cents": 4770,
+      "line_total_cents": 4770,
       "tax_flags": "FP"
     }
   ],
-  "subtotal_cents": 3035,
+  "subtotal_cents": 4770,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 152
+      "cents": 239
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 303
+      "cents": 476
     }
   ],
-  "total_cents": 3490,
-  "tip_cents": 349,
+  "total_cents": 5485,
+  "tip_cents": null,
   "gst_number": "737607025RT0001",
   "qst_number": "4243981415TQ0001",
-  "payment_method": "credit",
+  "payment_method": "debit",
   "document_kind": "closing_receipt",
   "websrm": {
-    "transaction_id": "ZGUF-6700-TXH6-4689",
-    "device_id": "8510-4688-0476",
-    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-ZGUF-6700-TXH6-4689",
-    "processed_at": "2024-07-13T11:24:29"
+    "transaction_id": "EW7Z-1561-UF2T-5414",
+    "device_id": "1875-7683-4689",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-EW7Z-1561-UF2T-5414",
+    "processed_at": "2026-10-08T15:52:54"
   },
   "text_lines": [
     "  Taxis du Nord Doh",
-    "       34,90 $",
+    "       54,85 $",
     "",
-    " 2024-07-13 11:24:27",
-    " TRANSACTION #126913",
+    " 2026-10-08 15:52:49",
+    " TRANSACTION #364765",
     "",
-    "1 Tarif taxi.                  30,35 $ FP",
+    "1 Tarif taxi.                  47,70 $ FP",
     "   redevance@0,90 $",
     "",
-    " SOUS-TOTAL                        30,35 $",
+    " SOUS-TOTAL                        47,70 $",
     "",
     " TPS: 737607025     RT 0001",
     " TVQ: 4243981415    TQ 0001",
     "",
-    "             CARTE DE CRÉDIT",
+    "              CARTE DE DÉBIT",
     "",
-    "                  Merci!",
+    "          Merci et bonne journée",
     "==========================================",
-    " TPS:              1,52 $",
-    " TVQ:              3,03 $",
-    " TOTAL:           34,90 $",
-    " Pourboire:        3,49 $",
+    " TPS:              2,39 $",
+    " TVQ:              4,76 $",
+    " TOTAL:           54,85 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-07-13 11:24:29",
-    "           ZGUF-6700-TXH6-4689",
-    "              8510-4688-0476",
+    "           2026-10-08 15:52:54",
+    "           EW7Z-1561-UF2T-5414",
+    "              1875-7683-4689",
     "==========================================",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -85,16 +84,16 @@
     "degraded": "0020.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 66,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.35,
-    "fold_position": 0.5970244286030556,
-    "blur_radius": 1.2040535990025547,
-    "rotation_degrees": 0.8045128364974086,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 59
+    "paper_gray": 234,
+    "ink_gray_top": 56,
+    "ink_gray_bottom": 134,
+    "shading_amplitude": 0.2594614621910708,
+    "fold_position": null,
+    "blur_radius": 0.8571666321444529,
+    "rotation_degrees": -1.2803748932266448,
+    "perspective": 0.04262087892892105,
+    "noise_sigma": 7.775941259937318,
+    "salt_pepper_fraction": 0.0028704013527194707,
+    "jpeg_quality": 81
   }
 }

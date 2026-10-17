@@ -12,9 +12,9 @@
       "7807, chemin du Lac",
       "Trois-Rivières (Québec)  G3C 2T3"
     ],
-    "phone": "450 555-0154"
+    "phone": null
   },
-  "datetime": "2025-04-11T12:47:03",
+  "datetime": "2026-01-20T12:47:03",
   "transaction_number": "632412",
   "items": [
     {
@@ -50,14 +50,14 @@
     "transaction_id": "LE25-7413-2PG8-6089",
     "device_id": "2051-9312-2879",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-LE25-7413-2PG8-6089",
-    "processed_at": "2025-04-11T12:47:06"
+    "processed_at": "2026-01-20T12:47:06"
   },
   "text_lines": [
     "      Restaurant Au Fourneau d'Antan",
     "           7807, chemin du Lac",
     "     Trois-Rivières (Québec)  G3C 2T3",
     "",
-    " 2025-04-11 12:47:03",
+    " 2026-01-20 12:47:03",
     " TRANSACTION #632412",
     "",
     "1 Boisson gazeuse               3,00 $ FP",
@@ -76,7 +76,7 @@
     " Pourboire:        0,69 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-04-11 12:47:06",
+    "           2026-01-20 12:47:06",
     "           LE25-7413-2PG8-6089",
     "              2051-9312-2879",
     "==========================================",

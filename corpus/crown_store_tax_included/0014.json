@@ -61,11 +61,11 @@
   "change_cents": 0,
   "card": {
     "network": "Interac",
-    "masked_number": "************4959",
+    "masked_number": "************7614",
     "account": "CHEQUE",
-    "datetime": "2024-11-20T18:11:46",
-    "reference": "0018077488 H",
-    "authorization": "B4B998"
+    "datetime": "2024-11-20T18:11:56",
+    "reference": "0012595540 H",
+    "authorization": "CB4B99"
   },
   "reprint": false,
   "declared_weight_g": "3,5g",
@@ -107,10 +107,10 @@
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************4959",
-    "DATE/HEURE:      24/11/20 18:11:46",
-    "NUMERO REF:      0018077488 H",
-    "AUTOR #:         B4B998",
+    "NUMERO CARTE:    ************7614",
+    "DATE/HEURE:      24/11/20 18:11:56",
+    "NUMERO REF:      0012595540 H",
+    "AUTOR #:         CB4B99",
     "NUMERO DE FACT:  148339",
     "",
     "Interac",
@@ -133,7 +133,7 @@
     "Nombre d'articles vendus = 1",
     "Poids total Articles vendus =  3,5g",
     "",
-    "          T5EC652SG9QH1NMZNB0DRT",
+    "          TT5EC652SG9QH1NMZNB0DR",
     "",
     "            Exemplaire client",
     "",
@@ -144,16 +144,16 @@
     "degraded": "0014.jpg"
   },
   "degradation": {
-    "paper_gray": 233,
+    "paper_gray": 228,
     "ink_gray_top": 41,
-    "ink_gray_bottom": 102,
-    "shading_amplitude": 0.26588289682471167,
-    "fold_position": 0.7559857568412949,
-    "blur_radius": 0.8844280357609353,
-    "rotation_degrees": -0.3312714944203715,
-    "perspective": 0.01708493768166885,
-    "noise_sigma": 5.120960920539439,
-    "salt_pepper_fraction": 0.0029033578270450553,
-    "jpeg_quality": 69
+    "ink_gray_bottom": 74,
+    "shading_amplitude": 0.153051604635141,
+    "fold_position": 0.7078227129279506,
+    "blur_radius": 0.8537584996553363,
+    "rotation_degrees": 3.086224933928081,
+    "perspective": 0.0430101129567991,
+    "noise_sigma": 5.942530122555501,
+    "salt_pepper_fraction": 0.0025726367973041373,
+    "jpeg_quality": 72
   }
 }

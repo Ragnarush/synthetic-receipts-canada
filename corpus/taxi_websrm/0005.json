@@ -9,73 +9,73 @@
   "merchant": {
     "name": "Coop Taxi Exemple",
     "address_lines": [],
-    "phone": "819 555-0139"
+    "phone": null
   },
-  "datetime": "2025-12-15T18:31:10",
-  "transaction_number": "713464",
+  "datetime": "2026-10-20T14:36:31",
+  "transaction_number": "178351",
   "items": [
     {
       "qty": 1,
       "description": "Tarif taxi.",
-      "unit_price_cents": 8995,
-      "line_total_cents": 8995,
+      "unit_price_cents": 7765,
+      "line_total_cents": 7765,
       "tax_flags": "FP"
     }
   ],
-  "subtotal_cents": 8995,
+  "subtotal_cents": 7765,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 450
+      "cents": 388
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 897
+      "cents": 775
     }
   ],
-  "total_cents": 10342,
+  "total_cents": 8928,
   "tip_cents": null,
   "gst_number": "230680650RT0001",
   "qst_number": "6105839289TQ0001",
-  "payment_method": "debit",
+  "payment_method": "credit",
   "document_kind": "closing_receipt",
   "websrm": {
-    "transaction_id": "HXUW-0381-QU6W-8731",
-    "device_id": "3330-9480-9663",
-    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-HXUW-0381-QU6W-8731",
-    "processed_at": "2025-12-15T18:31:14"
+    "transaction_id": "FHXU-5179-BQU6-5198",
+    "device_id": "8732-3329-9480",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-FHXU-5179-BQU6-5198",
+    "processed_at": "2026-10-20T14:36:36"
   },
   "text_lines": [
     "  Coop Taxi Exemple",
-    "       103,42 $",
+    "       89,28 $",
     "",
-    " 2025-12-15 18:31:10",
-    " TRANSACTION #713464",
+    " 2026-10-20 14:36:31",
+    " TRANSACTION #178351",
     "",
-    "1 Tarif taxi.                  89,95 $ FP",
+    "1 Tarif taxi.                  77,65 $ FP",
     "   redevance@0,90 $",
     "",
-    " SOUS-TOTAL                        89,95 $",
+    " SOUS-TOTAL                        77,65 $",
     "",
     " TPS: 230680650     RT 0001",
     " TVQ: 6105839289    TQ 0001",
     "",
-    "              CARTE DE DÉBIT",
+    "             CARTE DE CRÉDIT",
     "",
-    "          Merci et bonne journée",
+    "          Merci de votre visite",
     "==========================================",
-    " TPS:              4,50 $",
-    " TVQ:              8,97 $",
-    " TOTAL:          103,42 $",
+    " TPS:              3,88 $",
+    " TVQ:              7,75 $",
+    " TOTAL:           89,28 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-12-15 18:31:14",
-    "           HXUW-0381-QU6W-8731",
-    "              3330-9480-9663",
+    "           2026-10-20 14:36:36",
+    "           FHXU-5179-BQU6-5198",
+    "              8732-3329-9480",
     "==========================================",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -84,16 +84,16 @@
     "degraded": "0005.jpg"
   },
   "degradation": {
-    "paper_gray": 231,
-    "ink_gray_top": 44,
-    "ink_gray_bottom": 127,
-    "shading_amplitude": 0.1673267998858095,
+    "paper_gray": 226,
+    "ink_gray_top": 57,
+    "ink_gray_bottom": 84,
+    "shading_amplitude": 0.1990132859236991,
     "fold_position": null,
-    "blur_radius": 0.5101470601107382,
-    "rotation_degrees": 2.0527027654900514,
-    "perspective": 0.041096395915179405,
-    "noise_sigma": 9.486453497518859,
-    "salt_pepper_fraction": 0.0027150546479472386,
-    "jpeg_quality": 73
+    "blur_radius": 0.6257429327243174,
+    "rotation_degrees": 0.6919821641875771,
+    "perspective": 0.04289112630340552,
+    "noise_sigma": 6.196681544543753,
+    "salt_pepper_fraction": 0.002739759727678627,
+    "jpeg_quality": 64
   }
 }

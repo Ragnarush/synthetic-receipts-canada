@@ -7,9 +7,10 @@ thank-you line, a survey); everything between them is prescribed and ordered.
 """
 
 import random
-from datetime import datetime, timedelta
+from datetime import date, datetime
 
 from .. import REPO_URL
+from ..fakes import random_day
 from ..layout import Align, Receipt, Size
 from ..money import format_cad_fr
 
@@ -21,8 +22,9 @@ PAYMENT_METHODS = {
 THANKS = ["Merci et bonne journée", "Merci de votre visite", "Au plaisir de vous revoir", "Merci!"]
 
 
-def random_datetime(rng: random.Random, hours: list[tuple[int, int]]) -> datetime:
-    day = datetime(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2 + 300))
+def random_datetime(rng: random.Random, hours: list[tuple[int, int]], first: date) -> datetime:
+    """`first`: the day the sector's receipts took the WEB-SRM form, none before."""
+    day = random_day(rng, first)
     start, end = rng.choice(hours)
     return day.replace(hour=rng.randint(start, end - 1), minute=rng.randint(0, 59), second=rng.randint(0, 59))
 
@@ -35,14 +37,19 @@ def websrm_ids(rng: random.Random) -> dict:
     return {"transaction_id": tx, "device_id": device, "qr_url": f"{REPO_URL}#specimen-{tx}"}
 
 
-def header(r: Receipt, name: str, address_lines: list[str], phone: str | None, rng: random.Random) -> None:
-    """Element 1: trade name and full address. Anything else up here is optional free content."""
+def header(r: Receipt, name: str, address_lines: list[str], phone: str | None, rng: random.Random) -> str | None:
+    """Element 1: trade name and full address. Anything else up here is optional free content.
+
+    Returns the phone if it was printed, None otherwise.
+    """
     r.add(name, align=Align.CENTER, bold=True, size=Size.DOUBLE if len(name) <= r.columns // 2 else Size.NORMAL)
     for line in address_lines:
         r.add(line, align=Align.CENTER)
-    if phone and rng.random() < 0.6:
-        r.add(f"Tél. : {phone}", align=Align.CENTER)
+    printed = phone if phone and rng.random() < 0.6 else None
+    if printed:
+        r.add(f"Tél. : {printed}", align=Align.CENTER)
     r.add()
+    return printed
 
 
 def transaction_lines(r: Receipt, when: datetime, number: str) -> None:

@@ -15,3 +15,7 @@ Same 20 elements in the same order as `restaurant-websrm.md`. Observed differenc
 
 **Trap for an extractor.** The large amount at the top is the total, not the subtotal;
 `redevance@0,90 $` is an amount not to be counted.
+
+**Generated variation.** Fare, GST/QST numbers, date and time (any hour), payment method,
+tip (40 %), thank-you note. Dates start on 2026-01-01, when the second-generation SEV
+became mandatory for taxis. No phone is printed, so `merchant.phone` is `null`.

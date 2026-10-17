@@ -61,11 +61,11 @@
   "change_cents": 0,
   "card": {
     "network": "Interac",
-    "masked_number": "************6263",
+    "masked_number": "************9546",
     "account": "CHEQUE",
-    "datetime": "2026-03-08T21:08:23",
-    "reference": "0013441955 C",
-    "authorization": "1D36FC"
+    "datetime": "2026-03-08T21:08:18",
+    "reference": "0017807975 C",
+    "authorization": "51D36F"
   },
   "reprint": false,
   "declared_weight_g": "28g",
@@ -107,10 +107,10 @@
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************6263",
-    "DATE/HEURE:      26/03/08 21:08:23",
-    "NUMERO REF:      0013441955 C",
-    "AUTOR #:         1D36FC",
+    "NUMERO CARTE:    ************9546",
+    "DATE/HEURE:      26/03/08 21:08:18",
+    "NUMERO REF:      0017807975 C",
+    "AUTOR #:         51D36F",
     "NUMERO DE FACT:  33974",
     "",
     "Interac",
@@ -133,7 +133,7 @@
     "Nombre d'articles vendus = 1",
     "Poids total Articles vendus =  28g",
     "",
-    "          T4FTB9K8M6HEHHBA6YGJG7",
+    "          TU4FTB9K8M6HEHHBA6YGJG",
     "",
     "            Exemplaire client",
     "",
@@ -144,16 +144,16 @@
     "degraded": "0005.jpg"
   },
   "degradation": {
-    "paper_gray": 240,
-    "ink_gray_top": 21,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.05,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": -1.303622093537904,
-    "perspective": 0.0,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.0008865673829868881,
-    "jpeg_quality": 92
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.3156353194274475,
+    "blur_radius": 1.6,
+    "rotation_degrees": -2.5496477104441073,
+    "perspective": 0.06,
+    "noise_sigma": 11.127786035041028,
+    "salt_pepper_fraction": 0.0033255715931045276,
+    "jpeg_quality": 55
   }
 }

@@ -14,7 +14,7 @@
     ],
     "phone": "367 555-0181"
   },
-  "datetime": "2025-09-24T21:59:18",
+  "datetime": "2026-04-13T21:59:18",
   "transaction_number": "521865",
   "items": [
     {
@@ -64,7 +64,7 @@
     "transaction_id": "ZHUK-7632-8YC4-3302",
     "device_id": "3051-3486-6261",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-ZHUK-7632-8YC4-3302",
-    "processed_at": "2025-09-24T21:59:20"
+    "processed_at": "2026-04-13T21:59:20"
   },
   "text_lines": [
     "         Buffet L'Assiette carrée",
@@ -72,7 +72,7 @@
     "       Sept-Îles (Québec)  G0R 7Z8",
     "           Tél. : 367 555-0181",
     "",
-    " 2025-09-24 21:59:18",
+    " 2026-04-13 21:59:18",
     " TRANSACTION #521865",
     "",
     "2 Verre de vin                 23,00 $ FPS",
@@ -96,7 +96,7 @@
     " Pourboire:       15,00 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-09-24 21:59:20",
+    "           2026-04-13 21:59:20",
     "           ZHUK-7632-8YC4-3302",
     "              3051-3486-6261",
     "==========================================",

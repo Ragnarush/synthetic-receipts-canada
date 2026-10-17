@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxis du Nord Doh",
     "address_lines": [],
-    "phone": "438 555-0182"
+    "phone": null
   },
-  "datetime": "2024-03-07T04:31:46",
+  "datetime": "2026-01-17T04:31:46",
   "transaction_number": "200495",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "2Z74-8371-F7ZF-1641",
     "device_id": "7300-5229-0980",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-2Z74-8371-F7ZF-1641",
-    "processed_at": "2024-03-07T04:31:48"
+    "processed_at": "2026-01-17T04:31:48"
   },
   "text_lines": [
     "  Taxis du Nord Doh",
     "       61,98 $",
     "",
-    " 2024-03-07 04:31:46",
+    " 2026-01-17 04:31:46",
     " TRANSACTION #200495",
     "",
     "1 Tarif taxi.                  53,90 $ FP",
@@ -74,7 +74,7 @@
     " Pourboire:       12,40 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-03-07 04:31:48",
+    "           2026-01-17 04:31:48",
     "           2Z74-8371-F7ZF-1641",
     "              7300-5229-0980",
     "==========================================",
@@ -85,16 +85,16 @@
     "degraded": "0014.jpg"
   },
   "degradation": {
-    "paper_gray": 241,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 60,
+    "paper_gray": 242,
+    "ink_gray_top": 31,
+    "ink_gray_bottom": 50,
     "shading_amplitude": 0.05,
     "fold_position": null,
     "blur_radius": 0.0,
-    "rotation_degrees": -0.3106706142984782,
+    "rotation_degrees": -0.2862827125315631,
     "perspective": 0.0,
     "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.0006657208198431529,
-    "jpeg_quality": 83
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
   }
 }

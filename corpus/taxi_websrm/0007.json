@@ -9,9 +9,9 @@
   "merchant": {
     "name": "Taxi Jean Doh inc.",
     "address_lines": [],
-    "phone": "579 555-0187"
+    "phone": null
   },
-  "datetime": "2024-11-07T06:04:47",
+  "datetime": "2026-03-19T06:04:47",
   "transaction_number": "438932",
   "items": [
     {
@@ -47,13 +47,13 @@
     "transaction_id": "HBYD-4883-BY2A-9560",
     "device_id": "4025-0398-8252",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-HBYD-4883-BY2A-9560",
-    "processed_at": "2024-11-07T06:04:50"
+    "processed_at": "2026-03-19T06:04:50"
   },
   "text_lines": [
     "  Taxi Jean Doh inc.",
     "       39,96 $",
     "",
-    " 2024-11-07 06:04:47",
+    " 2026-03-19 06:04:47",
     " TRANSACTION #438932",
     "",
     "1 Tarif taxi.                  34,75 $ FP",
@@ -74,7 +74,7 @@
     " Pourboire:        4,00 $",
     "",
     "              PAIEMENT REÇU",
-    "           2024-11-07 06:04:50",
+    "           2026-03-19 06:04:50",
     "           HBYD-4883-BY2A-9560",
     "              4025-0398-8252",
     "==========================================",
@@ -85,16 +85,16 @@
     "degraded": "0007.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 70,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.35,
+    "paper_gray": 221,
+    "ink_gray_top": 57,
+    "ink_gray_bottom": 134,
+    "shading_amplitude": 0.24727982567757045,
     "fold_position": null,
-    "blur_radius": 1.4567552221846265,
-    "rotation_degrees": 1.7115358560556893,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 57
+    "blur_radius": 1.1761760808200368,
+    "rotation_degrees": -1.1227151700315485,
+    "perspective": 0.04307418411173035,
+    "noise_sigma": 8.094202769960905,
+    "salt_pepper_fraction": 0.0021293211439744803,
+    "jpeg_quality": 71
   }
 }

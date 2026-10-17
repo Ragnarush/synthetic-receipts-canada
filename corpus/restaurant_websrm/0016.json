@@ -12,9 +12,9 @@
       "296, rue du Moulin",
       "Lévis (Québec)  G9E 8J9"
     ],
-    "phone": "418 555-0193"
+    "phone": null
   },
-  "datetime": "2025-12-28T12:15:17",
+  "datetime": "2026-05-30T12:15:17",
   "transaction_number": "956139",
   "items": [
     {
@@ -92,14 +92,14 @@
     "transaction_id": "R145-1455-XUKZ-2101",
     "device_id": "0580-4564-9329",
     "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-R145-1455-XUKZ-2101",
-    "processed_at": "2025-12-28T12:15:21"
+    "processed_at": "2026-05-30T12:15:21"
   },
   "text_lines": [
     "          Café L'Assiette carrée",
     "            296, rue du Moulin",
     "         Lévis (Québec)  G9E 8J9",
     "",
-    " 2025-12-28 12:15:17",
+    " 2026-05-30 12:15:17",
     " TRANSACTION #956139",
     "",
     "1 Burger maison                16,50 $ FP",
@@ -126,7 +126,7 @@
     " TOTAL:          284,57 $",
     "",
     "              PAIEMENT REÇU",
-    "           2025-12-28 12:15:21",
+    "           2026-05-30 12:15:21",
     "           R145-1455-XUKZ-2101",
     "              0580-4564-9329",
     "==========================================",

@@ -9,10 +9,10 @@ label (transaction groups, associate, UPC, SKU, barcode digits).
 
 import random
 import textwrap
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from .. import REPO_URL, SCHEMA_VERSION
-from ..fakes import CITIES, POSTAL_LETTERS, fake_gst_number, fake_postal_code, fake_qst_number
+from ..fakes import CITIES, POSTAL_LETTERS, fake_gst_number, fake_postal_code, fake_qst_number, random_day
 from ..layout import Align, Receipt
 from ..money import cash_rounded, gst_cents, qst_cents
 from ..render import PAPER
@@ -37,7 +37,7 @@ def _comma(cents: int) -> str:
 
 
 def _random_datetime(rng: random.Random) -> datetime:
-    day = datetime(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2 + 300))
+    day = random_day(rng)
     return day.replace(hour=rng.randint(9, 20), minute=rng.randint(0, 59))
 
 
@@ -79,14 +79,13 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     domain = banner.lower().replace(" ", "") + ".example"
     prize = rng.choice([250, 500, 1000])
 
-    # Totals of 1000 $ or more were not observed, nor how they would print.
-    while True:
-        items = _draw_items(rng)
-        subtotal = sum(i["line_total_cents"] for i in items)
-        gst, qst = gst_cents(subtotal), qst_cents(subtotal)
-        total = subtotal + gst + qst
-        if total < 100_000:
-            break
+    # Totals of 1000 $ or more were not observed, nor how they would print: 5 items at the
+    # top of PRODUCTS stay well under it, and raising those prices must keep it so.
+    items = _draw_items(rng)
+    subtotal = sum(i["line_total_cents"] for i in items)
+    gst, qst = gst_cents(subtotal), qst_cents(subtotal)
+    total = subtotal + gst + qst
+    assert total < 100_000
     # Cash pays the total rounded to 5 cents; the receipt keeps the cents and prints no rounding line.
     rounded = cash_rounded(total)
     ceilings = sorted({-(-rounded // step) * step for step in (500, 1000, 2000, 5000, 10000)})

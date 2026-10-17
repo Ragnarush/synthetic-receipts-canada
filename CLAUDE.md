@@ -100,7 +100,7 @@ src/synthetic_receipts_canada/
                 QR, barcode, wrap_overflow()
   render.py     thermal-print image rendering (Pillow)
   degrade.py    "phone photo" degradation
-  fakes.py      fictitious merchants, addresses, people, numbers
+  fakes.py      fictitious merchants, addresses, people, numbers, random_day()
   money.py      cents, rounding, cash rounding, fr/en formats
   families/     one module per family: generate(rng, paper_mm) -> (Receipt, ground truth),
                 listed in families/__init__.py
@@ -153,6 +153,7 @@ tests/          `uv run pytest`: invariants of every family, money, corpus regre
 uv sync
 uv run pytest              # every check, corpus regression included (~20 s)
 uv run pytest --deselect tests/test_corpus.py   # without rendering images (~2 s)
+RECEIPTS_COUNT=5000 uv run pytest tests/test_families.py   # hunt rare draws (~35 s)
 uv run synthetic-receipts-canada generate --family grocery_chain --count 200 --paper 58 --no-degrade --out /tmp/y
 git log -p origin/main..HEAD | grep -nE '<values from the source receipts>'   # before a push
 ```
