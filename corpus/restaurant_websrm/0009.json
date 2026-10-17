@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Taverne La Cabane à Pignon",
+    "address_lines": [
+      "1227, avenue des Érables",
+      "Longueuil (Québec)  J1B 7L9"
+    ],
+    "phone": "438 555-0191"
+  },
+  "datetime": "2026-08-07T21:30:43",
+  "transaction_number": "180922",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Pizza 12 po",
+      "unit_price_cents": 2525,
+      "line_total_cents": 2525,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Spaghetti",
+      "unit_price_cents": 1225,
+      "line_total_cents": 1225,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Soupe du jour",
+      "unit_price_cents": 650,
+      "line_total_cents": 650,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Bière en fût",
+      "unit_price_cents": 1050,
+      "line_total_cents": 1050,
+      "tax_flags": "FPS"
+    }
+  ],
+  "subtotal_cents": 5450,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 273
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 544
+    }
+  ],
+  "total_cents": 6267,
+  "tip_cents": null,
+  "gst_number": "360702136RT0001",
+  "qst_number": "4062440132TQ0001",
+  "payment_method": "debit",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "7TDA-3936-3JVY-2236",
+    "device_id": "1324-5614-1998",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-7TDA-3936-3JVY-2236",
+    "processed_at": "2026-08-07T21:30:44"
+  },
+  "text_lines": [
+    "        Taverne La Cabane à Pignon",
+    "         1227, avenue des Érables",
+    "       Longueuil (Québec)  J1B 7L9",
+    "",
+    " 2026-08-07 21:30:43",
+    " TRANSACTION #180922",
+    "",
+    "1 Pizza 12 po                  25,25 $ FP",
+    "1 Spaghetti                    12,25 $ FP",
+    "1 Soupe du jour                 6,50 $ FP",
+    "1 Bière en fût                 10,50 $ FPS",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                        54,50 $",
+    "",
+    " TPS: 360702136     RT 0001",
+    " TVQ: 4062440132    TQ 0001",
+    "",
+    "              CARTE DE DÉBIT",
+    "",
+    "     Vous avez été servi par: Mélanie",
+    "          Merci de votre visite",
+    "==========================================",
+    " TPS:              2,73 $",
+    " TVQ:              5,44 $",
+    " TOTAL:           62,67 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2026-08-07 21:30:44",
+    "           7TDA-3936-3JVY-2236",
+    "              1324-5614-1998",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0009.png",
+    "degraded": "0009.jpg"
+  },
+  "degradation": {
+    "paper_gray": 227,
+    "ink_gray_top": 34,
+    "ink_gray_bottom": 85,
+    "shading_amplitude": 0.19746340409938407,
+    "fold_position": null,
+    "blur_radius": 0.4192944738688269,
+    "rotation_degrees": -1.9637045497614187,
+    "perspective": 0.020034933360366037,
+    "noise_sigma": 5.491412980016966,
+    "salt_pepper_fraction": 0.0015057325086818795,
+    "jpeg_quality": 73
+  }
+}

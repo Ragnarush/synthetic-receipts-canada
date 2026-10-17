@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Café La Toque Rouge",
+    "address_lines": [
+      "9496, rue Notre-Dame",
+      "Granby (Québec)  J3E 9N2"
+    ],
+    "phone": "450 555-0193"
+  },
+  "datetime": "2026-01-03T11:27:32",
+  "transaction_number": "849708",
+  "items": [
+    {
+      "qty": 4,
+      "description": "Soupe du jour",
+      "unit_price_cents": 550,
+      "line_total_cents": 2200,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 4,
+      "description": "Pâtes alfredo",
+      "unit_price_cents": 1750,
+      "line_total_cents": 7000,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Cocktail maison",
+      "unit_price_cents": 1600,
+      "line_total_cents": 1600,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 3,
+      "description": "Pichet de bière",
+      "unit_price_cents": 2575,
+      "line_total_cents": 7725,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Filet de truite",
+      "unit_price_cents": 2975,
+      "line_total_cents": 2975,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 3,
+      "description": "Soupe du jour",
+      "unit_price_cents": 625,
+      "line_total_cents": 1875,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 23375,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 1169
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 2332
+    }
+  ],
+  "total_cents": 26876,
+  "tip_cents": null,
+  "gst_number": "214902627RT0001",
+  "qst_number": "9710843911TQ0001",
+  "payment_method": null,
+  "document_kind": "original_invoice",
+  "websrm": {
+    "transaction_id": "22L7-5592-87HT-9941",
+    "device_id": "6697-3793-5359",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-22L7-5592-87HT-9941",
+    "processed_at": "2026-01-03T11:27:34"
+  },
+  "text_lines": [
+    " Café La Toque Rouge",
+    "           9496, rue Notre-Dame",
+    "         Granby (Québec)  J3E 9N2",
+    "",
+    " 2026-01-03 11:27:32",
+    " TRANSACTION #849708",
+    "",
+    "4 Soupe du jour                22,00 $ FP",
+    "4 Pâtes alfredo                70,00 $ FP",
+    "1 Cocktail maison              16,00 $ FPS",
+    "3 Pichet de bière              77,25 $ FPS",
+    "1 Filet de truite              29,75 $ FP",
+    "3 Soupe du jour                18,75 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                       233,75 $",
+    "",
+    " TPS: 214902627     RT 0001",
+    " TVQ: 9710843911    TQ 0001",
+    "",
+    "      Vous avez été servi par: Jade",
+    "                  Merci!",
+    "==========================================",
+    " TPS:             11,69 $",
+    " TVQ:             23,32 $",
+    " TOTAL:          268,76 $",
+    "",
+    "            FACTURE ORIGINALE",
+    "           2026-01-03 11:27:34",
+    "           22L7-5592-87HT-9941",
+    "              6697-3793-5359",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0013.png",
+    "degraded": "0013.jpg"
+  },
+  "degradation": {
+    "paper_gray": 228,
+    "ink_gray_top": 47,
+    "ink_gray_bottom": 119,
+    "shading_amplitude": 0.18620238938508976,
+    "fold_position": null,
+    "blur_radius": 0.6549380266123589,
+    "rotation_degrees": 0.6288615098969552,
+    "perspective": 0.04123232077265888,
+    "noise_sigma": 5.436198995845869,
+    "salt_pepper_fraction": 0.002442517633225769,
+    "jpeg_quality": 76
+  }
+}

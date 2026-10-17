@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Café La Belle Fourchette",
+    "address_lines": [
+      "5786, boulevard des Pins",
+      "Sherbrooke (Québec)  J4K 1T6"
+    ],
+    "phone": "579 555-0179"
+  },
+  "datetime": "2024-08-28T21:53:01",
+  "transaction_number": "345483",
+  "items": [
+    {
+      "qty": 2,
+      "description": "Pizza 12 po",
+      "unit_price_cents": 1800,
+      "line_total_cents": 3600,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Dessert du jour",
+      "unit_price_cents": 625,
+      "line_total_cents": 625,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Salade César",
+      "unit_price_cents": 1275,
+      "line_total_cents": 1275,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Burger maison",
+      "unit_price_cents": 1900,
+      "line_total_cents": 1900,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Poutine",
+      "unit_price_cents": 1150,
+      "line_total_cents": 1150,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Pichet de bière",
+      "unit_price_cents": 2200,
+      "line_total_cents": 2200,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Filet de truite",
+      "unit_price_cents": 2750,
+      "line_total_cents": 2750,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 13500,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 675
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1347
+    }
+  ],
+  "total_cents": 15522,
+  "tip_cents": null,
+  "gst_number": "873818982RT0001",
+  "qst_number": "4859899259TQ0001",
+  "payment_method": null,
+  "document_kind": "original_invoice",
+  "websrm": {
+    "transaction_id": "ZS32-6217-SSJT-1731",
+    "device_id": "4477-2290-6805",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-ZS32-6217-SSJT-1731",
+    "processed_at": "2024-08-28T21:53:02"
+  },
+  "text_lines": [
+    "         Café La Belle Fourchette",
+    "         5786, boulevard des Pins",
+    "       Sherbrooke (Québec)  J4K 1T6",
+    "           Tél. : 579 555-0179",
+    "",
+    " 2024-08-28 21:53:01",
+    " TRANSACTION #345483",
+    "",
+    "2 Pizza 12 po                  36,00 $ FP",
+    "1 Dessert du jour               6,25 $ FP",
+    "1 Salade César                 12,75 $ FP",
+    "1 Burger maison                19,00 $ FP",
+    "1 Poutine                      11,50 $ FP",
+    "1 Pichet de bière              22,00 $ FPS",
+    "1 Filet de truite              27,50 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                       135,00 $",
+    "",
+    " TPS: 873818982     RT 0001",
+    " TVQ: 4859899259    TQ 0001",
+    "",
+    "       Vous avez été servi par: Léa",
+    "          Merci et bonne journée",
+    "==========================================",
+    " TPS:              6,75 $",
+    " TVQ:             13,47 $",
+    " TOTAL:          155,22 $",
+    "",
+    "            FACTURE ORIGINALE",
+    "           2024-08-28 21:53:02",
+    "           ZS32-6217-SSJT-1731",
+    "              4477-2290-6805",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0001.png",
+    "degraded": "0001.jpg"
+  },
+  "degradation": {
+    "paper_gray": 211,
+    "ink_gray_top": 69,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.32542913657112416,
+    "fold_position": 0.513987059334067,
+    "blur_radius": 1.4497616781474345,
+    "rotation_degrees": 0.8096092721831379,
+    "perspective": 0.0585493351625182,
+    "noise_sigma": 10.606002364084226,
+    "salt_pepper_fraction": 0.0036345158140774192,
+    "jpeg_quality": 55
+  }
+}

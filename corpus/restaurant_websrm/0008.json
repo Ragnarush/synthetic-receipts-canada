@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Buffet L'Assiette carrée",
+    "address_lines": [
+      "7035, boulevard des Pins",
+      "Sept-Îles (Québec)  G0R 7Z8"
+    ],
+    "phone": "367 555-0181"
+  },
+  "datetime": "2025-09-24T21:59:18",
+  "transaction_number": "521865",
+  "items": [
+    {
+      "qty": 2,
+      "description": "Verre de vin",
+      "unit_price_cents": 1150,
+      "line_total_cents": 2300,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Tartare de saumon",
+      "unit_price_cents": 2275,
+      "line_total_cents": 2275,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Pizza 12 po",
+      "unit_price_cents": 1950,
+      "line_total_cents": 1950,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 6525,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 326
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 651
+    }
+  ],
+  "total_cents": 7502,
+  "tip_cents": 1500,
+  "gst_number": "801708550RT0001",
+  "qst_number": "1283141259TQ0001",
+  "payment_method": "debit",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "ZHUK-7632-8YC4-3302",
+    "device_id": "3051-3486-6261",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-ZHUK-7632-8YC4-3302",
+    "processed_at": "2025-09-24T21:59:20"
+  },
+  "text_lines": [
+    "         Buffet L'Assiette carrée",
+    "         7035, boulevard des Pins",
+    "       Sept-Îles (Québec)  G0R 7Z8",
+    "           Tél. : 367 555-0181",
+    "",
+    " 2025-09-24 21:59:18",
+    " TRANSACTION #521865",
+    "",
+    "2 Verre de vin                 23,00 $ FPS",
+    "1 Tartare de saumon            22,75 $ FP",
+    "1 Pizza 12 po                  19,50 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                        65,25 $",
+    "",
+    " TPS: 801708550     RT 0001",
+    " TVQ: 1283141259    TQ 0001",
+    "",
+    "              CARTE DE DÉBIT",
+    "",
+    "     Vous avez été servi par: Sophie",
+    "          Merci et bonne journée",
+    "==========================================",
+    " TPS:              3,26 $",
+    " TVQ:              6,51 $",
+    " TOTAL:           75,02 $",
+    " Pourboire:       15,00 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2025-09-24 21:59:20",
+    "           ZHUK-7632-8YC4-3302",
+    "              3051-3486-6261",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0008.png",
+    "degraded": "0008.jpg"
+  },
+  "degradation": {
+    "paper_gray": 226,
+    "ink_gray_top": 55,
+    "ink_gray_bottom": 128,
+    "shading_amplitude": 0.16662887094794016,
+    "fold_position": 0.5247101269819079,
+    "blur_radius": 0.8615292898996444,
+    "rotation_degrees": 1.5749016270425573,
+    "perspective": 0.01828878275064118,
+    "noise_sigma": 6.371085799501347,
+    "salt_pepper_fraction": 0.001157615001557274,
+    "jpeg_quality": 81
+  }
+}

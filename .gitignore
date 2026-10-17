@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+dist/
+build/
+# Generated locally while iterating; the committed corpus lives under corpus/ on purpose.
+out/

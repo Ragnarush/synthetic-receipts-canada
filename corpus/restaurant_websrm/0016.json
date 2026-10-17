@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Café L'Assiette carrée",
+    "address_lines": [
+      "296, rue du Moulin",
+      "Lévis (Québec)  G9E 8J9"
+    ],
+    "phone": "418 555-0193"
+  },
+  "datetime": "2025-12-28T12:15:17",
+  "transaction_number": "956139",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Burger maison",
+      "unit_price_cents": 1650,
+      "line_total_cents": 1650,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 4,
+      "description": "Verre de vin",
+      "unit_price_cents": 1125,
+      "line_total_cents": 4500,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Pâtes alfredo",
+      "unit_price_cents": 1725,
+      "line_total_cents": 1725,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 2,
+      "description": "Tartare de saumon",
+      "unit_price_cents": 2200,
+      "line_total_cents": 4400,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 3,
+      "description": "Filet de truite",
+      "unit_price_cents": 3050,
+      "line_total_cents": 9150,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Pizza 12 po",
+      "unit_price_cents": 1975,
+      "line_total_cents": 1975,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 2,
+      "description": "Soupe du jour",
+      "unit_price_cents": 675,
+      "line_total_cents": 1350,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 24750,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 1238
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 2469
+    }
+  ],
+  "total_cents": 28457,
+  "tip_cents": null,
+  "gst_number": "436250413RT0001",
+  "qst_number": "6231039719TQ0001",
+  "payment_method": "cash",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "R145-1455-XUKZ-2101",
+    "device_id": "0580-4564-9329",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-R145-1455-XUKZ-2101",
+    "processed_at": "2025-12-28T12:15:21"
+  },
+  "text_lines": [
+    "          Café L'Assiette carrée",
+    "            296, rue du Moulin",
+    "         Lévis (Québec)  G9E 8J9",
+    "",
+    " 2025-12-28 12:15:17",
+    " TRANSACTION #956139",
+    "",
+    "1 Burger maison                16,50 $ FP",
+    "4 Verre de vin                 45,00 $ FPS",
+    "1 Pâtes alfredo                17,25 $ FP",
+    "2 Tartare de saumon            44,00 $ FP",
+    "3 Filet de truite              91,50 $ FP",
+    "1 Pizza 12 po                  19,75 $ FP",
+    "2 Soupe du jour                13,50 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                       247,50 $",
+    "",
+    " TPS: 436250413     RT 0001",
+    " TVQ: 6231039719    TQ 0001",
+    "",
+    "                 COMPTANT",
+    "",
+    "     Vous avez été servi par: Rosalie",
+    "        Au plaisir de vous revoir",
+    "==========================================",
+    " TPS:             12,38 $",
+    " TVQ:             24,69 $",
+    " TOTAL:          284,57 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2025-12-28 12:15:21",
+    "           R145-1455-XUKZ-2101",
+    "              0580-4564-9329",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0016.png",
+    "degraded": "0016.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 58,
+    "ink_gray_bottom": 168,
+    "shading_amplitude": 0.3461947169779172,
+    "fold_position": 0.6112632571695449,
+    "blur_radius": 1.6,
+    "rotation_degrees": 3.676199743662853,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0031554350297033967,
+    "jpeg_quality": 55
+  }
+}

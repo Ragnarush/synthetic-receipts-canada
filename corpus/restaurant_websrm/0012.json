@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Café Les Deux Cuillères",
+    "address_lines": [
+      "3185, rue des Bouleaux",
+      "Rouyn-Noranda (Québec)  J6B 6A6"
+    ],
+    "phone": "367 555-0196"
+  },
+  "datetime": "2024-09-21T18:48:07",
+  "transaction_number": "468387",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Pâtes alfredo",
+      "unit_price_cents": 1675,
+      "line_total_cents": 1675,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 1675,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 84
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 167
+    }
+  ],
+  "total_cents": 1926,
+  "tip_cents": null,
+  "gst_number": "521214947RT0001",
+  "qst_number": "7516485744TQ0001",
+  "payment_method": null,
+  "document_kind": "original_invoice",
+  "websrm": {
+    "transaction_id": "Z0TX-6018-9VYV-9503",
+    "device_id": "2705-5452-3587",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-Z0TX-6018-9VYV-9503",
+    "processed_at": "2024-09-21T18:48:10"
+  },
+  "text_lines": [
+    "         Café Les Deux Cuillères",
+    "          3185, rue des Bouleaux",
+    "     Rouyn-Noranda (Québec)  J6B 6A6",
+    "",
+    " 2024-09-21 18:48:07",
+    " TRANSACTION #468387",
+    "",
+    "1 Pâtes alfredo                16,75 $ FP",
+    " SOUS-TOTAL                        16,75 $",
+    "",
+    " TPS: 521214947     RT 0001",
+    " TVQ: 7516485744    TQ 0001",
+    "",
+    "                  Merci!",
+    "==========================================",
+    " TPS:                               0,84 $",
+    " TVQ:                               1,67 $",
+    " TOTAL:                            19,26 $",
+    "",
+    "            FACTURE ORIGINALE",
+    "           2024-09-21 18:48:10",
+    "           Z0TX-6018-9VYV-9503",
+    "              2705-5452-3587",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0012.png",
+    "degraded": "0012.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 69,
+    "ink_gray_bottom": 162,
+    "shading_amplitude": 0.3198776711787911,
+    "fold_position": 0.7960489171312712,
+    "blur_radius": 1.364595582514528,
+    "rotation_degrees": -3.8850956073039367,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 57
+  }
+}

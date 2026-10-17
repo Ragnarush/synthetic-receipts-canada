@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Resto du Vieux-Quai",
+    "address_lines": [
+      "3522, rue du Moulin",
+      "Rimouski (Québec)  G5V 0N1"
+    ],
+    "phone": "581 555-0176"
+  },
+  "datetime": "2024-06-29T19:19:08",
+  "transaction_number": "232720",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Burger maison",
+      "unit_price_cents": 1850,
+      "line_total_cents": 1850,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 1850,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 93
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 185
+    }
+  ],
+  "total_cents": 2128,
+  "tip_cents": null,
+  "gst_number": "810625132RT0001",
+  "qst_number": "9535445955TQ0001",
+  "payment_method": null,
+  "document_kind": "original_invoice",
+  "websrm": {
+    "transaction_id": "1BRF-5737-AMV2-5191",
+    "device_id": "6205-1204-0196",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-1BRF-5737-AMV2-5191",
+    "processed_at": "2024-06-29T19:19:09"
+  },
+  "text_lines": [
+    " Resto du Vieux-Quai",
+    "           3522, rue du Moulin",
+    "        Rimouski (Québec)  G5V 0N1",
+    "",
+    " 2024-06-29 19:19:08",
+    " TRANSACTION #232720",
+    "",
+    "1 Burger maison                18,50 $ FP",
+    " SOUS-TOTAL                        18,50 $",
+    "",
+    " TPS: 810625132     RT 0001",
+    " TVQ: 9535445955    TQ 0001",
+    "",
+    "     Vous avez été servi par: Rosalie",
+    "          Merci et bonne journée",
+    "==========================================",
+    " TPS:                               0,93 $",
+    " TVQ:                               1,85 $",
+    " TOTAL:                            21,28 $",
+    "",
+    "            FACTURE ORIGINALE",
+    "           2024-06-29 19:19:09",
+    "           1BRF-5737-AMV2-5191",
+    "              6205-1204-0196",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0018.png",
+    "degraded": "0018.jpg"
+  },
+  "degradation": {
+    "paper_gray": 214,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.28628111002757867,
+    "fold_position": 0.7057576076526325,
+    "blur_radius": 1.5246080872696788,
+    "rotation_degrees": -2.7790117617033365,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0037418325401178945,
+    "jpeg_quality": 59
+  }
+}

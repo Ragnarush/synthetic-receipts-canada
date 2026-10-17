@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Bistro Au Fourneau d'Antan",
+    "address_lines": [
+      "1423, boul. de la Rivière",
+      "Shawinigan (Québec)  G3G 2H3"
+    ],
+    "phone": "819 555-0194"
+  },
+  "datetime": "2025-01-18T17:45:15",
+  "transaction_number": "243154",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Spaghetti",
+      "unit_price_cents": 1200,
+      "line_total_cents": 1200,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Salade César",
+      "unit_price_cents": 1125,
+      "line_total_cents": 1125,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Verre de vin",
+      "unit_price_cents": 1100,
+      "line_total_cents": 1100,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Soupe du jour",
+      "unit_price_cents": 650,
+      "line_total_cents": 650,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Boisson gazeuse",
+      "unit_price_cents": 425,
+      "line_total_cents": 425,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 2,
+      "description": "Burger maison",
+      "unit_price_cents": 1700,
+      "line_total_cents": 3400,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 7900,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 395
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 788
+    }
+  ],
+  "total_cents": 9083,
+  "tip_cents": null,
+  "gst_number": "573979414RT0001",
+  "qst_number": "9927446362TQ0001",
+  "payment_method": null,
+  "document_kind": "original_invoice",
+  "websrm": {
+    "transaction_id": "JV5J-6174-BJVW-2443",
+    "device_id": "5074-8637-2692",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-JV5J-6174-BJVW-2443",
+    "processed_at": "2025-01-18T17:45:19"
+  },
+  "text_lines": [
+    "        Bistro Au Fourneau d'Antan",
+    "        1423, boul. de la Rivière",
+    "       Shawinigan (Québec)  G3G 2H3",
+    "",
+    " 2025-01-18 17:45:15",
+    " TRANSACTION #243154",
+    "",
+    "1 Spaghetti                    12,00 $ FP",
+    "1 Salade César                 11,25 $ FP",
+    "1 Verre de vin                 11,00 $ FPS",
+    "1 Soupe du jour                 6,50 $ FP",
+    "1 Boisson gazeuse               4,25 $ FP",
+    "2 Burger maison                34,00 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                        79,00 $",
+    "",
+    " TPS: 573979414     RT 0001",
+    " TVQ: 9927446362    TQ 0001",
+    "",
+    "      Vous avez été servi par: Julie",
+    "          Merci et bonne journée",
+    "==========================================",
+    " TPS:              3,95 $",
+    " TVQ:              7,88 $",
+    " TOTAL:           90,83 $",
+    "",
+    "            FACTURE ORIGINALE",
+    "           2025-01-18 17:45:19",
+    "           JV5J-6174-BJVW-2443",
+    "              5074-8637-2692",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0020.png",
+    "degraded": "0020.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.28340686625229516,
+    "fold_position": 0.4986377652694946,
+    "blur_radius": 1.2610663484974662,
+    "rotation_degrees": -3.0829336325873267,
+    "perspective": 0.06,
+    "noise_sigma": 11.028581315777256,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

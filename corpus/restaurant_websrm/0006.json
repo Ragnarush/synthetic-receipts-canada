@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Rôtisserie du Coin",
+    "address_lines": [
+      "1831, rue Principale",
+      "Longueuil (Québec)  J1V 0R0"
+    ],
+    "phone": "450 555-0180"
+  },
+  "datetime": "2025-09-26T13:31:33",
+  "transaction_number": "240657",
+  "items": [
+    {
+      "qty": 2,
+      "description": "Pizza 12 po",
+      "unit_price_cents": 2325,
+      "line_total_cents": 4650,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Table d'hôte",
+      "unit_price_cents": 3150,
+      "line_total_cents": 3150,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 2,
+      "description": "Eau pétillante",
+      "unit_price_cents": 350,
+      "line_total_cents": 700,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Eau pétillante",
+      "unit_price_cents": 350,
+      "line_total_cents": 350,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Dessert du jour",
+      "unit_price_cents": 1000,
+      "line_total_cents": 1000,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 9850,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 493
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 983
+    }
+  ],
+  "total_cents": 11326,
+  "tip_cents": 1125,
+  "gst_number": "371924302RT0001",
+  "qst_number": "2048326278TQ0001",
+  "payment_method": "debit",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "NR36-4546-Y4VG-9073",
+    "device_id": "4391-7733-4558",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-NR36-4546-Y4VG-9073",
+    "processed_at": "2025-09-26T13:31:38"
+  },
+  "text_lines": [
+    "  Rôtisserie du Coin",
+    "           1831, rue Principale",
+    "       Longueuil (Québec)  J1V 0R0",
+    "           Tél. : 450 555-0180",
+    "",
+    " 2025-09-26 13:31:33",
+    " TRANSACTION #240657",
+    "",
+    "2 Pizza 12 po                  46,50 $ FP",
+    "1 Table d'hôte                 31,50 $ FP",
+    "2 Eau pétillante                7,00 $ FP",
+    "1 Eau pétillante                3,50 $ FP",
+    "1 Dessert du jour              10,00 $ FP",
+    " SOUS-TOTAL                        98,50 $",
+    "",
+    " TPS: 371924302     RT 0001",
+    " TVQ: 2048326278    TQ 0001",
+    "",
+    "              CARTE DE DÉBIT",
+    "",
+    "     Vous avez été servi par: Mélanie",
+    "                  Merci!",
+    "==========================================",
+    " TPS:              4,93 $",
+    " TVQ:              9,83 $",
+    " TOTAL:          113,26 $",
+    " Pourboire:       11,25 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2025-09-26 13:31:38",
+    "           NR36-4546-Y4VG-9073",
+    "              4391-7733-4558",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0006.png",
+    "degraded": "0006.jpg"
+  },
+  "degradation": {
+    "paper_gray": 241,
+    "ink_gray_top": 22,
+    "ink_gray_bottom": 45,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.19369956282899903,
+    "perspective": 0.0,
+    "noise_sigma": 3.646031550716171,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 84
+  }
+}

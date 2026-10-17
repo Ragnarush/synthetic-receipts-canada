@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Restaurant Au Fourneau d'Antan",
+    "address_lines": [
+      "7807, chemin du Lac",
+      "Trois-Rivières (Québec)  G3C 2T3"
+    ],
+    "phone": "450 555-0154"
+  },
+  "datetime": "2025-04-11T12:47:03",
+  "transaction_number": "632412",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Boisson gazeuse",
+      "unit_price_cents": 300,
+      "line_total_cents": 300,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 300,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 15
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 30
+    }
+  ],
+  "total_cents": 345,
+  "tip_cents": 69,
+  "gst_number": "829216567RT0001",
+  "qst_number": "2351912144TQ0001",
+  "payment_method": "cash",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "LE25-7413-2PG8-6089",
+    "device_id": "2051-9312-2879",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-LE25-7413-2PG8-6089",
+    "processed_at": "2025-04-11T12:47:06"
+  },
+  "text_lines": [
+    "      Restaurant Au Fourneau d'Antan",
+    "           7807, chemin du Lac",
+    "     Trois-Rivières (Québec)  G3C 2T3",
+    "",
+    " 2025-04-11 12:47:03",
+    " TRANSACTION #632412",
+    "",
+    "1 Boisson gazeuse               3,00 $ FP",
+    " SOUS-TOTAL                         3,00 $",
+    "",
+    " TPS: 829216567     RT 0001",
+    " TVQ: 2351912144    TQ 0001",
+    "",
+    "                 COMPTANT",
+    "",
+    "        Au plaisir de vous revoir",
+    "==========================================",
+    " TPS:              0,15 $",
+    " TVQ:              0,30 $",
+    " TOTAL:            3,45 $",
+    " Pourboire:        0,69 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2025-04-11 12:47:06",
+    "           LE25-7413-2PG8-6089",
+    "              2051-9312-2879",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0002.png",
+    "degraded": "0002.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 51,
+    "shading_amplitude": 0.09422417597279216,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.43089400814999224,
+    "perspective": 0.012834593488476891,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0008253704945008613,
+    "jpeg_quality": 92
+  }
+}

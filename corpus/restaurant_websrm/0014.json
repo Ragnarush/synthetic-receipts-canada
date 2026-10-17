@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Rôtisserie du Moulin",
+    "address_lines": [
+      "8548, avenue du Quai",
+      "Longueuil (Québec)  J3H 5X3"
+    ],
+    "phone": "450 555-0154"
+  },
+  "datetime": "2026-03-24T11:11:29",
+  "transaction_number": "516470",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Boisson gazeuse",
+      "unit_price_cents": 425,
+      "line_total_cents": 425,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Tartare de saumon",
+      "unit_price_cents": 2975,
+      "line_total_cents": 2975,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Tartare de saumon",
+      "unit_price_cents": 2325,
+      "line_total_cents": 2325,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Pichet de bière",
+      "unit_price_cents": 2500,
+      "line_total_cents": 2500,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 2,
+      "description": "Eau pétillante",
+      "unit_price_cents": 350,
+      "line_total_cents": 700,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Soupe du jour",
+      "unit_price_cents": 700,
+      "line_total_cents": 700,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 9625,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 481
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 960
+    }
+  ],
+  "total_cents": 11066,
+  "tip_cents": 1107,
+  "gst_number": "821223596RT0001",
+  "qst_number": "8609158779TQ0001",
+  "payment_method": "cash",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "GVPG-5251-64M2-8543",
+    "device_id": "7898-7011-1368",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-GVPG-5251-64M2-8543",
+    "processed_at": "2026-03-24T11:11:30"
+  },
+  "text_lines": [
+    " Rôtisserie du Moulin",
+    "           8548, avenue du Quai",
+    "       Longueuil (Québec)  J3H 5X3",
+    "",
+    " 2026-03-24 11:11:29",
+    " TRANSACTION #516470",
+    "",
+    "1 Boisson gazeuse               4,25 $ FP",
+    "1 Tartare de saumon            29,75 $ FP",
+    "1 Tartare de saumon            23,25 $ FP",
+    "1 Pichet de bière              25,00 $ FPS",
+    "2 Eau pétillante                7,00 $ FP",
+    "1 Soupe du jour                 7,00 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                        96,25 $",
+    "",
+    " TPS: 821223596     RT 0001",
+    " TVQ: 8609158779    TQ 0001",
+    "",
+    "                 COMPTANT",
+    "",
+    "     Vous avez été servi par: Olivier",
+    "==========================================",
+    " TPS:                               4,81 $",
+    " TVQ:                               9,60 $",
+    " TOTAL:                           110,66 $",
+    " Pourboire:                        11,07 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2026-03-24 11:11:30",
+    "           GVPG-5251-64M2-8543",
+    "              7898-7011-1368",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0014.png",
+    "degraded": "0014.jpg"
+  },
+  "degradation": {
+    "paper_gray": 230,
+    "ink_gray_top": 36,
+    "ink_gray_bottom": 107,
+    "shading_amplitude": 0.14495168168618885,
+    "fold_position": null,
+    "blur_radius": 0.8706256706926401,
+    "rotation_degrees": -1.3918954632996607,
+    "perspective": 0.03796861802308797,
+    "noise_sigma": 6.030121798384453,
+    "salt_pepper_fraction": 0.0018535999299758713,
+    "jpeg_quality": 79
+  }
+}

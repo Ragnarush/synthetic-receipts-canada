@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "family": "taxi_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Taxi Fictif",
+    "address_lines": [],
+    "phone": "581 555-0137"
+  },
+  "datetime": "2026-04-04T21:32:26",
+  "transaction_number": "335299",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Tarif taxi.",
+      "unit_price_cents": 5220,
+      "line_total_cents": 5220,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 5220,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 261
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 521
+    }
+  ],
+  "total_cents": 6002,
+  "tip_cents": 1200,
+  "gst_number": "252332031RT0001",
+  "qst_number": "4826418259TQ0001",
+  "payment_method": "cash",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "MDX1-8252-CV2H-3812",
+    "device_id": "5617-2341-7081",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-MDX1-8252-CV2H-3812",
+    "processed_at": "2026-04-04T21:32:30"
+  },
+  "text_lines": [
+    "     Taxi Fictif",
+    "       60,02 $",
+    "",
+    " 2026-04-04 21:32:26",
+    " TRANSACTION #335299",
+    "",
+    "1 Tarif taxi.                  52,20 $ FP",
+    "   redevance@0,90 $",
+    "",
+    " SOUS-TOTAL                        52,20 $",
+    "",
+    " TPS: 252332031     RT 0001",
+    " TVQ: 4826418259    TQ 0001",
+    "",
+    "                 COMPTANT",
+    "",
+    "          Merci de votre visite",
+    "==========================================",
+    " TPS:              2,61 $",
+    " TVQ:              5,21 $",
+    " TOTAL:           60,02 $",
+    " Pourboire:       12,00 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2026-04-04 21:32:30",
+    "           MDX1-8252-CV2H-3812",
+    "              5617-2341-7081",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0018.png",
+    "degraded": "0018.jpg"
+  },
+  "degradation": {
+    "paper_gray": 226,
+    "ink_gray_top": 39,
+    "ink_gray_bottom": 115,
+    "shading_amplitude": 0.18499949437100288,
+    "fold_position": null,
+    "blur_radius": 0.7421913407945205,
+    "rotation_degrees": 0.1373288464867235,
+    "perspective": 0.04281636198343812,
+    "noise_sigma": 4.673108887159367,
+    "salt_pepper_fraction": 0.0023418925092308085,
+    "jpeg_quality": 77
+  }
+}

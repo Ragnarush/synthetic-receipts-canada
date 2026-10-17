@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "family": "restaurant_websrm",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "Pizzeria L'Assiette carrée",
+    "address_lines": [
+      "5144, chemin du Lac",
+      "Sherbrooke (Québec)  J3P 9Z5"
+    ],
+    "phone": "438 555-0101"
+  },
+  "datetime": "2025-07-14T20:22:04",
+  "transaction_number": "322975",
+  "items": [
+    {
+      "qty": 1,
+      "description": "Poutine",
+      "unit_price_cents": 1100,
+      "line_total_cents": 1100,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Boisson gazeuse",
+      "unit_price_cents": 425,
+      "line_total_cents": 425,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Soupe du jour",
+      "unit_price_cents": 475,
+      "line_total_cents": 475,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Thé",
+      "unit_price_cents": 250,
+      "line_total_cents": 250,
+      "tax_flags": "FP"
+    },
+    {
+      "qty": 1,
+      "description": "Bière en fût",
+      "unit_price_cents": 800,
+      "line_total_cents": 800,
+      "tax_flags": "FPS"
+    },
+    {
+      "qty": 1,
+      "description": "Table d'hôte",
+      "unit_price_cents": 3575,
+      "line_total_cents": 3575,
+      "tax_flags": "FP"
+    }
+  ],
+  "subtotal_cents": 6625,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 331
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 661
+    }
+  ],
+  "total_cents": 7617,
+  "tip_cents": 1371,
+  "gst_number": "663370337RT0001",
+  "qst_number": "6379119244TQ0001",
+  "payment_method": "debit",
+  "document_kind": "closing_receipt",
+  "websrm": {
+    "transaction_id": "GPCS-2017-V6JC-6872",
+    "device_id": "4333-1812-7066",
+    "qr_url": "https://github.com/Ragnarush/synthetic-receipts-canada#specimen-GPCS-2017-V6JC-6872",
+    "processed_at": "2025-07-14T20:22:05"
+  },
+  "text_lines": [
+    "        Pizzeria L'Assiette carrée",
+    "           5144, chemin du Lac",
+    "       Sherbrooke (Québec)  J3P 9Z5",
+    "           Tél. : 438 555-0101",
+    "",
+    " 2025-07-14 20:22:04",
+    " TRANSACTION #322975",
+    "",
+    "1 Poutine                      11,00 $ FP",
+    "1 Boisson gazeuse               4,25 $ FP",
+    "1 Soupe du jour                 4,75 $ FP",
+    "1 Thé                           2,50 $ FP",
+    "1 Bière en fût                  8,00 $ FPS",
+    "1 Table d'hôte                 35,75 $ FP",
+    "   Taxe(s) supplémentaire(s)",
+    "   Boiss.alc.(t.incl.)",
+    " SOUS-TOTAL                        66,25 $",
+    "",
+    " TPS: 663370337     RT 0001",
+    " TVQ: 6379119244    TQ 0001",
+    "",
+    "              CARTE DE DÉBIT",
+    "",
+    "          Merci de votre visite",
+    "==========================================",
+    " TPS:                               3,31 $",
+    " TVQ:                               6,61 $",
+    " TOTAL:                            76,17 $",
+    " Pourboire:                        13,71 $",
+    "",
+    "              PAIEMENT REÇU",
+    "           2025-07-14 20:22:05",
+    "           GPCS-2017-V6JC-6872",
+    "              4333-1812-7066",
+    "==========================================",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0010.png",
+    "degraded": "0010.jpg"
+  },
+  "degradation": {
+    "paper_gray": 206,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 157,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.35925011023848424,
+    "blur_radius": 1.6,
+    "rotation_degrees": -1.3280853071527177,
+    "perspective": 0.04808249391900218,
+    "noise_sigma": 11.006267974931202,
+    "salt_pepper_fraction": 0.0036476495493609714,
+    "jpeg_quality": 55
+  }
+}
