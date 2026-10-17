@@ -110,6 +110,7 @@ src/synthetic_receipts_canada/
 docs/templates/ one template sheet per family (source, block table, traps, variation)
 docs/sources/   official documents the WEB-SRM templates are drawn from (in French)
 corpus/         sample of 20 receipts per family (seed 1), committed
+tests/          `uv run pytest`: invariants of every family, money, corpus regression
 ```
 
 ## Adding a family (or a variant)
@@ -123,18 +124,22 @@ corpus/         sample of 20 receipts per family (seed 1), committed
    `_terminal.py`, `_websrm.py` and `_crown_store.py` rather than copying; what serves two
    families moves to `layout.py` or a shared `_module`. Such a move must change **neither
    the order nor the number** of random draws.
-3. Check, on at least 200 receipts at 80 mm **and** 200 at 58 mm:
+3. Run `uv run pytest`. `tests/test_families.py` checks every registered family on 200
+   receipts at 80 mm **and** 200 at 58 mm:
    - the arithmetic: item sum, taxes to the cent, payments = total + rounding + change;
    - that the amounts, dates and numbers printed in `text_lines` match the ground truth;
-   - that no line of `text_lines` exceeds the paper width;
-   - the guardrails: Luhn failing, 555-01XX, SPÉCIMEN line, placeholder names.
+   - that no printed line exceeds the paper width (half of it for a double-size line);
+   - the guardrails: Luhn failing, 555-01XX, SPÉCIMEN line, QR to this repository,
+     `.example` URLs, placeholder names.
 
-   There is no test suite yet: these checks are written for the family and run with
-   `uv run python -I`.
+   The checks read the ground truth generically (`taxes_included`, `base_cents`,
+   `tenders`, `cash_rounding_cents`, `card`…), so a new family is covered once registered.
+   A new date format or a new field the family prints goes into these checks; a rule only
+   one family has gets its own test there.
 4. Look at at least one clean and one degraded image, at 80 and at 58 mm.
-5. **No regression**: regenerate `--family all --count 20 --seed 1` into a temporary
-   folder and check that existing families are **byte-for-byte identical** to `corpus/`
-   (`diff -rq`). Any draw added on a shared path shifts existing receipts. Adding a variant
+5. **No regression**: `tests/test_corpus.py` regenerates `--family all --count 20 --seed 1`
+   and requires existing families to be **byte-for-byte identical** to `corpus/` (a family
+   not yet in `corpus/` is skipped). Any draw added on a shared path shifts existing receipts. Adding a variant
    shifts its family's sample: fine while that sample is unpublished, to be stated in the
    commit otherwise.
 6. Copy the new family's sample into `corpus/`, add its row to the families table in
@@ -145,8 +150,8 @@ corpus/         sample of 20 receipts per family (seed 1), committed
 
 ```sh
 uv sync
-uv run synthetic-receipts-canada generate --family all --count 20 --seed 1 --out /tmp/x
-diff -rq /tmp/x corpus     # no regression: only new families differ
+uv run pytest              # every check, corpus regression included (~20 s)
+uv run pytest --deselect tests/test_corpus.py   # without rendering images (~2 s)
 uv run synthetic-receipts-canada generate --family grocery_chain --count 200 --paper 58 --no-degrade --out /tmp/y
 git log -p origin/main..HEAD | grep -nE '<values from the source receipts>'   # before a push
 ```
