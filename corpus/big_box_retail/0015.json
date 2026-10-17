@@ -22,42 +22,42 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "151936372038",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 1199,
-      "line_total_cents": 1199,
+      "description": "Chargeur USB-C 30W",
+      "upc": "678636433237",
+      "sku": "387594",
+      "eco_fee_included": true,
+      "unit_price_cents": 4799,
+      "line_total_cents": 4799,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cable HDMI 2m Doh",
-      "upc": "656438540259",
-      "sku": "788169",
-      "eco_fee_included": true,
-      "unit_price_cents": 2297,
-      "line_total_cents": 2297,
+      "description": "Classeur 1po Fictif",
+      "upc": "090000177223",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 449,
+      "line_total_cents": 449,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 3496,
+  "subtotal_cents": 5248,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 175
+      "cents": 262
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 349
+      "cents": 523
     }
   ],
-  "total_cents": 4020,
+  "total_cents": 6033,
   "tip_cents": null,
   "gst_number": "595353487",
   "qst_number": "5055711602TQ0001TL",
@@ -65,10 +65,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 4500
+      "cents": 6035
     }
   ],
-  "change_cents": 480,
+  "cash_rounding_cents": 2,
+  "change_cents": 0,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -82,18 +83,26 @@
     "",
     "1328297",
     "",
+    "1    Chargeur USB-C 30W",
+    "     678636433237                   47.99B",
+    "     UGS 387594 d'écofrais inclus",
     "1    Classeur 1po Fictif",
-    "     151936372038                   11.99B",
-    "1    Cable HDMI 2m Doh",
-    "     656438540259                   22.97B",
-    "     UGS 788169 d'écofrais inclus",
-    "Total partiel                        34,96",
-    "     5.00% TPS                        1,75",
-    "     9.975% TVQ                       3,49",
+    "     090000177223                    4.49B",
+    "Total partiel                        52,48",
+    "     5.00% TPS                        2,62",
+    "     9.975% TVQ                       5,23",
     "",
-    "Total                              40,20 $",
-    "Comptant                             45,00",
-    "Comptant Rendu                        4,80",
+    "Total                              60,33 $",
+    "Comptant                             60,35",
+    "Comptant Rendu                        0,00",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
     "",
     "   Merci d'avoir magasiné chez ELECTRO",
     "                 SPECIMEN",
@@ -126,16 +135,16 @@
     "degraded": "0015.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 28,
-    "ink_gray_bottom": 42,
-    "shading_amplitude": 0.11038667706125922,
-    "fold_position": null,
-    "blur_radius": 0.370824941870471,
-    "rotation_degrees": 0.1655556414384607,
-    "perspective": 0.0,
-    "noise_sigma": 2.865379198874137,
-    "salt_pepper_fraction": 0.0,
-    "jpeg_quality": 88
+    "paper_gray": 210,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 155,
+    "shading_amplitude": 0.3455245495119962,
+    "fold_position": 0.4121648997585228,
+    "blur_radius": 1.6,
+    "rotation_degrees": 3.8829580011797606,
+    "perspective": 0.047193710823082276,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 60
   }
 }

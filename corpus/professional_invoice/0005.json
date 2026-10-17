@@ -32,54 +32,46 @@
   },
   "items": [
     {
-      "kind": "service",
-      "qty": 1,
-      "description": "Examen de santé complet",
-      "unit_price_cents": 7211,
-      "line_total_cents": 7211,
-      "tax_flags": null
-    },
-    {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
-      "unit_price_cents": 5733,
-      "line_total_cents": 5733,
+      "description": "Vaccin annuel DHPP",
+      "unit_price_cents": 5042,
+      "line_total_cents": 5042,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Vaccin annuel DHPP",
-      "unit_price_cents": 4646,
-      "line_total_cents": 4646,
+      "unit_price_cents": 4314,
+      "line_total_cents": 4314,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 10.1 kg à 20kg",
-      "unit_price_cents": 2758,
-      "line_total_cents": 2758,
+      "description": "Nourriture canin FICTIVE 2 kg",
+      "unit_price_cents": 8058,
+      "line_total_cents": 8058,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 20348,
+  "subtotal_cents": 17414,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 1017
+      "cents": 871
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 2030
+      "cents": 1737
     }
   ],
-  "total_cents": 23395,
+  "total_cents": 20022,
   "tip_cents": null,
   "gst_number": "188682453",
   "qst_number": "2354484164",
@@ -87,10 +79,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 25000
+      "cents": 21000
     }
   ],
-  "change_cents": 1605,
+  "cash_rounding_cents": -2,
+  "change_cents": 980,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -112,22 +105,31 @@
     "",
     "",
     "Filou - 17838",
-    "   1 Examen de santé complet       72,11 $",
-    "   1 Antiparasitaire DOH canin     57,33 $",
-    "     5.1 kg à 10kg",
-    "   1 Vaccin annuel DHPP            46,46 $",
-    "   1 Antiparasitaire DOH canin     27,58 $",
-    "     10.1 kg à 20kg",
+    "   1 Vaccin annuel DHPP            50,42 $",
+    "   1 Vaccin annuel DHPP            43,14 $",
+    "   1 Nourriture canin FICTIVE 2    80,58 $",
+    "     kg",
     "",
-    "                   Sous-total:    203,48 $",
-    "                   TPS(5%):        10,17 $",
-    "                   TVQ(9,975%):    20,30 $",
-    "                   Total:         233,95 $",
+    "                   Sous-total:    174,14 $",
+    "                   TPS(5%):         8,71 $",
+    "                   TVQ(9,975%):    17,37 $",
+    "                   Total:         200,22 $",
     "",
-    "         9-mai-2025  Comptant:    250,00 $",
+    "         9-mai-2025  Comptant:    210,00 $",
     "",
-    "                     Monnaie       16,05 $",
+    "                     Monnaie        9,80 $",
     "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
     "",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -136,16 +138,16 @@
     "degraded": "0005.jpg"
   },
   "degradation": {
-    "paper_gray": 231,
-    "ink_gray_top": 40,
-    "ink_gray_bottom": 104,
-    "shading_amplitude": 0.21149792945648926,
-    "fold_position": null,
-    "blur_radius": 0.5919561720710632,
-    "rotation_degrees": -2.17968581594516,
-    "perspective": 0.039691908498489636,
-    "noise_sigma": 4.61356889573502,
-    "salt_pepper_fraction": 0.0022292179204877246,
-    "jpeg_quality": 68
+    "paper_gray": 210,
+    "ink_gray_top": 57,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.6872384466301569,
+    "blur_radius": 1.6,
+    "rotation_degrees": 4.861901271133849,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0031970497758429454,
+    "jpeg_quality": 60
   }
 }

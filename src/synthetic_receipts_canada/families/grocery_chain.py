@@ -15,7 +15,7 @@ from fractions import Fraction
 from .. import SCHEMA_VERSION
 from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_qst_number
 from ..layout import Align, Receipt, Size
-from ..money import GST_RATE, QST_RATE, format_cad_en, round_half_up
+from ..money import GST_RATE, QST_RATE, cash_rounded, format_cad_en, round_half_up
 from ..render import PAPER
 
 BANNERS = ["MARCHE DOH", "EPICERIE FICTIVE", "SUPER SPECIMEN", "ECONO-DOH", "PANIER FICTIF", "ALIMENTATION DOH"]
@@ -74,11 +74,6 @@ def _plain(text: str) -> str:
 
 def _amt(cents: int) -> str:
     return f"({_amt(-cents)})" if cents < 0 else f"{cents // 100}.{cents % 100:02d}"
-
-
-def _cash_rounded(cents: int) -> int:
-    """Canadian penny rounding: to the nearest 5 cents, x.x3 up, x.x2 down."""
-    return (cents + 2) // 5 * 5
 
 
 def _shelf_price(rng: random.Random, lo: int, hi: int) -> int:
@@ -272,7 +267,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     method = rng.choices(["cash", "debit", "credit", "mixed"], weights=[3, 5, 2, 1])[0]
     garbled = rng.random() < 0.5
     if method == "cash":
-        rounded = _cash_rounded(total)
+        rounded = cash_rounded(total)
         rounding = rounded - total
         given = rounded if rng.random() < 0.2 else (rounded // 500 + 1) * 500 if rng.random() < 0.5 else (rounded // 100 + 1) * 100
         change = given - rounded

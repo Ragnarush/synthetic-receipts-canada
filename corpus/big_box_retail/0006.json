@@ -22,31 +22,64 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cartouche encre noire",
-      "upc": "183319319306",
+      "description": "Chargeur USB-C 30W",
+      "upc": "334368213136",
+      "sku": "477071",
+      "eco_fee_included": true,
+      "unit_price_cents": 3697,
+      "line_total_cents": 3697,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Ecouteurs bt Specimen",
+      "upc": "155703278710",
+      "sku": "785346",
+      "eco_fee_included": true,
+      "unit_price_cents": 10499,
+      "line_total_cents": 10499,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Chargeur USB-C 30W",
+      "upc": "295458477419",
+      "sku": "604196",
+      "eco_fee_included": true,
+      "unit_price_cents": 3899,
+      "line_total_cents": 3899,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Papier 8.5x11 500f",
+      "upc": "305636618899",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 5149,
-      "line_total_cents": 5149,
+      "unit_price_cents": 1249,
+      "line_total_cents": 1249,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 5149,
+  "subtotal_cents": 19344,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 257
+      "cents": 967
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 514
+      "cents": 1930
     }
   ],
-  "total_cents": 5920,
+  "total_cents": 22241,
   "tip_cents": null,
   "gst_number": "863737743",
   "qst_number": "8763224780TQ0001LM",
@@ -54,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 6000
+      "cents": 23000
     }
   ],
-  "change_cents": 80,
+  "cash_rounding_cents": -1,
+  "change_cents": 760,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -71,15 +105,24 @@
     "",
     "2987576",
     "",
-    "1    Cartouche encre noire",
-    "     183319319306                   51.49B",
-    "Total partiel                        51,49",
-    "     5.00% TPS                        2,57",
-    "     9.975% TVQ                       5,14",
+    "1    Chargeur USB-C 30W",
+    "     334368213136                   36.97B",
+    "     UGS 477071 d'écofrais inclus",
+    "1    Ecouteurs bt Specimen",
+    "     155703278710                  104.99B",
+    "     UGS 785346 d'écofrais inclus",
+    "1    Chargeur USB-C 30W",
+    "     295458477419                   38.99B",
+    "     UGS 604196 d'écofrais inclus",
+    "1    Papier 8.5x11 500f",
+    "     305636618899                   12.49B",
+    "Total partiel                       193,44",
+    "     5.00% TPS                        9,67",
+    "     9.975% TVQ                      19,30",
     "",
-    "Total                              59,20 $",
-    "Comptant                             60,00",
-    "Comptant Rendu                        0,80",
+    "Total                             222,41 $",
+    "Comptant                            230,00",
+    "Comptant Rendu                        7,60",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -120,16 +163,16 @@
     "degraded": "0006.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
+    "paper_gray": 242,
     "ink_gray_top": 20,
-    "ink_gray_bottom": 58,
+    "ink_gray_bottom": 40,
     "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": 0.4332696849906277,
-    "perspective": 0.001251776773130976,
-    "noise_sigma": 3.027706075134292,
-    "salt_pepper_fraction": 0.0002523269226138167,
-    "jpeg_quality": 86
+    "blur_radius": 0.3277173595621832,
+    "rotation_degrees": 0.34548115416697167,
+    "perspective": 0.005398615798761335,
+    "noise_sigma": 2.1748671573740186,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 91
   }
 }

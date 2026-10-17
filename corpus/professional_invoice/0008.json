@@ -32,38 +32,46 @@
   },
   "items": [
     {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 7168,
+      "line_total_cents": 7168,
+      "tax_flags": null
+    },
+    {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
-      "unit_price_cents": 5356,
-      "line_total_cents": 5356,
+      "description": "Antiparasitaire DOH canin 10.1 kg à 20kg",
+      "unit_price_cents": 5937,
+      "line_total_cents": 5937,
       "tax_flags": null
     },
     {
       "kind": "service",
       "qty": 1,
       "description": "Examen de santé complet",
-      "unit_price_cents": 8647,
-      "line_total_cents": 8647,
+      "unit_price_cents": 7355,
+      "line_total_cents": 7355,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 14003,
+  "subtotal_cents": 20460,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 700
+      "cents": 1023
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1397
+      "cents": 2041
     }
   ],
-  "total_cents": 16100,
+  "total_cents": 23524,
   "tip_cents": null,
   "gst_number": "762149101",
   "qst_number": "9217469167",
@@ -71,10 +79,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 16100
+      "cents": 25000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": 1,
+  "change_cents": 1475,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -96,18 +105,19 @@
     "",
     "",
     "Rocco - 14374",
-    "   1 Antiparasitaire DOH canin     53,56 $",
-    "     5.1 kg à 10kg",
-    "   1 Examen de santé complet       86,47 $",
+    "   1 Examen de santé complet       71,68 $",
+    "   1 Antiparasitaire DOH canin     59,37 $",
+    "     10.1 kg à 20kg",
+    "   1 Examen de santé complet       73,55 $",
     "",
-    "                   Sous-total:    140,03 $",
-    "                   TPS(5%):         7,00 $",
-    "                   TVQ(9,975%):    13,97 $",
-    "                   Total:         161,00 $",
+    "                   Sous-total:    204,60 $",
+    "                   TPS(5%):        10,23 $",
+    "                   TVQ(9,975%):    20,41 $",
+    "                   Total:         235,24 $",
     "",
-    "       12-mars-2024  Comptant:    161,00 $",
+    "       12-mars-2024  Comptant:    250,00 $",
     "",
-    "                     Monnaie        0,00 $",
+    "                     Monnaie       14,75 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -128,16 +138,16 @@
     "degraded": "0008.jpg"
   },
   "degradation": {
-    "paper_gray": 231,
-    "ink_gray_top": 54,
-    "ink_gray_bottom": 90,
-    "shading_amplitude": 0.1704920552974457,
-    "fold_position": 0.47867845357697775,
-    "blur_radius": 0.8742458495613704,
-    "rotation_degrees": 1.1403880980405159,
-    "perspective": 0.017429041848508485,
-    "noise_sigma": 5.203296697857539,
-    "salt_pepper_fraction": 0.0023896678770132375,
-    "jpeg_quality": 66
+    "paper_gray": 216,
+    "ink_gray_top": 49,
+    "ink_gray_bottom": 108,
+    "shading_amplitude": 0.13809546914629756,
+    "fold_position": null,
+    "blur_radius": 0.6141022995673637,
+    "rotation_degrees": -1.063149976218668,
+    "perspective": 0.027025517122205443,
+    "noise_sigma": 8.898261365227867,
+    "salt_pepper_fraction": 0.0027604502111481426,
+    "jpeg_quality": 64
   }
 }

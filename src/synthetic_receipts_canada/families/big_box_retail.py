@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 from .. import REPO_URL, SCHEMA_VERSION
 from ..fakes import CITIES, POSTAL_LETTERS, fake_gst_number, fake_postal_code, fake_qst_number
 from ..layout import Align, Receipt
-from ..money import gst_cents, qst_cents
+from ..money import cash_rounded, gst_cents, qst_cents
 from ..render import PAPER
 
 BANNERS = ["BUREAU FICTIF", "FOURNITURES DOH", "ELECTRO SPECIMEN", "PAPETERIE QUIDAM"]
@@ -79,17 +79,19 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     domain = banner.lower().replace(" ", "") + ".example"
     prize = rng.choice([250, 500, 1000])
 
-    # Only cash with a total already a multiple of 5 cents was observed: no rounding line.
+    # Totals of 1000 $ or more were not observed, nor how they would print.
     while True:
         items = _draw_items(rng)
         subtotal = sum(i["line_total_cents"] for i in items)
         gst, qst = gst_cents(subtotal), qst_cents(subtotal)
         total = subtotal + gst + qst
-        if total % 5 == 0 and total < 100_000:
+        if total < 100_000:
             break
-    ceilings = sorted({-(-total // step) * step for step in (500, 1000, 2000, 5000, 10000)})
-    cash = total if rng.random() < 0.2 else rng.choice(ceilings[:3])
-    change = cash - total
+    # Cash pays the total rounded to 5 cents; the receipt keeps the cents and prints no rounding line.
+    rounded = cash_rounded(total)
+    ceilings = sorted({-(-rounded // step) * step for step in (500, 1000, 2000, 5000, 10000)})
+    cash = rounded if rng.random() < 0.2 else rng.choice(ceilings[:3])
+    change = cash - rounded
 
     r.add(banner, align=Align.CENTER)
     r.add(city, align=Align.CENTER)
@@ -169,6 +171,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         "qst_number": qst_number,
         "payment_method": "cash",
         "tenders": [{"method": "cash", "cents": cash}],
+        "cash_rounding_cents": rounded - total,
         "change_cents": change,
         "card": None,
         "document_kind": "sales_receipt",

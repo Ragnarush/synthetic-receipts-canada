@@ -22,53 +22,75 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cartouche encre noire",
-      "upc": "876076649549",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 2697,
-      "line_total_cents": 2697,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Souris optique Quidam",
-      "upc": "240112006105",
-      "sku": "556864",
+      "description": "Cable HDMI 2m Doh",
+      "upc": "204628004241",
+      "sku": "905408",
       "eco_fee_included": true,
-      "unit_price_cents": 1899,
-      "line_total_cents": 1899,
+      "unit_price_cents": 2597,
+      "line_total_cents": 2597,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "746950307594",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1097,
+      "line_total_cents": 1097,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Papier 8.5x11 500f",
+      "upc": "414268017531",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1349,
+      "line_total_cents": 1349,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "356693823440",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1199,
+      "line_total_cents": 1199,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Cartouche encre noire",
-      "upc": "812182842483",
+      "upc": "858278162178",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 4497,
-      "line_total_cents": 4497,
+      "unit_price_cents": 5799,
+      "line_total_cents": 5799,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 9093,
+  "subtotal_cents": 12041,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 455
+      "cents": 602
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 907
+      "cents": 1201
     }
   ],
-  "total_cents": 10455,
+  "total_cents": 13844,
   "tip_cents": null,
   "gst_number": "357149043",
   "qst_number": "9543814853TQ0001CA",
@@ -76,10 +98,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 10455
+      "cents": 15000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": 1,
+  "change_cents": 1155,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -93,28 +116,24 @@
     "",
     "1557451",
     "",
+    "1    Cable HDMI 2m Doh",
+    "     204628004241                   25.97B",
+    "     UGS 905408 d'écofrais inclus",
+    "1    Classeur 1po Fictif",
+    "     746950307594                   10.97B",
+    "1    Papier 8.5x11 500f",
+    "     414268017531                   13.49B",
+    "1    Classeur 1po Fictif",
+    "     356693823440                   11.99B",
     "1    Cartouche encre noire",
-    "     876076649549                   26.97B",
-    "1    Souris optique Quidam",
-    "     240112006105                   18.99B",
-    "     UGS 556864 d'écofrais inclus",
-    "1    Cartouche encre noire",
-    "     812182842483                   44.97B",
-    "Total partiel                        90,93",
-    "     5.00% TPS                        4,55",
-    "     9.975% TVQ                       9,07",
+    "     858278162178                   57.99B",
+    "Total partiel                       120,41",
+    "     5.00% TPS                        6,02",
+    "     9.975% TVQ                      12,01",
     "",
-    "Total                             104,55 $",
-    "Comptant                            104,55",
-    "Comptant Rendu                        0,00",
-    "******************************************",
-    "   Les écouteurs et casques ouverts ne",
-    "       peuvent pas être retournés.",
-    "******************************************",
-    "Échangez votre ancien appareil contre une",
-    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
-    "     un associé pour plus de détails.",
-    "******************************************",
+    "Total                             138,44 $",
+    "Comptant                            150,00",
+    "Comptant Rendu                       11,55",
     "",
     "   Merci d'avoir magasiné chez ELECTRO",
     "                 SPECIMEN",
@@ -147,16 +166,16 @@
     "degraded": "0012.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 59,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.35,
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 59,
+    "shading_amplitude": 0.11894444572999893,
     "fold_position": null,
-    "blur_radius": 1.5593800017426336,
-    "rotation_degrees": 3.3368579920681753,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 55
+    "blur_radius": 0.0,
+    "rotation_degrees": 1.188738330486992,
+    "perspective": 0.007221957284797352,
+    "noise_sigma": 3.54914372502043,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
   }
 }

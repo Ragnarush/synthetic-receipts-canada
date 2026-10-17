@@ -22,42 +22,42 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cable HDMI 2m Doh",
-      "upc": "313125724462",
-      "sku": "543055",
+      "description": "Clavier sans fil Fictf",
+      "upc": "186898522208",
+      "sku": "285756",
       "eco_fee_included": true,
-      "unit_price_cents": 2899,
-      "line_total_cents": 2899,
+      "unit_price_cents": 5749,
+      "line_total_cents": 5749,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cahier spirale 3 suj",
-      "upc": "124905357240",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 497,
-      "line_total_cents": 497,
+      "description": "Souris optique Quidam",
+      "upc": "204967876886",
+      "sku": "908192",
+      "eco_fee_included": true,
+      "unit_price_cents": 2599,
+      "line_total_cents": 2599,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 3396,
+  "subtotal_cents": 8348,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 170
+      "cents": 417
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 339
+      "cents": 833
     }
   ],
-  "total_cents": 3905,
+  "total_cents": 9598,
   "tip_cents": null,
   "gst_number": "750209219",
   "qst_number": "3421403286TQ0001SB",
@@ -68,7 +68,8 @@
       "cents": 10000
     }
   ],
-  "change_cents": 6095,
+  "cash_rounding_cents": 2,
+  "change_cents": 400,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -82,18 +83,19 @@
     "",
     "2960727",
     "",
-    "1    Cable HDMI 2m Doh",
-    "     313125724462                   28.99B",
-    "     UGS 543055 d'écofrais inclus",
-    "1    Cahier spirale 3 suj",
-    "     124905357240                    4.97B",
-    "Total partiel                        33,96",
-    "     5.00% TPS                        1,70",
-    "     9.975% TVQ                       3,39",
+    "1    Clavier sans fil Fictf",
+    "     186898522208                   57.49B",
+    "     UGS 285756 d'écofrais inclus",
+    "1    Souris optique Quidam",
+    "     204967876886                   25.99B",
+    "     UGS 908192 d'écofrais inclus",
+    "Total partiel                        83,48",
+    "     5.00% TPS                        4,17",
+    "     9.975% TVQ                       8,33",
     "",
-    "Total                              39,05 $",
+    "Total                              95,98 $",
     "Comptant                            100,00",
-    "Comptant Rendu                       60,95",
+    "Comptant Rendu                        4,00",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -134,16 +136,16 @@
     "degraded": "0005.jpg"
   },
   "degradation": {
-    "paper_gray": 236,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 63,
-    "shading_amplitude": 0.08153087532844033,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": 0.1495455994270415,
-    "perspective": 0.0,
-    "noise_sigma": 3.096964274304862,
-    "salt_pepper_fraction": 0.0008491984200595903,
-    "jpeg_quality": 86
+    "paper_gray": 233,
+    "ink_gray_top": 36,
+    "ink_gray_bottom": 134,
+    "shading_amplitude": 0.15886844997430957,
+    "fold_position": 0.38574381496409904,
+    "blur_radius": 0.6444561707685595,
+    "rotation_degrees": 1.9235714617338504,
+    "perspective": 0.023369794710702777,
+    "noise_sigma": 8.670998283632418,
+    "salt_pepper_fraction": 0.0027518816647968763,
+    "jpeg_quality": 77
   }
 }

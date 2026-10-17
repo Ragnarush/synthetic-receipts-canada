@@ -57,6 +57,7 @@
       "cents": 5000
     }
   ],
+  "cash_rounding_cents": 0,
   "change_cents": 2300,
   "card": null,
   "document_kind": "sales_receipt",

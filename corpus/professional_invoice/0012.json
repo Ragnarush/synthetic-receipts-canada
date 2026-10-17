@@ -34,36 +34,28 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Nourriture félin FICTIVE 8 kg",
-      "unit_price_cents": 5610,
-      "line_total_cents": 5610,
-      "tax_flags": null
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Nourriture félin FICTIVE 2 kg",
-      "unit_price_cents": 5540,
-      "line_total_cents": 5540,
+      "description": "Vaccin annuel RCP",
+      "unit_price_cents": 4441,
+      "line_total_cents": 4441,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 11150,
+  "subtotal_cents": 4441,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 558
+      "cents": 222
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1112
+      "cents": 443
     }
   ],
-  "total_cents": 12820,
+  "total_cents": 5106,
   "tip_cents": null,
   "gst_number": "307798365",
   "qst_number": "5085415343",
@@ -71,10 +63,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 13000
+      "cents": 5105
     }
   ],
-  "change_cents": 180,
+  "cash_rounding_cents": -1,
+  "change_cents": 0,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -96,19 +89,16 @@
     "",
     "",
     "Biscuit - 24948",
-    "   1 Nourriture félin FICTIVE 8    56,10 $",
-    "     kg",
-    "   1 Nourriture félin FICTIVE 2    55,40 $",
-    "     kg",
+    "   1 Vaccin annuel RCP             44,41 $",
     "",
-    "                   Sous-total:    111,50 $",
-    "                   TPS(5%):         5,58 $",
-    "                   TVQ(9,975%):    11,12 $",
-    "                   Total:         128,20 $",
+    "                   Sous-total:     44,41 $",
+    "                   TPS(5%):         2,22 $",
+    "                   TVQ(9,975%):     4,43 $",
+    "                   Total:          51,06 $",
     "",
-    "       3-sept.-2024  Comptant:    130,00 $",
+    "       3-sept.-2024  Comptant:     51,05 $",
     "",
-    "                     Monnaie        1,80 $",
+    "                     Monnaie        0,00 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -129,16 +119,16 @@
     "degraded": "0012.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 21,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.0878470633177422,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": -0.23061533161831768,
-    "perspective": 0.0,
-    "noise_sigma": 3.3265485029846884,
-    "salt_pepper_fraction": 0.0,
-    "jpeg_quality": 92
+    "paper_gray": 210,
+    "ink_gray_top": 64,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.29090246808430165,
+    "fold_position": 0.4321824959496485,
+    "blur_radius": 1.2846497726139117,
+    "rotation_degrees": -0.5902001446251759,
+    "perspective": 0.045447441074071566,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0038348123820134993,
+    "jpeg_quality": 55
   }
 }

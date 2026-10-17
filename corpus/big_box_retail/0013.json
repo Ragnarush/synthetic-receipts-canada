@@ -22,30 +22,8 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Stylos gel 12 pqt",
-      "upc": "198068324588",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 1099,
-      "line_total_cents": 1099,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Souris optique Quidam",
-      "upc": "753245955289",
-      "sku": "446306",
-      "eco_fee_included": true,
-      "unit_price_cents": 3097,
-      "line_total_cents": 3097,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
       "description": "Classeur 1po Fictif",
-      "upc": "286189552848",
+      "upc": "739428931980",
       "sku": null,
       "eco_fee_included": false,
       "unit_price_cents": 999,
@@ -55,31 +33,53 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cahier spirale 3 suj",
-      "upc": "564375474450",
+      "description": "Chargeur USB-C 30W",
+      "upc": "806009069029",
+      "sku": "634123",
+      "eco_fee_included": true,
+      "unit_price_cents": 2799,
+      "line_total_cents": 2799,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Papier 8.5x11 500f",
+      "upc": "166798071575",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 497,
-      "line_total_cents": 497,
+      "unit_price_cents": 899,
+      "line_total_cents": 899,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Stylos gel 12 pqt",
+      "upc": "651709081718",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1199,
+      "line_total_cents": 1199,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 5692,
+  "subtotal_cents": 5896,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 285
+      "cents": 295
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 568
+      "cents": 588
     }
   ],
-  "total_cents": 6545,
+  "total_cents": 6779,
   "tip_cents": null,
   "gst_number": "336443541",
   "qst_number": "7816744943TQ0001HA",
@@ -87,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 10000
+      "cents": 8000
     }
   ],
-  "change_cents": 3455,
+  "cash_rounding_cents": 1,
+  "change_cents": 1220,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -104,30 +105,22 @@
     "",
     "2512860",
     "",
-    "1    Stylos gel 12 pqt",
-    "     198068324588                   10.99B",
-    "1    Souris optique Quidam",
-    "     753245955289                   30.97B",
-    "     UGS 446306 d'écofrais inclus",
     "1    Classeur 1po Fictif",
-    "     286189552848                    9.99B",
-    "1    Cahier spirale 3 suj",
-    "     564375474450                    4.97B",
-    "Total partiel                        56,92",
-    "     5.00% TPS                        2,85",
-    "     9.975% TVQ                       5,68",
+    "     739428931980                    9.99B",
+    "1    Chargeur USB-C 30W",
+    "     806009069029                   27.99B",
+    "     UGS 634123 d'écofrais inclus",
+    "1    Papier 8.5x11 500f",
+    "     166798071575                    8.99B",
+    "1    Stylos gel 12 pqt",
+    "     651709081718                   11.99B",
+    "Total partiel                        58,96",
+    "     5.00% TPS                        2,95",
+    "     9.975% TVQ                       5,88",
     "",
-    "Total                              65,45 $",
-    "Comptant                            100,00",
-    "Comptant Rendu                       34,55",
-    "******************************************",
-    "   Les écouteurs et casques ouverts ne",
-    "       peuvent pas être retournés.",
-    "******************************************",
-    "Échangez votre ancien appareil contre une",
-    "carte-cadeau PAPETERIE QUIDAM. Demandez à",
-    "     un associé pour plus de détails.",
-    "******************************************",
+    "Total                              67,79 $",
+    "Comptant                             80,00",
+    "Comptant Rendu                       12,20",
     "",
     "  Merci d'avoir magasiné chez PAPETERIE",
     "                  QUIDAM",
@@ -160,16 +153,16 @@
     "degraded": "0013.jpg"
   },
   "degradation": {
-    "paper_gray": 225,
-    "ink_gray_top": 51,
-    "ink_gray_bottom": 99,
-    "shading_amplitude": 0.179919849849151,
-    "fold_position": null,
-    "blur_radius": 1.0328045925878448,
-    "rotation_degrees": -0.16192765862261294,
-    "perspective": 0.0166948752975771,
-    "noise_sigma": 8.895269116458936,
-    "salt_pepper_fraction": 0.0022125503096959926,
-    "jpeg_quality": 72
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 145,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.3264562955661017,
+    "blur_radius": 1.4244562350780798,
+    "rotation_degrees": -1.6656668060354098,
+    "perspective": 0.06,
+    "noise_sigma": 10.214305926254273,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 62
   }
 }

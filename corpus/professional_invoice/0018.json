@@ -32,38 +32,30 @@
   },
   "items": [
     {
-      "kind": "service",
-      "qty": 1,
-      "description": "Examen de santé complet",
-      "unit_price_cents": 7094,
-      "line_total_cents": 7094,
-      "tax_flags": null
-    },
-    {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH félin 4.1 kg à 8kg",
-      "unit_price_cents": 4678,
-      "line_total_cents": 4678,
+      "description": "Nourriture félin FICTIVE 2 kg",
+      "unit_price_cents": 7951,
+      "line_total_cents": 7951,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 11772,
+  "subtotal_cents": 7951,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 589
+      "cents": 398
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1174
+      "cents": 793
     }
   ],
-  "total_cents": 13535,
+  "total_cents": 9142,
   "tip_cents": null,
   "gst_number": "284686137",
   "qst_number": "3542218552",
@@ -71,10 +63,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 15000
+      "cents": 9500
     }
   ],
-  "change_cents": 1465,
+  "cash_rounding_cents": -2,
+  "change_cents": 360,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -96,18 +89,17 @@
     "",
     "",
     "Pacha - 36261",
-    "   1 Examen de santé complet       70,94 $",
-    "   1 Antiparasitaire DOH félin     46,78 $",
-    "     4.1 kg à 8kg",
+    "   1 Nourriture félin FICTIVE 2    79,51 $",
+    "     kg",
     "",
-    "                   Sous-total:    117,72 $",
-    "                   TPS(5%):         5,89 $",
-    "                   TVQ(9,975%):    11,74 $",
-    "                   Total:         135,35 $",
+    "                   Sous-total:     79,51 $",
+    "                   TPS(5%):         3,98 $",
+    "                   TVQ(9,975%):     7,93 $",
+    "                   Total:          91,42 $",
     "",
-    "       23-nov.-2024  Comptant:    150,00 $",
+    "       23-nov.-2024  Comptant:     95,00 $",
     "",
-    "                     Monnaie       14,65 $",
+    "                     Monnaie        3,60 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -128,16 +120,16 @@
     "degraded": "0018.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 28,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.05,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": 0.30304587726355314,
-    "perspective": 0.0008148068749218407,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 3.9981805398486614e-05,
-    "jpeg_quality": 90
+    "paper_gray": 208,
+    "ink_gray_top": 60,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.7828326102112981,
+    "blur_radius": 1.6,
+    "rotation_degrees": 0.920557866110441,
+    "perspective": 0.05202006020429733,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.003362453253710215,
+    "jpeg_quality": 55
   }
 }

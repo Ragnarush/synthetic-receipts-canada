@@ -32,38 +32,30 @@
   },
   "items": [
     {
-      "kind": "product",
+      "kind": "service",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 10.1 kg à 20kg",
-      "unit_price_cents": 5116,
-      "line_total_cents": 5116,
-      "tax_flags": null
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
-      "unit_price_cents": 4286,
-      "line_total_cents": 4286,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8326,
+      "line_total_cents": 8326,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 9402,
+  "subtotal_cents": 8326,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 470
+      "cents": 416
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 938
+      "cents": 831
     }
   ],
-  "total_cents": 10810,
+  "total_cents": 9573,
   "tip_cents": null,
   "gst_number": "116713128",
   "qst_number": "4506765771",
@@ -71,10 +63,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 12000
+      "cents": 10000
     }
   ],
-  "change_cents": 1190,
+  "cash_rounding_cents": 2,
+  "change_cents": 425,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -96,19 +89,16 @@
     "",
     "",
     "Galette - 13600",
-    "   1 Antiparasitaire DOH canin     51,16 $",
-    "     10.1 kg à 20kg",
-    "   1 Antiparasitaire DOH canin     42,86 $",
-    "     5.1 kg à 10kg",
+    "   1 Examen de santé complet       83,26 $",
     "",
-    "                   Sous-total:     94,02 $",
-    "                   TPS(5%):         4,70 $",
-    "                   TVQ(9,975%):     9,38 $",
-    "                   Total:         108,10 $",
+    "                   Sous-total:     83,26 $",
+    "                   TPS(5%):         4,16 $",
+    "                   TVQ(9,975%):     8,31 $",
+    "                   Total:          95,73 $",
     "",
-    "      14-févr.-2024  Comptant:    120,00 $",
+    "      14-févr.-2024  Comptant:    100,00 $",
     "",
-    "                     Monnaie       11,90 $",
+    "                     Monnaie        4,25 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -129,16 +119,16 @@
     "degraded": "0006.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
+    "paper_gray": 211,
     "ink_gray_top": 70,
     "ink_gray_bottom": 170,
-    "shading_amplitude": 0.3476462588301303,
-    "fold_position": null,
-    "blur_radius": 1.6,
-    "rotation_degrees": 0.3305666736052726,
-    "perspective": 0.06,
-    "noise_sigma": 11.44050577480797,
-    "salt_pepper_fraction": 0.003268145793531924,
+    "shading_amplitude": 0.3436240110527219,
+    "fold_position": 0.4796350632109128,
+    "blur_radius": 1.2016519678256647,
+    "rotation_degrees": 3.0393007451406975,
+    "perspective": 0.05112342805355363,
+    "noise_sigma": 10.843592131096692,
+    "salt_pepper_fraction": 0.003827774824817207,
     "jpeg_quality": 56
   }
 }

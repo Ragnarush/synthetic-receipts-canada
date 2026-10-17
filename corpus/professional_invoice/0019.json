@@ -35,43 +35,51 @@
       "kind": "service",
       "qty": 1,
       "description": "Examen de santé complet",
-      "unit_price_cents": 8453,
-      "line_total_cents": 8453,
+      "unit_price_cents": 8097,
+      "line_total_cents": 8097,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Vaccin annuel DHPP",
-      "unit_price_cents": 5318,
-      "line_total_cents": 5318,
+      "unit_price_cents": 5349,
+      "line_total_cents": 5349,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Vaccin annuel DHPP",
-      "unit_price_cents": 5390,
-      "line_total_cents": 5390,
+      "description": "Antiparasitaire DOH canin 20.1 kg à 40kg",
+      "unit_price_cents": 3273,
+      "line_total_cents": 3273,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 2.1 kg à 5kg",
+      "unit_price_cents": 5217,
+      "line_total_cents": 5217,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 19161,
+  "subtotal_cents": 21936,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 958
+      "cents": 1097
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1911
+      "cents": 2188
     }
   ],
-  "total_cents": 22030,
+  "total_cents": 25221,
   "tip_cents": null,
   "gst_number": "949806770",
   "qst_number": "4198840385",
@@ -79,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 24000
+      "cents": 26000
     }
   ],
-  "change_cents": 1970,
+  "cash_rounding_cents": -1,
+  "change_cents": 780,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -104,18 +113,21 @@
     "",
     "",
     "Biscuit - 33667",
-    "   1 Examen de santé complet       84,53 $",
-    "   1 Vaccin annuel DHPP            53,18 $",
-    "   1 Vaccin annuel DHPP            53,90 $",
+    "   1 Examen de santé complet       80,97 $",
+    "   1 Vaccin annuel DHPP            53,49 $",
+    "   1 Antiparasitaire DOH canin     32,73 $",
+    "     20.1 kg à 40kg",
+    "   1 Antiparasitaire DOH canin     52,17 $",
+    "     2.1 kg à 5kg",
     "",
-    "                   Sous-total:    191,61 $",
-    "                   TPS(5%):         9,58 $",
-    "                   TVQ(9,975%):    19,11 $",
-    "                   Total:         220,30 $",
+    "                   Sous-total:    219,36 $",
+    "                   TPS(5%):        10,97 $",
+    "                   TVQ(9,975%):    21,88 $",
+    "                   Total:         252,21 $",
     "",
-    "        9-mars-2025  Comptant:    240,00 $",
+    "        9-mars-2025  Comptant:    260,00 $",
     "",
-    "                     Monnaie       19,70 $",
+    "                     Monnaie        7,80 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -136,16 +148,16 @@
     "degraded": "0019.jpg"
   },
   "degradation": {
-    "paper_gray": 223,
-    "ink_gray_top": 43,
-    "ink_gray_bottom": 95,
-    "shading_amplitude": 0.20021268006805032,
-    "fold_position": null,
-    "blur_radius": 0.6853877643638553,
-    "rotation_degrees": -0.39983680238956687,
-    "perspective": 0.044045626955414745,
-    "noise_sigma": 8.099663306216158,
-    "salt_pepper_fraction": 0.00289826860258847,
-    "jpeg_quality": 70
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 149,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.602119795760909,
+    "blur_radius": 1.6,
+    "rotation_degrees": -2.8129161346747047,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0035683006826675223,
+    "jpeg_quality": 59
   }
 }

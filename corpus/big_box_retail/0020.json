@@ -22,31 +22,31 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Clavier sans fil Fictf",
-      "upc": "448408606641",
-      "sku": "791521",
+      "description": "Souris optique Quidam",
+      "upc": "828913753701",
+      "sku": "784906",
       "eco_fee_included": true,
-      "unit_price_cents": 3649,
-      "line_total_cents": 3649,
+      "unit_price_cents": 2199,
+      "line_total_cents": 2199,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 3649,
+  "subtotal_cents": 2199,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 182
+      "cents": 110
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 364
+      "cents": 219
     }
   ],
-  "total_cents": 4195,
+  "total_cents": 2528,
   "tip_cents": null,
   "gst_number": "391114991",
   "qst_number": "3540419229TQ0001WJ",
@@ -54,10 +54,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 4195
+      "cents": 4000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": 2,
+  "change_cents": 1470,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -71,16 +72,16 @@
     "",
     "1638085",
     "",
-    "1    Clavier sans fil Fictf",
-    "     448408606641                   36.49B",
-    "     UGS 791521 d'écofrais inclus",
-    "Total partiel                        36,49",
-    "     5.00% TPS                        1,82",
-    "     9.975% TVQ                       3,64",
+    "1    Souris optique Quidam",
+    "     828913753701                   21.99B",
+    "     UGS 784906 d'écofrais inclus",
+    "Total partiel                        21,99",
+    "     5.00% TPS                        1,10",
+    "     9.975% TVQ                       2,19",
     "",
-    "Total                              41,95 $",
-    "Comptant                             41,95",
-    "Comptant Rendu                        0,00",
+    "Total                              25,28 $",
+    "Comptant                             40,00",
+    "Comptant Rendu                       14,70",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -119,16 +120,16 @@
     "degraded": "0020.jpg"
   },
   "degradation": {
-    "paper_gray": 219,
-    "ink_gray_top": 56,
-    "ink_gray_bottom": 97,
-    "shading_amplitude": 0.2680675167940737,
-    "fold_position": 0.5861937879831678,
-    "blur_radius": 0.45890614264023544,
-    "rotation_degrees": -1.0510565907649476,
-    "perspective": 0.032593552591710595,
-    "noise_sigma": 5.91382327097868,
-    "salt_pepper_fraction": 0.00174468414674103,
-    "jpeg_quality": 69
+    "paper_gray": 205,
+    "ink_gray_top": 62,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": null,
+    "blur_radius": 1.6,
+    "rotation_degrees": 4.32624839607547,
+    "perspective": 0.04511285915793646,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
   }
 }

@@ -34,28 +34,36 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Nourriture félin FICTIVE 8 kg",
-      "unit_price_cents": 7267,
-      "line_total_cents": 7267,
+      "description": "Vaccin annuel RCP",
+      "unit_price_cents": 3760,
+      "line_total_cents": 3760,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Vaccin annuel RCP",
+      "unit_price_cents": 3784,
+      "line_total_cents": 3784,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 7267,
+  "subtotal_cents": 7544,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 363
+      "cents": 377
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 725
+      "cents": 753
     }
   ],
-  "total_cents": 8355,
+  "total_cents": 8674,
   "tip_cents": null,
   "gst_number": "651121214",
   "qst_number": "1397932593",
@@ -63,10 +71,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 8500
+      "cents": 8675
     }
   ],
-  "change_cents": 145,
+  "cash_rounding_cents": 1,
+  "change_cents": 0,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -88,29 +97,18 @@
     "",
     "",
     "Pistache - 29357",
-    "   1 Nourriture félin FICTIVE 8    72,67 $",
-    "     kg",
+    "   1 Vaccin annuel RCP             37,60 $",
+    "   1 Vaccin annuel RCP             37,84 $",
     "",
-    "                   Sous-total:     72,67 $",
-    "                   TPS(5%):         3,63 $",
-    "                   TVQ(9,975%):     7,25 $",
-    "                   Total:          83,55 $",
+    "                   Sous-total:     75,44 $",
+    "                   TPS(5%):         3,77 $",
+    "                   TVQ(9,975%):     7,53 $",
+    "                   Total:          86,74 $",
     "",
-    "      27-juil.-2024  Comptant:     85,00 $",
+    "      27-juil.-2024  Comptant:     86,75 $",
     "",
-    "                     Monnaie        1,45 $",
+    "                     Monnaie        0,00 $",
     "                   Solde:           0,00 $",
-    "",
-    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
-    "RAISONS DE SÉCURITÉ <------------",
-    "",
-    "Les frais de prescription et de",
-    "préparation sont inclus dans le prix total",
-    "des médicaments",
-    "",
-    "Des intérêts de 2% par mois équivalent à",
-    "un taux de 24% annuellement seront",
-    "appliqués sur tout solde impayé",
     "",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -119,16 +117,16 @@
     "degraded": "0007.jpg"
   },
   "degradation": {
-    "paper_gray": 211,
+    "paper_gray": 205,
     "ink_gray_top": 70,
-    "ink_gray_bottom": 161,
-    "shading_amplitude": 0.3432530403912447,
-    "fold_position": 0.5444890460737069,
+    "ink_gray_bottom": 146,
+    "shading_amplitude": 0.35,
+    "fold_position": null,
     "blur_radius": 1.6,
-    "rotation_degrees": 3.918137953566441,
-    "perspective": 0.06,
-    "noise_sigma": 10.055481060396353,
+    "rotation_degrees": 2.339214363852226,
+    "perspective": 0.05255442900454769,
+    "noise_sigma": 12.0,
     "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 55
+    "jpeg_quality": 62
   }
 }

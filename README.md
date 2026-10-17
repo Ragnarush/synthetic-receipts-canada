@@ -98,7 +98,9 @@ déjà produits.
 
 Certaines familles ajoutent des champs, décrits dans leur gabarit : `grocery_chain` donne
 l'assiette de chaque taxe (`taxes[].base_cents`), les modes de paiement (`tenders`),
-l'arrondi au comptant, la monnaie rendue et le bordereau de carte (`card`) ;
+l'arrondi au comptant (`cash_rounding_cents`, aussi donné par `big_box_retail` et
+`professional_invoice`, où il n'est pas imprimé), la monnaie rendue et le bordereau de
+carte (`card`) ;
 `crown_store_tax_included` marque les taxes `included` et donne un `subtotal_cents` qui
 n'est pas imprimé, à recalculer ; `payment_terminal_slip` n'a que `tenders` et `card` :
 son `total_cents` est `null` (`document_kind`: `payment_slip`) ; sa variante

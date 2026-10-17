@@ -15,7 +15,7 @@ from datetime import date, timedelta
 from .. import SCHEMA_VERSION
 from ..fakes import CITIES, STREETS, fake_full_name, fake_gst_number, fake_postal_code, fake_qst_number
 from ..layout import Align, Receipt, Size
-from ..money import gst_cents, qst_cents
+from ..money import cash_rounded, gst_cents, qst_cents
 from ..render import PAPER
 
 CLINIC_NAMES = ["Doh", "du Quidam", "Fictive", "Spécimen", "des Fictifs"]
@@ -81,17 +81,15 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     pet = rng.choice(PET_NAMES)
     pet_id = f"{rng.randint(10_000, 49_999)}"
 
-    # Only cash with a total already a multiple of 5 cents was observed: no rounding line.
-    while True:
-        items = _draw_items(rng, species)
-        subtotal = sum(i["line_total_cents"] for i in items)
-        gst, qst = gst_cents(subtotal), qst_cents(subtotal)
-        total = subtotal + gst + qst
-        if total % 5 == 0:
-            break
-    ceilings = sorted({-(-total // step) * step for step in (500, 1000, 2000, 5000, 10000)})
-    cash = total if rng.random() < 0.2 else rng.choice(ceilings[:3])
-    change = cash - total
+    items = _draw_items(rng, species)
+    subtotal = sum(i["line_total_cents"] for i in items)
+    gst, qst = gst_cents(subtotal), qst_cents(subtotal)
+    total = subtotal + gst + qst
+    # Cash pays the total rounded to 5 cents; the receipt keeps the cents and prints no rounding line.
+    rounded = cash_rounded(total)
+    ceilings = sorted({-(-rounded // step) * step for step in (500, 1000, 2000, 5000, 10000)})
+    cash = rounded if rng.random() < 0.2 else rng.choice(ceilings[:3])
+    change = cash - rounded
 
     for line in ("Clinique", "vétérinaire", f"{clinic} inc"):
         r.add(line, align=Align.CENTER, size=Size.DOUBLE)
@@ -167,6 +165,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         "qst_number": qst_number,
         "payment_method": "cash",
         "tenders": [{"method": "cash", "cents": cash}],
+        "cash_rounding_cents": rounded - total,
         "change_cents": change,
         "balance_cents": 0,
         "card": None,

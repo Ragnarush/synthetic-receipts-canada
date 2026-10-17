@@ -22,42 +22,75 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Papier 8.5x11 500f",
-      "upc": "689966788120",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 1097,
-      "line_total_cents": 1097,
+      "description": "Ecouteurs bt Specimen",
+      "upc": "012930477599",
+      "sku": "294707",
+      "eco_fee_included": true,
+      "unit_price_cents": 4797,
+      "line_total_cents": 4797,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "589390803039",
+      "description": "Cahier spirale 3 suj",
+      "upc": "475450825549",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 1099,
-      "line_total_cents": 1099,
+      "unit_price_cents": 697,
+      "line_total_cents": 697,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "197777670362",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 5597,
+      "line_total_cents": 5597,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Manette sans fil Doh",
+      "upc": "569165502561",
+      "sku": "677632",
+      "eco_fee_included": true,
+      "unit_price_cents": 9549,
+      "line_total_cents": 9549,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Ecouteurs bt Specimen",
+      "upc": "433638045619",
+      "sku": "969475",
+      "eco_fee_included": true,
+      "unit_price_cents": 10449,
+      "line_total_cents": 10449,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 2196,
+  "subtotal_cents": 31089,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 110
+      "cents": 1554
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 219
+      "cents": 3101
     }
   ],
-  "total_cents": 2525,
+  "total_cents": 35744,
   "tip_cents": null,
   "gst_number": "152228864",
   "qst_number": "4786177269TQ0001PG",
@@ -65,10 +98,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 5000
+      "cents": 36000
     }
   ],
-  "change_cents": 2475,
+  "cash_rounding_cents": 1,
+  "change_cents": 255,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -82,17 +116,26 @@
     "",
     "1718096",
     "",
-    "1    Papier 8.5x11 500f",
-    "     689966788120                   10.97B",
-    "1    Classeur 1po Fictif",
-    "     589390803039                   10.99B",
-    "Total partiel                        21,96",
-    "     5.00% TPS                        1,10",
-    "     9.975% TVQ                       2,19",
+    "1    Ecouteurs bt Specimen",
+    "     012930477599                   47.97B",
+    "     UGS 294707 d'écofrais inclus",
+    "1    Cahier spirale 3 suj",
+    "     475450825549                    6.97B",
+    "1    Cartouche encre noire",
+    "     197777670362                   55.97B",
+    "1    Manette sans fil Doh",
+    "     569165502561                   95.49B",
+    "     UGS 677632 d'écofrais inclus",
+    "1    Ecouteurs bt Specimen",
+    "     433638045619                  104.49B",
+    "     UGS 969475 d'écofrais inclus",
+    "Total partiel                       310,89",
+    "     5.00% TPS                       15,54",
+    "     9.975% TVQ                      31,01",
     "",
-    "Total                              25,25 $",
-    "Comptant                             50,00",
-    "Comptant Rendu                       24,75",
+    "Total                             357,44 $",
+    "Comptant                            360,00",
+    "Comptant Rendu                        2,55",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -134,15 +177,15 @@
   },
   "degradation": {
     "paper_gray": 205,
-    "ink_gray_top": 70,
-    "ink_gray_bottom": 148,
+    "ink_gray_top": 68,
+    "ink_gray_bottom": 170,
     "shading_amplitude": 0.35,
-    "fold_position": 0.4536723903305604,
+    "fold_position": null,
     "blur_radius": 1.6,
-    "rotation_degrees": -2.701015488114995,
-    "perspective": 0.05982602779639097,
+    "rotation_degrees": 0.20508933311667255,
+    "perspective": 0.06,
     "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.003918575957090951,
-    "jpeg_quality": 55
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 61
   }
 }

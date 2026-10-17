@@ -66,6 +66,7 @@
       "cents": 3735
     }
   ],
+  "cash_rounding_cents": 0,
   "change_cents": 0,
   "balance_cents": 0,
   "card": null,

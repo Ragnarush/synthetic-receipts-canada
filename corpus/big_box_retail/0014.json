@@ -22,64 +22,42 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Souris optique Quidam",
-      "upc": "869715697545",
-      "sku": "628255",
+      "description": "Papier 8.5x11 500f",
+      "upc": "485255096491",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1397,
+      "line_total_cents": 1397,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Manette sans fil Doh",
+      "upc": "164696423529",
+      "sku": "749043",
       "eco_fee_included": true,
-      "unit_price_cents": 3797,
-      "line_total_cents": 3797,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "169552188978",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 597,
-      "line_total_cents": 597,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Cahier spirale 3 suj",
-      "upc": "500468512749",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 749,
-      "line_total_cents": 749,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Stylos gel 12 pqt",
-      "upc": "280051954083",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 1049,
-      "line_total_cents": 1049,
+      "unit_price_cents": 8099,
+      "line_total_cents": 8099,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 6192,
+  "subtotal_cents": 9496,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 310
+      "cents": 475
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 618
+      "cents": 947
     }
   ],
-  "total_cents": 7120,
+  "total_cents": 10918,
   "tip_cents": null,
   "gst_number": "294073972",
   "qst_number": "8430713094TQ0001YG",
@@ -87,10 +65,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 8000
+      "cents": 11000
     }
   ],
-  "change_cents": 880,
+  "cash_rounding_cents": 2,
+  "change_cents": 80,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -104,22 +83,26 @@
     "",
     "1586901",
     "",
-    "1    Souris optique Quidam",
-    "     869715697545                   37.97B",
-    "     UGS 628255 d'écofrais inclus",
-    "1    Classeur 1po Fictif",
-    "     169552188978                    5.97B",
-    "1    Cahier spirale 3 suj",
-    "     500468512749                    7.49B",
-    "1    Stylos gel 12 pqt",
-    "     280051954083                   10.49B",
-    "Total partiel                        61,92",
-    "     5.00% TPS                        3,10",
-    "     9.975% TVQ                       6,18",
+    "1    Papier 8.5x11 500f",
+    "     485255096491                   13.97B",
+    "1    Manette sans fil Doh",
+    "     164696423529                   80.99B",
+    "     UGS 749043 d'écofrais inclus",
+    "Total partiel                        94,96",
+    "     5.00% TPS                        4,75",
+    "     9.975% TVQ                       9,47",
     "",
-    "Total                              71,20 $",
-    "Comptant                             80,00",
-    "Comptant Rendu                        8,80",
+    "Total                             109,18 $",
+    "Comptant                            110,00",
+    "Comptant Rendu                        0,80",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau BUREAU FICTIF. Demandez à un",
+    "      associé pour plus de détails.",
+    "******************************************",
     "",
     "Merci d'avoir magasiné chez BUREAU FICTIF",
     "",
@@ -150,16 +133,16 @@
     "degraded": "0014.jpg"
   },
   "degradation": {
-    "paper_gray": 243,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.058601865394871576,
+    "paper_gray": 239,
+    "ink_gray_top": 22,
+    "ink_gray_bottom": 57,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.05760863689979008,
-    "rotation_degrees": -0.18863887054220171,
-    "perspective": 0.002515413786344984,
-    "noise_sigma": 2.721803165544897,
-    "salt_pepper_fraction": 0.000838717477425597,
-    "jpeg_quality": 83
+    "blur_radius": 0.3891278715317074,
+    "rotation_degrees": 0.34265315643428895,
+    "perspective": 0.0005577429016120861,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
   }
 }

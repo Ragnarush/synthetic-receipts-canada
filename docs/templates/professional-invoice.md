@@ -28,14 +28,17 @@ colonnes) ; le générateur reste à 42 colonnes et replie les longues lignes.
 | Taxes | `TPS(5%):   2,15 $` / `TVQ(9,975%):   4,29 $` (taux en **virgule**) | `taxes[]` |
 | Total | `Total:   49,45 $` | `total_cents` |
 | Paiement | `7-nov.-2026  Comptant:   50,00 $` : la date du paiement **répétée** devant le mode | `tenders[]` |
-| Monnaie | `Monnaie   0,55 $` (sans deux-points) | `change_cents` |
+| Monnaie | `Monnaie   0,55 $` (sans deux-points), rendue sur le total arrondi aux 5 ¢ | `change_cents`, `cash_rounding_cents` |
 | Solde | `Solde:   0,00 $` | `balance_cents` |
 | Avis | `AUCUN RETOUR SUR LES MEDICAMENTS…` en majuscules, frais de prescription inclus dans le prix, intérêts sur solde impayé (`2% par mois`, `24%` par an) | — |
 
 **Taxes.** TPS 5 % et TVQ 9,975 % sur le sous-total, arrondies au cent (demi supérieur).
 
-**Comptant.** Seul le comptant a été observé, avec un total multiple de 5 ¢ et sans ligne
-d'arrondi : le générateur ne produit que des totaux multiples de 5 ¢.
+**Comptant.** Depuis le retrait du cent (2013), seul le **paiement au comptant** s'arrondit aux 5 ¢ les
+plus proches (x,x1-x,x2 vers le bas, x,x3-x,x4 vers le haut…) ; le total imprimé garde
+ses cents. La facture observée avait un total déjà multiple de 5 ¢ ; quand il ne l'est pas,
+la monnaie est rendue sur le total arrondi, **sans ligne d'arrondi imprimée** (forme
+non observée, déduite de la règle). L'écart vit dans `cash_rounding_cents`, à recalculer.
 
 **Mois abrégés.** Seul `sept.` a été observé. Les autres mois suivent les abréviations
 françaises usuelles (`janv.`, `févr.`, `mars`, `avr.`, `mai`, `juin`, `juil.`, `août`,
@@ -51,6 +54,8 @@ françaises usuelles (`janv.`, `févr.`, `mars`, `avr.`, `mai`, `juin`, `juil.`,
 - Numéros TPS et TVQ nus, sans suffixe : seule l'étiquette les distingue d'autres numéros.
 - `Monnaie` puis `Solde: 0,00 $` : deux montants après le total qui ne sont pas des
   paiements ; `Solde` à zéro ne veut pas dire « gratuit ».
+- `Comptant` − `Monnaie` ≠ `Total` quand le total ne finit pas par 0 ou 5 : l'arrondi
+  n'est pas imprimé, et le solde reste à zéro.
 - `2%` et `24%` dans l'avis sur les intérêts ressemblent à des taux de taxe.
 - Le nom du client n'est pas le commerçant : le premier nom propre après l'en-tête est
   celui du client.

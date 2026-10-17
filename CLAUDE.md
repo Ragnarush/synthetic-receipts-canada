@@ -55,8 +55,11 @@ gabarit » de la fiche, en attendant un reçu qui le montre.
   seul mode de compte généré.
 - Une extrapolation inévitable (les autres mois quand seul `sept.` a été vu) est
   **signalée comme telle** dans la fiche.
-- Une contrainte observée se respecte même si elle coûte un tirage : seul le comptant sans
-  ligne d'arrondi a été vu, donc on retire les articles jusqu'à un total multiple de 5 ¢.
+- Une règle connue s'applique même quand le reçu observé ne la montre pas, mais on ne
+  confond pas un hasard de l'observation avec une règle. Deux reçus payés au comptant
+  tombaient sur un total multiple de 5 ¢ : ce n'est pas une contrainte. La règle est
+  que seul le paiement au comptant s'arrondit aux 5 ¢ (`money.cash_rounded`), le total
+  garde ses cents, et l'écart va dans `cash_rounding_cents`, imprimé ou non.
 - Un terminal qui imprime toujours sur son propre papier (58 mm) le fait quel que soit
   `--paper` : la famille écrit la largeur réelle dans `paper_width_mm`, et le CLI rend
   l'image à cette largeur.

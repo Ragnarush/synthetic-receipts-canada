@@ -22,53 +22,64 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cartouche encre noire",
-      "upc": "179185651997",
+      "description": "Papier 8.5x11 500f",
+      "upc": "172107980631",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 5549,
-      "line_total_cents": 5549,
+      "unit_price_cents": 949,
+      "line_total_cents": 949,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Manette sans fil Doh",
-      "upc": "875222898211",
-      "sku": "502624",
+      "description": "Chargeur USB-C 30W",
+      "upc": "787512749816",
+      "sku": "939713",
       "eco_fee_included": true,
-      "unit_price_cents": 7549,
-      "line_total_cents": 7549,
+      "unit_price_cents": 4299,
+      "line_total_cents": 4299,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "779690991800",
+      "description": "Ecouteurs bt Specimen",
+      "upc": "527099667822",
+      "sku": "668545",
+      "eco_fee_included": true,
+      "unit_price_cents": 12797,
+      "line_total_cents": 12797,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cahier spirale 3 suj",
+      "upc": "504451808967",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 849,
-      "line_total_cents": 849,
+      "unit_price_cents": 399,
+      "line_total_cents": 399,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 13947,
+  "subtotal_cents": 18444,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 697
+      "cents": 922
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1391
+      "cents": 1840
     }
   ],
-  "total_cents": 16035,
+  "total_cents": 21206,
   "tip_cents": null,
   "gst_number": "486720588",
   "qst_number": "9715448262TQ0001MB",
@@ -76,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 17000
+      "cents": 21205
     }
   ],
-  "change_cents": 965,
+  "cash_rounding_cents": -1,
+  "change_cents": 0,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -93,20 +105,23 @@
     "",
     "1480084",
     "",
-    "1    Cartouche encre noire",
-    "     179185651997                   55.49B",
-    "1    Manette sans fil Doh",
-    "     875222898211                   75.49B",
-    "     UGS 502624 d'écofrais inclus",
-    "1    Classeur 1po Fictif",
-    "     779690991800                    8.49B",
-    "Total partiel                       139,47",
-    "     5.00% TPS                        6,97",
-    "     9.975% TVQ                      13,91",
+    "1    Papier 8.5x11 500f",
+    "     172107980631                    9.49B",
+    "1    Chargeur USB-C 30W",
+    "     787512749816                   42.99B",
+    "     UGS 939713 d'écofrais inclus",
+    "1    Ecouteurs bt Specimen",
+    "     527099667822                  127.97B",
+    "     UGS 668545 d'écofrais inclus",
+    "1    Cahier spirale 3 suj",
+    "     504451808967                    3.99B",
+    "Total partiel                       184,44",
+    "     5.00% TPS                        9,22",
+    "     9.975% TVQ                      18,40",
     "",
-    "Total                             160,35 $",
-    "Comptant                            170,00",
-    "Comptant Rendu                        9,65",
+    "Total                             212,06 $",
+    "Comptant                            212,05",
+    "Comptant Rendu                        0,00",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -148,15 +163,15 @@
   },
   "degradation": {
     "paper_gray": 245,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 49,
-    "shading_amplitude": 0.1051770523605795,
+    "ink_gray_top": 27,
+    "ink_gray_bottom": 61,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.328612194236115,
-    "rotation_degrees": -0.4156626299110755,
-    "perspective": 0.010880276478270928,
-    "noise_sigma": 3.08374072205089,
-    "salt_pepper_fraction": 0.000695847661955058,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.13840667905220794,
+    "perspective": 0.0034813156431107283,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0,
     "jpeg_quality": 92
   }
 }

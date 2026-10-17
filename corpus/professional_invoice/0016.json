@@ -34,28 +34,36 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 2.1 kg à 5kg",
-      "unit_price_cents": 5653,
-      "line_total_cents": 5653,
+      "description": "Nourriture canin FICTIVE 4 kg",
+      "unit_price_cents": 5916,
+      "line_total_cents": 5916,
+      "tax_flags": null
+    },
+    {
+      "kind": "service",
+      "qty": 1,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8654,
+      "line_total_cents": 8654,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 5653,
+  "subtotal_cents": 14570,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 283
+      "cents": 729
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 564
+      "cents": 1453
     }
   ],
-  "total_cents": 6500,
+  "total_cents": 16752,
   "tip_cents": null,
   "gst_number": "622932865",
   "qst_number": "9796847504",
@@ -63,10 +71,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 6500
+      "cents": 17000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": -2,
+  "change_cents": 250,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -88,17 +97,18 @@
     "",
     "",
     "Galette - 25186",
-    "   1 Antiparasitaire DOH canin     56,53 $",
-    "     2.1 kg à 5kg",
+    "   1 Nourriture canin FICTIVE 4    59,16 $",
+    "     kg",
+    "   1 Examen de santé complet       86,54 $",
     "",
-    "                   Sous-total:     56,53 $",
-    "                   TPS(5%):         2,83 $",
-    "                   TVQ(9,975%):     5,64 $",
-    "                   Total:          65,00 $",
+    "                   Sous-total:    145,70 $",
+    "                   TPS(5%):         7,29 $",
+    "                   TVQ(9,975%):    14,53 $",
+    "                   Total:         167,52 $",
     "",
-    "      24-juil.-2024  Comptant:     65,00 $",
+    "      24-juil.-2024  Comptant:    170,00 $",
     "",
-    "                     Monnaie        0,00 $",
+    "                     Monnaie        2,50 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -119,16 +129,16 @@
     "degraded": "0016.jpg"
   },
   "degradation": {
-    "paper_gray": 208,
-    "ink_gray_top": 63,
-    "ink_gray_bottom": 156,
-    "shading_amplitude": 0.3143713117958648,
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 1.2851361958447214,
-    "rotation_degrees": -4.038997907686957,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 61
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.40068602430732436,
+    "perspective": 0.0,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0005826481832577934,
+    "jpeg_quality": 85
   }
 }

@@ -22,53 +22,53 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "898823995346",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 699,
-      "line_total_cents": 699,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "038894488177",
+      "sku": "985869",
+      "eco_fee_included": true,
+      "unit_price_cents": 1399,
+      "line_total_cents": 1399,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Cle USB 64 Go Doh",
-      "upc": "376752826656",
-      "sku": "261877",
+      "upc": "842453126202",
+      "sku": "735803",
       "eco_fee_included": true,
-      "unit_price_cents": 2897,
-      "line_total_cents": 2897,
+      "unit_price_cents": 1297,
+      "line_total_cents": 1297,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Classeur 1po Fictif",
-      "upc": "393126241807",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 849,
-      "line_total_cents": 849,
+      "description": "Souris optique Quidam",
+      "upc": "877822133012",
+      "sku": "529129",
+      "eco_fee_included": true,
+      "unit_price_cents": 2397,
+      "line_total_cents": 2397,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 4445,
+  "subtotal_cents": 5093,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 222
+      "cents": 255
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 443
+      "cents": 508
     }
   ],
-  "total_cents": 5110,
+  "total_cents": 5856,
   "tip_cents": null,
   "gst_number": "467879562",
   "qst_number": "6987145975TQ0001JB",
@@ -76,10 +76,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 5500
+      "cents": 6000
     }
   ],
-  "change_cents": 390,
+  "cash_rounding_cents": -1,
+  "change_cents": 145,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -93,20 +94,22 @@
     "",
     "1888933",
     "",
-    "1    Classeur 1po Fictif",
-    "     898823995346                    6.99B",
     "1    Cle USB 64 Go Doh",
-    "     376752826656                   28.97B",
-    "     UGS 261877 d'écofrais inclus",
-    "1    Classeur 1po Fictif",
-    "     393126241807                    8.49B",
-    "Total partiel                        44,45",
-    "     5.00% TPS                        2,22",
-    "     9.975% TVQ                       4,43",
+    "     038894488177                   13.99B",
+    "     UGS 985869 d'écofrais inclus",
+    "1    Cle USB 64 Go Doh",
+    "     842453126202                   12.97B",
+    "     UGS 735803 d'écofrais inclus",
+    "1    Souris optique Quidam",
+    "     877822133012                   23.97B",
+    "     UGS 529129 d'écofrais inclus",
+    "Total partiel                        50,93",
+    "     5.00% TPS                        2,55",
+    "     9.975% TVQ                       5,08",
     "",
-    "Total                              51,10 $",
-    "Comptant                             55,00",
-    "Comptant Rendu                        3,90",
+    "Total                              58,56 $",
+    "Comptant                             60,00",
+    "Comptant Rendu                        1,45",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -147,16 +150,16 @@
     "degraded": "0009.jpg"
   },
   "degradation": {
-    "paper_gray": 215,
-    "ink_gray_top": 33,
-    "ink_gray_bottom": 124,
-    "shading_amplitude": 0.13385620594562456,
-    "fold_position": 0.5887215496921041,
-    "blur_radius": 0.5416935171342342,
-    "rotation_degrees": 0.9996391478303623,
-    "perspective": 0.035623634133771384,
-    "noise_sigma": 6.268498413114107,
-    "salt_pepper_fraction": 0.002608912607478091,
-    "jpeg_quality": 69
+    "paper_gray": 216,
+    "ink_gray_top": 43,
+    "ink_gray_bottom": 136,
+    "shading_amplitude": 0.15936869380984475,
+    "fold_position": 0.33309774801496733,
+    "blur_radius": 0.4883745823380797,
+    "rotation_degrees": 1.600455412454512,
+    "perspective": 0.038551843768672045,
+    "noise_sigma": 7.988272700401031,
+    "salt_pepper_fraction": 0.0010915784990006708,
+    "jpeg_quality": 82
   }
 }

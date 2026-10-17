@@ -22,53 +22,42 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Stylos gel 12 pqt",
-      "upc": "858409049349",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 1299,
-      "line_total_cents": 1299,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Cartouche encre noire",
-      "upc": "761772105169",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 4599,
-      "line_total_cents": 4599,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Souris optique Quidam",
-      "upc": "863500983045",
-      "sku": "802961",
+      "description": "Chargeur USB-C 30W",
+      "upc": "582159573023",
+      "sku": "817715",
       "eco_fee_included": true,
-      "unit_price_cents": 2899,
-      "line_total_cents": 2899,
+      "unit_price_cents": 4349,
+      "line_total_cents": 4349,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cahier spirale 3 suj",
+      "upc": "212850048679",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 399,
+      "line_total_cents": 399,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 8797,
+  "subtotal_cents": 4748,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 440
+      "cents": 237
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 878
+      "cents": 474
     }
   ],
-  "total_cents": 10115,
+  "total_cents": 5459,
   "tip_cents": null,
   "gst_number": "854863338",
   "qst_number": "9165080916TQ0001HK",
@@ -76,10 +65,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 11000
+      "cents": 10000
     }
   ],
-  "change_cents": 885,
+  "cash_rounding_cents": 1,
+  "change_cents": 4540,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -93,20 +83,18 @@
     "",
     "2595996",
     "",
-    "1    Stylos gel 12 pqt",
-    "     858409049349                   12.99B",
-    "1    Cartouche encre noire",
-    "     761772105169                   45.99B",
-    "1    Souris optique Quidam",
-    "     863500983045                   28.99B",
-    "     UGS 802961 d'écofrais inclus",
-    "Total partiel                        87,97",
-    "     5.00% TPS                        4,40",
-    "     9.975% TVQ                       8,78",
+    "1    Chargeur USB-C 30W",
+    "     582159573023                   43.49B",
+    "     UGS 817715 d'écofrais inclus",
+    "1    Cahier spirale 3 suj",
+    "     212850048679                    3.99B",
+    "Total partiel                        47,48",
+    "     5.00% TPS                        2,37",
+    "     9.975% TVQ                       4,74",
     "",
-    "Total                             101,15 $",
-    "Comptant                            110,00",
-    "Comptant Rendu                        8,85",
+    "Total                              54,59 $",
+    "Comptant                            100,00",
+    "Comptant Rendu                       45,40",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -147,16 +135,16 @@
     "degraded": "0011.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 29,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.10747243501025419,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": 0.19785921769359904,
-    "perspective": 0.0005239507456632897,
-    "noise_sigma": 4.207941939240971,
-    "salt_pepper_fraction": 0.0006355846924194257,
-    "jpeg_quality": 92
+    "paper_gray": 205,
+    "ink_gray_top": 66,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.33774237925582123,
+    "fold_position": 0.45150063927103273,
+    "blur_radius": 1.5456787782027626,
+    "rotation_degrees": 3.9157425393158265,
+    "perspective": 0.06,
+    "noise_sigma": 10.604675091213174,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 56
   }
 }

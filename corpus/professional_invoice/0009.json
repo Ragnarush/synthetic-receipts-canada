@@ -32,46 +32,46 @@
   },
   "items": [
     {
+      "kind": "product",
+      "qty": 1,
+      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
+      "unit_price_cents": 5390,
+      "line_total_cents": 5390,
+      "tax_flags": null
+    },
+    {
       "kind": "service",
       "qty": 1,
       "description": "Examen de santé complet",
-      "unit_price_cents": 9159,
-      "line_total_cents": 9159,
+      "unit_price_cents": 7096,
+      "line_total_cents": 7096,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
-      "unit_price_cents": 5824,
-      "line_total_cents": 5824,
-      "tax_flags": null
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Antiparasitaire DOH canin 5.1 kg à 10kg",
-      "unit_price_cents": 6252,
-      "line_total_cents": 6252,
+      "unit_price_cents": 5045,
+      "line_total_cents": 5045,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 21235,
+  "subtotal_cents": 17531,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 1062
+      "cents": 877
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 2118
+      "cents": 1749
     }
   ],
-  "total_cents": 24415,
+  "total_cents": 20157,
   "tip_cents": null,
   "gst_number": "563418816",
   "qst_number": "9177401181",
@@ -79,10 +79,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 24415
+      "cents": 22000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": -2,
+  "change_cents": 1845,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -104,20 +105,20 @@
     "",
     "",
     "Nala - 48531",
-    "   1 Examen de santé complet       91,59 $",
-    "   1 Antiparasitaire DOH canin     58,24 $",
+    "   1 Antiparasitaire DOH canin     53,90 $",
+    "     40.1 kg à 60kg",
+    "   1 Examen de santé complet       70,96 $",
+    "   1 Antiparasitaire DOH canin     50,45 $",
     "     5.1 kg à 10kg",
-    "   1 Antiparasitaire DOH canin     62,52 $",
-    "     5.1 kg à 10kg",
     "",
-    "                   Sous-total:    212,35 $",
-    "                   TPS(5%):        10,62 $",
-    "                   TVQ(9,975%):    21,18 $",
-    "                   Total:         244,15 $",
+    "                   Sous-total:    175,31 $",
+    "                   TPS(5%):         8,77 $",
+    "                   TVQ(9,975%):    17,49 $",
+    "                   Total:         201,57 $",
     "",
-    "      27-janv.-2024  Comptant:    244,15 $",
+    "      27-janv.-2024  Comptant:    220,00 $",
     "",
-    "                     Monnaie        0,00 $",
+    "                     Monnaie       18,45 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -138,16 +139,16 @@
     "degraded": "0009.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
+    "paper_gray": 238,
     "ink_gray_top": 20,
     "ink_gray_bottom": 40,
     "shading_amplitude": 0.05,
     "fold_position": null,
     "blur_radius": 0.0,
-    "rotation_degrees": -0.33379375790916543,
-    "perspective": 0.004373847877043293,
-    "noise_sigma": 2.129294535687934,
+    "rotation_degrees": 0.008848668832676876,
+    "perspective": 0.0,
+    "noise_sigma": 2.0,
     "salt_pepper_fraction": 0.0,
-    "jpeg_quality": 88
+    "jpeg_quality": 92
   }
 }

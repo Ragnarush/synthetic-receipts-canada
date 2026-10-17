@@ -22,53 +22,64 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cle USB 64 Go Doh",
-      "upc": "770394561659",
-      "sku": "501284",
-      "eco_fee_included": true,
-      "unit_price_cents": 1399,
-      "line_total_cents": 1399,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
       "description": "Cahier spirale 3 suj",
-      "upc": "127930216438",
+      "upc": "667940721986",
       "sku": null,
       "eco_fee_included": false,
-      "unit_price_cents": 349,
-      "line_total_cents": 349,
+      "unit_price_cents": 499,
+      "line_total_cents": 499,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Souris optique Quidam",
-      "upc": "585165078952",
-      "sku": "281383",
+      "description": "Ecouteurs bt Specimen",
+      "upc": "878319624412",
+      "sku": "713908",
       "eco_fee_included": true,
-      "unit_price_cents": 3897,
-      "line_total_cents": 3897,
+      "unit_price_cents": 6549,
+      "line_total_cents": 6549,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Manette sans fil Doh",
+      "upc": "062835268601",
+      "sku": "926592",
+      "eco_fee_included": true,
+      "unit_price_cents": 5299,
+      "line_total_cents": 5299,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cable HDMI 2m Doh",
+      "upc": "190801284309",
+      "sku": "300028",
+      "eco_fee_included": true,
+      "unit_price_cents": 2699,
+      "line_total_cents": 2699,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 5645,
+  "subtotal_cents": 15046,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 282
+      "cents": 752
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 563
+      "cents": 1501
     }
   ],
-  "total_cents": 6490,
+  "total_cents": 17299,
   "tip_cents": null,
   "gst_number": "260353397",
   "qst_number": "4102607691TQ0001BJ",
@@ -76,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 8000
+      "cents": 20000
     }
   ],
-  "change_cents": 1510,
+  "cash_rounding_cents": 1,
+  "change_cents": 2700,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -93,21 +105,24 @@
     "",
     "1227729",
     "",
-    "1    Cle USB 64 Go Doh",
-    "     770394561659                   13.99B",
-    "     UGS 501284 d'écofrais inclus",
     "1    Cahier spirale 3 suj",
-    "     127930216438                    3.49B",
-    "1    Souris optique Quidam",
-    "     585165078952                   38.97B",
-    "     UGS 281383 d'écofrais inclus",
-    "Total partiel                        56,45",
-    "     5.00% TPS                        2,82",
-    "     9.975% TVQ                       5,63",
+    "     667940721986                    4.99B",
+    "1    Ecouteurs bt Specimen",
+    "     878319624412                   65.49B",
+    "     UGS 713908 d'écofrais inclus",
+    "1    Manette sans fil Doh",
+    "     062835268601                   52.99B",
+    "     UGS 926592 d'écofrais inclus",
+    "1    Cable HDMI 2m Doh",
+    "     190801284309                   26.99B",
+    "     UGS 300028 d'écofrais inclus",
+    "Total partiel                       150,46",
+    "     5.00% TPS                        7,52",
+    "     9.975% TVQ                      15,01",
     "",
-    "Total                              64,90 $",
-    "Comptant                             80,00",
-    "Comptant Rendu                       15,10",
+    "Total                             172,99 $",
+    "Comptant                            200,00",
+    "Comptant Rendu                       27,00",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -146,16 +161,16 @@
     "degraded": "0001.jpg"
   },
   "degradation": {
-    "paper_gray": 219,
-    "ink_gray_top": 44,
-    "ink_gray_bottom": 110,
-    "shading_amplitude": 0.2534011999649959,
+    "paper_gray": 235,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 49,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.7649798683998104,
-    "rotation_degrees": 0.04054015413737035,
-    "perspective": 0.04177111352562582,
-    "noise_sigma": 8.692252557721952,
-    "salt_pepper_fraction": 0.00178403548705368,
-    "jpeg_quality": 75
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.5653875719545058,
+    "perspective": 0.00892275863931549,
+    "noise_sigma": 3.7303897476687298,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 92
   }
 }

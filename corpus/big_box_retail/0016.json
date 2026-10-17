@@ -22,42 +22,64 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Chargeur USB-C 30W",
-      "upc": "077464400247",
-      "sku": "114505",
+      "description": "Clavier sans fil Fictf",
+      "upc": "890267241894",
+      "sku": "942330",
       "eco_fee_included": true,
-      "unit_price_cents": 3599,
-      "line_total_cents": 3599,
+      "unit_price_cents": 3197,
+      "line_total_cents": 3197,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cahier spirale 3 suj",
-      "upc": "235017089540",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 797,
-      "line_total_cents": 797,
+      "description": "Clavier sans fil Fictf",
+      "upc": "623554775496",
+      "sku": "271668",
+      "eco_fee_included": true,
+      "unit_price_cents": 7799,
+      "line_total_cents": 7799,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "588124727387",
+      "sku": "839272",
+      "eco_fee_included": true,
+      "unit_price_cents": 2099,
+      "line_total_cents": 2099,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Manette sans fil Doh",
+      "upc": "460284938250",
+      "sku": "748624",
+      "eco_fee_included": true,
+      "unit_price_cents": 6199,
+      "line_total_cents": 6199,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 4396,
+  "subtotal_cents": 19294,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 220
+      "cents": 965
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 439
+      "cents": 1925
     }
   ],
-  "total_cents": 5055,
+  "total_cents": 22184,
   "tip_cents": null,
   "gst_number": "885475280",
   "qst_number": "7838169009TQ0001VP",
@@ -65,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 10000
+      "cents": 22185
     }
   ],
-  "change_cents": 4945,
+  "cash_rounding_cents": 1,
+  "change_cents": 0,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -82,18 +105,25 @@
     "",
     "2657048",
     "",
-    "1    Chargeur USB-C 30W",
-    "     077464400247                   35.99B",
-    "     UGS 114505 d'écofrais inclus",
-    "1    Cahier spirale 3 suj",
-    "     235017089540                    7.97B",
-    "Total partiel                        43,96",
-    "     5.00% TPS                        2,20",
-    "     9.975% TVQ                       4,39",
+    "1    Clavier sans fil Fictf",
+    "     890267241894                   31.97B",
+    "     UGS 942330 d'écofrais inclus",
+    "1    Clavier sans fil Fictf",
+    "     623554775496                   77.99B",
+    "     UGS 271668 d'écofrais inclus",
+    "1    Cle USB 64 Go Doh",
+    "     588124727387                   20.99B",
+    "     UGS 839272 d'écofrais inclus",
+    "1    Manette sans fil Doh",
+    "     460284938250                   61.99B",
+    "     UGS 748624 d'écofrais inclus",
+    "Total partiel                       192,94",
+    "     5.00% TPS                        9,65",
+    "     9.975% TVQ                      19,25",
     "",
-    "Total                              50,55 $",
-    "Comptant                            100,00",
-    "Comptant Rendu                       49,45",
+    "Total                             221,84 $",
+    "Comptant                            221,85",
+    "Comptant Rendu                        0,00",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -134,16 +164,16 @@
     "degraded": "0016.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 70,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.33559511225148325,
-    "fold_position": 0.4217599365235728,
-    "blur_radius": 1.3951763162263444,
-    "rotation_degrees": -3.022847485525345,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.0031757246122601996,
-    "jpeg_quality": 55
+    "paper_gray": 218,
+    "ink_gray_top": 34,
+    "ink_gray_bottom": 83,
+    "shading_amplitude": 0.25040208227990357,
+    "fold_position": 0.32858349933164144,
+    "blur_radius": 0.9850775488550577,
+    "rotation_degrees": 0.7901292528059581,
+    "perspective": 0.02899473234913212,
+    "noise_sigma": 5.978380260362668,
+    "salt_pepper_fraction": 0.0019808125290861566,
+    "jpeg_quality": 67
   }
 }

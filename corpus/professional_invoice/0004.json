@@ -34,52 +34,44 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Nourriture canin FICTIVE 8 kg",
-      "unit_price_cents": 5204,
-      "line_total_cents": 5204,
+      "description": "Antiparasitaire DOH canin 20.1 kg à 40kg",
+      "unit_price_cents": 6108,
+      "line_total_cents": 6108,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
-      "unit_price_cents": 3611,
-      "line_total_cents": 3611,
+      "description": "Nourriture canin FICTIVE 2 kg",
+      "unit_price_cents": 6372,
+      "line_total_cents": 6372,
       "tax_flags": null
     },
     {
-      "kind": "product",
+      "kind": "service",
       "qty": 1,
-      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
-      "unit_price_cents": 6186,
-      "line_total_cents": 6186,
-      "tax_flags": null
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Nourriture canin FICTIVE 8 kg",
-      "unit_price_cents": 6021,
-      "line_total_cents": 6021,
+      "description": "Examen de santé complet",
+      "unit_price_cents": 8726,
+      "line_total_cents": 8726,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 21022,
+  "subtotal_cents": 21206,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 1051
+      "cents": 1060
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 2097
+      "cents": 2115
     }
   ],
-  "total_cents": 24170,
+  "total_cents": 24381,
   "tip_cents": null,
   "gst_number": "290882625",
   "qst_number": "6772815572",
@@ -90,7 +82,8 @@
       "cents": 26000
     }
   ],
-  "change_cents": 1830,
+  "cash_rounding_cents": -1,
+  "change_cents": 1620,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -112,24 +105,32 @@
     "",
     "",
     "Filou - 20350",
-    "   1 Nourriture canin FICTIVE 8    52,04 $",
+    "   1 Antiparasitaire DOH canin     61,08 $",
+    "     20.1 kg à 40kg",
+    "   1 Nourriture canin FICTIVE 2    63,72 $",
     "     kg",
-    "   1 Antiparasitaire DOH canin     36,11 $",
-    "     40.1 kg à 60kg",
-    "   1 Antiparasitaire DOH canin     61,86 $",
-    "     40.1 kg à 60kg",
-    "   1 Nourriture canin FICTIVE 8    60,21 $",
-    "     kg",
+    "   1 Examen de santé complet       87,26 $",
     "",
-    "                   Sous-total:    210,22 $",
-    "                   TPS(5%):        10,51 $",
-    "                   TVQ(9,975%):    20,97 $",
-    "                   Total:         241,70 $",
+    "                   Sous-total:    212,06 $",
+    "                   TPS(5%):        10,60 $",
+    "                   TVQ(9,975%):    21,15 $",
+    "                   Total:         243,81 $",
     "",
     "        6-nov.-2024  Comptant:    260,00 $",
     "",
-    "                     Monnaie       18,30 $",
+    "                     Monnaie       16,20 $",
     "                   Solde:           0,00 $",
+    "",
+    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
+    "RAISONS DE SÉCURITÉ <------------",
+    "",
+    "Les frais de prescription et de",
+    "préparation sont inclus dans le prix total",
+    "des médicaments",
+    "",
+    "Des intérêts de 2% par mois équivalent à",
+    "un taux de 24% annuellement seront",
+    "appliqués sur tout solde impayé",
     "",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -138,16 +139,16 @@
     "degraded": "0004.jpg"
   },
   "degradation": {
-    "paper_gray": 213,
-    "ink_gray_top": 59,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.35,
+    "paper_gray": 225,
+    "ink_gray_top": 53,
+    "ink_gray_bottom": 90,
+    "shading_amplitude": 0.22998392488741765,
     "fold_position": null,
-    "blur_radius": 1.6,
-    "rotation_degrees": 4.423218556890881,
-    "perspective": 0.047622885530649556,
-    "noise_sigma": 10.082868104109,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 59
+    "blur_radius": 0.9226658269158045,
+    "rotation_degrees": -0.17919512681679656,
+    "perspective": 0.03661208496290372,
+    "noise_sigma": 7.949898368571208,
+    "salt_pepper_fraction": 0.002383332577649804,
+    "jpeg_quality": 68
   }
 }

@@ -34,44 +34,52 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Nourriture félin FICTIVE 8 kg",
-      "unit_price_cents": 6388,
-      "line_total_cents": 6388,
+      "description": "Antiparasitaire DOH félin 4.1 kg à 8kg",
+      "unit_price_cents": 3476,
+      "line_total_cents": 3476,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Nourriture félin FICTIVE 2 kg",
-      "unit_price_cents": 6159,
-      "line_total_cents": 6159,
+      "description": "Antiparasitaire DOH félin 4.1 kg à 8kg",
+      "unit_price_cents": 5674,
+      "line_total_cents": 5674,
       "tax_flags": null
     },
     {
       "kind": "product",
       "qty": 1,
       "description": "Antiparasitaire DOH félin 2.1 kg à 4kg",
-      "unit_price_cents": 5401,
-      "line_total_cents": 5401,
+      "unit_price_cents": 3082,
+      "line_total_cents": 3082,
+      "tax_flags": null
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Nourriture félin FICTIVE 2 kg",
+      "unit_price_cents": 4690,
+      "line_total_cents": 4690,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 17948,
+  "subtotal_cents": 16922,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 897
+      "cents": 846
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1790
+      "cents": 1688
     }
   ],
-  "total_cents": 20635,
+  "total_cents": 19456,
   "tip_cents": null,
   "gst_number": "795877493",
   "qst_number": "7655939904",
@@ -79,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 22000
+      "cents": 20000
     }
   ],
-  "change_cents": 1365,
+  "cash_rounding_cents": -1,
+  "change_cents": 545,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -104,33 +113,24 @@
     "",
     "",
     "Biscuit - 19916",
-    "   1 Nourriture félin FICTIVE 8    63,88 $",
-    "     kg",
-    "   1 Nourriture félin FICTIVE 2    61,59 $",
-    "     kg",
-    "   1 Antiparasitaire DOH félin     54,01 $",
+    "   1 Antiparasitaire DOH félin     34,76 $",
+    "     4.1 kg à 8kg",
+    "   1 Antiparasitaire DOH félin     56,74 $",
+    "     4.1 kg à 8kg",
+    "   1 Antiparasitaire DOH félin     30,82 $",
     "     2.1 kg à 4kg",
+    "   1 Nourriture félin FICTIVE 2    46,90 $",
+    "     kg",
     "",
-    "                   Sous-total:    179,48 $",
-    "                   TPS(5%):         8,97 $",
-    "                   TVQ(9,975%):    17,90 $",
-    "                   Total:         206,35 $",
+    "                   Sous-total:    169,22 $",
+    "                   TPS(5%):         8,46 $",
+    "                   TVQ(9,975%):    16,88 $",
+    "                   Total:         194,56 $",
     "",
-    "       30-mars-2025  Comptant:    220,00 $",
+    "       30-mars-2025  Comptant:    200,00 $",
     "",
-    "                     Monnaie       13,65 $",
+    "                     Monnaie        5,45 $",
     "                   Solde:           0,00 $",
-    "",
-    "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
-    "RAISONS DE SÉCURITÉ <------------",
-    "",
-    "Les frais de prescription et de",
-    "préparation sont inclus dans le prix total",
-    "des médicaments",
-    "",
-    "Des intérêts de 2% par mois équivalent à",
-    "un taux de 24% annuellement seront",
-    "appliqués sur tout solde impayé",
     "",
     "   SPÉCIMEN - synthetic-receipts-canada"
   ],
@@ -139,16 +139,16 @@
     "degraded": "0015.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 62,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.3180191353041728,
-    "fold_position": 0.635978880606658,
-    "blur_radius": 1.6,
-    "rotation_degrees": -2.4621061196236083,
-    "perspective": 0.06,
-    "noise_sigma": 11.420660053999704,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 55
+    "paper_gray": 245,
+    "ink_gray_top": 28,
+    "ink_gray_bottom": 41,
+    "shading_amplitude": 0.11025998195204388,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.7368782093806516,
+    "perspective": 0.0017985120478574235,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 9.439351384277339e-05,
+    "jpeg_quality": 92
   }
 }

@@ -22,31 +22,64 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cle USB 64 Go Doh",
-      "upc": "381469144694",
-      "sku": "162615",
+      "description": "Ecouteurs bt Specimen",
+      "upc": "180334461042",
+      "sku": "909768",
       "eco_fee_included": true,
-      "unit_price_cents": 1849,
-      "line_total_cents": 1849,
+      "unit_price_cents": 6649,
+      "line_total_cents": 6649,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Clavier sans fil Fictf",
+      "upc": "551556315192",
+      "sku": "333798",
+      "eco_fee_included": true,
+      "unit_price_cents": 3897,
+      "line_total_cents": 3897,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Papier 8.5x11 500f",
+      "upc": "539518015730",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1149,
+      "line_total_cents": 1149,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Clavier sans fil Fictf",
+      "upc": "253074165143",
+      "sku": "524660",
+      "eco_fee_included": true,
+      "unit_price_cents": 4097,
+      "line_total_cents": 4097,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 1849,
+  "subtotal_cents": 15792,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 92
+      "cents": 790
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 184
+      "cents": 1575
     }
   ],
-  "total_cents": 2125,
+  "total_cents": 18157,
   "tip_cents": null,
   "gst_number": "171076380",
   "qst_number": "7414257008TQ0001AS",
@@ -54,10 +87,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 2125
+      "cents": 19000
     }
   ],
-  "change_cents": 0,
+  "cash_rounding_cents": -2,
+  "change_cents": 845,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -71,24 +105,24 @@
     "",
     "2966521",
     "",
-    "1    Cle USB 64 Go Doh",
-    "     381469144694                   18.49B",
-    "     UGS 162615 d'écofrais inclus",
-    "Total partiel                        18,49",
-    "     5.00% TPS                        0,92",
-    "     9.975% TVQ                       1,84",
+    "1    Ecouteurs bt Specimen",
+    "     180334461042                   66.49B",
+    "     UGS 909768 d'écofrais inclus",
+    "1    Clavier sans fil Fictf",
+    "     551556315192                   38.97B",
+    "     UGS 333798 d'écofrais inclus",
+    "1    Papier 8.5x11 500f",
+    "     539518015730                   11.49B",
+    "1    Clavier sans fil Fictf",
+    "     253074165143                   40.97B",
+    "     UGS 524660 d'écofrais inclus",
+    "Total partiel                       157,92",
+    "     5.00% TPS                        7,90",
+    "     9.975% TVQ                      15,75",
     "",
-    "Total                              21,25 $",
-    "Comptant                             21,25",
-    "Comptant Rendu                        0,00",
-    "******************************************",
-    "   Les écouteurs et casques ouverts ne",
-    "       peuvent pas être retournés.",
-    "******************************************",
-    "Échangez votre ancien appareil contre une",
-    " carte-cadeau FOURNITURES DOH. Demandez à",
-    "     un associé pour plus de détails.",
-    "******************************************",
+    "Total                             181,57 $",
+    "Comptant                            190,00",
+    "Comptant Rendu                        8,45",
     "",
     " Merci d'avoir magasiné chez FOURNITURES",
     "                   DOH",
@@ -121,16 +155,16 @@
     "degraded": "0008.jpg"
   },
   "degradation": {
-    "paper_gray": 239,
-    "ink_gray_top": 32,
-    "ink_gray_bottom": 43,
-    "shading_amplitude": 0.1127514641768749,
-    "fold_position": null,
-    "blur_radius": 0.07907354753116991,
-    "rotation_degrees": -0.09331818826832938,
-    "perspective": 0.008360172788592109,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.0008631333386848985,
-    "jpeg_quality": 92
+    "paper_gray": 215,
+    "ink_gray_top": 44,
+    "ink_gray_bottom": 76,
+    "shading_amplitude": 0.2411136235771032,
+    "fold_position": 0.41047426518086616,
+    "blur_radius": 0.7860368847531194,
+    "rotation_degrees": 0.714390191628521,
+    "perspective": 0.03509870809347045,
+    "noise_sigma": 8.675172507719767,
+    "salt_pepper_fraction": 0.00273633410642567,
+    "jpeg_quality": 68
   }
 }

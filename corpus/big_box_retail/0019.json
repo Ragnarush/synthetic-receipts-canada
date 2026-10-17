@@ -22,64 +22,31 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cartouche encre noire",
-      "upc": "291640920977",
-      "sku": null,
-      "eco_fee_included": false,
+      "description": "Cable HDMI 2m Doh",
+      "upc": "405536109215",
+      "sku": "261345",
+      "eco_fee_included": true,
       "unit_price_cents": 2599,
       "line_total_cents": 2599,
       "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Chargeur USB-C 30W",
-      "upc": "231531003742",
-      "sku": "363651",
-      "eco_fee_included": true,
-      "unit_price_cents": 2549,
-      "line_total_cents": 2549,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Ecouteurs bt Specimen",
-      "upc": "799175953625",
-      "sku": "519476",
-      "eco_fee_included": true,
-      "unit_price_cents": 4099,
-      "line_total_cents": 4099,
-      "tax_flags": "B"
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Stylos gel 12 pqt",
-      "upc": "565302001880",
-      "sku": null,
-      "eco_fee_included": false,
-      "unit_price_cents": 899,
-      "line_total_cents": 899,
-      "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 10146,
+  "subtotal_cents": 2599,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 507
+      "cents": 130
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1012
+      "cents": 259
     }
   ],
-  "total_cents": 11665,
+  "total_cents": 2988,
   "tip_cents": null,
   "gst_number": "283550027",
   "qst_number": "9464130626TQ0001RT",
@@ -87,10 +54,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 12000
+      "cents": 4000
     }
   ],
-  "change_cents": 335,
+  "cash_rounding_cents": 2,
+  "change_cents": 1010,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -104,23 +72,16 @@
     "",
     "2028039",
     "",
-    "1    Cartouche encre noire",
-    "     291640920977                   25.99B",
-    "1    Chargeur USB-C 30W",
-    "     231531003742                   25.49B",
-    "     UGS 363651 d'écofrais inclus",
-    "1    Ecouteurs bt Specimen",
-    "     799175953625                   40.99B",
-    "     UGS 519476 d'écofrais inclus",
-    "1    Stylos gel 12 pqt",
-    "     565302001880                    8.99B",
-    "Total partiel                       101,46",
-    "     5.00% TPS                        5,07",
-    "     9.975% TVQ                      10,12",
+    "1    Cable HDMI 2m Doh",
+    "     405536109215                   25.99B",
+    "     UGS 261345 d'écofrais inclus",
+    "Total partiel                        25,99",
+    "     5.00% TPS                        1,30",
+    "     9.975% TVQ                       2,59",
     "",
-    "Total                             116,65 $",
-    "Comptant                            120,00",
-    "Comptant Rendu                        3,35",
+    "Total                              29,88 $",
+    "Comptant                             40,00",
+    "Comptant Rendu                       10,10",
     "******************************************",
     "   Les écouteurs et casques ouverts ne",
     "       peuvent pas être retournés.",
@@ -161,16 +122,16 @@
     "degraded": "0019.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 61,
-    "ink_gray_bottom": 148,
-    "shading_amplitude": 0.35,
-    "fold_position": 0.43073289090396427,
-    "blur_radius": 1.6,
-    "rotation_degrees": 1.1304874662356315,
-    "perspective": 0.05349414637400805,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 55
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.04645072190060624,
+    "rotation_degrees": 0.08005141089336623,
+    "perspective": 0.009815050021333786,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0006938140353152909,
+    "jpeg_quality": 92
   }
 }

@@ -34,44 +34,28 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Vaccin annuel RCP",
-      "unit_price_cents": 3701,
-      "line_total_cents": 3701,
-      "tax_flags": null
-    },
-    {
-      "kind": "service",
-      "qty": 1,
-      "description": "Examen de santé complet",
-      "unit_price_cents": 7841,
-      "line_total_cents": 7841,
-      "tax_flags": null
-    },
-    {
-      "kind": "service",
-      "qty": 1,
-      "description": "Examen de santé complet",
-      "unit_price_cents": 8484,
-      "line_total_cents": 8484,
+      "description": "Nourriture félin FICTIVE 8 kg",
+      "unit_price_cents": 6720,
+      "line_total_cents": 6720,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 20026,
+  "subtotal_cents": 6720,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 1001
+      "cents": 336
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1998
+      "cents": 670
     }
   ],
-  "total_cents": 23025,
+  "total_cents": 7726,
   "tip_cents": null,
   "gst_number": "415094287",
   "qst_number": "8032490087",
@@ -79,10 +63,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 24000
+      "cents": 8000
     }
   ],
-  "change_cents": 975,
+  "cash_rounding_cents": -1,
+  "change_cents": 275,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -104,18 +89,17 @@
     "",
     "",
     "Caramel - 10228",
-    "   1 Vaccin annuel RCP             37,01 $",
-    "   1 Examen de santé complet       78,41 $",
-    "   1 Examen de santé complet       84,84 $",
+    "   1 Nourriture félin FICTIVE 8    67,20 $",
+    "     kg",
     "",
-    "                   Sous-total:    200,26 $",
-    "                   TPS(5%):        10,01 $",
-    "                   TVQ(9,975%):    19,98 $",
-    "                   Total:         230,25 $",
+    "                   Sous-total:     67,20 $",
+    "                   TPS(5%):         3,36 $",
+    "                   TVQ(9,975%):     6,70 $",
+    "                   Total:          77,26 $",
     "",
-    "       14-avr.-2024  Comptant:    240,00 $",
+    "       14-avr.-2024  Comptant:     80,00 $",
     "",
-    "                     Monnaie        9,75 $",
+    "                     Monnaie        2,75 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -136,16 +120,16 @@
     "degraded": "0020.jpg"
   },
   "degradation": {
-    "paper_gray": 215,
-    "ink_gray_top": 56,
-    "ink_gray_bottom": 91,
-    "shading_amplitude": 0.2711720782005957,
+    "paper_gray": 230,
+    "ink_gray_top": 45,
+    "ink_gray_bottom": 116,
+    "shading_amplitude": 0.1870449161818331,
     "fold_position": null,
-    "blur_radius": 0.9293528011049471,
-    "rotation_degrees": -1.418010879930892,
-    "perspective": 0.015445035317450574,
-    "noise_sigma": 7.397317308103659,
-    "salt_pepper_fraction": 0.00118105011331551,
-    "jpeg_quality": 79
+    "blur_radius": 0.8859955408054548,
+    "rotation_degrees": 0.8435695660155165,
+    "perspective": 0.01883743958879591,
+    "noise_sigma": 7.883254290629612,
+    "salt_pepper_fraction": 0.0010498629541031775,
+    "jpeg_quality": 67
   }
 }

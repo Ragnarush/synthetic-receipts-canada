@@ -34,44 +34,36 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Vaccin annuel DHPP",
-      "unit_price_cents": 5440,
-      "line_total_cents": 5440,
+      "description": "Nourriture canin FICTIVE 4 kg",
+      "unit_price_cents": 8679,
+      "line_total_cents": 8679,
       "tax_flags": null
     },
     {
       "kind": "service",
       "qty": 1,
       "description": "Examen de santé complet",
-      "unit_price_cents": 9191,
-      "line_total_cents": 9191,
-      "tax_flags": null
-    },
-    {
-      "kind": "product",
-      "qty": 1,
-      "description": "Antiparasitaire DOH canin 40.1 kg à 60kg",
-      "unit_price_cents": 2556,
-      "line_total_cents": 2556,
+      "unit_price_cents": 8178,
+      "line_total_cents": 8178,
       "tax_flags": null
     }
   ],
-  "subtotal_cents": 17187,
+  "subtotal_cents": 16857,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 859
+      "cents": 843
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 1714
+      "cents": 1681
     }
   ],
-  "total_cents": 19760,
+  "total_cents": 19381,
   "tip_cents": null,
   "gst_number": "338203275",
   "qst_number": "6568009156",
@@ -82,7 +74,8 @@
       "cents": 20000
     }
   ],
-  "change_cents": 240,
+  "cash_rounding_cents": -1,
+  "change_cents": 620,
   "balance_cents": 0,
   "card": null,
   "document_kind": "invoice",
@@ -104,19 +97,18 @@
     "",
     "",
     "Moka - 13282",
-    "   1 Vaccin annuel DHPP            54,40 $",
-    "   1 Examen de santé complet       91,91 $",
-    "   1 Antiparasitaire DOH canin     25,56 $",
-    "     40.1 kg à 60kg",
+    "   1 Nourriture canin FICTIVE 4    86,79 $",
+    "     kg",
+    "   1 Examen de santé complet       81,78 $",
     "",
-    "                   Sous-total:    171,87 $",
-    "                   TPS(5%):         8,59 $",
-    "                   TVQ(9,975%):    17,14 $",
-    "                   Total:         197,60 $",
+    "                   Sous-total:    168,57 $",
+    "                   TPS(5%):         8,43 $",
+    "                   TVQ(9,975%):    16,81 $",
+    "                   Total:         193,81 $",
     "",
     "       9-sept.-2025  Comptant:    200,00 $",
     "",
-    "                     Monnaie        2,40 $",
+    "                     Monnaie        6,20 $",
     "                   Solde:           0,00 $",
     "",
     "AUCUN RETOUR SUR LES MEDICAMENTS POUR DES",
@@ -137,16 +129,16 @@
     "degraded": "0002.jpg"
   },
   "degradation": {
-    "paper_gray": 241,
-    "ink_gray_top": 30,
-    "ink_gray_bottom": 43,
-    "shading_amplitude": 0.06327960789411745,
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 50,
+    "shading_amplitude": 0.05,
     "fold_position": null,
-    "blur_radius": 0.08657690646287888,
-    "rotation_degrees": 0.3360362128672092,
-    "perspective": 0.0,
-    "noise_sigma": 3.5294095822341407,
-    "salt_pepper_fraction": 0.00046106710151778475,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.4876664904130951,
+    "perspective": 0.013515913134328364,
+    "noise_sigma": 2.6208777422710883,
+    "salt_pepper_fraction": 0.0,
     "jpeg_quality": 92
   }
 }

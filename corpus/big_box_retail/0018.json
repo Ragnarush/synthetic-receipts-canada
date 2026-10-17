@@ -22,42 +22,42 @@
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cle USB 64 Go Doh",
-      "upc": "571465416960",
-      "sku": "853247",
-      "eco_fee_included": true,
-      "unit_price_cents": 1999,
-      "line_total_cents": 1999,
+      "description": "Classeur 1po Fictif",
+      "upc": "735264316956",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 999,
+      "line_total_cents": 999,
       "tax_flags": "B"
     },
     {
       "kind": "product",
       "qty": 1,
-      "description": "Cable HDMI 2m Doh",
-      "upc": "337337195906",
-      "sku": "905073",
-      "eco_fee_included": true,
-      "unit_price_cents": 1897,
-      "line_total_cents": 1897,
+      "description": "Stylos gel 12 pqt",
+      "upc": "066561750203",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1549,
+      "line_total_cents": 1549,
       "tax_flags": "B"
     }
   ],
-  "subtotal_cents": 3896,
+  "subtotal_cents": 2548,
   "taxes": [
     {
       "kind": "GST",
       "label": "TPS",
       "rate": "0.05",
-      "cents": 195
+      "cents": 127
     },
     {
       "kind": "QST",
       "label": "TVQ",
       "rate": "0.09975",
-      "cents": 389
+      "cents": 254
     }
   ],
-  "total_cents": 4480,
+  "total_cents": 2929,
   "tip_cents": null,
   "gst_number": "779988169",
   "qst_number": "2389161140TQ0001YR",
@@ -65,10 +65,11 @@
   "tenders": [
     {
       "method": "cash",
-      "cents": 6000
+      "cents": 2930
     }
   ],
-  "change_cents": 1520,
+  "cash_rounding_cents": 1,
+  "change_cents": 0,
   "card": null,
   "document_kind": "sales_receipt",
   "text_lines": [
@@ -82,27 +83,17 @@
     "",
     "1827310",
     "",
-    "1    Cle USB 64 Go Doh",
-    "     571465416960                   19.99B",
-    "     UGS 853247 d'écofrais inclus",
-    "1    Cable HDMI 2m Doh",
-    "     337337195906                   18.97B",
-    "     UGS 905073 d'écofrais inclus",
-    "Total partiel                        38,96",
-    "     5.00% TPS                        1,95",
-    "     9.975% TVQ                       3,89",
+    "1    Classeur 1po Fictif",
+    "     735264316956                    9.99B",
+    "1    Stylos gel 12 pqt",
+    "     066561750203                   15.49B",
+    "Total partiel                        25,48",
+    "     5.00% TPS                        1,27",
+    "     9.975% TVQ                       2,54",
     "",
-    "Total                              44,80 $",
-    "Comptant                             60,00",
-    "Comptant Rendu                       15,20",
-    "******************************************",
-    "   Les écouteurs et casques ouverts ne",
-    "       peuvent pas être retournés.",
-    "******************************************",
-    "Échangez votre ancien appareil contre une",
-    " carte-cadeau FOURNITURES DOH. Demandez à",
-    "     un associé pour plus de détails.",
-    "******************************************",
+    "Total                              29,29 $",
+    "Comptant                             29,30",
+    "Comptant Rendu                        0,00",
     "",
     " Merci d'avoir magasiné chez FOURNITURES",
     "                   DOH",
@@ -135,16 +126,16 @@
     "degraded": "0018.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 27,
-    "ink_gray_bottom": 50,
-    "shading_amplitude": 0.1203146938812355,
+    "paper_gray": 239,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.05,
     "fold_position": null,
     "blur_radius": 0.0,
-    "rotation_degrees": -0.26262483744624443,
+    "rotation_degrees": -0.2185074389841658,
     "perspective": 0.0,
-    "noise_sigma": 3.4022401735058967,
-    "salt_pepper_fraction": 4.129020944988904e-05,
+    "noise_sigma": 3.078903602884461,
+    "salt_pepper_fraction": 0.00019485146980656798,
     "jpeg_quality": 90
   }
 }
