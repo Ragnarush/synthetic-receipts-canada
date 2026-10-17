@@ -112,3 +112,11 @@ def fake_restaurant(rng: random.Random) -> Merchant:
 
 def fake_first_name(rng: random.Random) -> str:
     return rng.choice(FIRST_NAMES)
+
+
+# Surnames that read as placeholders, so a printed full name can never point at a real person.
+LAST_NAMES = ["Doh", "Untel", "Fictif", "Exemple", "Spécimen", "Lambda", "Toutlemonde", "Quidam"]
+
+
+def fake_full_name(rng: random.Random) -> str:
+    return f"{fake_first_name(rng)} {rng.choice(LAST_NAMES)}"

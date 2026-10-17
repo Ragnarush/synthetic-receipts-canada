@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "family": "grocery_chain",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ALIMENTATION DOH",
+    "address_lines": [
+      "364,DES ERABLES, DRUMMONDVILLE"
+    ],
+    "phone": "418-555-0175"
+  },
+  "store_number": "6311",
+  "datetime": "2024-07-23T08:08:00",
+  "transaction_number": "3829",
+  "items": [
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "08606306168",
+      "description": "LITIERE AGGL 14KG",
+      "qty": 2,
+      "unit_price_cents": 900,
+      "weight_kg": null,
+      "promo": {
+        "limit": 6,
+        "regular_cents": 950
+      },
+      "line_total_cents": 1800,
+      "tax_flags": "FPMRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "03729612201",
+      "description": "JUS POMME 1.89L",
+      "qty": 1,
+      "unit_price_cents": 225,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 225,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "23-PRODUITS SURGELES",
+      "code": "05302116726",
+      "description": "LASAGNE VIANDE",
+      "qty": 1,
+      "unit_price_cents": 1225,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 1225,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "35-CHARCUTERIE",
+      "code": "03732010453",
+      "description": "JAMBON TR MINCE",
+      "qty": 1,
+      "unit_price_cents": 549,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 549,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "35-CHARCUTERIE",
+      "code": "06436454107",
+      "description": "FROMAGE GRAINS 600G",
+      "qty": 4,
+      "unit_price_cents": 1298,
+      "weight_kg": null,
+      "promo": {
+        "limit": 6,
+        "regular_cents": 1398
+      },
+      "line_total_cents": 5192,
+      "tax_flags": "MRJ"
+    }
+  ],
+  "subtotal_cents": 8991,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "base_cents": 1800,
+      "cents": 90
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "base_cents": 1800,
+      "cents": 180
+    }
+  ],
+  "total_cents": 9261,
+  "tip_cents": null,
+  "gst_number": "330049858RT0001",
+  "qst_number": null,
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 9500
+    }
+  ],
+  "cash_rounding_cents": -1,
+  "change_cents": 240,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "   ALIMENTATION DOH",
+    "",
+    "ALIMENTATION DOH DRUMMONDVILLE (6311)",
+    "364,DES ERABLES, DRUMMONDVILLE",
+    "",
+    "21-EPICERIE",
+    "  (2)08606306168 LITIERE AGGL 14KG",
+    "            FPMRJ",
+    "   $9.00 lmt 6, $9.50 ch",
+    "   2 @ $9.00 ch                      18.00",
+    " 03729612201 JUS POMME 1. MRJ     2.25",
+    "23-PRODUITS SURGELES",
+    " 05302116726 LASAGNE VIAN MRJ    12.25",
+    "35-CHARCUTERIE",
+    " 03732010453 JAMBON TR MI MRJ     5.49",
+    "  (4)06436454107 FROMAGE GRAINS 60 MRJ",
+    "   $12.98 lmt 6, $13.98 ch",
+    "   4 @ $12.98 ch                     51.92",
+    "SOUS-TOTAL      89.91",
+    "   F=T.P.S 5%   18.00 @  5.000%",
+    "                                      0.90",
+    "   P=TVQ 9.975%  18.00 @  9.975%",
+    "                                      1.80",
+    "TOTAL           92.61",
+    "NOMBRE D'ARTICLES:     9",
+    "",
+    "     COMPTANT                        95.00",
+    "     ARRONDI 0.01                  (92.60)",
+    "     MONNAIE     2.40",
+    "   VOUS AURIEZ PU RECOLTER AU MOINS 920",
+    "    POINTS FIDELITE DE PLUS GRACE A LA",
+    "       CARTE DE CREDIT FICTIVE DOH.",
+    "",
+    "         TPS # 33004-9858 RT0001",
+    "DIRECTEUR DU MAGASIN: HUGO EXEMPLE",
+    "NUMERO DE TELEPHONE: 418-555-0175",
+    "**************************************",
+    "2024/07/23  350   350   01 3829   08:08",
+    "PARTAGEZ VOTRE OPINION SUR LE MAGASIN!",
+    "VISITEZ OPINION.EXAMPLE OU APPELEZ",
+    "1-800-555-0129. GAGNEZ UNE CARTE-CADEAU",
+    "CODE: 072324 080801 3829 06311",
+    "",
+    "   SPECIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0017.png",
+    "degraded": "0017.jpg"
+  },
+  "degradation": {
+    "paper_gray": 235,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.10001121483816727,
+    "fold_position": null,
+    "blur_radius": 0.06837826904063703,
+    "rotation_degrees": 0.19371504581092513,
+    "perspective": 0.004753438456723471,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 90
+  }
+}

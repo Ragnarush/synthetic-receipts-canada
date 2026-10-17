@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "family": "grocery_chain",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "MARCHE DOH",
+    "address_lines": [
+      "261,DU QUAI, MONTREAL"
+    ],
+    "phone": "418-555-0132"
+  },
+  "store_number": "7827",
+  "datetime": "2024-01-08T20:05:00",
+  "transaction_number": "6650",
+  "items": [
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "02008556120",
+      "description": "BEURRE ARACH CR",
+      "qty": 1,
+      "unit_price_cents": 550,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 550,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "06181351309",
+      "description": "THON PALE EAU",
+      "qty": 1,
+      "unit_price_cents": 125,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 125,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "05186885061",
+      "description": "CEREALES FRUITS",
+      "qty": 6,
+      "unit_price_cents": 799,
+      "weight_kg": null,
+      "promo": {
+        "limit": 12,
+        "regular_cents": 849
+      },
+      "line_total_cents": 4794,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "03378772761",
+      "description": "JUS POMME 1.89L",
+      "qty": 3,
+      "unit_price_cents": 175,
+      "weight_kg": null,
+      "promo": {
+        "limit": 6,
+        "regular_cents": 275
+      },
+      "line_total_cents": 525,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "27-FRUITS ET LEGUMES",
+      "code": "4320",
+      "description": "TOMATES",
+      "qty": 1,
+      "unit_price_cents": 325,
+      "weight_kg": "1.075",
+      "promo": null,
+      "line_total_cents": 349,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "31-VIANDE",
+      "code": "06125933083",
+      "description": "POITRINE POULET",
+      "qty": 3,
+      "unit_price_cents": 1400,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 4200,
+      "tax_flags": "MRJ"
+    },
+    {
+      "kind": "product",
+      "department": "31-VIANDE",
+      "code": "07390338613",
+      "description": "POITRINE POULET",
+      "qty": 1,
+      "unit_price_cents": 1875,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 1875,
+      "tax_flags": "MRJ"
+    }
+  ],
+  "subtotal_cents": 12418,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "base_cents": 0,
+      "cents": 0
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "base_cents": 0,
+      "cents": 0
+    }
+  ],
+  "total_cents": 12418,
+  "tip_cents": null,
+  "gst_number": "707716739RT0005",
+  "qst_number": "7731083499TQ0002",
+  "payment_method": "debit",
+  "tenders": [
+    {
+      "method": "debit",
+      "cents": 12418
+    }
+  ],
+  "cash_rounding_cents": null,
+  "change_cents": null,
+  "card": {
+    "network": "Interac",
+    "masked_number": "************6160",
+    "account": "DEFAUT",
+    "datetime": "2024-01-08T20:05:44",
+    "reference": "0010090196",
+    "authorization": "782D3A"
+  },
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "      MARCHE DOH",
+    "",
+    "MARCHE DOH MONTREAL (7827)",
+    "261,DU QUAI, MONTREAL",
+    "",
+    "21-EPICERIE",
+    " 02008556120 BEURRE ARACH MRJ     5.50",
+    " 06181351309 THON PALE EA MRJ     1.25",
+    "  (6)05186885061 CEREALES FRUITS MRJ",
+    "   $7.99 lmt 12, $8.49 ch",
+    "   6 @ $7.99 ch                      47.94",
+    "  (3)03378772761 JUS POMME 1.89L MRJ",
+    "   $1.75 lmt 6, $2.75 ch",
+    "   3 @ $1.75 ch                       5.25",
+    "27-FRUITS ET LEGUMES",
+    "  4320           TOMATES MRJ",
+    "    1.075 kg @ $3.25/kg               3.49",
+    "31-VIANDE",
+    "  (3)06125933083 POITRINE POULET MRJ",
+    "   3 @ $14.00                        42.00",
+    " 07390338613 POITRINE POU MRJ    18.75",
+    "SOUS-TOTAL     124.18",
+    "   F=T.P.S 5%    0.00 @  5.000%",
+    "                                      0.00",
+    "   P=TVQ 9.975%   0.00 @  9.975%",
+    "                                      0.00",
+    "TOTAL          124.18",
+    "",
+    "Type de Trans.:  ACHAT",
+    "Compte:  DEFAUT            124,18 CAD$",
+    "Type de carte:  DÉBIT",
+    "Numéro de Carte:  ************6160 P",
+    "DateTime:        24/01/08 20:05:44",
+    "# de Ref.:       0010090196",
+    "# d'Autor.:      782D3A",
+    "Interac",
+    "A0000002771010 0080008000 EC00",
+    "         00/001 APPROUVEE - MERCI",
+    "             VERIFIEE PAR NIP",
+    " Conservez cette copie pour vérification",
+    "        de votre rapport financier",
+    "         *** COPIE DU CLIENT ***",
+    "",
+    "   DEBIT                            124.18",
+    "  VOUS AURIEZ PU RECOLTER AU MOINS 1,240",
+    "    POINTS FIDELITE DE PLUS GRACE A LA",
+    "       CARTE DE CREDIT FICTIVE DOH.",
+    "",
+    "         TPS # 70771-6739 RT0005",
+    "TVQ# 7731083499 TQ 0002",
+    "DIRECTEUR DU MAGASIN: SOPHIE TOUTLEMONDE",
+    "NUMERO DE TELEPHONE: 418-555-0132",
+    "**************************************",
+    "24/01/08 LIBRE-SERV 6  9995  08 6650 20:05",
+    "PARTAGEZ VOTRE OPINION SUR LE MAGASIN!",
+    "VISITEZ OPINION.EXAMPLE OU APPELEZ",
+    "1-800-555-0161. GAGNEZ UNE CARTE-CADEAU",
+    "CODE: 010824 200501 6650 07827",
+    "",
+    "   SPECIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0006.png",
+    "degraded": "0006.jpg"
+  },
+  "degradation": {
+    "paper_gray": 233,
+    "ink_gray_top": 36,
+    "ink_gray_bottom": 115,
+    "shading_amplitude": 0.24732313011127444,
+    "fold_position": null,
+    "blur_radius": 0.7583161441899988,
+    "rotation_degrees": 1.2294596419375468,
+    "perspective": 0.04186510944734453,
+    "noise_sigma": 6.749895163670467,
+    "salt_pepper_fraction": 0.001271813037388913,
+    "jpeg_quality": 65
+  }
+}

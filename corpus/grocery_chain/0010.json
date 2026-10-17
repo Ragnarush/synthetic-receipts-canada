@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "family": "grocery_chain",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "SUPER SPECIMEN",
+    "address_lines": [
+      "2716,DU MOULIN, SEPT-ILES"
+    ],
+    "phone": "819-555-0115"
+  },
+  "store_number": "6638",
+  "datetime": "2025-11-29T17:30:00",
+  "transaction_number": "8587",
+  "items": [
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "05113544684",
+      "description": "NOURR CHAT 7KG",
+      "qty": 2,
+      "unit_price_cents": 1979,
+      "weight_kg": null,
+      "promo": {
+        "limit": 12,
+        "regular_cents": 2029
+      },
+      "line_total_cents": 3958,
+      "tax_flags": "FPMRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "07594178311",
+      "description": "PAPIER HYG 24R",
+      "qty": 1,
+      "unit_price_cents": 1675,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 1675,
+      "tax_flags": "FMRJ"
+    },
+    {
+      "kind": "product",
+      "department": "21-EPICERIE",
+      "code": "03740584966",
+      "description": "LITIERE AGGL 14KG",
+      "qty": 3,
+      "unit_price_cents": 1000,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 3000,
+      "tax_flags": "FPMRJ"
+    },
+    {
+      "kind": "product",
+      "department": "22-PRODUITS LAITIERS",
+      "code": "05297793270",
+      "description": "BABEURRE 1L",
+      "qty": 2,
+      "unit_price_cents": 250,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 500,
+      "tax_flags": "RQ"
+    },
+    {
+      "kind": "product",
+      "department": "23-PRODUITS SURGELES",
+      "code": "04032937109",
+      "description": "LASAGNE VIANDE",
+      "qty": 1,
+      "unit_price_cents": 1075,
+      "weight_kg": null,
+      "promo": null,
+      "line_total_cents": 1075,
+      "tax_flags": "MRJ"
+    }
+  ],
+  "subtotal_cents": 10208,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "base_cents": 8633,
+      "cents": 432
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "base_cents": 6958,
+      "cents": 694
+    }
+  ],
+  "total_cents": 11334,
+  "tip_cents": null,
+  "gst_number": "120691741RT0005",
+  "qst_number": null,
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 11400
+    }
+  ],
+  "cash_rounding_cents": 1,
+  "change_cents": 65,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "    SUPER SPECIMEN",
+    "",
+    "SUPER SPECIMEN SEPT-ILES (6638)",
+    "2716,DU MOULIN, SEPT-ILES",
+    "",
+    "21-EPICERIE",
+    "  (2)05113544684 NOURR CHAT 7KG",
+    "            FPMRJ",
+    "   $19.79 lmt 12, $20.29 ch",
+    "   2 @ $19.79 ch                     39.58",
+    " 07594178311 PAPIER HYG 2 FMRJ   16.75",
+    "  (3)03740584966 LITIERE AGGL 14KG",
+    "            FPMRJ",
+    "   3 @ $10.00                        30.00",
+    "22-PRODUITS LAITIERS",
+    "  (2)05297793270 BABEURRE 1L RQ",
+    "   2 @ $2.50                          5.00",
+    "23-PRODUITS SURGELES",
+    " 04032937109 LASAGNE VIAN MRJ    10.75",
+    "SOUS-TOTAL     102.08",
+    "   F=T.P.S 5%   86.33 @  5.000%",
+    "                                      4.32",
+    "   P=TVQ 9.975%  69.58 @  9.975%",
+    "                                      6.94",
+    "TOTAL          113.34",
+    "NOMBRE D'ARTICLES:     9",
+    "",
+    "     COMPTANT                       114.00",
+    "     ARRONDI 0.01                 (113.35)",
+    "     MONNAIE     0.65",
+    "  VOUS AURIEZ PU RECOLTER AU MOINS 1,130",
+    "    POINTS FIDELITE DE PLUS GRACE A LA",
+    "       CARTE DE CREDIT FICTIVE DOH.",
+    "",
+    "         TPS # 12069-1741 RT0005",
+    "DIRECTEUR DU MAGASIN: ETIENNE TOUTLEMONDE",
+    "NUMERO DE TELEPHONE: 819-555-0115",
+    "**************************************",
+    "2025/11/29  223   223   08 8587   17:30",
+    "PARTAGEZ VOTRE OPINION SUR LE MAGASIN!",
+    "VISITEZ OPINION.EXAMPLE OU APPELEZ",
+    "1-800-555-0128. GAGNEZ UNE CARTE-CADEAU",
+    "CODE: 112925 173001 8587 06638",
+    "",
+    "   SPECIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0010.png",
+    "degraded": "0010.jpg"
+  },
+  "degradation": {
+    "paper_gray": 206,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 139,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.7590536561240998,
+    "blur_radius": 1.6,
+    "rotation_degrees": 0.8992330086916012,
+    "perspective": 0.05677658338077159,
+    "noise_sigma": 9.809935249041672,
+    "salt_pepper_fraction": 0.0031907568111202577,
+    "jpeg_quality": 63
+  }
+}
