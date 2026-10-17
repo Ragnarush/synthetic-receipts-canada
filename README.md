@@ -35,8 +35,8 @@ src/                         le générateur (Python, Pillow, numpy)
 | `restaurant_websrm` | Revenu Québec, exemple officiel de facture du secteur de la restauration (facturation obligatoire, MEV-WEB), juillet 2025 | livrée |
 | `taxi_websrm` | Revenu Québec, exemple officiel du transport rémunéré de personnes, juillet 2025 | livrée |
 | `grocery_chain` | observation de reçus réels d'une grande chaîne d'épicerie québécoise (structure seulement) ; bordereau du terminal intégré | livrée |
-| bordereau de terminal de paiement seul | observation | à venir |
 | `crown_store_tax_included` | observation de reçus réels de deux sociétés d'État québécoises (alcool, cannabis) : prix taxes comprises, bordereau intégré | livrée |
+| `payment_terminal_slip` | observation de tickets réels d'une société d'État québécoise : bordereau du terminal imprimé seul, sans articles ni total d'achat | livrée |
 | grande surface (fournitures, électronique) | observation | à venir |
 | facture de services professionnels | observation | à venir |
 | pharmacie, quincaillerie | observation | à venir |
@@ -100,7 +100,8 @@ Certaines familles ajoutent des champs, décrits dans leur gabarit : `grocery_ch
 l'assiette de chaque taxe (`taxes[].base_cents`), les modes de paiement (`tenders`),
 l'arrondi au comptant, la monnaie rendue et le bordereau de carte (`card`) ;
 `crown_store_tax_included` marque les taxes `included` et donne un `subtotal_cents` qui
-n'est pas imprimé, à recalculer. Un champ
+n'est pas imprimé, à recalculer ; `payment_terminal_slip` n'a que `tenders` et `card` :
+son `total_cents` est `null` (`document_kind`: `payment_slip`). Un champ
 absent du reçu vaut `null`, jamais une valeur par défaut.
 
 Les montants sont en **cents entiers**, arrondis à la demi-unité supérieure comme une

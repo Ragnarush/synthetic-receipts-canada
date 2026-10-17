@@ -8,7 +8,6 @@ registration number, an amount-looking run of digits.
 """
 
 import random
-from datetime import datetime, timedelta
 from fractions import Fraction
 
 from .. import SCHEMA_VERSION
@@ -17,20 +16,14 @@ from ..layout import Align, Receipt, Size
 from ..money import round_half_up
 from ..render import PAPER
 from . import _terminal
+from ._crown_store import ALCOHOL, ALCOHOL_BANNERS, alcohol_header, random_datetime, reprint_banner, shelf_price
 
 # Taxes inside a tax-included price P: TPS = P * 5 / 114.975, TVQ = P * 9.975 / 114.975.
 GROSS_RATE = Fraction(114975, 100_000)
 GST_SHARE = Fraction(5, 100) / GROSS_RATE
 QST_SHARE = Fraction(9975, 100_000) / GROSS_RATE
 
-ALCOHOL_BANNERS = ["CELLIER FICTIF", "ALCOOLS DOH", "VINS SPECIMEN"]
 CANNABIS_BANNERS = ["CANNA-DOH", "CANNABIS FICTIF", "CHANVRE SPECIMEN"]
-# (description, low, high in cents)
-ALCOHOL = [
-    ("ROUGE DOMAINE FICTIF", 1295, 2995), ("BLANC CLOS DOH", 1395, 2495), ("ROSE DU QUIDAM", 1195, 1895),
-    ("RHUM BLANC SPECIMEN", 2700, 4800), ("VODKA DOH 1,14 L", 3900, 5600), ("GIN ARTISANAL FICTIF", 3500, 5200),
-    ("MOUSSEUX BRUT EXEMPLE", 1695, 3295), ("BIERE IPA DOH 4X473", 1199, 1599), ("CIDRE DE GLACE FICTIF", 2200, 3500),
-]
 # (description, equivalent grams of dried cannabis per unit, low, high). Federal equivalence:
 # 1 g of hash or resin counts as 4 g dried, which is why the printed total weight looks wrong.
 CANNABIS = [
@@ -44,12 +37,6 @@ CANNABIS = [
 POSSESSION_LIMIT_G = 30
 
 
-def _price(rng: random.Random, lo: int, hi: int, cannabis: bool) -> int:
-    """Shelf prices end in a multiple of 5 cents, so cash needs no rounding."""
-    endings = [90, 90, 95, 0, 50] if cannabis else [95, 95, 0, 25, 50, 75]
-    return rng.randint(lo // 100, hi // 100 - 1) * 100 + rng.choice(endings)
-
-
 def _fr(cents: int, space: bool) -> str:
     sign = "(" if cents < 0 else ""
     cents = abs(cents)
@@ -61,21 +48,6 @@ def _grams(value: Fraction) -> str:
     return f"{value:.1f}".replace(".", ",").removesuffix(",0") + "g"
 
 
-def _random_datetime(rng: random.Random) -> datetime:
-    day = datetime(2024, 1, 1) + timedelta(days=rng.randint(0, 365 * 2 + 300))
-    return day.replace(hour=rng.randint(10, 21), minute=rng.randint(0, 59), second=rng.randint(0, 59))
-
-
-def _reprint_banner(r: Receipt) -> None:
-    stars = "*" * r.columns
-    middle = " RÉIMPRESSION - RÉIMPRESSION "
-    r.add(stars)
-    r.add(stars)
-    r.add(middle.center(r.columns, "*")[:r.columns])
-    r.add(stars)
-    r.add(stars)
-
-
 def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     cols = PAPER[paper_mm]["columns"]
     r = Receipt(columns=cols)
@@ -85,7 +57,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     city, letter = rng.choice(CITIES)
     street = f"{rng.randint(10, 3999)}, {rng.choice(STREETS)}"
     postal = fake_postal_code(rng, letter)
-    when = _random_datetime(rng)
+    when = random_datetime(rng)
     number = f"{rng.randint(10_000, 199_999)}"
     store = f"{rng.randint(10_000, 99_999)}"
     register = rng.randint(1, 4)
@@ -112,44 +84,36 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
             desc, lo, hi = rng.choice(ALCOHOL)
         if desc not in shelf:  # a product bought twice prints twice, same code and price
             code = f"{rng.randint(10**11, 10**12 - 1)}" if cannabis else f"{rng.randint(10**7, 10**8 - 1)}"
-            shelf[desc] = (code, _price(rng, lo, hi, cannabis))
+            shelf[desc] = (code, shelf_price(rng, lo, hi, cannabis))
         code, unit = shelf[desc]
         items.append({"kind": "product", "code": code, "description": desc, "qty": 1,
                       "unit_price_cents": unit, "line_total_cents": unit, "tax_flags": None})
     if not items:
         desc, grams, lo, hi = CANNABIS[0]
         declared = grams
-        unit = _price(rng, lo, hi, True)
+        unit = shelf_price(rng, lo, hi, True)
         items.append({"kind": "product", "code": f"{rng.randint(10**11, 10**12 - 1)}", "description": desc,
                       "qty": 1, "unit_price_cents": unit, "line_total_cents": unit, "tax_flags": None})
     total = sum(i["line_total_cents"] for i in items)
     gst = round_half_up(total * GST_SHARE)
     qst = round_half_up(total * QST_SHARE)
 
-    r.add(banner, align=Align.CENTER, bold=True, size=Size.DOUBLE)
     if cannabis:
+        r.add(banner, align=Align.CENTER, bold=True, size=Size.DOUBLE)
         r.add(street, align=Align.CENTER)
         r.add(f"{city}, QC {postal}", align=Align.CENTER)
         r.add("Canada", align=Align.CENTER)
         r.add(phone, align=Align.CENTER)
-    else:
         r.add()
-        r.add(f"{street} - {city}", align=Align.CENTER)
-        r.add(f"{city}, QC {postal}", align=Align.CENTER)
-        r.add(phone, align=Align.CENTER)
-    r.add()
-    half = cols // 2 - 1
-    if cannabis:
+        half = cols // 2 - 1
         r.add(f"{'Transaction : ' + number:<{half}} Caisse {register}")
         r.add(f"{'Magasin : ' + store:<{half}} Caissier : {cashier}")
         r.add(f"{when:Date : %d/%m/%Y}".ljust(half) + f" {when:Heure : %H:%M}")
     else:
-        r.add(f"{'Billet : ' + number:<{half}} Caisse : {register}")
-        r.add(f"{'Succursale : ' + store:<{half}} Caissier : {cashier}")
-        r.add(f"{when:Date : %Y/%m/%d}".ljust(half) + f" {when:Heure : %H:%M}")
+        alcohol_header(r, banner, street, city, postal, phone, number, store, register, cashier, when)
     r.add()
     if reprint:
-        _reprint_banner(r)
+        reprint_banner(r)
         r.add()
 
     qty_end, price_end = cols * 19 // 42, cols * 31 // 42
@@ -221,7 +185,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
         r.add()
         r.add(f"Nombre d'articles vendus = {len(items)}")
         if reprint:
-            _reprint_banner(r)
+            reprint_banner(r)
     alnum = "ABCDEFGHJKLMNPQRSTUVWXYZ0123456789"
     code = "T" + "".join(rng.choice(alnum) for _ in range(21))
     r.add()
