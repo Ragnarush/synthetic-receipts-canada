@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this corpus or generator, please cite it as below."
+title: "synthetic-receipts-canada: synthetic Canadian receipts with ground truth"
+type: software
+authors:
+  - alias: Ragnarush
+repository-code: "https://github.com/Ragnarush/synthetic-receipts-canada"
+abstract: >-
+  Synthetic Canadian receipts, Québec first, generated from templates that reproduce
+  the structure of real receipts and filled with verifiably fake data, each with a JSON
+  ground truth, for testing OCR engines and receipt-field extractors.
+keywords:
+  - receipts
+  - OCR
+  - synthetic data
+  - Québec
+  - Canada
+  - GST
+  - QST
+license:
+  - Apache-2.0
+  - CC-BY-4.0

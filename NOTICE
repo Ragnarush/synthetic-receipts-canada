@@ -1,0 +1,11 @@
+synthetic-receipts-canada
+Copyright 2026 Ragnarush
+
+This product includes software and data created by Ragnarush
+(https://github.com/Ragnarush/synthetic-receipts-canada).
+
+The code is licensed under the Apache License, Version 2.0 (see LICENSE).
+The corpus and template sheets (corpus/, docs/templates/) are licensed under
+Creative Commons Attribution 4.0 International (see LICENSE-DATA).
+The documents in docs/sources/ come from Revenu Québec and remain the property
+of their author.

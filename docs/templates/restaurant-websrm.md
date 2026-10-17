@@ -1,44 +1,45 @@
-# Gabarit `restaurant_websrm` — restaurant, bar, traiteur (Québec)
+# Template `restaurant_websrm` — restaurant, bar, caterer (Québec)
 
-**Source.** Revenu Québec, *Exemple de facture – Secteur de la restauration* (facturation
-obligatoire, système d'enregistrement des ventes certifié / MEV-WEB), image de juillet 2025 :
-`docs/sources/revenu-quebec-exemple-facture-restauration-2025-07.png`. La page officielle
-numérote 20 éléments ; ils sont repris ci-dessous dans le même ordre. Les éléments entre les
-deux suites de « = » sont prescrits et ordonnés ; avant la première et après la deuxième,
-le commerçant peut ajouter ce qu'il veut (nom du serveur, remerciement, sondage, logo).
+**Source.** Revenu Québec, *Exemple de facture – Secteur de la restauration* (sample bill,
+restaurant sector), under *facturation obligatoire* (mandatory billing) with a certified
+sales recording system (*système d'enregistrement des ventes*, SEV) / MEV-WEB, image of
+July 2025: `docs/sources/revenu-quebec-exemple-facture-restauration-2025-07.png`. The
+official page numbers 20 elements; they are listed below in the same order. The elements
+between the two runs of "=" are prescribed and ordered; before the first run and after the
+second, the merchant may add whatever it wants (server name, thank-you note, survey, logo).
 
-**Papier.** Thermique 80 mm (42 colonnes) le plus souvent ; 58 mm (32 colonnes) existe.
-Police à chasse fixe. Le nom du commerce est souvent en double hauteur ou remplacé par un logo.
+**Paper.** Thermal 80 mm (42 columns) most often; 58 mm (32 columns) exists. Fixed-pitch
+font. The business name is often printed double height or replaced by a logo.
 
-| # | Élément | Forme observée | Dans la vérité attendue |
+| # | Element | Observed form | In the ground truth |
 |---|---|---|---|
-| 1 | Nom sous lequel l'entreprise fait affaire, adresse complète de l'établissement | centré, 2 à 3 lignes | `merchant` |
-| 2 | Moment de la transmission | `AAAA-MM-JJ HH:MM:SS` | `datetime` |
-| 3 | Numéro de transaction du SEV | `TRANSACTION #123456` | `transaction_number` |
-| 4 | Description de chaque bien ou service | `1 Spaghetti` + prix | `items[]` |
-| 5 | Taxes applicables par article | `FP` (fédérale, provinciale), `FPS` (+ taxe supplémentaire, alcool) | `items[].tax_flags` |
-| 6 | Sous-total avant taxes | `SOUS-TOTAL   18,00 $` | `subtotal_cents` |
-| 7 | Numéro d'inscription TPS | `TPS: 123456789   RT 0001` | `gst_number` |
-| 8 | Numéro d'inscription TVQ | `TVQ: 1234567890  TQ 0001` | `qst_number` |
-| 9 | Mode de paiement (reçu de fermeture seulement) | `CARTE DE DÉBIT`, `CARTE DE CRÉDIT`, `COMPTANT` | `payment_method` |
-| 10 | Note de crédit seulement : nom du client, date de remise | *non généré en v1* | — |
-| 11 | Suite de signes `=` | pleine largeur | — |
-| 12 | Montant de la TPS | `TPS:   0,90 $` | `taxes[kind=GST]` |
-| 13 | Montant de la TVQ | `TVQ:   1,80 $` | `taxes[kind=QST]` |
-| 14 | Total de la fourniture (sous-total + TPS + TVQ) | `TOTAL:  20,70 $` ; pourboire à part, après | `total_cents`, `tip_cents` |
-| 15 | Mention selon la situation | `PAIEMENT REÇU` ou `FACTURE ORIGINALE` | `document_kind` |
-| 16 | Code QR avec adresse Web | ~ moitié de la largeur | `websrm.qr_url` (pointe vers ce dépôt) |
-| 17 | Moment du traitement par Revenu Québec | `AAAA-MM-JJ HH:MM:SS`, quelques secondes après #2 | `websrm.processed_at` |
-| 18 | Numéro de transaction attribué par Revenu Québec | `ABCD-1234-EFGH-5678` | `websrm.transaction_id` |
-| 19 | Identifiant unique de l'appareil | `0001-2345-6789` | `websrm.device_id` |
-| 20 | Suite de signes `=` | pleine largeur | — |
+| 1 | Name under which the business operates, full address of the establishment | centred, 2 to 3 lines | `merchant` |
+| 2 | Time of transmission | `YYYY-MM-DD HH:MM:SS` | `datetime` |
+| 3 | SEV transaction number | `TRANSACTION #123456` | `transaction_number` |
+| 4 | Description of each good or service | `1 Spaghetti` + price | `items[]` |
+| 5 | Taxes applicable per item | `FP` (federal, provincial), `FPS` (+ additional tax, alcohol) | `items[].tax_flags` |
+| 6 | Subtotal before taxes | `SOUS-TOTAL   18,00 $` | `subtotal_cents` |
+| 7 | GST (TPS) registration number | `TPS: 123456789   RT 0001` | `gst_number` |
+| 8 | QST (TVQ) registration number | `TVQ: 1234567890  TQ 0001` | `qst_number` |
+| 9 | Payment method (closing receipt only) | `CARTE DE DÉBIT`, `CARTE DE CRÉDIT`, `COMPTANT` | `payment_method` |
+| 10 | Credit note only: customer name, refund date | *not generated in v1* | — |
+| 11 | Run of `=` signs | full width | — |
+| 12 | GST amount | `TPS:   0,90 $` | `taxes[kind=GST]` |
+| 13 | QST amount | `TVQ:   1,80 $` | `taxes[kind=QST]` |
+| 14 | Total of the supply (subtotal + GST + QST) | `TOTAL:  20,70 $`; tip separate, after it | `total_cents`, `tip_cents` |
+| 15 | Statement depending on the situation | `PAIEMENT REÇU` or `FACTURE ORIGINALE` | `document_kind` |
+| 16 | QR code with a web address | ~ half the width | `websrm.qr_url` (points to this repository) |
+| 17 | Time of processing by Revenu Québec | `YYYY-MM-DD HH:MM:SS`, a few seconds after #2 | `websrm.processed_at` |
+| 18 | Transaction number assigned by Revenu Québec | `ABCD-1234-EFGH-5678` | `websrm.transaction_id` |
+| 19 | Unique device identifier | `0001-2345-6789` | `websrm.device_id` |
+| 20 | Run of `=` signs | full width | — |
 
-**Pièges utiles pour un extracteur.** Deux blocs « TPS/TVQ » sur le même reçu : les
-numéros d'inscription (7, 8) et les montants (12, 13). Le mot `TOTAL` apparaît dans
-`SOUS-TOTAL` avant d'apparaître seul. Le pourboire suit le total sans en faire partie. La
-ligne `Boiss.alc.(t.incl.)` contient un montant-leurre potentiel (« t.incl. »). Le pied
-« SPÉCIMEN » doit être ignoré.
+**Traps for an extractor.** Two "TPS/TVQ" blocks on the same receipt: the registration
+numbers (7, 8) and the amounts (12, 13). The word `TOTAL` appears inside `SOUS-TOTAL`
+before it appears alone. The tip follows the total without being part of it. The line
+`Boiss.alc.(t.incl.)` holds a potential decoy amount ("t.incl."). The "SPÉCIMEN" footer
+must be ignored.
 
-**Variation générée.** Commerce, articles (1 à 7, quantités), alcool ou non, reçu de
-fermeture (80 %) ou facture originale, mode de paiement, pourboire, ligne du serveur,
-remerciement, téléphone, colonnes de montants étroites ou pleine largeur.
+**Generated variation.** Merchant, items (1 to 7, quantities), alcohol or not, closing
+receipt (80 %) or original invoice, payment method, tip, server line, thank-you note,
+phone, narrow or full-width amount columns.

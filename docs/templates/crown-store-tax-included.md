@@ -1,63 +1,62 @@
-# Gabarit `crown_store_tax_included` — société d'État, taxes incluses (Québec)
+# Template `crown_store_tax_included` — crown corporation store, taxes included (Québec)
 
-**Source.** Observation de reçus réels de deux sociétés d'État québécoises de vente au
-détail (alcool, cannabis), imprimés en 2026, au comptant, par débit et en paiement mixte,
-dont des réimpressions. **Seule la structure est reprise** ; enseigne, adresses et
-numéros sont fictifs, et les exemples ci-dessous aussi.
+**Source.** Observation of real receipts from two Québec retail crown corporations
+(alcohol, cannabis), printed in 2026, paid in cash, debit and split payment, including
+reprints. **Only the structure is reused**; merchant names, addresses and numbers are
+fictitious, and so are the examples below.
 
-Deux variantes, `alcohol` et `cannabis`, partagent l'essentiel : **les prix affichés
-comprennent les taxes**. Il n'y a pas de sous-total imprimé, et les lignes TPS et TVQ
-portent `(incl.)` : elles sont **déjà dans le total**.
+Two variants, `alcohol` and `cannabis`, share the essentials: **displayed prices include
+taxes**. There is no printed subtotal, and the GST (TPS) and QST (TVQ) lines carry
+`(incl.)`: they are **already in the total**.
 
-**Papier.** Thermique 80 mm (42 colonnes) ; en 58 mm, les lignes longues se replient.
+**Paper.** Thermal 80 mm (42 columns); on 58 mm, long lines wrap.
 
-| Bloc | Variante `alcohol` | Variante `cannabis` | Vérité attendue |
+| Block | `alcohol` variant | `cannabis` variant | Ground truth |
 |---|---|---|---|
-| Logo | bannière | bannière | `merchant.name` (nom fictif, double hauteur) |
-| Adresse | `123, rue X - Ville` / `Ville, QC A1B 2C3` / `819-555-0123` | `123, rue X` / `Ville, QC A1B 2C3` / `Canada` / `8445550123` (10 chiffres collés) | `merchant` |
+| Logo | banner | banner | `merchant.name` (fictitious name, double height) |
+| Address | `123, rue X - Ville` / `Ville, QC A1B 2C3` / `819-555-0123` | `123, rue X` / `Ville, QC A1B 2C3` / `Canada` / `8445550123` (10 digits run together) | `merchant` |
 | Transaction | `Billet : 12345    Caisse : 1` | `Transaction : 12345  Caisse 2` | `transaction_number` |
-| Succursale | `Succursale : 12345  Caissier : 1234567` | `Magasin : 12345  Caissier : 123456` | `store_number` |
-| Date | `Date : 2026/01/15   Heure : 10:20` (*AAAA/MM/JJ*) | `Date : 15/01/2026   Heure : 10:20` (*JJ/MM/AAAA*) | `datetime` |
-| Réimpression | 5 lignes d'étoiles avec `RÉIMPRESSION`, avant les articles et après le pied | — | `reprint` |
-| Articles | `Article  Qté  Prix  Montant`, puis le nom sur une ligne et `code  1  37,50 $  37,50 $` sur la suivante | idem, `42,90$` sans espace ; un produit acheté deux fois s'imprime deux fois | `items[]` |
-| Total | `Total   37,50 $`, aligné sur la colonne Prix | idem | `total_cents` |
-| Taxes | `123456789 RT0001 TPS (incl.)   1,63 $` | numéros imprimés sur **8 chiffres** | `taxes[]` (`included: true`) |
-| Paiement | `Comptant 20,00 $` / `ACHAT DÉBIT 17,50 $` / `Remise Comptant 0,00 $` | `Comptant 90,00$` puis `Monnaie` / `Comptant (4,20)$` ; ou `Debit Card` + bordereau complet intégré | `tenders[]`, `change_cents`, `card` |
-| Mention | `Taxe spécifique sur les boissons alcooliques incluse` | renvoi vers l'information sur la consommation | — |
-| Compteurs | `Nombre d'articles vendus = 1` | idem + `Poids total Articles vendus =  7g` | `declared_weight_g` |
-| Pied | code-barres + code alphanumérique `T…` (22 caractères), `Copie client` | idem, `Exemplaire client` | — |
+| Store | `Succursale : 12345  Caissier : 1234567` | `Magasin : 12345  Caissier : 123456` | `store_number` |
+| Date | `Date : 2026/01/15   Heure : 10:20` (*YYYY/MM/DD*) | `Date : 15/01/2026   Heure : 10:20` (*DD/MM/YYYY*) | `datetime` |
+| Reprint | 5 lines of stars with `RÉIMPRESSION`, before the items and after the footer | — | `reprint` |
+| Items | `Article  Qté  Prix  Montant`, then the name on one line and `code  1  37,50 $  37,50 $` on the next | same, `42,90$` without a space; a product bought twice prints twice | `items[]` |
+| Total | `Total   37,50 $`, aligned on the Prix column | same | `total_cents` |
+| Taxes | `123456789 RT0001 TPS (incl.)   1,63 $` | numbers printed with **8 digits** | `taxes[]` (`included: true`) |
+| Payment | `Comptant 20,00 $` / `ACHAT DÉBIT 17,50 $` / `Remise Comptant 0,00 $` | `Comptant 90,00$` then `Monnaie` / `Comptant (4,20)$`; or `Debit Card` + full embedded card slip | `tenders[]`, `change_cents`, `card` |
+| Notice | `Taxe spécifique sur les boissons alcooliques incluse` | pointer to information on consumption | — |
+| Counters | `Nombre d'articles vendus = 1` | same + `Poids total Articles vendus =  7g` | `declared_weight_g` |
+| Footer | barcode + alphanumeric code `T…` (22 characters), `Copie client` | same, `Exemplaire client` | — |
 
-**Calcul des taxes incluses.** Pour un prix P taxes comprises : TPS = P × 5 / 114,975 et
-TVQ = P × 9,975 / 114,975, arrondies au cent (demi supérieur). Les deux variantes le
-confirment au cent près. `subtotal_cents` de la vérité attendue vaut
-total − TPS − TVQ : **il n'est pas imprimé**, c'est ce qu'un extracteur doit recalculer.
+**Computing included taxes.** For a tax-included price P: GST = P × 5 / 114.975 and
+QST = P × 9.975 / 114.975, rounded to the cent (half up). Both variants confirm this to
+the cent. `subtotal_cents` in the ground truth equals total − GST − QST: **it is not
+printed**; it is what an extractor has to recompute.
 
-**Bordereau intégré (cannabis, débit).** Un résumé (`Debit Card`, carte masquée,
-`Numéro d'autorisation`, `Type de transaction : Vente`, `Heure d'autorisation`, ligne de
-version du terminal) puis le bordereau `RELEVE DE TRANSACTION` complet. Ce bordereau est
-identique d'un détaillant à l'autre (`families/_terminal.py`). Il donne `MONTANT: 42.90 $`
-en **point décimal**, alors que le reste du reçu est en virgule, et la date en
-*AA/MM/JJ* (`26/01/15 10:20:45`). Côté alcool, le bordereau sort sur un ticket séparé ;
-il relève de la famille « bordereau de terminal ».
+**Embedded card slip (cannabis, debit).** A summary (`Debit Card`, masked card,
+`Numéro d'autorisation`, `Type de transaction : Vente`, `Heure d'autorisation`, terminal
+version line) then the full `RELEVE DE TRANSACTION` card slip. This card slip is identical
+from one retailer to the next (`families/_terminal.py`). It gives `MONTANT: 42.90 $` with a
+**decimal point**, while the rest of the receipt uses a comma, and the date as *YY/MM/DD*
+(`26/01/15 10:20:45`). On the alcohol side, the card slip comes out on a separate ticket;
+it belongs to the "terminal card slip" family.
 
-**Poids déclaré (cannabis).** `Poids total Articles vendus` est l'**équivalent en
-cannabis séché** de la réglementation fédérale : 1 g de haschich ou de résine compte pour
-4 g. Un sachet de 3,5 g de haschich imprime donc `14g`. Le total reste sous la
-limite de possession de 30 g. C'est un nombre-leurre pour un extracteur, pas un montant.
+**Declared weight (cannabis).** `Poids total Articles vendus` is the **dried-cannabis
+equivalent** under federal regulations: 1 g of hashish or resin counts as 4 g. A 3.5 g
+pouch of hashish therefore prints `14g`. The total stays under the 30 g possession limit.
+It is a decoy number for an extractor, not an amount.
 
-**Pièges utiles pour un extracteur.**
-- **Additionner les taxes au total compte deux fois** : `(incl.)` est le seul indice.
-- Pas de `SOUS-TOTAL` : un extracteur qui l'exige ne trouve rien ; un extracteur qui
-  prend la première somme venue après les articles prend le total.
-- Chaque ligne de taxe **commence par le numéro d'inscription** (8 à 10 chiffres).
-- La monnaie rendue est **négative entre parenthèses** sous un second `Comptant`.
-- Paiement fractionné : `Comptant` et `ACHAT DÉBIT` sont deux montants partiels.
-- Trois formats de date selon la variante et le bordereau.
-- `Caissier : 1234567` et la ligne de version du terminal ressemblent à des montants.
+**Traps for an extractor.**
+- **Adding the taxes to the total counts them twice**: `(incl.)` is the only clue.
+- No `SOUS-TOTAL`: an extractor that requires one finds nothing; an extractor that takes
+  the first sum after the items takes the total.
+- Each tax line **starts with the registration number** (8 to 10 digits).
+- The change given is **negative, in parentheses**, under a second `Comptant`.
+- Split payment: `Comptant` and `ACHAT DÉBIT` are two partial amounts.
+- Three date formats depending on the variant and the card slip.
+- `Caissier : 1234567` and the terminal version line look like amounts.
 
-**Variation générée.** Variante, enseigne, succursale, 1 à 5 articles (doublons
-compris), comptant (avec ou sans monnaie), débit, mixte (alcool seulement), réimpression
-(alcool, 20 %).
+**Generated variation.** Variant, banner, store, 1 to 5 items (duplicates included), cash
+(with or without change), debit, split (alcohol only), reprint (alcohol, 20 %).
 
-**Hors gabarit (pas encore observé).** Carte de crédit, retours, consigne sur les
-contenants, rabais.
+**Out of template (not yet observed).** Credit card, returns, container deposit,
+discounts.

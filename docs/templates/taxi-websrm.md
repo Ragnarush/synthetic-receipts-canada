@@ -1,16 +1,17 @@
-# Gabarit `taxi_websrm` — transport rémunéré de personnes (Québec)
+# Template `taxi_websrm` — paid passenger transportation (Québec)
 
-**Source.** Revenu Québec, *Exemple de facture – Secteur du transport rémunéré de personnes*,
-image de juillet 2025 : `docs/sources/revenu-quebec-exemple-facture-taxi-2025-07.png`.
-Obligatoire avec un SEV de deuxième génération depuis le 1er janvier 2026.
+**Source.** Revenu Québec, *Exemple de facture – Secteur du transport rémunéré de personnes*
+(sample bill, paid passenger transportation sector), image of July 2025:
+`docs/sources/revenu-quebec-exemple-facture-taxi-2025-07.png`. Mandatory with a
+second-generation sales recording system (SEV) since January 1, 2026.
 
-Mêmes 20 éléments et même ordre que `restaurant-websrm.md`. Différences observées :
+Same 20 elements in the same order as `restaurant-websrm.md`. Observed differences:
 
-- le **montant total est imprimé en double hauteur sous le nom**, avant la date ;
-- un seul article, `1 Tarif taxi.   15,80 $ FP` ;
-- une ligne d'information `redevance@0,90 $` sous l'article : la redevance est **déjà
-  comprise** dans le tarif, elle ne s'additionne pas (sous-total = tarif) ;
-- pas d'adresse d'établissement (véhicule).
+- the **total amount is printed double height under the name**, before the date;
+- a single item, `1 Tarif taxi.   15,80 $ FP`;
+- an information line `redevance@0,90 $` under the item: the fee (*redevance*) is
+  **already included** in the fare and is not added to it (subtotal = fare);
+- no establishment address (vehicle).
 
-**Piège utile pour un extracteur.** Le montant en gros caractères en haut est le total,
-pas le sous-total ; `redevance@0,90 $` est un montant à ne pas compter.
+**Trap for an extractor.** The large amount at the top is the total, not the subtotal;
+`redevance@0,90 $` is an amount not to be counted.

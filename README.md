@@ -1,63 +1,67 @@
 # synthetic-receipts-canada
 
-Reçus canadiens synthétiques, Québec d'abord, avec la vérité attendue pour chaque image.
-Pour tester un moteur OCR ou un extracteur de champs (commerçant, date, sous-total,
-TPS, TVQ, total) sans manipuler un seul reçu réel.
+Synthetic Canadian receipts, Québec first, each with its ground truth. Built to test OCR
+engines and receipt-field extractors (merchant, date, subtotal, GST, QST, total) without
+handling a single real receipt.
 
-*Synthetic Canadian receipts, Québec first, each with its ground truth, for testing OCR
-engines and receipt-field extractors. English summary at the end.*
+## Why this project exists
 
-## Pourquoi
+Anyone building a receipt scanner, an expense app or a bookkeeping tool for Canada hits
+the same wall: **there is no public dataset of Canadian receipts**. The known datasets
+(SROIE, CORD) are Malaysian or Indonesian, in English, with no GST, QST, HST or PST. And a
+real receipt is personal data: the last four digits of a card, a member number, a
+customer's name, where and when someone shopped.
 
-Il n'existe aucun jeu public de reçus québécois ou canadiens. Les jeux connus (SROIE,
-CORD) sont malaisiens ou indonésiens, en anglais, sans TPS/TVQ. Et un reçu réel est une
-donnée personnelle : quatre derniers chiffres d'une carte, numéro de membre, nom de
-client. Ce dépôt contourne les deux problèmes : les reçus sont **générés**, à partir de
-gabarits qui reproduisent la **structure** des reçus réels, et remplis de **fausses
-données vérifiablement fausses**.
+This repository solves both problems. Receipts are **generated** from templates that
+reproduce the **structure** of real receipts (block order, vocabulary, alignment, tax
+codes, the traps an extractor falls into), then filled with **verifiably fake data**.
+Every receipt ships with the exact answer an extractor should find, so accuracy can be
+measured field by field, not eyeballed.
 
-## Ce qu'il y a dedans
+The goal is a shared, open benchmark: one place where every Canadian receipt layout an
+extractor can meet is described, generated and scored.
+
+## What is inside
 
 ```
-corpus/<famille>/NNNN.png    impression propre, telle que sortie de l'imprimante thermique
-corpus/<famille>/NNNN.jpg    la même, dégradée comme une photo de téléphone (délavage,
-                             ombrage, pli, flou, rotation, perspective, bruit, JPEG)
-corpus/<famille>/NNNN.json   vérité attendue + lignes de texte exactes + paramètres de dégradation
-docs/templates/              un gabarit par famille : structure, vocabulaire, source
-docs/sources/                documents officiels dont les gabarits sont tirés
-src/                         le générateur (Python, Pillow, numpy)
+corpus/<family>/NNNN.png    clean print, as it leaves the thermal printer
+corpus/<family>/NNNN.jpg    the same, degraded like a phone photo (fading, shading, fold,
+                            blur, rotation, perspective, noise, JPEG)
+corpus/<family>/NNNN.json   ground truth + exact printed text lines + degradation parameters
+docs/templates/             one template sheet per family: structure, vocabulary, source
+docs/sources/               official documents some templates are drawn from
+src/                        the generator (Python, Pillow, numpy)
 ```
 
-### Familles
+### Families
 
-| Famille | Source du gabarit | État |
+| Family | Template source | Status |
 |---|---|---|
-| `restaurant_websrm` | Revenu Québec, exemple officiel de facture du secteur de la restauration (facturation obligatoire, MEV-WEB), juillet 2025 | livrée |
-| `taxi_websrm` | Revenu Québec, exemple officiel du transport rémunéré de personnes, juillet 2025 | livrée |
-| `grocery_chain` | observation de reçus réels d'une grande chaîne d'épicerie québécoise (structure seulement) ; bordereau du terminal intégré | livrée |
-| `crown_store_tax_included` | observation de reçus réels de deux sociétés d'État québécoises (alcool, cannabis) : prix taxes comprises, bordereau intégré | livrée |
-| `payment_terminal_slip` | observation de tickets réels d'une société d'État et d'un dépanneur québécois : bordereau du terminal imprimé seul, sans articles ni total d'achat ; terminal autonome (date *MM/JJ/AA*, `$12.50`) | livrée |
-| `big_box_retail` | observation d'un reçu réel d'une grande chaîne québécoise de fournitures et d'électronique : prix en point avec code de taxe collé (`49.99B`), totaux en virgule, écofrais inclus | livrée |
-| `professional_invoice` | observation d'une facture réelle d'une clinique vétérinaire québécoise : client, patient, date `7-nov.-2026` sans heure, numéros TPS/TVQ sans suffixe | livrée |
-| pharmacie, quincaillerie | observation | à venir |
-| essence, stationnement | observation | à venir |
-| hors Québec (TVH ; TPS + TVP) | observation | à venir |
+| `restaurant_websrm` | Revenu Québec, official restaurant-sector invoice sample (mandatory billing, MEV-WEB), July 2025 | done |
+| `taxi_websrm` | Revenu Québec, official sample for paid passenger transportation, July 2025 | done |
+| `grocery_chain` | real receipts from a large Québec grocery chain (structure only); card slip printed inside the receipt | done |
+| `crown_store_tax_included` | real receipts from two Québec crown corporations (alcohol, cannabis): prices include taxes, inline card slip | done |
+| `payment_terminal_slip` | real tickets from a crown corporation and a Québec convenience store: the card slip printed on its own, with no items or purchase total; standalone terminal variant (*MM/DD/YY* date, `$12.50`) | done |
+| `big_box_retail` | a real receipt from a large Québec office-supply and electronics chain: item prices with a decimal point and a glued tax code (`49.99B`), totals with a decimal comma, eco fee included | done |
+| `professional_invoice` | a real invoice from a Québec veterinary clinic: client, patient, `7-nov.-2026` date with no time, GST/QST numbers without suffix | done |
+| pharmacy, hardware store | observation | wanted |
+| gas station, parking | observation | wanted |
+| outside Québec (HST; GST + PST) | observation | wanted |
 
-## Fausses données, garanties fausses
+## Fake data, guaranteed fake
 
-Un générateur de reçus réalistes est aussi, entre d'autres mains, un générateur de faux
-reçus. Quatre garde-fous, dans le code et non dans la bonne volonté :
+A generator of realistic receipts is also, in other hands, a generator of fake receipts.
+The guardrails live in the code, not in good intentions:
 
-- **Commerces fictifs**, assemblés à partir de morceaux ; jamais une enseigne existante.
-- **Téléphones dans le bloc 555-01XX**, réservé à la fiction par le plan de numérotation
-  nord-américain.
-- **Numéros de TPS et de TVQ qui échouent volontairement la vérification de Luhn** : la
-  forme est juste (9 chiffres + RT0001, 10 chiffres + TQ0001), le numéro ne peut
-  appartenir à personne.
-- **Une ligne « SPÉCIMEN » imprimée sur chaque reçu** et un code QR qui pointe vers ce
-  dépôt, pas vers Revenu Québec.
+- **Fictitious merchants**, assembled from pieces; never an existing brand.
+- **Phone numbers in the 555-01XX block**, reserved for fiction by the North American
+  Numbering Plan.
+- **GST and QST numbers that deliberately fail the Luhn check**: the shape is right
+  (9 digits + RT0001, 10 digits + TQ0001), the number can belong to no one.
+- **A "SPÉCIMEN" line printed on every receipt**, a QR code pointing to this repository,
+  URLs on `.example`, and placeholder surnames (`Doh`, `Untel`…) for any person named.
 
-## Utilisation
+## Usage
 
 ```sh
 uv sync
@@ -65,11 +69,11 @@ uv run synthetic-receipts-canada generate --family restaurant_websrm --count 100
 uv run synthetic-receipts-canada generate --family all --count 20 --severity heavy --paper 58 --out out
 ```
 
-Chaque reçu est tiré d'un générateur pseudo-aléatoire propre, semé par
-`(seed, famille, index)` : en regénérer un ou en ajouter d'autres ne change jamais ceux
-déjà produits.
+Each receipt is drawn from its own pseudo-random generator, seeded by
+`(seed, family, index)`: regenerating one receipt or adding more never changes the ones
+already produced.
 
-### Format de la vérité attendue (`schema_version` 1)
+### Ground truth format (`schema_version` 1)
 
 ```json
 {
@@ -96,51 +100,80 @@ déjà produits.
 }
 ```
 
-Certaines familles ajoutent des champs, décrits dans leur gabarit : `grocery_chain` donne
-l'assiette de chaque taxe (`taxes[].base_cents`), les modes de paiement (`tenders`),
-l'arrondi au comptant (`cash_rounding_cents`, aussi donné par `big_box_retail` et
-`professional_invoice`, où il n'est pas imprimé), la monnaie rendue et le bordereau de
-carte (`card`) ;
-`crown_store_tax_included` marque les taxes `included` et donne un `subtotal_cents` qui
-n'est pas imprimé, à recalculer ; `payment_terminal_slip` n'a que `tenders` et `card` :
-son `total_cents` est `null` (`document_kind`: `payment_slip`) ; sa variante
-`standalone_terminal` s'imprime toujours en 58 mm, quel que soit `--paper` ;
-`big_box_retail` donne pour chaque article `upc`, `sku` et `eco_fee_included`, et le
-numéro de l'associé (`associate_id`) ; `professional_invoice` donne le `client` (nom,
-numéro de dossier, adresse), le `patient` et le `balance_cents` imprimé, et son
-`datetime` est une date seule. Un champ
-absent du reçu vaut `null`, jamais une valeur par défaut.
+A field absent from the receipt is `null`, never a default value. Some families add
+fields, described in their template sheet:
 
-Les montants sont en **cents entiers**, arrondis à la demi-unité supérieure comme une
-caisse. `total_cents` est le total de la fourniture (sous-total + taxes) ; le pourboire
-est à part, comme sur le reçu. `text_lines` est le texte exact imprimé, ligne par ligne :
-il permet de tester un extracteur sans passer par l'OCR.
+- `grocery_chain`: the base of each tax (`taxes[].base_cents`), payment tenders
+  (`tenders`), cash rounding (`cash_rounding_cents`), change, and the card slip (`card`).
+- `crown_store_tax_included`: taxes marked `included`, and a `subtotal_cents` that is not
+  printed and must be recomputed.
+- `payment_terminal_slip`: only `tenders` and `card`; `total_cents` is `null`
+  (`document_kind`: `payment_slip`). Its `standalone_terminal` variant always prints on
+  58 mm paper, whatever `--paper` says.
+- `big_box_retail`: `upc`, `sku` and `eco_fee_included` per item, `associate_id`, and a
+  `cash_rounding_cents` that is not printed.
+- `professional_invoice`: the `client` (name, file number, address), the `patient`, the
+  printed `balance_cents`, an unprinted `cash_rounding_cents`; `datetime` is a date only.
 
-## Contribuer un gabarit
+Amounts are **integer cents**, rounded half up like a cash register. `total_cents` is the
+total of the supply (subtotal + taxes); the tip is separate, as on the receipt. Cash
+payments round to the nearest 5 cents, as everywhere in Canada since the cent was
+withdrawn in 2013; the total keeps its cents. `text_lines` is the exact printed text, line
+by line: it lets an extractor be tested without OCR.
 
-Un gabarit décrit une **structure**, jamais un reçu précis : ordre des blocs,
-vocabulaire, alignement, largeur de papier, marqueurs de taxes. Voir
-`docs/templates/restaurant-websrm.md` pour la forme attendue, avec la source de chaque
-élément. Un reçu réel ne doit jamais être versé dans ce dépôt, même anonymisé.
+## Contributing: help cover every receipt in Canada
 
-## Licences
+This project gets better with every receipt layout it learns. **You do not need to share
+a receipt to contribute**, and you must not: a contribution is a description of a
+receipt's *structure*, written from a receipt you have in hand, with every value invented.
 
-- Code (`src/`) : Apache License 2.0, voir `LICENSE`.
-- Corpus et gabarits (`corpus/`, `docs/templates/`) : Creative Commons Attribution 4.0,
-  voir `LICENSE-DATA`.
-- `docs/sources/` : documents de Revenu Québec, reproduits à titre de référence ; ils
-  restent la propriété de leur auteur.
+What helps most:
 
----
+- **Receipts from the other provinces and territories.** Ontario and the Atlantic
+  provinces (HST), British Columbia, Manitoba and Saskatchewan (GST + PST), Alberta and
+  the territories (GST only). English receipts, bilingual receipts, other date formats.
+- **Store types not covered yet**: pharmacy, hardware store, gas station, parking,
+  restaurant chains, online-order receipts, returns and refunds, credit-card slips.
+- **Traps you have seen break an extractor**: a total printed twice, a tax line that looks
+  like a price, a date that reads two ways.
 
-## English summary
+How to contribute a template:
 
-No public dataset of Québec or Canadian receipts exists, and real receipts carry personal
-data. This repository generates receipts from templates that copy the *structure* of real
-ones (the restaurant and taxi families follow Revenu Québec's official mandatory-billing
-samples; the grocery and crown-store families copy the structure of real Québec receipts,
-inline card slips and tax-included prices included) and fills them with verifiably fake data: fictitious merchants, 555-01XX
-phone numbers, GST/QST numbers that deliberately fail the Luhn check, a printed "SPÉCIMEN" line,
-a QR code pointing here. Each receipt comes as a clean print, a degraded phone-photo
-version, and a JSON ground truth with integer-cent amounts and the exact printed text
-lines. Code is Apache-2.0; data is CC BY 4.0.
+1. Read [`CLAUDE.md`](CLAUDE.md), the contributor guide (also read by coding agents). Its
+   first section, *no real data*, is not negotiable.
+2. Write the template sheet first, in `docs/templates/`, modeled on
+   [`grocery-chain.md`](docs/templates/grocery-chain.md): the source in general terms ("a
+   large Ontario pharmacy chain"), a table of blocks with invented examples, the traps for
+   an extractor, the variation to generate, and what was not observed.
+3. Open an issue or a pull request with the sheet. Code can follow from you or from
+   someone else; the sheet alone is already a contribution.
+
+Never commit a real receipt, a photo, a crop, or any value copied from one: no store
+name, address, phone, tax number, card digits, cashier, reference or authorization
+number, date or amount.
+
+### Beyond Canada
+
+The ground truth already carries `country`, `province`, `currency` and `language`, so
+other countries fit the same format: US sales taxes, Mexican CFDI invoices, Brazilian NFC-e
+receipts, European VAT receipts. Each country needs its own fake-data guardrails (a phone
+range reserved for fiction, tax numbers that fail their checksum) and its own tax rules
+before its first family. If you want to start one, open an issue first so the shared
+pieces are designed once.
+
+## Credit and citation
+
+Created by **Ragnarush** in 2026. If you use the corpus or the generator, please credit
+the project: GitHub's "Cite this repository" button gives a ready citation (from
+[`CITATION.cff`](CITATION.cff)). Forks and redistributions keep the [`NOTICE`](NOTICE)
+file, as the Apache License 2.0 requires, and credit the corpus as CC BY 4.0 requires,
+for example: *"Synthetic receipts from synthetic-receipts-canada by Ragnarush, CC BY
+4.0."*
+
+## Licenses
+
+- Code (`src/`): Apache License 2.0, see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+- Corpus and template sheets (`corpus/`, `docs/templates/`): Creative Commons Attribution
+  4.0, see [`LICENSE-DATA`](LICENSE-DATA).
+- `docs/sources/`: documents from Revenu Québec, reproduced for reference; they remain
+  the property of their author.
