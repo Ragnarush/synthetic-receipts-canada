@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "2614, rue Principale - Québec",
-      "Québec, QC G5T 0N9"
-    ],
-    "phone": "819-555-0162"
-  },
-  "store_number": "57781",
-  "datetime": "2026-07-31T11:39:00",
-  "transaction_number": "66547",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,33 +16,44 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "VINS SPECIMEN",
+    "address_lines": [
+      "1443, boul. de la Rivière - Québec",
+      "Québec, QC G0N 9V8"
+    ],
+    "phone": "819-555-0158"
+  },
+  "store_number": "99996",
+  "datetime": "2024-05-30T19:20:00",
+  "transaction_number": "105562",
   "tenders": [
     {
       "method": "debit",
       "cents": 1225
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************2648",
     "account": "CHEQUE",
-    "datetime": "2026-07-31T11:40:00",
+    "datetime": "2024-05-30T19:20:53",
     "reference": "0013564867 C",
     "authorization": "903AEA"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
-    "     ALCOOLS DOH",
+    "    VINS SPECIMEN",
     "",
-    "      2614, rue Principale - Québec",
-    "            Québec, QC G5T 0N9",
-    "               819-555-0162",
+    "    1443, boul. de la Rivière - Québec",
+    "            Québec, QC G0N 9V8",
+    "               819-555-0158",
     "",
-    "Billet : 66547       Caisse : 1",
-    "Succursale : 57781   Caissier : 2606112",
-    "Date : 2026/07/31    Heure : 11:39",
+    "Billet : 105562      Caisse : 1",
+    "Succursale : 99996   Caissier : 2606112",
+    "Date : 2024/05/30    Heure : 19:20",
     "",
     "",
     "",
@@ -67,10 +68,10 @@
     "Type de carte: Interac",
     "",
     "NUMERO CARTE:    ************2648",
-    "DATE/HEURE:      26/07/31 11:40:00",
+    "DATE/HEURE:      24/05/30 19:20:53",
     "NUMERO REF:      0013564867 C",
     "AUTOR #:         903AEA",
-    "NUMERO DE FACT:  66547",
+    "NUMERO DE FACT:  105562",
     "",
     "Interac",
     "A0000002771010",

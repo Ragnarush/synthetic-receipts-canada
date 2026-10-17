@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "1729, boulevard des Pins - Gatineau",
-      "Gatineau, QC J2P 6L0"
-    ],
-    "phone": "819-555-0151"
-  },
-  "store_number": "58733",
-  "datetime": "2026-06-06T17:53:00",
-  "transaction_number": "37759",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,13 +16,25 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "VINS SPECIMEN",
+    "address_lines": [
+      "1729, boulevard des Pins - Gatineau",
+      "Gatineau, QC J2P 6L0"
+    ],
+    "phone": "819-555-0151"
+  },
+  "store_number": "58733",
+  "datetime": "2026-06-06T17:53:00",
+  "transaction_number": "37759",
   "tenders": [
     {
       "method": "debit",
       "cents": 1600
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************9308",
@@ -42,9 +44,8 @@
     "authorization": "31FE57"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
-    "    CELLIER FICTIF",
+    "    VINS SPECIMEN",
     "",
     "   1729, boulevard des Pins - Gatineau",
     "           Gatineau, QC J2P 6L0",

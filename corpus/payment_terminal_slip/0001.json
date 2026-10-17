@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "698, avenue du Quai - Gatineau",
-      "Gatineau, QC J1E 1Y1"
-    ],
-    "phone": "819-555-0133"
-  },
-  "store_number": "49056",
-  "datetime": "2025-08-05T18:02:00",
-  "transaction_number": "71402",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,39 +16,45 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "CELLIER FICTIF",
+    "address_lines": [
+      "2533, rue Saint-Joseph - Trois-Rivières",
+      "Trois-Rivières, QC G1E 9C4"
+    ],
+    "phone": "819-555-0136"
+  },
+  "store_number": "31145",
+  "datetime": "2024-03-16T10:14:00",
+  "transaction_number": "100192",
   "tenders": [
     {
       "method": "debit",
       "cents": 5245
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************5296",
     "account": "DEFAUT FLASH",
-    "datetime": "2025-08-05T18:02:11",
+    "datetime": "2024-03-16T10:14:29",
     "reference": "0017602245 C",
     "authorization": "CB0BBA"
   },
-  "reprint": true,
-  "document_kind": "payment_slip",
+  "reprint": false,
   "text_lines": [
-    "     ALCOOLS DOH",
+    "    CELLIER FICTIF",
     "",
-    "      698, avenue du Quai - Gatineau",
-    "           Gatineau, QC J1E 1Y1",
-    "               819-555-0133",
+    " 2533, rue Saint-Joseph - Trois-Rivières",
+    "        Trois-Rivières, QC G1E 9C4",
+    "               819-555-0136",
     "",
-    "Billet : 71402       Caisse : 3",
-    "Succursale : 49056   Caissier : 776655",
-    "Date : 2025/08/05    Heure : 18:02",
+    "Billet : 100192      Caisse : 1",
+    "Succursale : 31145   Caissier : 2003103",
+    "Date : 2024/03/16    Heure : 10:14",
     "",
-    "******************************************",
-    "******************************************",
-    "****** RÉIMPRESSION - RÉIMPRESSION *******",
-    "******************************************",
-    "******************************************",
     "",
     "",
     "        RELEVE DE TRANSACTION",
@@ -72,10 +68,10 @@
     "Type de carte: Interac",
     "",
     "NUMERO CARTE:    ************5296",
-    "DATE/HEURE:      25/08/05 18:02:11",
+    "DATE/HEURE:      24/03/16 10:14:29",
     "NUMERO REF:      0017602245 C",
     "AUTOR #:         CB0BBA",
-    "NUMERO DE FACT:  71402",
+    "NUMERO DE FACT:  100192",
     "",
     "Interac",
     "A0000002771010",

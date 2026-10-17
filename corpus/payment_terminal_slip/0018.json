@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "42, rue Principale - Terrebonne",
-      "Terrebonne, QC J9R 6Z5"
-    ],
-    "phone": "819-555-0179"
-  },
-  "store_number": "70494",
-  "datetime": "2026-09-04T21:55:00",
-  "transaction_number": "125526",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,34 +16,50 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "CELLIER FICTIF",
+    "address_lines": [
+      "2455, rue Notre-Dame - Montréal",
+      "Montréal, QC H6Z 5Z7"
+    ],
+    "phone": "819-555-0189"
+  },
+  "store_number": "77801",
+  "datetime": "2026-04-29T17:29:00",
+  "transaction_number": "180066",
   "tenders": [
     {
       "method": "debit",
-      "cents": 3140
+      "cents": 8290
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
-    "masked_number": "************0268",
+    "masked_number": "************4444",
     "account": "CHEQUE",
-    "datetime": "2026-09-04T21:56:01",
-    "reference": "0014551266 C",
-    "authorization": "72BD48"
+    "datetime": "2026-04-29T17:29:44",
+    "reference": "0013736937 C",
+    "authorization": "BD48EE"
   },
-  "reprint": false,
-  "document_kind": "payment_slip",
+  "reprint": true,
   "text_lines": [
     "    CELLIER FICTIF",
     "",
-    "     42, rue Principale - Terrebonne",
-    "          Terrebonne, QC J9R 6Z5",
-    "               819-555-0179",
+    "     2455, rue Notre-Dame - Montréal",
+    "           Montréal, QC H6Z 5Z7",
+    "               819-555-0189",
     "",
-    "Billet : 125526      Caisse : 4",
-    "Succursale : 70494   Caissier : 2821061",
-    "Date : 2026/09/04    Heure : 21:55",
+    "Billet : 180066      Caisse : 1",
+    "Succursale : 77801   Caissier : 2839270",
+    "Date : 2026/04/29    Heure : 17:29",
     "",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
     "",
     "",
     "        RELEVE DE TRANSACTION",
@@ -62,19 +68,19 @@
     "",
     "COMPTE: : CHEQUE",
     "               -----------",
-    "MONTANT:           31.40 $",
+    "MONTANT:           82.90 $",
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************0268",
-    "DATE/HEURE:      26/09/04 21:56:01",
-    "NUMERO REF:      0014551266 C",
-    "AUTOR #:         72BD48",
-    "NUMERO DE FACT:  125526",
+    "NUMERO CARTE:    ************4444",
+    "DATE/HEURE:      26/04/29 17:29:44",
+    "NUMERO REF:      0013736937 C",
+    "AUTOR #:         BD48EE",
+    "NUMERO DE FACT:  180066",
     "",
     "Interac",
     "A0000002771010",
-    "8000008000  7800",
+    "0080008000  EC00",
     "",
     "        00/001  APPROUVEE - MERCI",
     "",
@@ -90,16 +96,16 @@
     "degraded": "0018.jpg"
   },
   "degradation": {
-    "paper_gray": 206,
-    "ink_gray_top": 59,
-    "ink_gray_bottom": 157,
-    "shading_amplitude": 0.2905346896955475,
-    "fold_position": 0.4629138310233857,
-    "blur_radius": 1.6,
-    "rotation_degrees": 1.595537024148975,
-    "perspective": 0.057049057601345245,
-    "noise_sigma": 11.25318112905334,
-    "salt_pepper_fraction": 0.00337831528631493,
-    "jpeg_quality": 55
+    "paper_gray": 230,
+    "ink_gray_top": 33,
+    "ink_gray_bottom": 132,
+    "shading_amplitude": 0.20292042490115858,
+    "fold_position": 0.5380679965767518,
+    "blur_radius": 0.5704738521673396,
+    "rotation_degrees": -1.8021699990416047,
+    "perspective": 0.01795289074923911,
+    "noise_sigma": 4.980809954892594,
+    "salt_pepper_fraction": 0.0013451722711645964,
+    "jpeg_quality": 79
   }
 }

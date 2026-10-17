@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "3064, rue Saint-Joseph - Granby",
-      "Granby, QC J5E 6N0"
-    ],
-    "phone": "819-555-0157"
-  },
-  "store_number": "85675",
-  "datetime": "2026-05-05T14:39:00",
-  "transaction_number": "196287",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,13 +16,25 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "1331, rue de l'Église - Gatineau",
+      "Gatineau, QC J1R 5B7"
+    ],
+    "phone": "819-555-0173"
+  },
+  "store_number": "85675",
+  "datetime": "2026-05-05T14:39:00",
+  "transaction_number": "196287",
   "tenders": [
     {
       "method": "debit",
       "cents": 7800
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************2300",
@@ -42,13 +44,12 @@
     "authorization": "F4D591"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
     "     ALCOOLS DOH",
     "",
-    "     3064, rue Saint-Joseph - Granby",
-    "            Granby, QC J5E 6N0",
-    "               819-555-0157",
+    "     1331, rue de l'Église - Gatineau",
+    "           Gatineau, QC J1R 5B7",
+    "               819-555-0173",
     "",
     "Billet : 196287      Caisse : 1",
     "Succursale : 85675   Caissier : 641994",

@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "1288, avenue du Quai - Lévis",
-      "Lévis, QC G3K 3L6"
-    ],
-    "phone": "819-555-0190"
-  },
-  "store_number": "12487",
-  "datetime": "2025-01-21T20:09:00",
-  "transaction_number": "45760",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,34 +16,50 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "996, avenue des Érables - Lévis",
+      "Lévis, QC G4R 3G4"
+    ],
+    "phone": "819-555-0117"
+  },
+  "store_number": "74397",
+  "datetime": "2024-02-08T21:24:00",
+  "transaction_number": "32609",
   "tenders": [
     {
       "method": "debit",
-      "cents": 8065
+      "cents": 7220
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
-    "masked_number": "************9321",
+    "masked_number": "************8208",
     "account": "CHEQUE",
-    "datetime": "2025-01-21T20:09:38",
-    "reference": "0016556183 C",
-    "authorization": "8093CE"
+    "datetime": "2024-02-08T21:25:30",
+    "reference": "0010476200 H",
+    "authorization": "3CEA6A"
   },
-  "reprint": false,
-  "document_kind": "payment_slip",
+  "reprint": true,
   "text_lines": [
-    "    CELLIER FICTIF",
+    "     ALCOOLS DOH",
     "",
-    "       1288, avenue du Quai - Lévis",
-    "            Lévis, QC G3K 3L6",
-    "               819-555-0190",
+    "     996, avenue des Érables - Lévis",
+    "            Lévis, QC G4R 3G4",
+    "               819-555-0117",
     "",
-    "Billet : 45760       Caisse : 4",
-    "Succursale : 12487   Caissier : 461751",
-    "Date : 2025/01/21    Heure : 20:09",
+    "Billet : 32609       Caisse : 4",
+    "Succursale : 74397   Caissier : 2478622",
+    "Date : 2024/02/08    Heure : 21:24",
     "",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
     "",
     "",
     "        RELEVE DE TRANSACTION",
@@ -62,15 +68,15 @@
     "",
     "COMPTE: : CHEQUE",
     "               -----------",
-    "MONTANT:           80.65 $",
+    "MONTANT:           72.20 $",
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************9321",
-    "DATE/HEURE:      25/01/21 20:09:38",
-    "NUMERO REF:      0016556183 C",
-    "AUTOR #:         8093CE",
-    "NUMERO DE FACT:  45760",
+    "NUMERO CARTE:    ************8208",
+    "DATE/HEURE:      24/02/08 21:25:30",
+    "NUMERO REF:      0010476200 H",
+    "AUTOR #:         3CEA6A",
+    "NUMERO DE FACT:  32609",
     "",
     "Interac",
     "A0000002771010",
@@ -90,16 +96,16 @@
     "degraded": "0006.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.11966462891275859,
+    "paper_gray": 241,
+    "ink_gray_top": 26,
+    "ink_gray_bottom": 60,
+    "shading_amplitude": 0.0695808762990733,
     "fold_position": null,
     "blur_radius": 0.0,
-    "rotation_degrees": 0.027404446920201275,
+    "rotation_degrees": -1.321196854298034,
     "perspective": 0.0,
-    "noise_sigma": 2.046748555163769,
-    "salt_pepper_fraction": 0.0008065340833930155,
-    "jpeg_quality": 92
+    "noise_sigma": 2.896972702106737,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 90
   }
 }

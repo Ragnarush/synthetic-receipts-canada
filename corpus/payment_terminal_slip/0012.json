@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "2912, rue Saint-Joseph - Lévis",
-      "Lévis, QC G2C 6S9"
-    ],
-    "phone": "819-555-0111"
-  },
-  "store_number": "20395",
-  "datetime": "2025-09-09T16:11:00",
-  "transaction_number": "138271",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,33 +16,44 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "CELLIER FICTIF",
+    "address_lines": [
+      "605, rue Saint-Joseph - Laval",
+      "Laval, QC H6S 9C4"
+    ],
+    "phone": "819-555-0152"
+  },
+  "store_number": "56205",
+  "datetime": "2025-01-10T20:59:00",
+  "transaction_number": "30791",
   "tenders": [
     {
       "method": "debit",
-      "cents": 6795
+      "cents": 1850
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
-    "masked_number": "************3109",
+    "masked_number": "************8832",
     "account": "CHEQUE",
-    "datetime": "2025-09-09T16:12:19",
-    "reference": "0012430188 C",
-    "authorization": "409C31"
+    "datetime": "2025-01-10T20:59:45",
+    "reference": "0010840426 C",
+    "authorization": "09C317"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
     "    CELLIER FICTIF",
     "",
-    "      2912, rue Saint-Joseph - Lévis",
-    "            Lévis, QC G2C 6S9",
-    "               819-555-0111",
+    "      605, rue Saint-Joseph - Laval",
+    "            Laval, QC H6S 9C4",
+    "               819-555-0152",
     "",
-    "Billet : 138271      Caisse : 3",
-    "Succursale : 20395   Caissier : 720859",
-    "Date : 2025/09/09    Heure : 16:11",
+    "Billet : 30791       Caisse : 2",
+    "Succursale : 56205   Caissier : 2655413",
+    "Date : 2025/01/10    Heure : 20:59",
     "",
     "",
     "",
@@ -62,15 +63,15 @@
     "",
     "COMPTE: : CHEQUE",
     "               -----------",
-    "MONTANT:           67.95 $",
+    "MONTANT:           18.50 $",
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************3109",
-    "DATE/HEURE:      25/09/09 16:12:19",
-    "NUMERO REF:      0012430188 C",
-    "AUTOR #:         409C31",
-    "NUMERO DE FACT:  138271",
+    "NUMERO CARTE:    ************8832",
+    "DATE/HEURE:      25/01/10 20:59:45",
+    "NUMERO REF:      0010840426 C",
+    "AUTOR #:         09C317",
+    "NUMERO DE FACT:  30791",
     "",
     "Interac",
     "A0000002771010",
@@ -90,16 +91,16 @@
     "degraded": "0012.jpg"
   },
   "degradation": {
-    "paper_gray": 245,
-    "ink_gray_top": 20,
-    "ink_gray_bottom": 40,
-    "shading_amplitude": 0.06999198348246588,
-    "fold_position": null,
-    "blur_radius": 0.0,
-    "rotation_degrees": -1.278964891671843,
-    "perspective": 0.0,
-    "noise_sigma": 2.0,
-    "salt_pepper_fraction": 0.000444332496717053,
-    "jpeg_quality": 89
+    "paper_gray": 228,
+    "ink_gray_top": 42,
+    "ink_gray_bottom": 101,
+    "shading_amplitude": 0.12623010057812323,
+    "fold_position": 0.7555771277558483,
+    "blur_radius": 1.1600189500181548,
+    "rotation_degrees": 3.2811945935624856,
+    "perspective": 0.020428924200422967,
+    "noise_sigma": 4.964825803188168,
+    "salt_pepper_fraction": 0.001022927854363365,
+    "jpeg_quality": 65
   }
 }

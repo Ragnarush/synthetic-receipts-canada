@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "3588, rue Notre-Dame - Rouyn-Noranda",
-      "Rouyn-Noranda, QC J9B 6R2"
-    ],
-    "phone": "819-555-0106"
-  },
-  "store_number": "18994",
-  "datetime": "2026-10-25T13:00:00",
-  "transaction_number": "52670",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,33 +16,44 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "1554, rue Notre-Dame - Québec",
+      "Québec, QC G2B 8K0"
+    ],
+    "phone": "819-555-0160"
+  },
+  "store_number": "62831",
+  "datetime": "2024-11-29T11:13:00",
+  "transaction_number": "40142",
   "tenders": [
     {
       "method": "debit",
-      "cents": 800
+      "cents": 8000
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
-    "masked_number": "************5440",
-    "account": "DEFAUT FLASH",
-    "datetime": "2026-10-25T13:00:35",
-    "reference": "0017736449 C",
-    "authorization": "863F18"
+    "masked_number": "************4480",
+    "account": "CHEQUE",
+    "datetime": "2024-11-29T11:13:52",
+    "reference": "0013338283 C",
+    "authorization": "F1816E"
   },
   "reprint": true,
-  "document_kind": "payment_slip",
   "text_lines": [
-    "    CELLIER FICTIF",
+    "     ALCOOLS DOH",
     "",
-    "   3588, rue Notre-Dame - Rouyn-Noranda",
-    "        Rouyn-Noranda, QC J9B 6R2",
-    "               819-555-0106",
+    "      1554, rue Notre-Dame - Québec",
+    "            Québec, QC G2B 8K0",
+    "               819-555-0160",
     "",
-    "Billet : 52670       Caisse : 2",
-    "Succursale : 18994   Caissier : 418828",
-    "Date : 2026/10/25    Heure : 13:00",
+    "Billet : 40142       Caisse : 1",
+    "Succursale : 62831   Caissier : 1669369",
+    "Date : 2024/11/29    Heure : 11:13",
     "",
     "******************************************",
     "******************************************",
@@ -65,21 +66,21 @@
     "",
     "TYPE: ACHAT",
     "",
-    "COMPTE: : DEFAUT FLASH",
+    "COMPTE: : CHEQUE",
     "               -----------",
-    "MONTANT:            8.00 $",
+    "MONTANT:           80.00 $",
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************5440",
-    "DATE/HEURE:      26/10/25 13:00:35",
-    "NUMERO REF:      0017736449 C",
-    "AUTOR #:         863F18",
-    "NUMERO DE FACT:  52670",
+    "NUMERO CARTE:    ************4480",
+    "DATE/HEURE:      24/11/29 11:13:52",
+    "NUMERO REF:      0013338283 C",
+    "AUTOR #:         F1816E",
+    "NUMERO DE FACT:  40142",
     "",
     "Interac",
     "A0000002771010",
-    "0080008000  EC00",
+    "8000008000  7800",
     "",
     "        00/001  APPROUVEE - MERCI",
     "",
@@ -96,15 +97,15 @@
   },
   "degradation": {
     "paper_gray": 205,
-    "ink_gray_top": 70,
+    "ink_gray_top": 68,
     "ink_gray_bottom": 170,
     "shading_amplitude": 0.35,
-    "fold_position": null,
+    "fold_position": 0.5400357627881353,
     "blur_radius": 1.6,
-    "rotation_degrees": -0.7743096165636842,
+    "rotation_degrees": 3.1337020205836716,
     "perspective": 0.06,
-    "noise_sigma": 11.208183494957735,
-    "salt_pepper_fraction": 0.003960143051152542,
-    "jpeg_quality": 55
+    "noise_sigma": 11.569325390771766,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 60
   }
 }

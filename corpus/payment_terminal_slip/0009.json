@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "CELLIER FICTIF",
-    "address_lines": [
-      "3638, rue de l'Église - Terrebonne",
-      "Terrebonne, QC J9T 9G1"
-    ],
-    "phone": "819-555-0109"
-  },
-  "store_number": "15610",
-  "datetime": "2025-06-01T19:15:00",
-  "transaction_number": "14095",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,34 +16,50 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "3180, avenue du Quai - Shawinigan",
+      "Shawinigan, QC G2E 1L9"
+    ],
+    "phone": "819-555-0130"
+  },
+  "store_number": "22001",
+  "datetime": "2025-01-31T10:02:00",
+  "transaction_number": "131864",
   "tenders": [
     {
       "method": "debit",
       "cents": 4615
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************4329",
     "account": "CHEQUE",
-    "datetime": "2025-06-01T19:15:46",
+    "datetime": "2025-01-31T10:03:07",
     "reference": "0015751991 H",
     "authorization": "644C32"
   },
-  "reprint": false,
-  "document_kind": "payment_slip",
+  "reprint": true,
   "text_lines": [
-    "    CELLIER FICTIF",
+    "     ALCOOLS DOH",
     "",
-    "    3638, rue de l'Église - Terrebonne",
-    "          Terrebonne, QC J9T 9G1",
-    "               819-555-0109",
+    "    3180, avenue du Quai - Shawinigan",
+    "          Shawinigan, QC G2E 1L9",
+    "               819-555-0130",
     "",
-    "Billet : 14095       Caisse : 4",
-    "Succursale : 15610   Caissier : 484060",
-    "Date : 2025/06/01    Heure : 19:15",
+    "Billet : 131864      Caisse : 2",
+    "Succursale : 22001   Caissier : 2592719",
+    "Date : 2025/01/31    Heure : 10:02",
     "",
+    "******************************************",
+    "******************************************",
+    "****** RÉIMPRESSION - RÉIMPRESSION *******",
+    "******************************************",
+    "******************************************",
     "",
     "",
     "        RELEVE DE TRANSACTION",
@@ -67,10 +73,10 @@
     "Type de carte: Interac",
     "",
     "NUMERO CARTE:    ************4329",
-    "DATE/HEURE:      25/06/01 19:15:46",
+    "DATE/HEURE:      25/01/31 10:03:07",
     "NUMERO REF:      0015751991 H",
     "AUTOR #:         644C32",
-    "NUMERO DE FACT:  14095",
+    "NUMERO DE FACT:  131864",
     "",
     "Interac",
     "A0000002771010",

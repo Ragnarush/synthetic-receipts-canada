@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "2268, boulevard des Pins - Granby",
-      "Granby, QC J6N 4S7"
-    ],
-    "phone": "819-555-0181"
-  },
-  "store_number": "22151",
-  "datetime": "2024-09-14T14:17:00",
-  "transaction_number": "16823",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,33 +16,44 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "1621, rue du Moulin - Trois-Rivières",
+      "Trois-Rivières, QC G4S 7G4"
+    ],
+    "phone": "819-555-0135"
+  },
+  "store_number": "75998",
+  "datetime": "2025-06-18T10:56:00",
+  "transaction_number": "25799",
   "tenders": [
     {
       "method": "debit",
-      "cents": 4670
+      "cents": 7070
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
-    "masked_number": "************2234",
+    "masked_number": "************1061",
     "account": "CHEQUE",
-    "datetime": "2024-09-14T14:17:44",
-    "reference": "0018590223 C",
-    "authorization": "2364F8"
+    "datetime": "2025-06-18T10:56:16",
+    "reference": "0013320881 C",
+    "authorization": "F8778B"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
     "     ALCOOLS DOH",
     "",
-    "    2268, boulevard des Pins - Granby",
-    "            Granby, QC J6N 4S7",
-    "               819-555-0181",
+    "   1621, rue du Moulin - Trois-Rivières",
+    "        Trois-Rivières, QC G4S 7G4",
+    "               819-555-0135",
     "",
-    "Billet : 16823       Caisse : 1",
-    "Succursale : 22151   Caissier : 2211936",
-    "Date : 2024/09/14    Heure : 14:17",
+    "Billet : 25799       Caisse : 3",
+    "Succursale : 75998   Caissier : 503967",
+    "Date : 2025/06/18    Heure : 10:56",
     "",
     "",
     "",
@@ -62,19 +63,19 @@
     "",
     "COMPTE: : CHEQUE",
     "               -----------",
-    "MONTANT:           46.70 $",
+    "MONTANT:           70.70 $",
     "               -----------",
     "Type de carte: Interac",
     "",
-    "NUMERO CARTE:    ************2234",
-    "DATE/HEURE:      24/09/14 14:17:44",
-    "NUMERO REF:      0018590223 C",
-    "AUTOR #:         2364F8",
-    "NUMERO DE FACT:  16823",
+    "NUMERO CARTE:    ************1061",
+    "DATE/HEURE:      25/06/18 10:56:16",
+    "NUMERO REF:      0013320881 C",
+    "AUTOR #:         F8778B",
+    "NUMERO DE FACT:  25799",
     "",
     "Interac",
     "A0000002771010",
-    "0080008000  EC00",
+    "8000008000  7800",
     "",
     "        00/001  APPROUVEE - MERCI",
     "",
@@ -90,16 +91,16 @@
     "degraded": "0014.jpg"
   },
   "degradation": {
-    "paper_gray": 205,
-    "ink_gray_top": 63,
-    "ink_gray_bottom": 170,
-    "shading_amplitude": 0.3284269109446045,
+    "paper_gray": 217,
+    "ink_gray_top": 35,
+    "ink_gray_bottom": 111,
+    "shading_amplitude": 0.24859964740814,
     "fold_position": null,
-    "blur_radius": 1.6,
-    "rotation_degrees": -3.8333200061440778,
-    "perspective": 0.06,
-    "noise_sigma": 12.0,
-    "salt_pepper_fraction": 0.004,
-    "jpeg_quality": 62
+    "blur_radius": 1.0132507939066489,
+    "rotation_degrees": -2.1031952383184684,
+    "perspective": 0.02451994262434494,
+    "noise_sigma": 7.344048838138842,
+    "salt_pepper_fraction": 0.00279157968514133,
+    "jpeg_quality": 77
   }
 }

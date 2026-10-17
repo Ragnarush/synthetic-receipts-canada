@@ -20,7 +20,8 @@ def generate(args: argparse.Namespace) -> None:
             # receipt or adding more never changes the ones already produced.
             rng = random.Random(f"{args.seed}/{family}/{index}")
             receipt, truth = module.generate(rng, paper_mm=args.paper)
-            clean = render.render(receipt, paper_mm=args.paper, font_family=args.font)
+            # A family may print on its own paper whatever --paper says (a standalone card terminal).
+            clean = render.render(receipt, paper_mm=truth["paper_width_mm"], font_family=args.font)
             stem = out_dir / f"{index:04d}"
             clean.save(stem.with_suffix(".png"), optimize=True)
             truth["files"] = {"clean": stem.with_suffix(".png").name}

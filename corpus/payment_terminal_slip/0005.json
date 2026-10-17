@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "3584, boul. de la Rivière - Drummondville",
-      "Drummondville, QC J0M 8S2"
-    ],
-    "phone": "819-555-0133"
-  },
-  "store_number": "76925",
-  "datetime": "2025-01-30T15:27:00",
-  "transaction_number": "162328",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,33 +16,44 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "3004, chemin de la Montagne - Québec",
+      "Québec, QC G8S 2L8"
+    ],
+    "phone": "819-555-0124"
+  },
+  "store_number": "76925",
+  "datetime": "2025-10-11T16:16:00",
+  "transaction_number": "162328",
   "tenders": [
     {
       "method": "debit",
       "cents": 6050
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************9360",
     "account": "CHEQUE",
-    "datetime": "2025-01-30T15:27:24",
+    "datetime": "2025-10-11T16:17:05",
     "reference": "0017303632 H",
     "authorization": "F3B1EB"
   },
   "reprint": false,
-  "document_kind": "payment_slip",
   "text_lines": [
     "     ALCOOLS DOH",
     "",
-    "3584, boul. de la Rivière - Drummondville",
-    "        Drummondville, QC J0M 8S2",
-    "               819-555-0133",
+    "   3004, chemin de la Montagne - Québec",
+    "            Québec, QC G8S 2L8",
+    "               819-555-0124",
     "",
     "Billet : 162328      Caisse : 4",
     "Succursale : 76925   Caissier : 2060809",
-    "Date : 2025/01/30    Heure : 15:27",
+    "Date : 2025/10/11    Heure : 16:16",
     "",
     "",
     "",
@@ -67,7 +68,7 @@
     "Type de carte: Interac",
     "",
     "NUMERO CARTE:    ************9360",
-    "DATE/HEURE:      25/01/30 15:27:24",
+    "DATE/HEURE:      25/10/11 16:17:05",
     "NUMERO REF:      0017303632 H",
     "AUTOR #:         F3B1EB",
     "NUMERO DE FACT:  162328",

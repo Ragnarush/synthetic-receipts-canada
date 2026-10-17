@@ -1,22 +1,12 @@
 {
   "schema_version": 1,
   "family": "payment_terminal_slip",
+  "variant": "store_header",
   "country": "CA",
   "province": "QC",
   "currency": "CAD",
   "language": "fr",
   "paper_width_mm": 80,
-  "merchant": {
-    "name": "ALCOOLS DOH",
-    "address_lines": [
-      "1257, boul. de la Rivière - Trois-Rivières",
-      "Trois-Rivières, QC G1X 7G3"
-    ],
-    "phone": "819-555-0152"
-  },
-  "store_number": "68528",
-  "datetime": "2026-09-26T12:01:00",
-  "transaction_number": "127126",
   "items": [],
   "taxes_included": null,
   "subtotal_cents": null,
@@ -26,39 +16,45 @@
   "gst_number": null,
   "qst_number": null,
   "payment_method": "debit",
+  "change_cents": null,
+  "document_kind": "payment_slip",
+  "merchant": {
+    "name": "ALCOOLS DOH",
+    "address_lines": [
+      "354, rue des Bouleaux - Shawinigan",
+      "Shawinigan, QC G7G 3S7"
+    ],
+    "phone": "819-555-0117"
+  },
+  "store_number": "45965",
+  "datetime": "2024-02-27T20:28:00",
+  "transaction_number": "146237",
   "tenders": [
     {
       "method": "debit",
       "cents": 6625
     }
   ],
-  "change_cents": null,
   "card": {
     "network": "Interac",
     "masked_number": "************8262",
     "account": "DEFAUT FLASH",
-    "datetime": "2026-09-26T12:02:19",
+    "datetime": "2024-02-27T20:29:06",
     "reference": "0019620533 C",
     "authorization": "9D9AB8"
   },
-  "reprint": true,
-  "document_kind": "payment_slip",
+  "reprint": false,
   "text_lines": [
     "     ALCOOLS DOH",
     "",
-    "1257, boul. de la Rivière - Trois-Rivières",
-    "        Trois-Rivières, QC G1X 7G3",
-    "               819-555-0152",
+    "    354, rue des Bouleaux - Shawinigan",
+    "          Shawinigan, QC G7G 3S7",
+    "               819-555-0117",
     "",
-    "Billet : 127126      Caisse : 3",
-    "Succursale : 68528   Caissier : 2917798",
-    "Date : 2026/09/26    Heure : 12:01",
+    "Billet : 146237      Caisse : 1",
+    "Succursale : 45965   Caissier : 1974220",
+    "Date : 2024/02/27    Heure : 20:28",
     "",
-    "******************************************",
-    "******************************************",
-    "****** RÉIMPRESSION - RÉIMPRESSION *******",
-    "******************************************",
-    "******************************************",
     "",
     "",
     "        RELEVE DE TRANSACTION",
@@ -72,10 +68,10 @@
     "Type de carte: Interac",
     "",
     "NUMERO CARTE:    ************8262",
-    "DATE/HEURE:      26/09/26 12:02:19",
+    "DATE/HEURE:      24/02/27 20:29:06",
     "NUMERO REF:      0019620533 C",
     "AUTOR #:         9D9AB8",
-    "NUMERO DE FACT:  127126",
+    "NUMERO DE FACT:  146237",
     "",
     "Interac",
     "A0000002771010",
