@@ -76,6 +76,7 @@ def generate(rng: random.Random, paper_mm: int = 80) -> tuple[Receipt, dict]:
     processed_at = when + timedelta(seconds=rng.randint(1, 5))
     _websrm.fiscal_footer(r, "PAIEMENT REÇU" if closing else "FACTURE ORIGINALE", ids, processed_at)
     r.add("SPÉCIMEN - synthetic-receipts-canada", align=Align.CENTER)
+    r.wrap_overflow()
 
     truth = {
         "schema_version": SCHEMA_VERSION,
