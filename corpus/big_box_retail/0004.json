@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ELECTRO SPECIMEN",
+    "address_lines": [
+      "1766 Carrefour-Spécimen Blvd",
+      "Rouyn-Noranda, QC J3J 1E8"
+    ],
+    "phone": "819-555-0175"
+  },
+  "store_number": "0402",
+  "datetime": "2026-10-07T09:44:00",
+  "transaction_number": "66588",
+  "associate_id": "1632086",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Chargeur USB-C 30W",
+      "upc": "147069464011",
+      "sku": "654646",
+      "eco_fee_included": true,
+      "unit_price_cents": 4149,
+      "line_total_cents": 4149,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Chargeur USB-C 30W",
+      "upc": "214873213420",
+      "sku": "867650",
+      "eco_fee_included": true,
+      "unit_price_cents": 4497,
+      "line_total_cents": 4497,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 8646,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 432
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 862
+    }
+  ],
+  "total_cents": 9940,
+  "tip_cents": null,
+  "gst_number": "958271679",
+  "qst_number": "2327103654TQ0001NZ",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10000
+    }
+  ],
+  "change_cents": 60,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             ELECTRO SPECIMEN",
+    "              Rouyn-Noranda",
+    "       1766 Carrefour-Spécimen Blvd",
+    "        Rouyn-Noranda, QC J3J 1E8",
+    "               819-555-0175",
+    "VENTE                  00790 001 005 66588",
+    "                       0402 07/10/26 09:44",
+    "",
+    "1632086",
+    "",
+    "1    Chargeur USB-C 30W",
+    "     147069464011                   41.49B",
+    "     UGS 654646 d'écofrais inclus",
+    "1    Chargeur USB-C 30W",
+    "     214873213420                   44.97B",
+    "     UGS 867650 d'écofrais inclus",
+    "Total partiel                        86,46",
+    "     5.00% TPS                        4,32",
+    "     9.975% TVQ                       8,62",
+    "",
+    "Total                              99,40 $",
+    "Comptant                            100,00",
+    "Comptant Rendu                        0,60",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "   Merci d'avoir magasiné chez ELECTRO",
+    "                 SPECIMEN",
+    "",
+    "TPS : 958271679 - TVQ : 2327103654TQ0001NZ",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "chance de gagner une carte-cadeau ELECTRO",
+    "            SPECIMEN de 500 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             EPB402 au 12345,",
+    "                ou visitez",
+    "    electrospecimen.example/survey/402",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.electrospecimen.example",
+    "",
+    "    0 4 0 2 0 7 1 0 2 6 6 6 5 8 8 0 5",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0004.png",
+    "degraded": "0004.jpg"
+  },
+  "degradation": {
+    "paper_gray": 206,
+    "ink_gray_top": 59,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.316745043936176,
+    "fold_position": null,
+    "blur_radius": 1.2005646819190603,
+    "rotation_degrees": -2.0999929288286623,
+    "perspective": 0.05868616302508879,
+    "noise_sigma": 11.88730547170463,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

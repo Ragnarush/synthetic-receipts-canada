@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "PAPETERIE QUIDAM",
+    "address_lines": [
+      "1707 La Place-Doh St",
+      "Gatineau, QC J4M 8S7"
+    ],
+    "phone": "819-555-0158"
+  },
+  "store_number": "0245",
+  "datetime": "2024-12-18T09:59:00",
+  "transaction_number": "90457",
+  "associate_id": "1718096",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Papier 8.5x11 500f",
+      "upc": "689966788120",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1097,
+      "line_total_cents": 1097,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "589390803039",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1099,
+      "line_total_cents": 1099,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 2196,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 110
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 219
+    }
+  ],
+  "total_cents": 2525,
+  "tip_cents": null,
+  "gst_number": "152228864",
+  "qst_number": "4786177269TQ0001PG",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5000
+    }
+  ],
+  "change_cents": 2475,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             PAPETERIE QUIDAM",
+    "                 Gatineau",
+    "           1707 La Place-Doh St",
+    "           Gatineau, QC J4M 8S7",
+    "               819-555-0158",
+    "VENTE                  00792 001 001 90457",
+    "                       0245 18/12/24 09:59",
+    "",
+    "1718096",
+    "",
+    "1    Papier 8.5x11 500f",
+    "     689966788120                   10.97B",
+    "1    Classeur 1po Fictif",
+    "     589390803039                   10.99B",
+    "Total partiel                        21,96",
+    "     5.00% TPS                        1,10",
+    "     9.975% TVQ                       2,19",
+    "",
+    "Total                              25,25 $",
+    "Comptant                             50,00",
+    "Comptant Rendu                       24,75",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau PAPETERIE QUIDAM. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "  Merci d'avoir magasiné chez PAPETERIE",
+    "                  QUIDAM",
+    "",
+    "TPS : 152228864 - TVQ : 4786177269TQ0001PG",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "       PAPETERIE QUIDAM de 1000 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             GJR245 au 12345,",
+    "                ou visitez",
+    "    papeteriequidam.example/survey/245",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.papeteriequidam.example",
+    "",
+    "    0 2 4 5 1 8 1 2 2 4 9 0 4 5 7 0 1",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0002.png",
+    "degraded": "0002.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 148,
+    "shading_amplitude": 0.35,
+    "fold_position": 0.4536723903305604,
+    "blur_radius": 1.6,
+    "rotation_degrees": -2.701015488114995,
+    "perspective": 0.05982602779639097,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.003918575957090951,
+    "jpeg_quality": 55
+  }
+}

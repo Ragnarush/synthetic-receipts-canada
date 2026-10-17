@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "313 Principale Blvd",
+      "Drummondville, QC J6E 7P3"
+    ],
+    "phone": "819-555-0180"
+  },
+  "store_number": "0333",
+  "datetime": "2025-01-31T12:52:00",
+  "transaction_number": "44618",
+  "associate_id": "1508502",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Souris optique Quidam",
+      "upc": "824072048723",
+      "sku": "246904",
+      "eco_fee_included": true,
+      "unit_price_cents": 2349,
+      "line_total_cents": 2349,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 2349,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 117
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 234
+    }
+  ],
+  "total_cents": 2700,
+  "tip_cents": null,
+  "gst_number": "742242086",
+  "qst_number": "9303701565TQ0001BZ",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5000
+    }
+  ],
+  "change_cents": 2300,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "              Drummondville",
+    "           313 Principale Blvd",
+    "        Drummondville, QC J6E 7P3",
+    "               819-555-0180",
+    "VENTE                  00672 001 005 44618",
+    "                       0333 31/01/25 12:52",
+    "",
+    "1508502",
+    "",
+    "1    Souris optique Quidam",
+    "     824072048723                   23.49B",
+    "     UGS 246904 d'écofrais inclus",
+    "Total partiel                        23,49",
+    "     5.00% TPS                        1,17",
+    "     9.975% TVQ                       2,34",
+    "",
+    "Total                              27,00 $",
+    "Comptant                             50,00",
+    "Comptant Rendu                       23,00",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 742242086 - TVQ : 9303701565TQ0001BZ",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             EJB333 au 12345,",
+    "                ou visitez",
+    "    fournituresdoh.example/survey/333",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 3 3 3 3 1 0 1 2 5 4 4 6 1 8 0 5",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0010.png",
+    "degraded": "0010.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 145,
+    "shading_amplitude": 0.2772912978166363,
+    "fold_position": 0.5581267098559831,
+    "blur_radius": 1.6,
+    "rotation_degrees": 1.4626542726180383,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 62
+  }
+}

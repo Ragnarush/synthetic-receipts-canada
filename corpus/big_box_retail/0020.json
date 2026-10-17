@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "BUREAU FICTIF",
+    "address_lines": [
+      "3531 La Place-Doh St",
+      "Drummondville, QC J0A 4J2"
+    ],
+    "phone": "819-555-0176"
+  },
+  "store_number": "0109",
+  "datetime": "2024-11-20T11:31:00",
+  "transaction_number": "80011",
+  "associate_id": "1638085",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Clavier sans fil Fictf",
+      "upc": "448408606641",
+      "sku": "791521",
+      "eco_fee_included": true,
+      "unit_price_cents": 3649,
+      "line_total_cents": 3649,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 3649,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 182
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 364
+    }
+  ],
+  "total_cents": 4195,
+  "tip_cents": null,
+  "gst_number": "391114991",
+  "qst_number": "3540419229TQ0001WJ",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4195
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "              BUREAU FICTIF",
+    "              Drummondville",
+    "           3531 La Place-Doh St",
+    "        Drummondville, QC J0A 4J2",
+    "               819-555-0176",
+    "VENTE                  00909 001 003 80011",
+    "                       0109 20/11/24 11:31",
+    "",
+    "1638085",
+    "",
+    "1    Clavier sans fil Fictf",
+    "     448408606641                   36.49B",
+    "     UGS 791521 d'écofrais inclus",
+    "Total partiel                        36,49",
+    "     5.00% TPS                        1,82",
+    "     9.975% TVQ                       3,64",
+    "",
+    "Total                              41,95 $",
+    "Comptant                             41,95",
+    "Comptant Rendu                        0,00",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau BUREAU FICTIF. Demandez à un",
+    "      associé pour plus de détails.",
+    "******************************************",
+    "",
+    "Merci d'avoir magasiné chez BUREAU FICTIF",
+    "",
+    "TPS : 391114991 - TVQ : 3540419229TQ0001WJ",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    " chance de gagner une carte-cadeau BUREAU",
+    "             FICTIF de 500 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             JGK109 au 12345,",
+    "ou visitez bureaufictif.example/survey/109",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "        aide.bureaufictif.example",
+    "",
+    "    0 1 0 9 2 0 1 1 2 4 8 0 0 1 1 0 3",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0020.png",
+    "degraded": "0020.jpg"
+  },
+  "degradation": {
+    "paper_gray": 219,
+    "ink_gray_top": 56,
+    "ink_gray_bottom": 97,
+    "shading_amplitude": 0.2680675167940737,
+    "fold_position": 0.5861937879831678,
+    "blur_radius": 0.45890614264023544,
+    "rotation_degrees": -1.0510565907649476,
+    "perspective": 0.032593552591710595,
+    "noise_sigma": 5.91382327097868,
+    "salt_pepper_fraction": 0.00174468414674103,
+    "jpeg_quality": 69
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ELECTRO SPECIMEN",
+    "address_lines": [
+      "1595 Carrefour-Spécimen Blvd",
+      "Drummondville, QC J8P 3M1"
+    ],
+    "phone": "819-555-0105"
+  },
+  "store_number": "0191",
+  "datetime": "2024-02-05T14:53:00",
+  "transaction_number": "61232",
+  "associate_id": "1557451",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "876076649549",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 2697,
+      "line_total_cents": 2697,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Souris optique Quidam",
+      "upc": "240112006105",
+      "sku": "556864",
+      "eco_fee_included": true,
+      "unit_price_cents": 1899,
+      "line_total_cents": 1899,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "812182842483",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 4497,
+      "line_total_cents": 4497,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 9093,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 455
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 907
+    }
+  ],
+  "total_cents": 10455,
+  "tip_cents": null,
+  "gst_number": "357149043",
+  "qst_number": "9543814853TQ0001CA",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10455
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             ELECTRO SPECIMEN",
+    "              Drummondville",
+    "       1595 Carrefour-Spécimen Blvd",
+    "        Drummondville, QC J8P 3M1",
+    "               819-555-0105",
+    "VENTE                  00523 001 001 61232",
+    "                       0191 05/02/24 14:53",
+    "",
+    "1557451",
+    "",
+    "1    Cartouche encre noire",
+    "     876076649549                   26.97B",
+    "1    Souris optique Quidam",
+    "     240112006105                   18.99B",
+    "     UGS 556864 d'écofrais inclus",
+    "1    Cartouche encre noire",
+    "     812182842483                   44.97B",
+    "Total partiel                        90,93",
+    "     5.00% TPS                        4,55",
+    "     9.975% TVQ                       9,07",
+    "",
+    "Total                             104,55 $",
+    "Comptant                            104,55",
+    "Comptant Rendu                        0,00",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "   Merci d'avoir magasiné chez ELECTRO",
+    "                 SPECIMEN",
+    "",
+    "TPS : 357149043 - TVQ : 9543814853TQ0001CA",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "chance de gagner une carte-cadeau ELECTRO",
+    "            SPECIMEN de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             VXK191 au 12345,",
+    "                ou visitez",
+    "    electrospecimen.example/survey/191",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.electrospecimen.example",
+    "",
+    "    0 1 9 1 0 5 0 2 2 4 6 1 2 3 2 0 1",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0012.png",
+    "degraded": "0012.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 59,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.35,
+    "fold_position": null,
+    "blur_radius": 1.5593800017426336,
+    "rotation_degrees": 3.3368579920681753,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.004,
+    "jpeg_quality": 55
+  }
+}

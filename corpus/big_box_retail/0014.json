@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "BUREAU FICTIF",
+    "address_lines": [
+      "1118 Principale St",
+      "Drummondville, QC J5M 5R7"
+    ],
+    "phone": "819-555-0146"
+  },
+  "store_number": "0175",
+  "datetime": "2025-07-29T15:22:00",
+  "transaction_number": "11491",
+  "associate_id": "1586901",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Souris optique Quidam",
+      "upc": "869715697545",
+      "sku": "628255",
+      "eco_fee_included": true,
+      "unit_price_cents": 3797,
+      "line_total_cents": 3797,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "169552188978",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 597,
+      "line_total_cents": 597,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cahier spirale 3 suj",
+      "upc": "500468512749",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 749,
+      "line_total_cents": 749,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Stylos gel 12 pqt",
+      "upc": "280051954083",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1049,
+      "line_total_cents": 1049,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 6192,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 310
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 618
+    }
+  ],
+  "total_cents": 7120,
+  "tip_cents": null,
+  "gst_number": "294073972",
+  "qst_number": "8430713094TQ0001YG",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 8000
+    }
+  ],
+  "change_cents": 880,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "              BUREAU FICTIF",
+    "              Drummondville",
+    "            1118 Principale St",
+    "        Drummondville, QC J5M 5R7",
+    "               819-555-0146",
+    "VENTE                  00858 001 009 11491",
+    "                       0175 29/07/25 15:22",
+    "",
+    "1586901",
+    "",
+    "1    Souris optique Quidam",
+    "     869715697545                   37.97B",
+    "     UGS 628255 d'écofrais inclus",
+    "1    Classeur 1po Fictif",
+    "     169552188978                    5.97B",
+    "1    Cahier spirale 3 suj",
+    "     500468512749                    7.49B",
+    "1    Stylos gel 12 pqt",
+    "     280051954083                   10.49B",
+    "Total partiel                        61,92",
+    "     5.00% TPS                        3,10",
+    "     9.975% TVQ                       6,18",
+    "",
+    "Total                              71,20 $",
+    "Comptant                             80,00",
+    "Comptant Rendu                        8,80",
+    "",
+    "Merci d'avoir magasiné chez BUREAU FICTIF",
+    "",
+    "TPS : 294073972 - TVQ : 8430713094TQ0001YG",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    " chance de gagner une carte-cadeau BUREAU",
+    "             FICTIF de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             HPS175 au 12345,",
+    "ou visitez bureaufictif.example/survey/175",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "        aide.bureaufictif.example",
+    "",
+    "    0 1 7 5 2 9 0 7 2 5 1 1 4 9 1 0 9",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0014.png",
+    "degraded": "0014.jpg"
+  },
+  "degradation": {
+    "paper_gray": 243,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.058601865394871576,
+    "fold_position": null,
+    "blur_radius": 0.05760863689979008,
+    "rotation_degrees": -0.18863887054220171,
+    "perspective": 0.002515413786344984,
+    "noise_sigma": 2.721803165544897,
+    "salt_pepper_fraction": 0.000838717477425597,
+    "jpeg_quality": 83
+  }
+}

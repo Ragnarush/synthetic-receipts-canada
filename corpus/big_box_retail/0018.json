@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "2333 Des Fictifs Ave",
+      "Montréal, QC H6A 6C3"
+    ],
+    "phone": "819-555-0139"
+  },
+  "store_number": "0334",
+  "datetime": "2026-03-08T12:43:00",
+  "transaction_number": "90160",
+  "associate_id": "1827310",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "571465416960",
+      "sku": "853247",
+      "eco_fee_included": true,
+      "unit_price_cents": 1999,
+      "line_total_cents": 1999,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cable HDMI 2m Doh",
+      "upc": "337337195906",
+      "sku": "905073",
+      "eco_fee_included": true,
+      "unit_price_cents": 1897,
+      "line_total_cents": 1897,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 3896,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 195
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 389
+    }
+  ],
+  "total_cents": 4480,
+  "tip_cents": null,
+  "gst_number": "779988169",
+  "qst_number": "2389161140TQ0001YR",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 6000
+    }
+  ],
+  "change_cents": 1520,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "                 Montréal",
+    "           2333 Des Fictifs Ave",
+    "           Montréal, QC H6A 6C3",
+    "               819-555-0139",
+    "VENTE                  00566 001 009 90160",
+    "                       0334 08/03/26 12:43",
+    "",
+    "1827310",
+    "",
+    "1    Cle USB 64 Go Doh",
+    "     571465416960                   19.99B",
+    "     UGS 853247 d'écofrais inclus",
+    "1    Cable HDMI 2m Doh",
+    "     337337195906                   18.97B",
+    "     UGS 905073 d'écofrais inclus",
+    "Total partiel                        38,96",
+    "     5.00% TPS                        1,95",
+    "     9.975% TVQ                       3,89",
+    "",
+    "Total                              44,80 $",
+    "Comptant                             60,00",
+    "Comptant Rendu                       15,20",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    " carte-cadeau FOURNITURES DOH. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 779988169 - TVQ : 2389161140TQ0001YR",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 1000 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             YHJ334 au 12345,",
+    "                ou visitez",
+    "    fournituresdoh.example/survey/334",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 3 3 4 0 8 0 3 2 6 9 0 1 6 0 0 9",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0018.png",
+    "degraded": "0018.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 27,
+    "ink_gray_bottom": 50,
+    "shading_amplitude": 0.1203146938812355,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": -0.26262483744624443,
+    "perspective": 0.0,
+    "noise_sigma": 3.4022401735058967,
+    "salt_pepper_fraction": 4.129020944988904e-05,
+    "jpeg_quality": 90
+  }
+}

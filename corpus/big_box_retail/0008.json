@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "672 Principale St",
+      "Laval, QC H7R 5J9"
+    ],
+    "phone": "819-555-0119"
+  },
+  "store_number": "0118",
+  "datetime": "2024-02-15T11:36:00",
+  "transaction_number": "17773",
+  "associate_id": "2966521",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "381469144694",
+      "sku": "162615",
+      "eco_fee_included": true,
+      "unit_price_cents": 1849,
+      "line_total_cents": 1849,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 1849,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 92
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 184
+    }
+  ],
+  "total_cents": 2125,
+  "tip_cents": null,
+  "gst_number": "171076380",
+  "qst_number": "7414257008TQ0001AS",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 2125
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "                  Laval",
+    "            672 Principale St",
+    "            Laval, QC H7R 5J9",
+    "               819-555-0119",
+    "VENTE                  00216 001 011 17773",
+    "                       0118 15/02/24 11:36",
+    "",
+    "2966521",
+    "",
+    "1    Cle USB 64 Go Doh",
+    "     381469144694                   18.49B",
+    "     UGS 162615 d'écofrais inclus",
+    "Total partiel                        18,49",
+    "     5.00% TPS                        0,92",
+    "     9.975% TVQ                       1,84",
+    "",
+    "Total                              21,25 $",
+    "Comptant                             21,25",
+    "Comptant Rendu                        0,00",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    " carte-cadeau FOURNITURES DOH. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 171076380 - TVQ : 7414257008TQ0001AS",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 1000 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             VCA118 au 12345,",
+    "                ou visitez",
+    "    fournituresdoh.example/survey/118",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 1 1 8 1 5 0 2 2 4 1 7 7 7 3 1 1",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0008.png",
+    "degraded": "0008.jpg"
+  },
+  "degradation": {
+    "paper_gray": 239,
+    "ink_gray_top": 32,
+    "ink_gray_bottom": 43,
+    "shading_amplitude": 0.1127514641768749,
+    "fold_position": null,
+    "blur_radius": 0.07907354753116991,
+    "rotation_degrees": -0.09331818826832938,
+    "perspective": 0.008360172788592109,
+    "noise_sigma": 2.0,
+    "salt_pepper_fraction": 0.0008631333386848985,
+    "jpeg_quality": 92
+  }
+}

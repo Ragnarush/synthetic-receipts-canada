@@ -37,7 +37,7 @@ src/                         le générateur (Python, Pillow, numpy)
 | `grocery_chain` | observation de reçus réels d'une grande chaîne d'épicerie québécoise (structure seulement) ; bordereau du terminal intégré | livrée |
 | `crown_store_tax_included` | observation de reçus réels de deux sociétés d'État québécoises (alcool, cannabis) : prix taxes comprises, bordereau intégré | livrée |
 | `payment_terminal_slip` | observation de tickets réels d'une société d'État et d'un dépanneur québécois : bordereau du terminal imprimé seul, sans articles ni total d'achat ; terminal autonome (date *MM/JJ/AA*, `$12.50`) | livrée |
-| grande surface (fournitures, électronique) | observation | à venir |
+| `big_box_retail` | observation d'un reçu réel d'une grande chaîne québécoise de fournitures et d'électronique : prix en point avec code de taxe collé (`49.99B`), totaux en virgule, écofrais inclus | livrée |
 | facture de services professionnels | observation | à venir |
 | pharmacie, quincaillerie | observation | à venir |
 | essence, stationnement | observation | à venir |
@@ -102,7 +102,9 @@ l'arrondi au comptant, la monnaie rendue et le bordereau de carte (`card`) ;
 `crown_store_tax_included` marque les taxes `included` et donne un `subtotal_cents` qui
 n'est pas imprimé, à recalculer ; `payment_terminal_slip` n'a que `tenders` et `card` :
 son `total_cents` est `null` (`document_kind`: `payment_slip`) ; sa variante
-`standalone_terminal` s'imprime toujours en 58 mm, quel que soit `--paper`. Un champ
+`standalone_terminal` s'imprime toujours en 58 mm, quel que soit `--paper` ;
+`big_box_retail` donne pour chaque article `upc`, `sku` et `eco_fee_included`, et le
+numéro de l'associé (`associate_id`). Un champ
 absent du reçu vaut `null`, jamais une valeur par défaut.
 
 Les montants sont en **cents entiers**, arrondis à la demi-unité supérieure comme une

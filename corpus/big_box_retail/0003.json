@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "3529 Des Fictifs St",
+      "Gatineau, QC J9M 8V9"
+    ],
+    "phone": "819-555-0127"
+  },
+  "store_number": "0406",
+  "datetime": "2026-05-27T09:05:00",
+  "transaction_number": "89607",
+  "associate_id": "1480084",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "179185651997",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 5549,
+      "line_total_cents": 5549,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Manette sans fil Doh",
+      "upc": "875222898211",
+      "sku": "502624",
+      "eco_fee_included": true,
+      "unit_price_cents": 7549,
+      "line_total_cents": 7549,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "779690991800",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 849,
+      "line_total_cents": 849,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 13947,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 697
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 1391
+    }
+  ],
+  "total_cents": 16035,
+  "tip_cents": null,
+  "gst_number": "486720588",
+  "qst_number": "9715448262TQ0001MB",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 17000
+    }
+  ],
+  "change_cents": 965,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "                 Gatineau",
+    "           3529 Des Fictifs St",
+    "           Gatineau, QC J9M 8V9",
+    "               819-555-0127",
+    "VENTE                  00757 001 012 89607",
+    "                       0406 27/05/26 09:05",
+    "",
+    "1480084",
+    "",
+    "1    Cartouche encre noire",
+    "     179185651997                   55.49B",
+    "1    Manette sans fil Doh",
+    "     875222898211                   75.49B",
+    "     UGS 502624 d'écofrais inclus",
+    "1    Classeur 1po Fictif",
+    "     779690991800                    8.49B",
+    "Total partiel                       139,47",
+    "     5.00% TPS                        6,97",
+    "     9.975% TVQ                      13,91",
+    "",
+    "Total                             160,35 $",
+    "Comptant                            170,00",
+    "Comptant Rendu                        9,65",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    " carte-cadeau FOURNITURES DOH. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 486720588 - TVQ : 9715448262TQ0001MB",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             VGP406 au 12345,",
+    "                ou visitez",
+    "    fournituresdoh.example/survey/406",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 4 0 6 2 7 0 5 2 6 8 9 6 0 7 1 2",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0003.png",
+    "degraded": "0003.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 49,
+    "shading_amplitude": 0.1051770523605795,
+    "fold_position": null,
+    "blur_radius": 0.328612194236115,
+    "rotation_degrees": -0.4156626299110755,
+    "perspective": 0.010880276478270928,
+    "noise_sigma": 3.08374072205089,
+    "salt_pepper_fraction": 0.000695847661955058,
+    "jpeg_quality": 92
+  }
+}

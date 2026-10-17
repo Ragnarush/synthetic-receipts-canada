@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "2048 Principale St",
+      "Terrebonne, QC J8B 5G5"
+    ],
+    "phone": "819-555-0184"
+  },
+  "store_number": "0176",
+  "datetime": "2024-05-10T11:59:00",
+  "transaction_number": "18165",
+  "associate_id": "2595996",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Stylos gel 12 pqt",
+      "upc": "858409049349",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1299,
+      "line_total_cents": 1299,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "761772105169",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 4599,
+      "line_total_cents": 4599,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Souris optique Quidam",
+      "upc": "863500983045",
+      "sku": "802961",
+      "eco_fee_included": true,
+      "unit_price_cents": 2899,
+      "line_total_cents": 2899,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 8797,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 440
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 878
+    }
+  ],
+  "total_cents": 10115,
+  "tip_cents": null,
+  "gst_number": "854863338",
+  "qst_number": "9165080916TQ0001HK",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 11000
+    }
+  ],
+  "change_cents": 885,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "                Terrebonne",
+    "            2048 Principale St",
+    "          Terrebonne, QC J8B 5G5",
+    "               819-555-0184",
+    "VENTE                  00166 001 006 18165",
+    "                       0176 10/05/24 11:59",
+    "",
+    "2595996",
+    "",
+    "1    Stylos gel 12 pqt",
+    "     858409049349                   12.99B",
+    "1    Cartouche encre noire",
+    "     761772105169                   45.99B",
+    "1    Souris optique Quidam",
+    "     863500983045                   28.99B",
+    "     UGS 802961 d'écofrais inclus",
+    "Total partiel                        87,97",
+    "     5.00% TPS                        4,40",
+    "     9.975% TVQ                       8,78",
+    "",
+    "Total                             101,15 $",
+    "Comptant                            110,00",
+    "Comptant Rendu                        8,85",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    " carte-cadeau FOURNITURES DOH. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 854863338 - TVQ : 9165080916TQ0001HK",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 1000 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             GKL176 au 12345,",
+    "                ou visitez",
+    "    fournituresdoh.example/survey/176",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 1 7 6 1 0 0 5 2 4 1 8 1 6 5 0 6",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0011.png",
+    "degraded": "0011.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 29,
+    "ink_gray_bottom": 40,
+    "shading_amplitude": 0.10747243501025419,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.19785921769359904,
+    "perspective": 0.0005239507456632897,
+    "noise_sigma": 4.207941939240971,
+    "salt_pepper_fraction": 0.0006355846924194257,
+    "jpeg_quality": 92
+  }
+}

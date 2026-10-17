@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ELECTRO SPECIMEN",
+    "address_lines": [
+      "3924 La Place-Doh St",
+      "Laval, QC H8G 3P1"
+    ],
+    "phone": "819-555-0188"
+  },
+  "store_number": "0318",
+  "datetime": "2025-03-03T13:09:00",
+  "transaction_number": "74568",
+  "associate_id": "1888933",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "898823995346",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 699,
+      "line_total_cents": 699,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "376752826656",
+      "sku": "261877",
+      "eco_fee_included": true,
+      "unit_price_cents": 2897,
+      "line_total_cents": 2897,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "393126241807",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 849,
+      "line_total_cents": 849,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 4445,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 222
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 443
+    }
+  ],
+  "total_cents": 5110,
+  "tip_cents": null,
+  "gst_number": "467879562",
+  "qst_number": "6987145975TQ0001JB",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 5500
+    }
+  ],
+  "change_cents": 390,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             ELECTRO SPECIMEN",
+    "                  Laval",
+    "           3924 La Place-Doh St",
+    "            Laval, QC H8G 3P1",
+    "               819-555-0188",
+    "VENTE                  00768 001 001 74568",
+    "                       0318 03/03/25 13:09",
+    "",
+    "1888933",
+    "",
+    "1    Classeur 1po Fictif",
+    "     898823995346                    6.99B",
+    "1    Cle USB 64 Go Doh",
+    "     376752826656                   28.97B",
+    "     UGS 261877 d'écofrais inclus",
+    "1    Classeur 1po Fictif",
+    "     393126241807                    8.49B",
+    "Total partiel                        44,45",
+    "     5.00% TPS                        2,22",
+    "     9.975% TVQ                       4,43",
+    "",
+    "Total                              51,10 $",
+    "Comptant                             55,00",
+    "Comptant Rendu                        3,90",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "   Merci d'avoir magasiné chez ELECTRO",
+    "                 SPECIMEN",
+    "",
+    "TPS : 467879562 - TVQ : 6987145975TQ0001JB",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "chance de gagner une carte-cadeau ELECTRO",
+    "           SPECIMEN de 1000 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             BPE318 au 12345,",
+    "                ou visitez",
+    "    electrospecimen.example/survey/318",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.electrospecimen.example",
+    "",
+    "    0 3 1 8 0 3 0 3 2 5 7 4 5 6 8 0 1",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0009.png",
+    "degraded": "0009.jpg"
+  },
+  "degradation": {
+    "paper_gray": 215,
+    "ink_gray_top": 33,
+    "ink_gray_bottom": 124,
+    "shading_amplitude": 0.13385620594562456,
+    "fold_position": 0.5887215496921041,
+    "blur_radius": 0.5416935171342342,
+    "rotation_degrees": 0.9996391478303623,
+    "perspective": 0.035623634133771384,
+    "noise_sigma": 6.268498413114107,
+    "salt_pepper_fraction": 0.002608912607478091,
+    "jpeg_quality": 69
+  }
+}

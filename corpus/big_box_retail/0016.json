@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ELECTRO SPECIMEN",
+    "address_lines": [
+      "408 Carrefour-Spécimen Blvd",
+      "Laval, QC H0X 4C0"
+    ],
+    "phone": "819-555-0144"
+  },
+  "store_number": "0497",
+  "datetime": "2025-11-05T12:00:00",
+  "transaction_number": "40726",
+  "associate_id": "2657048",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Chargeur USB-C 30W",
+      "upc": "077464400247",
+      "sku": "114505",
+      "eco_fee_included": true,
+      "unit_price_cents": 3599,
+      "line_total_cents": 3599,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cahier spirale 3 suj",
+      "upc": "235017089540",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 797,
+      "line_total_cents": 797,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 4396,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 220
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 439
+    }
+  ],
+  "total_cents": 5055,
+  "tip_cents": null,
+  "gst_number": "885475280",
+  "qst_number": "7838169009TQ0001VP",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 10000
+    }
+  ],
+  "change_cents": 4945,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             ELECTRO SPECIMEN",
+    "                  Laval",
+    "       408 Carrefour-Spécimen Blvd",
+    "            Laval, QC H0X 4C0",
+    "               819-555-0144",
+    "VENTE                  00961 001 002 40726",
+    "                       0497 05/11/25 12:00",
+    "",
+    "2657048",
+    "",
+    "1    Chargeur USB-C 30W",
+    "     077464400247                   35.99B",
+    "     UGS 114505 d'écofrais inclus",
+    "1    Cahier spirale 3 suj",
+    "     235017089540                    7.97B",
+    "Total partiel                        43,96",
+    "     5.00% TPS                        2,20",
+    "     9.975% TVQ                       4,39",
+    "",
+    "Total                              50,55 $",
+    "Comptant                            100,00",
+    "Comptant Rendu                       49,45",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau ELECTRO SPECIMEN. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "   Merci d'avoir magasiné chez ELECTRO",
+    "                 SPECIMEN",
+    "",
+    "TPS : 885475280 - TVQ : 7838169009TQ0001VP",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "chance de gagner une carte-cadeau ELECTRO",
+    "            SPECIMEN de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             MRX497 au 12345,",
+    "                ou visitez",
+    "    electrospecimen.example/survey/497",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.electrospecimen.example",
+    "",
+    "    0 4 9 7 0 5 1 1 2 5 4 0 7 2 6 0 2",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0016.png",
+    "degraded": "0016.jpg"
+  },
+  "degradation": {
+    "paper_gray": 205,
+    "ink_gray_top": 70,
+    "ink_gray_bottom": 170,
+    "shading_amplitude": 0.33559511225148325,
+    "fold_position": 0.4217599365235728,
+    "blur_radius": 1.3951763162263444,
+    "rotation_degrees": -3.022847485525345,
+    "perspective": 0.06,
+    "noise_sigma": 12.0,
+    "salt_pepper_fraction": 0.0031757246122601996,
+    "jpeg_quality": 55
+  }
+}

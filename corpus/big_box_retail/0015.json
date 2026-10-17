@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "ELECTRO SPECIMEN",
+    "address_lines": [
+      "85 Du Quidam St",
+      "Rimouski, QC G3C 3W8"
+    ],
+    "phone": "819-555-0132"
+  },
+  "store_number": "0246",
+  "datetime": "2025-10-19T11:22:00",
+  "transaction_number": "94092",
+  "associate_id": "1328297",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Classeur 1po Fictif",
+      "upc": "151936372038",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 1199,
+      "line_total_cents": 1199,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cable HDMI 2m Doh",
+      "upc": "656438540259",
+      "sku": "788169",
+      "eco_fee_included": true,
+      "unit_price_cents": 2297,
+      "line_total_cents": 2297,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 3496,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 175
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 349
+    }
+  ],
+  "total_cents": 4020,
+  "tip_cents": null,
+  "gst_number": "595353487",
+  "qst_number": "5055711602TQ0001TL",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 4500
+    }
+  ],
+  "change_cents": 480,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             ELECTRO SPECIMEN",
+    "                 Rimouski",
+    "             85 Du Quidam St",
+    "           Rimouski, QC G3C 3W8",
+    "               819-555-0132",
+    "VENTE                  00302 001 007 94092",
+    "                       0246 19/10/25 11:22",
+    "",
+    "1328297",
+    "",
+    "1    Classeur 1po Fictif",
+    "     151936372038                   11.99B",
+    "1    Cable HDMI 2m Doh",
+    "     656438540259                   22.97B",
+    "     UGS 788169 d'écofrais inclus",
+    "Total partiel                        34,96",
+    "     5.00% TPS                        1,75",
+    "     9.975% TVQ                       3,49",
+    "",
+    "Total                              40,20 $",
+    "Comptant                             45,00",
+    "Comptant Rendu                        4,80",
+    "",
+    "   Merci d'avoir magasiné chez ELECTRO",
+    "                 SPECIMEN",
+    "",
+    "TPS : 595353487 - TVQ : 5055711602TQ0001TL",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "chance de gagner une carte-cadeau ELECTRO",
+    "            SPECIMEN de 500 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             PCZ246 au 12345,",
+    "                ou visitez",
+    "    electrospecimen.example/survey/246",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.electrospecimen.example",
+    "",
+    "    0 2 4 6 1 9 1 0 2 5 9 4 0 9 2 0 7",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0015.png",
+    "degraded": "0015.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 28,
+    "ink_gray_bottom": 42,
+    "shading_amplitude": 0.11038667706125922,
+    "fold_position": null,
+    "blur_radius": 0.370824941870471,
+    "rotation_degrees": 0.1655556414384607,
+    "perspective": 0.0,
+    "noise_sigma": 2.865379198874137,
+    "salt_pepper_fraction": 0.0,
+    "jpeg_quality": 88
+  }
+}

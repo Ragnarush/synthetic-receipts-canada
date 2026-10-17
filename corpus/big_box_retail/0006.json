@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "FOURNITURES DOH",
+    "address_lines": [
+      "2830 Carrefour-Spécimen St",
+      "Laval, QC H4L 1R8"
+    ],
+    "phone": "819-555-0136"
+  },
+  "store_number": "0015",
+  "datetime": "2025-02-10T20:14:00",
+  "transaction_number": "46082",
+  "associate_id": "2987576",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cartouche encre noire",
+      "upc": "183319319306",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 5149,
+      "line_total_cents": 5149,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 5149,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 257
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 514
+    }
+  ],
+  "total_cents": 5920,
+  "tip_cents": null,
+  "gst_number": "863737743",
+  "qst_number": "8763224780TQ0001LM",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 6000
+    }
+  ],
+  "change_cents": 80,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             FOURNITURES DOH",
+    "                  Laval",
+    "        2830 Carrefour-Spécimen St",
+    "            Laval, QC H4L 1R8",
+    "               819-555-0136",
+    "VENTE                  00984 001 005 46082",
+    "                       0015 10/02/25 20:14",
+    "",
+    "2987576",
+    "",
+    "1    Cartouche encre noire",
+    "     183319319306                   51.49B",
+    "Total partiel                        51,49",
+    "     5.00% TPS                        2,57",
+    "     9.975% TVQ                       5,14",
+    "",
+    "Total                              59,20 $",
+    "Comptant                             60,00",
+    "Comptant Rendu                        0,80",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    " carte-cadeau FOURNITURES DOH. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    " Merci d'avoir magasiné chez FOURNITURES",
+    "                   DOH",
+    "",
+    "TPS : 863737743 - TVQ : 8763224780TQ0001LM",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        FOURNITURES DOH de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             WAT15 au 12345,",
+    "                ou visitez",
+    "     fournituresdoh.example/survey/15",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.fournituresdoh.example",
+    "",
+    "    0 0 1 5 1 0 0 2 2 5 4 6 0 8 2 0 5",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0006.png",
+    "degraded": "0006.jpg"
+  },
+  "degradation": {
+    "paper_gray": 245,
+    "ink_gray_top": 20,
+    "ink_gray_bottom": 58,
+    "shading_amplitude": 0.05,
+    "fold_position": null,
+    "blur_radius": 0.0,
+    "rotation_degrees": 0.4332696849906277,
+    "perspective": 0.001251776773130976,
+    "noise_sigma": 3.027706075134292,
+    "salt_pepper_fraction": 0.0002523269226138167,
+    "jpeg_quality": 86
+  }
+}

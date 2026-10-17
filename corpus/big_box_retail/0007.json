@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "PAPETERIE QUIDAM",
+    "address_lines": [
+      "45 La Place-Doh St",
+      "Rouyn-Noranda, QC J4E 4R1"
+    ],
+    "phone": "819-555-0178"
+  },
+  "store_number": "0108",
+  "datetime": "2026-04-07T13:36:00",
+  "transaction_number": "42876",
+  "associate_id": "2284244",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Ecouteurs bt Specimen",
+      "upc": "427198285120",
+      "sku": "432212",
+      "eco_fee_included": true,
+      "unit_price_cents": 5997,
+      "line_total_cents": 5997,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 5997,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 300
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 598
+    }
+  ],
+  "total_cents": 6895,
+  "tip_cents": null,
+  "gst_number": "669613777",
+  "qst_number": "8573491244TQ0001SM",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 6895
+    }
+  ],
+  "change_cents": 0,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "             PAPETERIE QUIDAM",
+    "              Rouyn-Noranda",
+    "            45 La Place-Doh St",
+    "        Rouyn-Noranda, QC J4E 4R1",
+    "               819-555-0178",
+    "VENTE                  00208 001 011 42876",
+    "                       0108 07/04/26 13:36",
+    "",
+    "2284244",
+    "",
+    "1    Ecouteurs bt Specimen",
+    "     427198285120                   59.97B",
+    "     UGS 432212 d'écofrais inclus",
+    "Total partiel                        59,97",
+    "     5.00% TPS                        3,00",
+    "     9.975% TVQ                       5,98",
+    "",
+    "Total                              68,95 $",
+    "Comptant                             68,95",
+    "Comptant Rendu                        0,00",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau PAPETERIE QUIDAM. Demandez à",
+    "     un associé pour plus de détails.",
+    "******************************************",
+    "",
+    "  Merci d'avoir magasiné chez PAPETERIE",
+    "                  QUIDAM",
+    "",
+    "TPS : 669613777 - TVQ : 8573491244TQ0001SM",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    "    chance de gagner une carte-cadeau",
+    "        PAPETERIE QUIDAM de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             WYY108 au 12345,",
+    "                ou visitez",
+    "    papeteriequidam.example/survey/108",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "       aide.papeteriequidam.example",
+    "",
+    "    0 1 0 8 0 7 0 4 2 6 4 2 8 7 6 1 1",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0007.png",
+    "degraded": "0007.jpg"
+  },
+  "degradation": {
+    "paper_gray": 218,
+    "ink_gray_top": 39,
+    "ink_gray_bottom": 91,
+    "shading_amplitude": 0.19102126303932088,
+    "fold_position": null,
+    "blur_radius": 0.9754052035300694,
+    "rotation_degrees": -0.3871809871649209,
+    "perspective": 0.028358613428415003,
+    "noise_sigma": 4.817225959304984,
+    "salt_pepper_fraction": 0.0018354782196689748,
+    "jpeg_quality": 81
+  }
+}

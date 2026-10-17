@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "family": "big_box_retail",
+  "country": "CA",
+  "province": "QC",
+  "currency": "CAD",
+  "language": "fr",
+  "paper_width_mm": 80,
+  "merchant": {
+    "name": "BUREAU FICTIF",
+    "address_lines": [
+      "624 Des Fictifs St",
+      "Granby, QC J0H 6A1"
+    ],
+    "phone": "819-555-0176"
+  },
+  "store_number": "0449",
+  "datetime": "2025-01-13T11:33:00",
+  "transaction_number": "90898",
+  "associate_id": "1227729",
+  "items": [
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cle USB 64 Go Doh",
+      "upc": "770394561659",
+      "sku": "501284",
+      "eco_fee_included": true,
+      "unit_price_cents": 1399,
+      "line_total_cents": 1399,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Cahier spirale 3 suj",
+      "upc": "127930216438",
+      "sku": null,
+      "eco_fee_included": false,
+      "unit_price_cents": 349,
+      "line_total_cents": 349,
+      "tax_flags": "B"
+    },
+    {
+      "kind": "product",
+      "qty": 1,
+      "description": "Souris optique Quidam",
+      "upc": "585165078952",
+      "sku": "281383",
+      "eco_fee_included": true,
+      "unit_price_cents": 3897,
+      "line_total_cents": 3897,
+      "tax_flags": "B"
+    }
+  ],
+  "subtotal_cents": 5645,
+  "taxes": [
+    {
+      "kind": "GST",
+      "label": "TPS",
+      "rate": "0.05",
+      "cents": 282
+    },
+    {
+      "kind": "QST",
+      "label": "TVQ",
+      "rate": "0.09975",
+      "cents": 563
+    }
+  ],
+  "total_cents": 6490,
+  "tip_cents": null,
+  "gst_number": "260353397",
+  "qst_number": "4102607691TQ0001BJ",
+  "payment_method": "cash",
+  "tenders": [
+    {
+      "method": "cash",
+      "cents": 8000
+    }
+  ],
+  "change_cents": 1510,
+  "card": null,
+  "document_kind": "sales_receipt",
+  "text_lines": [
+    "              BUREAU FICTIF",
+    "                  Granby",
+    "            624 Des Fictifs St",
+    "            Granby, QC J0H 6A1",
+    "               819-555-0176",
+    "VENTE                  00834 001 009 90898",
+    "                       0449 13/01/25 11:33",
+    "",
+    "1227729",
+    "",
+    "1    Cle USB 64 Go Doh",
+    "     770394561659                   13.99B",
+    "     UGS 501284 d'écofrais inclus",
+    "1    Cahier spirale 3 suj",
+    "     127930216438                    3.49B",
+    "1    Souris optique Quidam",
+    "     585165078952                   38.97B",
+    "     UGS 281383 d'écofrais inclus",
+    "Total partiel                        56,45",
+    "     5.00% TPS                        2,82",
+    "     9.975% TVQ                       5,63",
+    "",
+    "Total                              64,90 $",
+    "Comptant                             80,00",
+    "Comptant Rendu                       15,10",
+    "******************************************",
+    "   Les écouteurs et casques ouverts ne",
+    "       peuvent pas être retournés.",
+    "******************************************",
+    "Échangez votre ancien appareil contre une",
+    "carte-cadeau BUREAU FICTIF. Demandez à un",
+    "      associé pour plus de détails.",
+    "******************************************",
+    "",
+    "Merci d'avoir magasiné chez BUREAU FICTIF",
+    "",
+    "TPS : 260353397 - TVQ : 4102607691TQ0001BJ",
+    "",
+    "",
+    "  Partagez vos commentaires et courez la",
+    " chance de gagner une carte-cadeau BUREAU",
+    "             FICTIF de 250 $.",
+    "",
+    "",
+    "        Scannez le code QR, textez",
+    "             WLM449 au 12345,",
+    "ou visitez bureaufictif.example/survey/449",
+    " Les frais standards de messagerie et de",
+    "          données s'appliquent.",
+    "      Pour connaître les règlements",
+    "               du concours,",
+    "            consultez le site",
+    "        aide.bureaufictif.example",
+    "",
+    "    0 4 4 9 1 3 0 1 2 5 9 0 8 9 8 0 9",
+    "",
+    "   SPÉCIMEN - synthetic-receipts-canada"
+  ],
+  "files": {
+    "clean": "0001.png",
+    "degraded": "0001.jpg"
+  },
+  "degradation": {
+    "paper_gray": 219,
+    "ink_gray_top": 44,
+    "ink_gray_bottom": 110,
+    "shading_amplitude": 0.2534011999649959,
+    "fold_position": null,
+    "blur_radius": 0.7649798683998104,
+    "rotation_degrees": 0.04054015413737035,
+    "perspective": 0.04177111352562582,
+    "noise_sigma": 8.692252557721952,
+    "salt_pepper_fraction": 0.00178403548705368,
+    "jpeg_quality": 75
+  }
+}
