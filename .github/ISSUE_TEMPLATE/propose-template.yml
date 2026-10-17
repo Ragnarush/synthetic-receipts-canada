@@ -1,0 +1,76 @@
+name: Propose a receipt template
+description: Describe the structure of a kind of receipt not covered yet, with every value invented.
+title: "Template: "
+labels: ["template-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public. Never attach a receipt, a photo, a crop or a scan, even blurred.**
+        Describe the receipt's *structure* from the one you have in hand, and invent every
+        value: no store name, address, phone, tax number, card digits (not even the last 4),
+        cashier, reference or authorization number, and no real date, time or amount.
+        Invented examples look like `12345-6789 RT0001`, `************0000`, `819-555-0142`.
+
+        The full rules are in [`CLAUDE.md`](https://github.com/Ragnarush/synthetic-receipts-canada/blob/main/CLAUDE.md); a finished template sheet
+        to model yours on is [`grocery-chain.md`](https://github.com/Ragnarush/synthetic-receipts-canada/blob/main/docs/templates/grocery-chain.md).
+  - type: input
+    id: kind
+    attributes:
+      label: Kind of receipt, in general terms
+      description: The kind of store and device, never the brand.
+      placeholder: "a large Ontario pharmacy chain; a gas-station pump receipt; a parking meter ticket"
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Province or territory, and language printed
+      placeholder: "Ontario, English; New Brunswick, bilingual"
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: Paper and printer
+      description: Paper width if you can measure it (58 or 80 mm), thermal or not, columns per line if you can count them.
+      placeholder: "80 mm thermal, about 42 characters per line"
+  - type: textarea
+    id: blocks
+    attributes:
+      label: Blocks, top to bottom
+      description: |
+        One block per line, as printed, with **invented** values. Text printed on the receipt
+        goes in backticks, keeping its spelling, accents (or lack of them) and alignment.
+      placeholder: |
+        - header: `PHARMACIE DOH`, street, city and postal code, phone `416-555-0142`
+        - date and time: `2026/03/14 10:20`
+        - one line per item: description left, price right with a tax code (`4.99 H`)
+        - `SUBTOTAL`, then `HST 13%` with its amount, then `TOTAL`
+        - card slip, then `HST # 12345 6789 RT0001` near the bottom
+    validations:
+      required: true
+  - type: textarea
+    id: taxes
+    attributes:
+      label: Taxes and payment
+      description: Which taxes are printed and how (rate, base, included in prices?), how payment is shown (cash rounding line? change? card slip inline or separate?).
+  - type: textarea
+    id: traps
+    attributes:
+      label: Traps for an extractor
+      description: What on this receipt could fool a program reading it (a total printed twice, a number that looks like an amount, an ambiguous date).
+  - type: textarea
+    id: unseen
+    attributes:
+      label: Not observed
+      description: Forms you expect exist but have not seen on a receipt (another payment method, a refund). They stay out of the generator until a receipt shows them.
+  - type: checkboxes
+    id: no-real-data
+    attributes:
+      label: No real data
+      options:
+        - label: I attached no receipt, photo, crop or scan.
+          required: true
+        - label: Every name, number, date, time and amount above is invented, not copied from a receipt.
+          required: true

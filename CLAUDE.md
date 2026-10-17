@@ -111,6 +111,7 @@ docs/templates/ one template sheet per family (source, block table, traps, varia
 docs/sources/   official documents the WEB-SRM templates are drawn from (in French)
 corpus/         sample of 20 receipts per family (seed 1), committed
 tests/          `uv run pytest`: invariants of every family, money, corpus regression
+.github/ISSUE_TEMPLATE/  issue forms: propose a template, report an extractor trap
 ```
 
 ## Adding a family (or a variant)

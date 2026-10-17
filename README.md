@@ -145,8 +145,13 @@ How to contribute a template:
    [`grocery-chain.md`](docs/templates/grocery-chain.md): the source in general terms ("a
    large Ontario pharmacy chain"), a table of blocks with invented examples, the traps for
    an extractor, the variation to generate, and what was not observed.
-3. Open an issue or a pull request with the sheet. Code can follow from you or from
-   someone else; the sheet alone is already a contribution.
+3. Open an issue with the [*Propose a receipt template*](https://github.com/Ragnarush/synthetic-receipts-canada/issues/new?template=propose-template.yml)
+   form, or a pull request with the sheet. Code can follow from you or from someone else;
+   the sheet alone is already a contribution.
+
+A trap you have seen fool an extractor goes in a [*Report an extractor
+trap*](https://github.com/Ragnarush/synthetic-receipts-canada/issues/new?template=extractor-trap.yml)
+issue, shown with a generated receipt or with lines you write yourself.
 
 Never commit a real receipt, a photo, a crop, or any value copied from one: no store
 name, address, phone, tax number, card digits, cashier, reference or authorization

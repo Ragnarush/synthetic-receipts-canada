@@ -1,0 +1,71 @@
+name: Report an extractor trap
+description: A layout or value that fools a receipt-field extractor, so the generator can produce it.
+title: "Trap: "
+labels: ["extractor-trap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A trap is something on a receipt that makes a program read a field wrong: a tax line
+        taken for a price, a date read in the wrong order, a total counted twice.
+
+        **Issues are public. Never attach a real receipt or a photo of one.** Show the trap
+        with a synthetic receipt from this repository, or with a few lines you write yourself
+        with invented values.
+  - type: input
+    id: family
+    attributes:
+      label: Family, if the trap concerns one
+      description: A family name from the README (`grocery_chain`, `crown_store_tax_included`...), or "none yet" for a receipt not covered.
+      placeholder: "grocery_chain"
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Field read wrong
+      description: The ground-truth key involved.
+      placeholder: "total_cents, datetime, taxes[].cents, payment_method..."
+    validations:
+      required: true
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: The lines that cause it
+      description: |
+        Copied from `text_lines` of a generated receipt, or written by you with invented
+        values. Keep the alignment.
+      placeholder: |
+        SOUS-TOTAL                         12.34
+           F=T.P.S 5%   12.34 @  5.000%
+                                            0.62
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: wrong-right
+    attributes:
+      label: What gets extracted, and what is right
+      placeholder: |
+        Extracted: total_cents = 1234 (the GST base)
+        Right: total_cents = 1419
+    validations:
+      required: true
+  - type: input
+    id: receipt
+    attributes:
+      label: Generated receipt, if any
+      description: Seed, family and index, so it can be regenerated, plus the paper width and whether it is the clean or degraded image.
+      placeholder: "seed 1, grocery_chain, 0007, 80 mm, degraded"
+  - type: textarea
+    id: extractor
+    attributes:
+      label: Extractor and OCR used (optional)
+      description: Only what helps reproduce the trap; nothing confidential.
+  - type: checkboxes
+    id: no-real-data
+    attributes:
+      label: No real data
+      options:
+        - label: Nothing here comes from a real receipt; every value is generated or invented.
+          required: true

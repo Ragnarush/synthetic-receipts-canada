@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributor guide (CLAUDE.md)
+    url: https://github.com/Ragnarush/synthetic-receipts-canada/blob/main/CLAUDE.md
+    about: The no-real-data rules and how a template becomes a family. Read it before proposing one.
